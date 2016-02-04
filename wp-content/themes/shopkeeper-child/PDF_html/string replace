@@ -1,0 +1,12 @@
+Page : 1
+
+##%%plan_name%%## : Order's plan name (<?php echo 'Dein Ernährungsplan: '.$item_data['name'];?>)
+
+##%%plan_period%%## : Plan Period ('(<?php echo $plan_period ?> Wochen	)')
+
+##%%product_content%%## : product's description ( <?php echo $plan_details->post_content; ?>)
+
+Page : 2
+
+##%%plan_name%%## : $item_data['name'];
+##%%plan_period%%## : $plan_period

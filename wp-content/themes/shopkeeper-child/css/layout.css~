@@ -1,0 +1,104 @@
+.wpb_wrapper .plan_overview.odd { background-color: #F4F4F4;}
+.wpb_wrapper .plan_overview.even { background-color: #ffffff;}
+.wpb_wrapper .plan_overview.even .txt_box { float: right;}
+.content_highlight { padding: 0 0;}
+
+.box_wrapper { width:960px; margin:0 auto; padding-top:80px ;}
+
+.box_wrapper  p {color:#162c5d;font-size:16px; text-transform:uppercase; font-family:"Conv_AvenirLTStd-Roman";margin-bottom:8px;}
+
+.box_wrapper h3 {font-family:"Conv_DINNextLTPro-Bold"; font-size: 36px; color:#162c5d; text-transform: uppercase;margin: 0 0 15px;}
+
+.txt_box span{ color:#71848e;font-size:16px;font-family:"Conv_AvenirLTStd-Roman";line-height:30px;display:inline-block;width:100%;}
+
+.txt_box b{color:#2cab50;font-weight:600;width:20%;display:inline-block;float:left;}
+
+.txt_box span p{ color: #71848e;float: left;line-height: 30px;margin-bottom: 0;text-transform: capitalize;width: 80%;}
+
+.txt_box button {background:transparent;margin:0;padding:0;}
+
+.txt_box a:button {background:transparent;}
+
+.txt_box .welter_btn { margin-top:15px;}
+
+.txt_box .welter_btn .btnext{height: 60px;line-height: 58px;width: 390px;}
+
+.price_tag2 { background: #feda46 ;border-radius: 50%;height: 120px;width: 120px;text-align:center;position:absolute;right:80px;top:30px;z-index:999;}
+
+.price_tag2 span {font-family:"Conv_DINNextLTPro-Bold"; font-size:34px;color:#162c5d;padding-top:30px;display:block;}
+
+.price_tag2 p { font-size:12px;font-family:"Conv_AvenirLTStd-Roman";margin-bottom:0;}
+
+.price_info2 { background: #162c5d ;border-radius: 50%;height: 120px;width: 120px;text-align:center;position:absolute;right:110px;top:130px;}
+
+.price_info2 p{ color:#ffffff;font-size:13px;text-transform:capitalize;padding-top:32px;}
+
+.even .price_tag2 { background: #feda46 ;border-radius: 50%;height: 120px;width: 120px;text-align:center;position:absolute;left:40px;top:30px;z-index:999;}
+
+.even .price_tag2 span {font-family:"Conv_DINNextLTPro-Bold"; font-size:34px;color:#162c5d;padding-top:30px;display:block;}
+
+.even .price_tag2 p { font-size:12px;font-family:"Conv_AvenirLTStd-Roman";margin-bottom:0;}
+
+.even .price_info2 { background: #162c5d ;border-radius: 50%;height: 120px;width: 120px;text-align:center;position:absolute;left:10px;top:130px;}
+
+.even .price_info2 p{ color:#ffffff;font-size:13px;text-transform:capitalize;padding-top:32px;}
+
+.odd .vc_col-sm-6.wpb_column.vc_column_container.img_box { float: right;}
+
+
+/* Responsive */
+
+@media screen and (max-width : 980px){
+
+.wpb_wrapper { width: 100%;}
+
+.box_wrapper { box-sizing: border-box; padding: 60px 2% 0; width: 100%;}
+
+.txt_box b {width:23%;font-size:14px}
+
+.txt_box span p {width:77%;font-size:14px}
+
+.txt_box .welter_btn { width: 100%; display: inline-block;} 
+
+.txt_box .welter_btn .btnext { width: 100%;}
+
+}
+
+@media screen and (max-width : 768px){
+
+.vc_col-sm-6.wpb_column.vc_column_container { box-sizing: border-box; float: left; width: 50%;}
+
+.attachment-post-thumbnail.wp-post-image {vertical-align:middle;}
+
+.price_tag2{ right: 30px;}
+
+.price_info2 { right: 60px;}
+
+@media screen and (max-width : 767px){
+	
+.vc_col-sm-6.wpb_column.vc_column_container{ width: 100%;}
+
+.box_wrapper { padding: 60px 10% 0;}
+
+.txt_box .welter_btn { margin: 20px 0; text-align: center;}
+
+.txt_box .welter_btn .btnext { width: 60%; display: inline-block;}
+
+.vc_col-sm-6.wpb_column.vc_column_container.img_box { text-align: center;width: 100%;}
+
+.wpb_wrapper .plan_overview .txt_box { padding: 20px 0;}
+
+}
+
+@media screen and (max-width : 360px){
+
+	.txt_box .welter_btn .btnext { width: 70%;}
+
+	.price_tag2 { right: 0px;}
+
+	.price_info2 { right: 30px;}
+
+	.even .price_tag2 { left: 20px;}
+
+	.even .price_info2 {  left: 0px;}
+}

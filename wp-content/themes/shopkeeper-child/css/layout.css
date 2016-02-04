@@ -1,0 +1,196 @@
+.text-light {font-weight:normal !important;}
+.text-bold {font-weight:bold !important;}
+.text-right {text-align:right !important;}
+.text-left {text-align:left !important;}
+.text-normal {text-transform:none !important;}
+.text-capitalize {text-transform:capitalize !important;}
+.text-uppercase {text-transform:uppercase !important;}
+.line-height-normal {line-height:normal !important;}
+.pull-right { float:right !important;}
+.pull-left { float:left !important;}
+.no-margin {margin:0 !important;}
+.no-padding {padding:0 !important;}
+.mb-80  {margin-bottom:80px !important;}
+.light-gray-text {color:#96a7b0 !important;}
+.dark-blue-color {color:#162c5d !important;}
+.green-text {color:#2cab50 !important;}
+.divider { height:1px; background:#BDC9CC; display:table; max-width: 620px; width: 100%; margin:72px auto;}
+.entry-header  {display:none;}
+.breadcrumb .main-hedding {padding: 75px 0; color: #fff !important;}
+
+
+.wrapper_header_mobile_layout .sticky-logo{float: left;}
+.wrapper_header_mobile_layout .header_col.right_menu .iosmarker img{ float: right;}
+.wrapper_header_mobile_layout .header_col.branding {text-align: center;}
+
+
+
+.entry-content .woocommerce .woocommerce-error { max-width: 620px; width: 100%; margin: 0 auto !important; font-family: "Conv_AvenirLTStd-Medium"; font-size: 16px !important; border: 1px solid #EC412C; border-radius: 30px; color: #EC412C; text-align: center;}
+.entry-content .woocommerce .woocommerce-message {max-width: 620px; width: 100%; margin: 0 auto !important; font-family: "Conv_AvenirLTStd-Medium"; font-size: 16px !important; border: 1px solid #2cab50; border-radius: 30px; color: #2cab50;}
+
+
+
+/************** Thank you start **************/
+
+h1:first-child { margin-top: 0px !important; }
+.thank_you_header_text {margin: 0px !important; padding: 0px !important; background: #FFF; background: transparent !important;color: #2cab50; }
+.thank_you_header_text p {font-family: "Conv_AvenirLTStd-Medium";margin: 0px; font-size: 16px !important; border: 1px solid #2cab50;border-radius: 30px; padding: 17px 0px;}
+.thank_you_wrapper  .thank_you_header_text p{ margin: 25px 0 40px;}
+.thank_you_wrapper { max-width: 620px; width: 100%; margin: 0 auto; }
+.woocommerce .thank_you_wrapper .thank_you_bank_details {margin: 37px 0 27px;}
+.thank_you_wrapper .thank_you_description {margin-top:-3px;}
+.thank_you_wrapper .thank_you_description span.desc-text {font-size:16px; font-family: "Conv_AvenirLTStd-Medium"; line-height: 28px;}
+.thank_you_wrapper .thank_you_bank_details li { display:inline-block; width:100%;}
+.thank_you_wrapper .thank_you_bank_details li:last-of-type {margin-bottom:0;}
+.thank_you_wrapper .thank_you_bank_details li label { margin-top:0;}
+.thank_you_wrapper .thank_you_bank_details li strong {margin-left:7px;}
+.thank_you_wrapper .thank_you_bank_details li label, .thank_you_bank_details li strong {letter-spacing: 1px; line-height:19px; font-family: "Conv_AvenirLTStd-Medium"; font-size: 16px; text-transform: inherit; letter-spacing:0.5px;}
+.thank_you_wrapper .thank_you_bank_details {margin:32px 0 25px;}
+.woocommerce  .thank_you_wrapper .recommend-secure-e-book { margin-top:65px; }
+.thank_you_wrapper .gratis-e-book { width: 50%; display: inline-block; }
+.thank_you_wrapper .gratis-e-book strong { letter-spacing: 1.15px; line-height:1em; font-family: "Conv_AvenirLTStd-Medium"; font-size: 16px; color: #162c5d; margin:55px 0 30px; display: inline-block; }
+.thank_you_wrapper .thank_you_header_text .purchure-desc-text { letter-spacing: 0.5px; font-family: "Conv_AvenirLTStd-Medium"; font-size: 16px; color: #162c5d !important; padding: 0px; margin:0px; line-height: 28px; }
+.thank_you_wrapper .gratis-e-book .highlight_words { color: #162c5d; }
+.thank_you_wrapper .high_active { float: right; position: absolute; right: -5px; top: -40px; }
+.thank_you_wrapper .high_active div { padding-top: 25px; background: #feda46; border-radius: 50%; color: #162c5d; display: inline-block; font-size: 13px; height: 116px; text-align: center; width: 116px; font-size: 16px; }
+
+.thank_you_wrapper .receive-download { width: 100%; display: table; text-align: center; }
+.thank_you_wrapper .receive-download .blue_hover .vc_btn3 {padding: 0 98px !important;}
+.thank_you_wrapper .receive-download p { color: #71848e; font-size: 14px; padding: 0px; margin:0px; font-family: "Conv_AvenirLTStd-Medium"; margin:30px 0 0;}
+.woocommerce .thank_you_wrapper .receive-download p { margin:26px 0 2px;}
+.thank_you_wrapper .order_details_container {margin-top:4px;}
+.thank_you_wrapper .order_details_container .order_details li:last-of-type { margin-right:0;padding-right:0;}
+.thank_you_wrapper .order_details_container .order_details li span.title, .thank_you_wrapper .order-detail-box .box-heading { text-transform: uppercase; font-weight: lighter; margin: 0; font-family: "Conv_AvenirLTStd-Medium"; font-size: 16px;}
+.woocommerce .thank_you_wrapper .order_details_container .order_details li strong {margin:11px 0 1px; font-family: "Conv_AvenirLTStd-Medium"; font-size: 16px;}
+.thank_you_wrapper .order-detail-box  tfoot th {margin-top:0 !important; padding:0 !important;}
+.thank_you_wrapper .order-detail-box .shop_table.customer_details {margin:12px 0 0}
+.thank_you_wrapper .order-detail-box table.shop_table.order_details thead tr th, .thank_you_wrapper .order-detail-box table tr th { font-size:16px !important; font-family: "Conv_AvenirLTStd-Medium";}
+.thank_you_wrapper .order-detail-box table.shop_table.order_details tr th, .thank_you_wrapper .order-detail-box table.shop_table.order_details tr td {padding:15px 0 !important;font-family: "Conv_AvenirLTStd-Medium";border-bottom: 1px solid rgba(84,84,84,0.15);}
+.thank_you_wrapper .order-detail-box table.shop_table.order_details tr:first-of-type  td{border-top:0 none;}
+.thank_you_wrapper .order-detail-box table.shop_table.order_details tfoot tr:last-child td:last-child .amount {font-weight:lighter; font-size:16px;}
+.thank_you_wrapper .order-detail-box table.shop_table.order_details tfoot tr:last-of-type td,
+.thank_you_wrapper .order-detail-box table..shop_table.order_details tfoot tr:last-of-type th { color:#2cab50 !important; border:0 none; padding-bottom:0 !important;}
+.thank_you_wrapper .order-detail-box table.shop_table.shop_table_responsive.customer_details tbody tr:last-of-type th,
+.thank_you_wrapper .order-detail-box table.shop_table.shop_table_responsive.customer_details tbody tr:last-of-type td { border:0 none; padding-bottom:0 !important;}
+.thank_you_wrapper .order-detail-box address {margin:12px 0 0; line-height:28px; }
+.thank_you_wrapper .thank_you_header_text .purchure-desc-text{ margin-top: 35px; }
+.thank_you_wrapper .shop_table {background-color: #fff !important;}
+/************** Thank you End **************/
+
+/* Responsive */
+
+@media screen and (max-width : 1280px){
+	.thank_you_wrapper .order_details_container .order_details li {
+		width:48%;
+		margin-right:4%;
+		padding-right:0;
+		margin-bottom:20px;
+		text-align: center;
+	}
+	.thank_you_wrapper .order_details_container .order_details li:nth-child(2n+2) {
+		width:48%;
+		margin-right:0;
+	}
+}
+
+
+
+@media screen and (max-width : 1024px){ 
+	.right-cart-box .shop_table tr {
+    display: table;
+    margin-bottom: 4px;
+    width: 100%;
+}
+
+}
+
+@media screen and (max-width : 980px){
+
+.wpb_wrapper { width: 100%;}
+
+.box_wrapper { box-sizing: border-box; padding: 60px 2% 0; width: 100%;}
+
+.txt_box b {width:23%;font-size:14px}
+.box_wrapper h3 {
+font-size:30px;
+}
+
+.txt_box span p {width:77%;font-size:14px}
+
+.txt_box .welter_btn { width: 100%; display: inline-block;} 
+
+.txt_box .welter_btn .btnext { width: 100%;}
+
+}
+
+
+@media screen and (min-width :768px) and (max-width :980px) { 
+    
+    .benefits {margin: 21px 7px 36px; }
+}
+
+
+@media screen and (max-width : 768px){
+
+.plan_overview .vc_col-sm-6.wpb_column.vc_column_container { box-sizing: border-box; float: left; width: 50%;}
+.attachment-post-thumbnail.wp-post-image {vertical-align:middle;}
+
+.price_tag2{ right: 30px;}
+
+.price_info2 { right: 60px;}
+}
+
+@media screen and (max-width : 767px){
+	
+.plan_overview .vc_col-sm-6.wpb_column.vc_column_container{ width: 100%;}
+
+.box_wrapper { padding: 60px 10% 0;}
+
+.txt_box .welter_btn { margin: 20px 0; text-align: center;}
+
+.txt_box .welter_btn .btnext { width: 60%; display: inline-block;}
+
+.plan_overview .vc_col-sm-6.wpb_column.vc_column_container.img_box { text-align: center;width: 100%;}
+
+.wpb_wrapper .plan_overview .txt_box { padding: 20px 0;}
+
+/**/
+.plan_overview .box_wrapper{width:100%; }
+
+.wpb_wrapper .plan_overview{padding:0 25px;} 
+
+
+}
+
+@media screen and (max-width : 640px){
+
+	.checkout .checkout_right_wrapper {margin-right: 0;}
+	.thank_you_wrapper.thank_you_header p::before {
+		left:12%;
+	}
+
+}
+
+@media screen and (max-width : 480px){
+
+    .mtop-warenkorb .woocommerce-billing-fields p { width: 100% !important;}
+	.thank_you_header_text p {padding-left:12%;}
+}
+
+@media screen and (max-width : 360px){
+
+	.txt_box .welter_btn .btnext { width: 70%;}
+
+	.price_tag2 { right: 0px;}
+
+	.price_info2 { right: 30px;}
+
+	.even .price_tag2 { left: 20px;}
+
+	.even .price_info2 {  left: 0px;}
+	.woocommerce table.shop_table {word-break: break-all;}
+ 
+
+}
+
+

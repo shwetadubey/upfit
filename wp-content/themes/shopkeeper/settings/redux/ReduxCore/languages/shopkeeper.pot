@@ -1,0 +1,584 @@
+# Loco Gettext template
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Redux Framework\n"
+"Report-Msgid-Bugs-To: https://github."
+"com/ReduxFramework/ReduxFramework/issues\n"
+"POT-Creation-Date: 2015-04-02 04:45:17+00:00\n"
+"POT-Revision-Date: Tue Dec 15 2015 11:45:07 GMT+0530 (IST)\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: admin <lanetteam.divyesh@gmail.com>\n"
+"Language-Team: German (Germany) (http://www.transifex.com/projects/p/redux-"
+"framework/language/de_DE/)\n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes\n"
+"X-Loco-Target-Locale: de_DE"
+
+msgid "Activate Demo Mode"
+msgstr ""
+
+msgid "Activate Development Plugins"
+msgstr ""
+
+msgid "Active"
+msgstr ""
+
+msgid "Active Plugins"
+msgstr ""
+
+msgid "Add More"
+msgstr ""
+
+msgid "Add/Edit Gallery"
+msgstr ""
+
+msgid "All"
+msgstr ""
+
+msgid "All Defaults Restored!"
+msgstr ""
+
+msgid "Allow tracking"
+msgstr ""
+
+msgid "Are you sure?  Resetting will lose all custom values."
+msgstr ""
+
+msgid "Are you sure? Resetting will lose all custom values in this section."
+msgstr ""
+
+msgid "Are you sure? Resetting will lose all custom values."
+msgstr ""
+
+#, c-format
+msgid "Automatic action performed: \"%s\""
+msgstr ""
+
+msgid "Background Attachment"
+msgstr ""
+
+msgid "Background Clip"
+msgstr ""
+
+msgid "Background Origin"
+msgstr ""
+
+msgid "Background Position"
+msgstr ""
+
+msgid "Background Repeat"
+msgstr ""
+
+msgid "Background Size"
+msgstr ""
+
+msgid "Backup Font Family"
+msgstr ""
+
+msgid "Border style"
+msgstr ""
+
+msgid "Bottom"
+msgstr ""
+
+msgid "Browser"
+msgstr ""
+
+msgid "Changelog"
+msgstr ""
+
+msgid "Clear Gallery"
+msgstr ""
+
+msgid "Click here to activate the sample config file."
+msgstr ""
+
+msgid "Close"
+msgstr ""
+
+msgid "Credits"
+msgstr ""
+
+msgid "Deactivate Demo Mode"
+msgstr ""
+
+msgid "Deactivate Development Plugins"
+msgstr ""
+
+msgid "Default"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+msgid "Description"
+msgstr ""
+
+msgid "Developer"
+msgstr ""
+
+#, c-format
+msgid ""
+"Did you know we have extensions, which greatly enhance the features of Redux?"
+"  Visit our %1$s to learn more!"
+msgstr ""
+
+msgid "Disable"
+msgstr ""
+
+msgid "Dismiss"
+msgstr ""
+
+msgid "Do not allow tracking"
+msgstr ""
+
+msgid "Email address"
+msgstr ""
+
+msgid "Enable"
+msgstr ""
+
+msgid "Expand"
+msgstr ""
+
+msgid "Export Options"
+msgstr ""
+
+msgid "Extensions"
+msgstr ""
+
+msgid "Font Color"
+msgstr ""
+
+msgid "Font Family"
+msgstr ""
+
+msgid "Font Size"
+msgstr ""
+
+msgid "Font Subsets"
+msgstr ""
+
+msgid "Font Variant"
+msgstr ""
+
+msgid "Font Weight &amp; Style"
+msgstr ""
+
+msgid "Font color"
+msgstr ""
+
+msgid "Font family"
+msgstr ""
+
+msgid "Font script"
+msgstr ""
+
+msgid "Font style"
+msgstr ""
+
+msgid "Font subsets"
+msgstr ""
+
+msgid "From "
+msgstr ""
+
+msgid "Front Page"
+msgstr ""
+
+msgid "Getting Started"
+msgstr ""
+
+msgid "Google Webfonts"
+msgstr ""
+
+msgid "Height"
+msgstr ""
+
+msgid "Help improve Our Panel"
+msgstr ""
+
+msgid ""
+"Here you can copy/download your current option settings. Keep this safe as "
+"you can use it as a backup should anything go wrong, or you can use it to "
+"restore your settings on this site (or any other site)."
+msgstr ""
+
+msgid "Hints"
+msgstr ""
+
+msgid "Hover"
+msgstr ""
+
+#, c-format
+msgid ""
+"If so, please %1$s and consider making a %2$s to keep development of Redux "
+"moving forward."
+msgstr ""
+
+msgid ""
+"If you'd like to keep up to with all things Redux, please subscribe to our "
+"newsletter"
+msgstr ""
+
+msgid "Import"
+msgstr ""
+
+msgid "Import / Export"
+msgstr ""
+
+msgid "Import Options"
+msgstr ""
+
+msgid "Import from URL"
+msgstr ""
+
+msgid ""
+"Input the URL to another sites options set and hit Import to load the "
+"options from that site."
+msgstr ""
+
+msgid ""
+"Input your backup file below and hit Import to restore your sites options "
+"from a backup."
+msgstr ""
+
+msgid "Left"
+msgstr ""
+
+msgid "Letter Spacing"
+msgstr ""
+
+msgid "Like Redux?"
+msgstr ""
+
+msgid "Line Height"
+msgstr ""
+
+msgid "Must call in of after the \"plugins_loaded\" action."
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+#, c-format
+msgid "New %s"
+msgstr ""
+
+msgid "Newsletter"
+msgstr ""
+
+msgid "No items of this type were found."
+msgstr ""
+
+msgid "No media selected"
+msgstr ""
+
+msgid "Off"
+msgstr ""
+
+msgid "On"
+msgstr ""
+
+msgid "Options"
+msgstr ""
+
+msgid "Options Object"
+msgstr ""
+
+#, c-format
+msgid "Options panel created using %1$s"
+msgstr ""
+
+msgid "Password"
+msgstr ""
+
+msgid "Please Wait"
+msgstr ""
+
+msgid ""
+"Please helps us improve our panel by allowing us to gather anonymous usage "
+"stats so we know which configurations, plugins and themes to test to ensure "
+"compatibility."
+msgstr ""
+
+msgid "Redux Extensions"
+msgstr ""
+
+msgid "Redux Framework"
+msgstr ""
+
+msgid "Redux Framework Changelog"
+msgstr ""
+
+msgid "Redux Framework has an embedded demo."
+msgstr ""
+
+msgid "Redux Generator"
+msgstr ""
+
+msgid "Regular"
+msgstr ""
+
+msgid "Remove"
+msgstr ""
+
+msgid "Repo"
+msgstr ""
+
+msgid "Reset All"
+msgstr ""
+
+msgid "Reset Section"
+msgstr ""
+
+msgid "Right"
+msgstr ""
+
+msgid "Save Changes"
+msgstr ""
+
+msgid "Section Defaults Restored!"
+msgstr ""
+
+msgid "Select an item"
+msgstr ""
+
+msgid "Settings Imported!"
+msgstr ""
+
+msgid "Settings Saved!"
+msgstr ""
+
+msgid "Settings have changed, you should save them!"
+msgstr ""
+
+msgid "Show Object in Javascript Console Object"
+msgstr ""
+
+msgid "Size"
+msgstr ""
+
+msgid "Slide"
+msgstr ""
+
+msgid "Standard Fonts"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "Style"
+msgstr ""
+
+msgid "Subscribe"
+msgstr ""
+
+msgid "Subsets"
+msgstr ""
+
+msgid "Support"
+msgstr ""
+
+msgid "System Info"
+msgstr ""
+
+msgid "Text Align"
+msgstr ""
+
+msgid "Text Decoration"
+msgstr ""
+
+msgid "Text Transform"
+msgstr ""
+
+msgid "The people that develop Redux Framework"
+msgstr ""
+
+#, c-format
+msgid "The unknown action has been replaced with \"%s\""
+msgstr ""
+
+msgid "Theme"
+msgstr ""
+
+msgid "This field cannot be empty. Please provide a value."
+msgstr ""
+
+msgid "This field must be a valid color value."
+msgstr ""
+
+msgid "This field must be a valid date."
+msgstr ""
+
+#, c-format
+msgid ""
+"This panel demonstrates the many features of Redux.  Before digging in, we "
+"suggest you get up to speed by reviewing %1$s."
+msgstr ""
+
+msgid "Title"
+msgstr ""
+
+msgid "To "
+msgstr ""
+
+msgid "Top"
+msgstr ""
+
+msgid "Transparent"
+msgstr ""
+
+msgid "URL"
+msgstr ""
+
+msgid "Units"
+msgstr ""
+
+#, c-format
+msgid "Unknown action \"%1$s\" specified for %2$s"
+msgstr ""
+
+msgid "Upload"
+msgstr ""
+
+msgid "User"
+msgstr ""
+
+msgid "Username"
+msgstr ""
+
+msgid "Version"
+msgstr ""
+
+#, c-format
+msgid "Version %s"
+msgstr ""
+
+#, c-format
+msgid "View %s"
+msgstr ""
+
+msgid "Visit plugin homepage"
+msgstr ""
+
+msgid "Visited"
+msgstr ""
+
+msgid ""
+"WARNING! This will overwrite all existing option values, please proceed with "
+"caution!"
+msgstr ""
+
+#, c-format
+msgid ""
+"Want to get a head start? Use the %1$s. It will create a customized "
+"boilerplate theme or a standalone admin folder complete with all things "
+"Redux (with the help of Underscores and TGM). Save yourself a headache and "
+"try it today."
+msgstr ""
+
+msgid "Warning- This options panel will not work properly without javascript!"
+msgstr ""
+
+msgid "Welcome to Redux Framework"
+msgstr ""
+
+#, c-format
+msgid "Welcome to Redux Framework %s"
+msgstr ""
+
+msgid "Welcome to the Redux Demo Panel"
+msgstr ""
+
+msgid "What's New"
+msgstr ""
+
+msgid "Width"
+msgstr ""
+
+msgid "Word Spacing"
+msgstr ""
+
+msgid "Working..."
+msgstr ""
+
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+msgid "You have changes that are not saved.  Would you like to save them now?"
+msgstr ""
+
+msgid "You have changes that are not saved. Would you like to save them now?"
+msgstr ""
+
+msgid "You must not enter any HTML in this field, all HTML tags have been removed."
+msgstr ""
+
+msgid ""
+"You must not enter any special characters in this field, all special "
+"characters have been removed."
+msgstr ""
+
+msgid "You must provide a comma separated list of numerical values for this option."
+msgstr ""
+
+msgid "You must provide a numerical value for this option."
+msgstr ""
+
+msgid "You must provide a valid URL for this option."
+msgstr ""
+
+msgid "You must provide a valid email for this option."
+msgstr ""
+
+msgid ""
+"Your current options will be replaced with the values of this preset.  Would "
+"you like to proceed?"
+msgstr ""
+
+msgid ""
+"Your current options will be replaced with the values of this preset. Would "
+"you like to proceed?"
+msgstr ""
+
+msgid "donation"
+msgstr ""
+
+msgid "error(s) were found!"
+msgstr ""
+
+msgid "extensions directory"
+msgstr ""
+
+msgid "leave us a favorable review on WordPress.org"
+msgstr ""
+
+msgid "our documentation"
+msgstr ""
+
+msgid "warning(s) were found!"
+msgstr ""
+
+msgid "Settings"
+msgstr ""
+
+msgctxt "Your email address"
+msgid "Your email address"
+msgstr ""

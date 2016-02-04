@@ -1,0 +1,46 @@
+<html>
+<head>
+
+</head>
+<body>
+<canvas id="canvas" style="border:2px solid black;" width="500" height="500">
+</canvas>
+
+ <div id="content" style="background:#f0eeef;margin:0 auto;padding:50px 70px;height:100%;display:inline-block;outline:none;">
+       
+          
+            <div>
+              <h2  class="p1-main-heading" >Herzlichen Giuckwunsch, Anna! <br/>Der erste Schritt Zu  Deinem Traumkorpre ist geschafft!</h2>  
+            </div>
+           
+
+      </div>
+</body>
+<script>
+
+var canvas = document.getElementById('canvas');
+var ctx = canvas.getContext('2d');
+var content=document.getElementById('content');
+console.log(content.innerHTML);
+var data = '<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">' +
+           '<foreignObject width="100%" height="100%">' +
+           '<div xmlns="http://www.w3.org/1999/xhtml" style="font-size:40px">' +
+           '<span></span>'+ 
+           '</div>' +
+           '</foreignObject>' +
+           '</svg>';
+
+var DOMURL = window.URL || window.webkitURL || window;
+
+var img = new Image();
+var svg = new Blob([data], {type: 'image/svg+xml;charset=utf-8'});
+var url = DOMURL.createObjectURL(svg);
+
+img.onload = function () {
+  ctx.drawImage(img, 0, 0);
+  DOMURL.revokeObjectURL(url);
+}
+
+img.src = url;
+</script>
+</html>

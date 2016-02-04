@@ -1,0 +1,2534 @@
+0000.000 (0) Opened log file at time: Tue, 02 Feb 2016 13:50:04 +0000 on https://upfit.de/
+0000.006 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.11.20 WP: 4.3.2 PHP: 5.5.9-1ubuntu4.14 (Linux localhost.localdomain 3.13.0-24-generic #47-Ubuntu SMP Fri May 2 23:30:00 UTC 2014 x86_64) MySQL: 5.5.47 Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 16.2M | 17.3M) multisite: Y mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.010 (0) Free space on disk containing Updraft's temporary directory: 145256.4 Mb
+0000.015 (0) Tasks: Backup files: 1 (schedule: weekly) Backup DB:  (schedule: weekly)
+0000.018 (0) Processed schedules. Tasks now: Backup files: 1 Backup DB: 1
+0000.028 (0) Requesting semaphore lock (fd)
+0000.036 (0) Set semaphore last lock (fd) time to 2016-02-02 13:50:04
+0000.041 (0) Semaphore lock (fd) complete
+0000.069 (0) Backup run: resumption=0, nonce=8d9fc2dd641f, begun at=1454421004 (0s ago), job type=backup
+0000.075 (0) Scheduling a resumption (1) after 300 seconds (1454421304) in case this run gets aborted
+0000.095 (0) Checking if we have a zip executable available
+0000.100 (0) Creation of backups of directories: beginning
+0000.108 (0) Beginning creation of dump of plugins (split every: 500 Mb)
+0001.568 (0) Total entities for the zip file: 818 directories, 4761 files (0 skipped as non-modified), 69.4 Mb
+0001.603 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 100 files added (on-disk size: 0 Kb)
+0001.630 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 200 files added (on-disk size: 0 Kb)
+0001.658 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 300 files added (on-disk size: 0 Kb)
+0001.687 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 400 files added (on-disk size: 0 Kb)
+0001.715 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 500 files added (on-disk size: 0 Kb)
+0001.719 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (6.3 Mb, 4761 files batched, 501 (501) added so far); re-opening (prior size: 0 Kb)
+0002.143 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 600 files added (on-disk size: 1691 Kb)
+0002.171 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 700 files added (on-disk size: 1691 Kb)
+0002.198 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 800 files added (on-disk size: 1691 Kb)
+0002.225 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 900 files added (on-disk size: 1691 Kb)
+0002.254 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 1000 files added (on-disk size: 1691 Kb)
+0002.258 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (8.9 Mb, 4761 files batched, 501 (1002) added so far); re-opening (prior size: 1691 Kb)
+0002.807 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 1100 files added (on-disk size: 5594.5 Kb)
+0002.834 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 1200 files added (on-disk size: 5594.5 Kb)
+0002.862 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 1300 files added (on-disk size: 5594.5 Kb)
+0002.893 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 1400 files added (on-disk size: 5594.5 Kb)
+0002.922 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 1500 files added (on-disk size: 5594.5 Kb)
+0002.927 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (8.4 Mb, 4761 files batched, 501 (1503) added so far); re-opening (prior size: 5594.5 Kb)
+0003.569 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 1600 files added (on-disk size: 10213.3 Kb)
+0003.602 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 1700 files added (on-disk size: 10213.3 Kb)
+0003.633 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 1800 files added (on-disk size: 10213.3 Kb)
+0003.666 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 1900 files added (on-disk size: 10213.3 Kb)
+0003.700 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 2000 files added (on-disk size: 10213.3 Kb)
+0003.706 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (6.1 Mb, 4761 files batched, 501 (2004) added so far); re-opening (prior size: 10213.3 Kb)
+0004.388 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 2100 files added (on-disk size: 11916.3 Kb)
+0004.424 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 2200 files added (on-disk size: 11916.3 Kb)
+0004.458 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 2300 files added (on-disk size: 11916.3 Kb)
+0004.493 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 2400 files added (on-disk size: 11916.3 Kb)
+0004.528 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 2500 files added (on-disk size: 11916.3 Kb)
+0004.533 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (7 Mb, 4761 files batched, 501 (2505) added so far); re-opening (prior size: 11916.3 Kb)
+0005.172 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 2600 files added (on-disk size: 14249.2 Kb)
+0005.207 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 2700 files added (on-disk size: 14249.2 Kb)
+0005.243 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 2800 files added (on-disk size: 14249.2 Kb)
+0005.276 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 2900 files added (on-disk size: 14249.2 Kb)
+0005.312 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 3000 files added (on-disk size: 14249.2 Kb)
+0005.318 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.8 Mb, 4761 files batched, 501 (3006) added so far); re-opening (prior size: 14249.2 Kb)
+0005.640 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 3100 files added (on-disk size: 15097.5 Kb)
+0005.675 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 3200 files added (on-disk size: 15097.5 Kb)
+0005.711 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 3300 files added (on-disk size: 15097.5 Kb)
+0005.746 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 3400 files added (on-disk size: 15097.5 Kb)
+0005.785 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 3500 files added (on-disk size: 15097.5 Kb)
+0005.791 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (7.4 Mb, 4761 files batched, 501 (3507) added so far); re-opening (prior size: 15097.5 Kb)
+0006.446 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 3600 files added (on-disk size: 17765.9 Kb)
+0006.480 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 3700 files added (on-disk size: 17765.9 Kb)
+0006.515 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 3800 files added (on-disk size: 17765.9 Kb)
+0006.552 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 3900 files added (on-disk size: 17765.9 Kb)
+0006.594 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 4000 files added (on-disk size: 17765.9 Kb)
+0006.601 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (17.5 Mb, 4761 files batched, 501 (4008) added so far); re-opening (prior size: 17765.9 Kb)
+0008.239 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 4100 files added (on-disk size: 23817.9 Kb)
+0008.281 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 4200 files added (on-disk size: 23817.9 Kb)
+0008.322 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 4300 files added (on-disk size: 23817.9 Kb)
+0008.365 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 4400 files added (on-disk size: 23817.9 Kb)
+0008.408 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 4500 files added (on-disk size: 23817.9 Kb)
+0008.415 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.9 Mb, 4761 files batched, 501 (4509) added so far); re-opening (prior size: 23817.9 Kb)
+0008.715 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 4600 files added (on-disk size: 24480.9 Kb)
+0008.758 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip.tmp: 4700 files added (on-disk size: 24480.9 Kb)
+0009.214 (0) Created plugins zip (0) - 26850.9 Kb in 9.1 s (2951 Kb/s) (SHA1 checksum: ebb04afd3b53c5ed506b7bc1f978d5183b6be8d0)
+0009.221 (0) Beginning creation of dump of themes (split every: 500 Mb)
+0009.667 (0) Total entities for the zip file: 230 directories, 1470 files (0 skipped as non-modified), 76.7 Mb
+0009.693 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-themes.zip.tmp: 100 files added (on-disk size: 0 Kb)
+0009.717 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-themes.zip.tmp: 200 files added (on-disk size: 0 Kb)
+0009.734 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 25 Mb added on this batch (25.3 Mb, 1470 files batched, 257 (257) added so far); re-opening (prior size: 0 Kb)
+0011.795 (0) A useful amount of data was added after this amount of zip processing: 3.2 s (normalised: 3.1 s, rate: 8172.8 Kb/s)
+0011.800 (0) Performance is good - will increase the amount of data we attempt to batch (time=3.167053937912, normalised_time=3.1323283292998, max_time=-1, data points known=0, old_max_bytes=26214400, new_max_bytes=50213893)
+0011.817 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-themes.zip.tmp: 300 files added (on-disk size: 10024.8 Kb)
+0011.841 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-themes.zip.tmp: 400 files added (on-disk size: 10024.8 Kb)
+0011.868 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-themes.zip.tmp: 500 files added (on-disk size: 10024.8 Kb)
+0011.894 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-themes.zip.tmp: 600 files added (on-disk size: 10024.8 Kb)
+0011.920 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-themes.zip.tmp: 700 files added (on-disk size: 10024.8 Kb)
+0011.937 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (38.9 Mb, 1470 files batched, 501 (758) added so far); re-opening (prior size: 10024.8 Kb)
+0014.078 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-themes.zip.tmp: 800 files added (on-disk size: 40150.6 Kb)
+0014.115 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-themes.zip.tmp: 900 files added (on-disk size: 40150.6 Kb)
+0014.151 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-themes.zip.tmp: 1000 files added (on-disk size: 40150.6 Kb)
+0014.186 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-themes.zip.tmp: 1100 files added (on-disk size: 40150.6 Kb)
+0014.215 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-themes.zip.tmp: 1200 files added (on-disk size: 40150.6 Kb)
+0014.236 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (9.9 Mb, 1470 files batched, 501 (1259) added so far); re-opening (prior size: 40150.6 Kb)
+0015.020 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-themes.zip.tmp: 1300 files added (on-disk size: 45753.3 Kb)
+0015.049 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-themes.zip.tmp: 1400 files added (on-disk size: 45753.3 Kb)
+0015.651 (0) Created themes zip (0) - 47051.3 Kb in 6.4 s (7324 Kb/s) (SHA1 checksum: 85596ca01e5b974c5fe363a27a1a524b11f3c7c5)
+0015.659 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone
+0015.663 (0) Looking for candidates to back up in: /var/www/vhosts/upfit.de/httpdocs/wp-content/uploads
+0015.667 (0) finding files: ithemes-security: adding to list (1)
+0015.670 (0) finding files: wc-logs: adding to list (2)
+0015.672 (0) finding files: 2015: adding to list (3)
+0015.676 (0) finding files: woocommerce_uploads: adding to list (4)
+0015.679 (0) finding files: js_composer: adding to list (5)
+0015.683 (0) finding files: sites: adding to list (6)
+0015.686 (0) finding files: foodies: adding to list (7)
+0015.690 (0) finding files: 2016: adding to list (8)
+0015.692 (0) finding files: pdf: adding to list (9)
+0015.696 (0) finding files: GeoIPv6.dat: adding to list (10)
+0015.699 (0) finding files: redux: adding to list (11)
+0015.702 (0) finding files: csv: adding to list (12)
+0015.706 (0) finding files: wpallimport: adding to list (13)
+0015.708 (0) finding files: GeoIP.dat: adding to list (14)
+0015.711 (0) finding files: json: adding to list (15)
+0015.715 (0) Beginning creation of dump of uploads (split every: 500 Mb)
+0016.461 (0) Total entities for the zip file: 179 directories, 2949 files (0 skipped as non-modified), 770.8 Mb
+0016.486 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads.zip.tmp: 100 files added (on-disk size: 0 Kb)
+0016.510 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads.zip.tmp: 200 files added (on-disk size: 0 Kb)
+0016.536 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads.zip.tmp: 300 files added (on-disk size: 0 Kb)
+0016.562 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads.zip.tmp: 400 files added (on-disk size: 0 Kb)
+0016.589 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads.zip.tmp: 500 files added (on-disk size: 0 Kb)
+0016.592 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (28.6 Mb, 2949 files batched, 501 (501) added so far); re-opening (prior size: 0 Kb)
+0017.652 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads.zip.tmp: 600 files added (on-disk size: 28423.1 Kb)
+0017.679 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads.zip.tmp: 700 files added (on-disk size: 28423.1 Kb)
+0017.695 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 47.9 Mb added on this batch (52.8 Mb, 2949 files batched, 250 (751) added so far); re-opening (prior size: 28423.1 Kb)
+0020.030 (0) A useful amount of data was added after this amount of zip processing: 3.4 s (normalised: 3.1 s, rate: 15906.8 Kb/s)
+0020.036 (0) Performance is good - will increase the amount of data we attempt to batch (time=3.4017090797424, normalised_time=3.0827750215717, max_time=-1, data points known=0, old_max_bytes=50213893, new_max_bytes=97731218)
+0020.054 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads.zip.tmp: 800 files added (on-disk size: 81202.7 Kb)
+0020.082 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads.zip.tmp: 900 files added (on-disk size: 81202.7 Kb)
+0020.110 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads.zip.tmp: 1000 files added (on-disk size: 81202.7 Kb)
+0020.118 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 93.2 Mb added on this batch (93.4 Mb, 2949 files batched, 263 (1014) added so far); re-opening (prior size: 81202.7 Kb)
+0025.348 (0) A useful amount of data was added after this amount of zip processing: 5.7 s (normalised: 5.7 s, rate: 16712.3 Kb/s)
+0025.357 (0) Performance is good - will increase the amount of data we attempt to batch (time=5.7199161052704, normalised_time=5.7107914576141, max_time=-1, data points known=0, old_max_bytes=97731218, new_max_bytes=102680567)
+0025.388 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads.zip.tmp: 1100 files added (on-disk size: 174099.1 Kb)
+0025.420 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads.zip.tmp: 1200 files added (on-disk size: 174099.1 Kb)
+0025.449 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads.zip.tmp: 1300 files added (on-disk size: 174099.1 Kb)
+0025.480 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads.zip.tmp: 1400 files added (on-disk size: 174099.1 Kb)
+0025.510 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads.zip.tmp: 1500 files added (on-disk size: 174099.1 Kb)
+0025.518 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (53.8 Mb, 2949 files batched, 501 (1515) added so far); re-opening (prior size: 174099.1 Kb)
+0029.364 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads.zip.tmp: 1600 files added (on-disk size: 226805.7 Kb)
+0029.395 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads.zip.tmp: 1700 files added (on-disk size: 226805.7 Kb)
+0029.426 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads.zip.tmp: 1800 files added (on-disk size: 226805.7 Kb)
+0029.452 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 97.9 Mb added on this batch (99.9 Mb, 2949 files batched, 367 (1882) added so far); re-opening (prior size: 226805.7 Kb)
+0034.669 (0) A useful amount of data was added after this amount of zip processing: 6 s (normalised: 5.9 s, rate: 16927.6 Kb/s)
+0034.677 (0) Performance is good - will increase the amount of data we attempt to batch (time=6.0412499904633, normalised_time=5.9236895740266, max_time=-1, data points known=0, old_max_bytes=102680567, new_max_bytes=104003323)
+0034.691 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads.zip.tmp: 1900 files added (on-disk size: 326518.5 Kb)
+0034.722 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads.zip.tmp: 2000 files added (on-disk size: 326518.5 Kb)
+0034.753 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads.zip.tmp: 2100 files added (on-disk size: 326518.5 Kb)
+0034.785 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads.zip.tmp: 2200 files added (on-disk size: 326518.5 Kb)
+0034.795 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 99.2 Mb added on this batch (104.5 Mb, 2949 files batched, 339 (2221) added so far); re-opening (prior size: 326518.5 Kb)
+0041.941 (0) A useful amount of data was added after this amount of zip processing: 7.3 s (normalised: 6.9 s, rate: 14639.5 Kb/s)
+0041.977 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads.zip.tmp: 2300 files added (on-disk size: 430605.3 Kb)
+0042.010 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads.zip.tmp: 2400 files added (on-disk size: 430605.3 Kb)
+0042.043 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads.zip.tmp: 2500 files added (on-disk size: 430605.3 Kb)
+0042.066 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): possibly approaching split limit (78 Mb, 341 (2562) files added so far); last ratio: 0.9723; re-opening (prior size: 430605.3 Kb)
+0048.507 (0) Zip size is at/near split limit (495.7 Mb / 500 Mb) - bumping index (from: 0)
+0050.546 (0) Created uploads zip (0) - 507587.6 Kb in 32.8 s (15478.6 Kb/s) (SHA1 checksum: e156f3311f271d92572d23929c579834c5954207)
+0050.562 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads2.zip.tmp: 2600 files added (on-disk size: 0 Kb)
+0050.589 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads2.zip.tmp: 2700 files added (on-disk size: 0 Kb)
+0050.615 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 99.2 Mb added on this batch (100.3 Mb, 2949 files batched, 235 (2797) added so far); re-opening (prior size: 0 Kb)
+0055.762 (0) A useful amount of data was added after this amount of zip processing: 8.1 s (normalised: 8 s, rate: 12633 Kb/s)
+0055.769 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads2.zip.tmp: 2800 files added (on-disk size: 99425.6 Kb)
+0055.782 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 99.2 Mb added on this batch (99.4 Mb, 2949 files batched, 44 (2841) added so far); re-opening (prior size: 99425.6 Kb)
+0062.829 (0) A useful amount of data was added after this amount of zip processing: 7.2 s (normalised: 7.2 s, rate: 14136 Kb/s)
+0062.864 (0) Zip: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads2.zip.tmp: 2900 files added (on-disk size: 190357.8 Kb)
+0075.011 (0) Created uploads zip (1) - 207029 Kb in 24.5 s (8463.8 Kb/s) (SHA1 checksum: dd6cb95119981250a058f69ff128e89446456142)
+0075.020 (0) Beginning backup of other directories found in the content directory (index: 0)
+0075.024 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql
+0075.029 (0) Looking for candidates to back up in: /var/www/vhosts/upfit.de/httpdocs/wp-content
+0075.033 (0) finding files: languages: adding to list (1)
+0075.036 (0) finding files: index.php: adding to list (2)
+0075.040 (0) finding files: plugins: skipping: this is the plugins directory
+0075.044 (0) finding files: uploads: skipping: this is the uploads directory
+0075.048 (0) finding files: upgrade: skipping: excluded by options
+0075.051 (0) finding files: images: adding to list (3)
+0075.055 (0) finding files: test.html: adding to list (4)
+0075.058 (0) finding files: themes: skipping: this is the themes directory
+0075.063 (0) finding files: updraft: skipping: this is the updraft directory
+0075.079 (0) Total entities for the zip file: 4 directories, 32 files (0 skipped as non-modified), 4.6 Mb
+0075.768 (0) Created others zip (0) - 1224.9 Kb in 0.7 s (1752 Kb/s) (SHA1 checksum: d78b0a75ba0caf2cfdb3ddffe677f622faf5f3db)
+0075.780 (0) Saving backup status to database (elements: 9)
+0075.787 (0) Beginning creation of database dump (WordPress DB)
+0075.834 (0) Table up_options: Total expected rows (approximate): 2567
+0075.930 (0) Table up_options: Total rows added: 3281 in 0.09 seconds
+0075.936 (0) Table up_options: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_options.table.gz - 237 Kb)
+0075.945 (0) Table up_users: Total expected rows (approximate): 14
+0075.950 (0) Table up_users: Total rows added: 14 in 0.00 seconds
+0075.955 (0) Table up_users: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_users.table.gz - 1.6 Kb)
+0075.965 (0) Table up_usermeta: Total expected rows (approximate): 809
+0075.978 (0) Table up_usermeta: Total rows added: 717 in 0.01 seconds
+0075.983 (0) Table up_usermeta: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_usermeta.table.gz - 10.6 Kb)
+0075.992 (0) Table up_blog_versions: Total expected rows (approximate): 0
+0075.996 (0) Table up_blog_versions: Total rows added: 0 in 0.00 seconds
+0076.000 (0) Table up_blog_versions: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_blog_versions.table.gz - 0.3 Kb)
+0076.008 (0) Table up_blogs: Total expected rows (approximate): 6
+0076.013 (0) Table up_blogs: Total rows added: 6 in 0.00 seconds
+0076.018 (0) Table up_blogs: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_blogs.table.gz - 0.7 Kb)
+0076.028 (0) Table up_commentmeta: Total expected rows (approximate): 0
+0076.033 (0) Table up_commentmeta: Total rows added: 0 in 0.00 seconds
+0076.037 (0) Table up_commentmeta: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_commentmeta.table.gz - 0.4 Kb)
+0076.047 (0) Table up_comments: Total expected rows (approximate): 22
+0076.053 (0) Table up_comments: Total rows added: 22 in 0.00 seconds
+0076.058 (0) Table up_comments: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_comments.table.gz - 1.1 Kb)
+0076.068 (0) Table up_links: Total expected rows (approximate): 0
+0076.072 (0) Table up_links: Total rows added: 0 in 0.00 seconds
+0076.076 (0) Table up_links: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_links.table.gz - 0.4 Kb)
+0076.087 (0) Table up_ms_snippets: Total expected rows (approximate): 0
+0076.092 (0) Table up_ms_snippets: Total rows added: 0 in 0.00 seconds
+0076.096 (0) Table up_ms_snippets: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_ms_snippets.table.gz - 0.3 Kb)
+0076.106 (0) Table up_postmeta: Total expected rows (approximate): 2287
+0076.149 (0) Table up_postmeta: Total rows added: 2504 in 0.04 seconds
+0076.153 (0) Table up_postmeta: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_postmeta.table.gz - 27.5 Kb)
+0076.165 (0) Table up_posts: Total expected rows (approximate): 1502
+0076.434 (0) Table up_posts: Total rows added: 1537 in 0.26 seconds
+0076.439 (0) Table up_posts: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_posts.table.gz - 471.2 Kb)
+0076.449 (0) Table up_registration_log: Total expected rows (approximate): 37
+0076.455 (0) Table up_registration_log: Total rows added: 37 in 0.00 seconds
+0076.460 (0) Table up_registration_log: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_registration_log.table.gz - 1 Kb)
+0076.471 (0) Table up_signups: Total expected rows (approximate): 23
+0076.477 (0) Table up_signups: Total rows added: 23 in 0.00 seconds
+0076.482 (0) Table up_signups: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_signups.table.gz - 1.6 Kb)
+0076.492 (0) Table up_site: Total expected rows (approximate): 1
+0076.497 (0) Table up_site: Total rows added: 1 in 0.00 seconds
+0076.502 (0) Table up_site: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_site.table.gz - 0.4 Kb)
+0076.512 (0) Table up_sitemeta: Total expected rows (approximate): 166
+0076.522 (0) Table up_sitemeta: Total rows added: 145 in 0.01 seconds
+0076.527 (0) Table up_sitemeta: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_sitemeta.table.gz - 18.4 Kb)
+0076.535 (0) Table up_snippets: Total expected rows (approximate): 1
+0076.540 (0) Table up_snippets: Total rows added: 1 in 0.00 seconds
+0076.544 (0) Table up_snippets: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_snippets.table.gz - 0.5 Kb)
+0076.553 (0) Table up_term_relationships: Total expected rows (approximate): 27
+0076.558 (0) Table up_term_relationships: Total rows added: 27 in 0.00 seconds
+0076.563 (0) Table up_term_relationships: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_term_relationships.table.gz - 0.5 Kb)
+0076.571 (0) Table up_term_taxonomy: Total expected rows (approximate): 32
+0076.577 (0) Table up_term_taxonomy: Total rows added: 32 in 0.00 seconds
+0076.582 (0) Table up_term_taxonomy: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_term_taxonomy.table.gz - 0.8 Kb)
+0076.593 (0) Table up_terms: Total expected rows (approximate): 32
+0076.597 (0) Table up_terms: Total rows added: 32 in 0.00 seconds
+0076.603 (0) Table up_terms: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_terms.table.gz - 0.8 Kb)
+0076.611 (0) Table up_woocommerce_order_itemmeta: Total expected rows (approximate): 427
+0076.620 (0) Table up_woocommerce_order_itemmeta: Total rows added: 310 in 0.00 seconds
+0076.624 (0) Table up_woocommerce_order_itemmeta: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_woocommerce_order_itemmeta.table.gz - 3.1 Kb)
+0076.632 (0) Table up_woocommerce_termmeta: Total expected rows (approximate): 19
+0076.637 (0) Table up_woocommerce_termmeta: Total rows added: 19 in 0.00 seconds
+0076.642 (0) Table up_woocommerce_termmeta: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_woocommerce_termmeta.table.gz - 0.7 Kb)
+0076.652 (0) Table up_yith_vendors_commissions: Total expected rows (approximate): 9
+0076.657 (0) Table up_yith_vendors_commissions: Total rows added: 9 in 0.00 seconds
+0076.662 (0) Table up_yith_vendors_commissions: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_yith_vendors_commissions.table.gz - 0.6 Kb)
+0076.671 (0) Table up_yith_vendors_commissions_notes: Total expected rows (approximate): 1
+0076.677 (0) Table up_yith_vendors_commissions_notes: Total rows added: 1 in 0.00 seconds
+0076.681 (0) Table up_yith_vendors_commissions_notes: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_yith_vendors_commissions_notes.table.gz - 0.4 Kb)
+0076.690 (0) Skipping table (lacks our prefix (up_)): questionnaire
+0076.694 (0) Skipping table (lacks our prefix (up_)): temp
+0076.700 (0) Table up_23_commentmeta: Total expected rows (approximate): 2
+0076.706 (0) Table up_23_commentmeta: Total rows added: 2 in 0.00 seconds
+0076.711 (0) Table up_23_commentmeta: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_commentmeta.table.gz - 0.4 Kb)
+0076.721 (0) Table up_23_comments: Total expected rows (approximate): 1229
+0076.776 (0) Table up_23_comments: Total rows added: 1283 in 0.05 seconds
+0076.781 (0) Table up_23_comments: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_comments.table.gz - 19.2 Kb)
+0076.791 (0) Table up_23_duplicator_packages: Total expected rows (approximate): 0
+0076.796 (0) Table up_23_duplicator_packages: Total rows added: 0 in 0.00 seconds
+0076.800 (0) Table up_23_duplicator_packages: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_duplicator_packages.table.gz - 0.4 Kb)
+0076.811 (0) Table up_23_links: Total expected rows (approximate): 0
+0076.816 (0) Table up_23_links: Total rows added: 0 in 0.00 seconds
+0076.820 (0) Table up_23_links: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_links.table.gz - 0.4 Kb)
+0076.828 (0) Table up_23_maintenance_page: Total expected rows (approximate): 0
+0076.833 (0) Table up_23_maintenance_page: Total rows added: 0 in 0.00 seconds
+0076.838 (0) Table up_23_maintenance_page: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_maintenance_page.table.gz - 0.3 Kb)
+0076.849 (0) Table up_23_options: Total expected rows (approximate): 740
+0076.870 (0) Table up_23_options: Total rows added: 619 in 0.02 seconds
+0076.875 (0) Table up_23_options: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_options.table.gz - 47 Kb)
+0076.885 (0) Table up_23_postmeta: Total expected rows (approximate): 34550
+0077.909 (0) Table up_23_postmeta: Total rows added: 44349 in 1.02 seconds
+0077.915 (0) Table up_23_postmeta: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_postmeta.table.gz - 337 Kb)
+0077.926 (0) Table up_23_posts: Total expected rows (approximate): 649
+0077.972 (0) Table up_23_posts: Total rows added: 479 in 0.04 seconds
+0077.978 (0) Table up_23_posts: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_posts.table.gz - 76 Kb)
+0077.990 (0) Table up_23_snippets: Total expected rows (approximate): 0
+0077.994 (0) Table up_23_snippets: Total rows added: 0 in 0.00 seconds
+0077.999 (0) Table up_23_snippets: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_snippets.table.gz - 0.3 Kb)
+0078.008 (0) Table up_23_term_relationships: Total expected rows (approximate): 49
+0078.013 (0) Table up_23_term_relationships: Total rows added: 49 in 0.00 seconds
+0078.018 (0) Table up_23_term_relationships: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_term_relationships.table.gz - 0.5 Kb)
+0078.028 (0) Table up_23_term_taxonomy: Total expected rows (approximate): 41
+0078.033 (0) Table up_23_term_taxonomy: Total rows added: 41 in 0.00 seconds
+0078.038 (0) Table up_23_term_taxonomy: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_term_taxonomy.table.gz - 0.9 Kb)
+0078.048 (0) Table up_23_terms: Total expected rows (approximate): 41
+0078.053 (0) Table up_23_terms: Total rows added: 41 in 0.00 seconds
+0078.057 (0) Table up_23_terms: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_terms.table.gz - 0.9 Kb)
+0078.068 (0) Table up_23_woocommerce_api_keys: Total expected rows (approximate): 0
+0078.073 (0) Table up_23_woocommerce_api_keys: Total rows added: 0 in 0.00 seconds
+0078.077 (0) Table up_23_woocommerce_api_keys: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_woocommerce_api_keys.table.gz - 0.4 Kb)
+0078.088 (0) Table up_23_woocommerce_attribute_taxonomies: Total expected rows (approximate): 0
+0078.092 (0) Table up_23_woocommerce_attribute_taxonomies: Total rows added: 0 in 0.00 seconds
+0078.096 (0) Table up_23_woocommerce_attribute_taxonomies: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_woocommerce_attribute_taxonomies.table.gz - 0.4 Kb)
+0078.105 (0) Table up_23_woocommerce_downloadable_product_permissions: Total expected rows (approximate): 0
+0078.110 (0) Table up_23_woocommerce_downloadable_product_permissions: Total rows added: 0 in 0.00 seconds
+0078.114 (0) Table up_23_woocommerce_downloadable_product_permissions: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_woocommerce_downloadable_product_permissions.table.gz - 0.5 Kb)
+0078.123 (0) Table up_23_woocommerce_order_itemmeta: Total expected rows (approximate): 52
+0078.128 (0) Table up_23_woocommerce_order_itemmeta: Total rows added: 52 in 0.00 seconds
+0078.133 (0) Table up_23_woocommerce_order_itemmeta: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_woocommerce_order_itemmeta.table.gz - 1.2 Kb)
+0078.143 (0) Table up_23_woocommerce_order_items: Total expected rows (approximate): 5
+0078.148 (0) Table up_23_woocommerce_order_items: Total rows added: 5 in 0.00 seconds
+0078.152 (0) Table up_23_woocommerce_order_items: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_woocommerce_order_items.table.gz - 0.5 Kb)
+0078.162 (0) Table up_23_woocommerce_tax_rate_locations: Total expected rows (approximate): 0
+0078.166 (0) Table up_23_woocommerce_tax_rate_locations: Total rows added: 0 in 0.00 seconds
+0078.171 (0) Table up_23_woocommerce_tax_rate_locations: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_woocommerce_tax_rate_locations.table.gz - 0.4 Kb)
+0078.179 (0) Table up_23_woocommerce_tax_rates: Total expected rows (approximate): 31
+0078.185 (0) Table up_23_woocommerce_tax_rates: Total rows added: 31 in 0.00 seconds
+0078.190 (0) Table up_23_woocommerce_tax_rates: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_woocommerce_tax_rates.table.gz - 0.9 Kb)
+0078.199 (0) Table up_23_woocommerce_termmeta: Total expected rows (approximate): 19
+0078.204 (0) Table up_23_woocommerce_termmeta: Total rows added: 19 in 0.00 seconds
+0078.209 (0) Table up_23_woocommerce_termmeta: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_woocommerce_termmeta.table.gz - 0.7 Kb)
+0078.219 (0) Table up_23_xyz_ips_short_code: Total expected rows (approximate): 0
+0078.224 (0) Table up_23_xyz_ips_short_code: Total rows added: 0 in 0.00 seconds
+0078.228 (0) Table up_23_xyz_ips_short_code: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_xyz_ips_short_code.table.gz - 0.3 Kb)
+0078.236 (0) Table up_23_yith_vendors_commissions: Total expected rows (approximate): 8
+0078.242 (0) Table up_23_yith_vendors_commissions: Total rows added: 8 in 0.00 seconds
+0078.246 (0) Table up_23_yith_vendors_commissions: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_yith_vendors_commissions.table.gz - 0.7 Kb)
+0078.256 (0) Table up_23_yith_vendors_commissions_notes: Total expected rows (approximate): 7
+0078.261 (0) Table up_23_yith_vendors_commissions_notes: Total rows added: 7 in 0.00 seconds
+0078.265 (0) Table up_23_yith_vendors_commissions_notes: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_yith_vendors_commissions_notes.table.gz - 0.5 Kb)
+0078.276 (0) Table up_24_duplicator_packages: Total expected rows (approximate): 0
+0078.280 (0) Table up_24_duplicator_packages: Total rows added: 0 in 0.00 seconds
+0078.285 (0) Table up_24_duplicator_packages: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_24_duplicator_packages.table.gz - 0.4 Kb)
+0078.296 (0) Table up_25_commentmeta: Total expected rows (approximate): 3
+0078.301 (0) Table up_25_commentmeta: Total rows added: 3 in 0.00 seconds
+0078.306 (0) Table up_25_commentmeta: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_commentmeta.table.gz - 0.4 Kb)
+0078.316 (0) Table up_25_comments: Total expected rows (approximate): 282
+0078.331 (0) Table up_25_comments: Total rows added: 262 in 0.01 seconds
+0078.336 (0) Table up_25_comments: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_comments.table.gz - 4.2 Kb)
+0078.344 (0) Table up_25_duplicator_packages: Total expected rows (approximate): 0
+0078.349 (0) Table up_25_duplicator_packages: Total rows added: 0 in 0.00 seconds
+0078.353 (0) Table up_25_duplicator_packages: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_duplicator_packages.table.gz - 0.4 Kb)
+0078.363 (0) Table up_25_links: Total expected rows (approximate): 0
+0078.368 (0) Table up_25_links: Total rows added: 0 in 0.00 seconds
+0078.373 (0) Table up_25_links: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_links.table.gz - 0.4 Kb)
+0078.384 (0) Table up_25_maintenance_page: Total expected rows (approximate): 0
+0078.389 (0) Table up_25_maintenance_page: Total rows added: 0 in 0.00 seconds
+0078.393 (0) Table up_25_maintenance_page: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_maintenance_page.table.gz - 0.3 Kb)
+0078.406 (0) Table up_25_options: Total expected rows (approximate): 2374
+0078.458 (0) Table up_25_options: Total rows added: 2170 in 0.05 seconds
+0078.463 (0) Table up_25_options: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_options.table.gz - 94.9 Kb)
+0078.474 (0) Table up_25_postmeta: Total expected rows (approximate): 7323
+0078.576 (0) Table up_25_postmeta: Total rows added: 6687 in 0.10 seconds
+0078.581 (0) Table up_25_postmeta: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_postmeta.table.gz - 61.4 Kb)
+0078.592 (0) Table up_25_posts: Total expected rows (approximate): 429
+0078.628 (0) Table up_25_posts: Total rows added: 306 in 0.03 seconds
+0078.633 (0) Table up_25_posts: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_posts.table.gz - 82.5 Kb)
+0078.643 (0) Table up_25_snippets: Total expected rows (approximate): 0
+0078.647 (0) Table up_25_snippets: Total rows added: 0 in 0.00 seconds
+0078.651 (0) Table up_25_snippets: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_snippets.table.gz - 0.3 Kb)
+0078.660 (0) Table up_25_term_relationships: Total expected rows (approximate): 31
+0078.664 (0) Table up_25_term_relationships: Total rows added: 31 in 0.00 seconds
+0078.668 (0) Table up_25_term_relationships: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_term_relationships.table.gz - 0.5 Kb)
+0078.679 (0) Table up_25_term_taxonomy: Total expected rows (approximate): 34
+0078.684 (0) Table up_25_term_taxonomy: Total rows added: 34 in 0.00 seconds
+0078.688 (0) Table up_25_term_taxonomy: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_term_taxonomy.table.gz - 0.8 Kb)
+0078.696 (0) Table up_25_terms: Total expected rows (approximate): 34
+0078.701 (0) Table up_25_terms: Total rows added: 34 in 0.00 seconds
+0078.705 (0) Table up_25_terms: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_terms.table.gz - 0.9 Kb)
+0078.715 (0) Table up_25_woocommerce_api_keys: Total expected rows (approximate): 0
+0078.720 (0) Table up_25_woocommerce_api_keys: Total rows added: 0 in 0.00 seconds
+0078.724 (0) Table up_25_woocommerce_api_keys: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_woocommerce_api_keys.table.gz - 0.4 Kb)
+0078.732 (0) Table up_25_woocommerce_attribute_taxonomies: Total expected rows (approximate): 0
+0078.737 (0) Table up_25_woocommerce_attribute_taxonomies: Total rows added: 0 in 0.00 seconds
+0078.741 (0) Table up_25_woocommerce_attribute_taxonomies: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_woocommerce_attribute_taxonomies.table.gz - 0.4 Kb)
+0078.751 (0) Table up_25_woocommerce_downloadable_product_permissions: Total expected rows (approximate): 0
+0078.756 (0) Table up_25_woocommerce_downloadable_product_permissions: Total rows added: 0 in 0.00 seconds
+0078.760 (0) Table up_25_woocommerce_downloadable_product_permissions: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_woocommerce_downloadable_product_permissions.table.gz - 0.5 Kb)
+0078.768 (0) Table up_25_woocommerce_order_itemmeta: Total expected rows (approximate): 316
+0078.777 (0) Table up_25_woocommerce_order_itemmeta: Total rows added: 353 in 0.01 seconds
+0078.782 (0) Table up_25_woocommerce_order_itemmeta: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_woocommerce_order_itemmeta.table.gz - 3.5 Kb)
+0078.791 (0) Table up_25_woocommerce_order_items: Total expected rows (approximate): 33
+0078.796 (0) Table up_25_woocommerce_order_items: Total rows added: 33 in 0.00 seconds
+0078.800 (0) Table up_25_woocommerce_order_items: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_woocommerce_order_items.table.gz - 0.6 Kb)
+0078.809 (0) Table up_25_woocommerce_tax_rate_locations: Total expected rows (approximate): 0
+0078.813 (0) Table up_25_woocommerce_tax_rate_locations: Total rows added: 0 in 0.00 seconds
+0078.817 (0) Table up_25_woocommerce_tax_rate_locations: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_woocommerce_tax_rate_locations.table.gz - 0.4 Kb)
+0078.827 (0) Table up_25_woocommerce_tax_rates: Total expected rows (approximate): 30
+0078.832 (0) Table up_25_woocommerce_tax_rates: Total rows added: 30 in 0.00 seconds
+0078.836 (0) Table up_25_woocommerce_tax_rates: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_woocommerce_tax_rates.table.gz - 0.9 Kb)
+0078.845 (0) Table up_25_woocommerce_termmeta: Total expected rows (approximate): 27
+0078.850 (0) Table up_25_woocommerce_termmeta: Total rows added: 27 in 0.00 seconds
+0078.854 (0) Table up_25_woocommerce_termmeta: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_woocommerce_termmeta.table.gz - 0.8 Kb)
+0078.864 (0) Table up_25_yith_vendors_commissions: Total expected rows (approximate): 4
+0078.869 (0) Table up_25_yith_vendors_commissions: Total rows added: 4 in 0.00 seconds
+0078.873 (0) Table up_25_yith_vendors_commissions: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_yith_vendors_commissions.table.gz - 0.6 Kb)
+0078.883 (0) Table up_25_yith_vendors_commissions_notes: Total expected rows (approximate): 3
+0078.887 (0) Table up_25_yith_vendors_commissions_notes: Total rows added: 3 in 0.00 seconds
+0078.891 (0) Table up_25_yith_vendors_commissions_notes: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_yith_vendors_commissions_notes.table.gz - 0.5 Kb)
+0078.900 (0) Table up_28_commentmeta: Total expected rows (approximate): 0
+0078.904 (0) Table up_28_commentmeta: Total rows added: 0 in 0.00 seconds
+0078.908 (0) Table up_28_commentmeta: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_commentmeta.table.gz - 0.4 Kb)
+0078.917 (0) Table up_28_comments: Total expected rows (approximate): 22
+0078.922 (0) Table up_28_comments: Total rows added: 22 in 0.00 seconds
+0078.927 (0) Table up_28_comments: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_comments.table.gz - 1 Kb)
+0078.935 (0) Table up_28_duplicator_packages: Total expected rows (approximate): 0
+0078.940 (0) Table up_28_duplicator_packages: Total rows added: 0 in 0.00 seconds
+0078.944 (0) Table up_28_duplicator_packages: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_duplicator_packages.table.gz - 0.4 Kb)
+0078.952 (0) Table up_28_links: Total expected rows (approximate): 0
+0078.957 (0) Table up_28_links: Total rows added: 0 in 0.00 seconds
+0078.961 (0) Table up_28_links: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_links.table.gz - 0.4 Kb)
+0078.971 (0) Table up_28_maintenance_page: Total expected rows (approximate): 0
+0078.976 (0) Table up_28_maintenance_page: Total rows added: 0 in 0.00 seconds
+0078.980 (0) Table up_28_maintenance_page: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_maintenance_page.table.gz - 0.3 Kb)
+0078.989 (0) Table up_28_options: Total expected rows (approximate): 1481
+0079.026 (0) Table up_28_options: Total rows added: 1409 in 0.03 seconds
+0079.030 (0) Table up_28_options: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_options.table.gz - 64.2 Kb)
+0079.040 (0) Table up_28_postmeta: Total expected rows (approximate): 1902
+0079.071 (0) Table up_28_postmeta: Total rows added: 1975 in 0.03 seconds
+0079.076 (0) Table up_28_postmeta: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_postmeta.table.gz - 24 Kb)
+0079.084 (0) Table up_28_posts: Total expected rows (approximate): 266
+0079.114 (0) Table up_28_posts: Total rows added: 248 in 0.03 seconds
+0079.118 (0) Table up_28_posts: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_posts.table.gz - 60.3 Kb)
+0079.128 (0) Table up_28_snippets: Total expected rows (approximate): 0
+0079.132 (0) Table up_28_snippets: Total rows added: 0 in 0.00 seconds
+0079.137 (0) Table up_28_snippets: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_snippets.table.gz - 0.3 Kb)
+0079.147 (0) Table up_28_term_relationships: Total expected rows (approximate): 32
+0079.152 (0) Table up_28_term_relationships: Total rows added: 32 in 0.00 seconds
+0079.156 (0) Table up_28_term_relationships: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_term_relationships.table.gz - 0.5 Kb)
+0079.164 (0) Table up_28_term_taxonomy: Total expected rows (approximate): 33
+0079.169 (0) Table up_28_term_taxonomy: Total rows added: 33 in 0.00 seconds
+0079.174 (0) Table up_28_term_taxonomy: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_term_taxonomy.table.gz - 0.8 Kb)
+0079.183 (0) Table up_28_terms: Total expected rows (approximate): 33
+0079.189 (0) Table up_28_terms: Total rows added: 33 in 0.00 seconds
+0079.193 (0) Table up_28_terms: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_terms.table.gz - 0.9 Kb)
+0079.203 (0) Table up_28_woocommerce_api_keys: Total expected rows (approximate): 0
+0079.207 (0) Table up_28_woocommerce_api_keys: Total rows added: 0 in 0.00 seconds
+0079.211 (0) Table up_28_woocommerce_api_keys: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_woocommerce_api_keys.table.gz - 0.4 Kb)
+0079.220 (0) Table up_28_woocommerce_attribute_taxonomies: Total expected rows (approximate): 0
+0079.225 (0) Table up_28_woocommerce_attribute_taxonomies: Total rows added: 0 in 0.00 seconds
+0079.228 (0) Table up_28_woocommerce_attribute_taxonomies: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_woocommerce_attribute_taxonomies.table.gz - 0.4 Kb)
+0079.237 (0) Table up_28_woocommerce_downloadable_product_permissions: Total expected rows (approximate): 0
+0079.241 (0) Table up_28_woocommerce_downloadable_product_permissions: Total rows added: 0 in 0.00 seconds
+0079.245 (0) Table up_28_woocommerce_downloadable_product_permissions: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_woocommerce_downloadable_product_permissions.table.gz - 0.5 Kb)
+0079.255 (0) Table up_28_woocommerce_order_itemmeta: Total expected rows (approximate): 197
+0079.262 (0) Table up_28_woocommerce_order_itemmeta: Total rows added: 230 in 0.00 seconds
+0079.266 (0) Table up_28_woocommerce_order_itemmeta: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_woocommerce_order_itemmeta.table.gz - 2.5 Kb)
+0079.276 (0) Table up_28_woocommerce_order_items: Total expected rows (approximate): 28
+0079.280 (0) Table up_28_woocommerce_order_items: Total rows added: 28 in 0.00 seconds
+0079.284 (0) Table up_28_woocommerce_order_items: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_woocommerce_order_items.table.gz - 0.6 Kb)
+0079.293 (0) Table up_28_woocommerce_tax_rate_locations: Total expected rows (approximate): 0
+0079.297 (0) Table up_28_woocommerce_tax_rate_locations: Total rows added: 0 in 0.00 seconds
+0079.302 (0) Table up_28_woocommerce_tax_rate_locations: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_woocommerce_tax_rate_locations.table.gz - 0.4 Kb)
+0079.312 (0) Table up_28_woocommerce_tax_rates: Total expected rows (approximate): 30
+0079.318 (0) Table up_28_woocommerce_tax_rates: Total rows added: 30 in 0.00 seconds
+0079.322 (0) Table up_28_woocommerce_tax_rates: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_woocommerce_tax_rates.table.gz - 0.9 Kb)
+0079.331 (0) Table up_28_woocommerce_termmeta: Total expected rows (approximate): 17
+0079.336 (0) Table up_28_woocommerce_termmeta: Total rows added: 17 in 0.00 seconds
+0079.340 (0) Table up_28_woocommerce_termmeta: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_woocommerce_termmeta.table.gz - 0.7 Kb)
+0079.349 (0) Table up_28_yith_vendors_commissions: Total expected rows (approximate): 2
+0079.354 (0) Table up_28_yith_vendors_commissions: Total rows added: 2 in 0.00 seconds
+0079.359 (0) Table up_28_yith_vendors_commissions: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_yith_vendors_commissions.table.gz - 0.5 Kb)
+0079.369 (0) Table up_28_yith_vendors_commissions_notes: Total expected rows (approximate): 1
+0079.374 (0) Table up_28_yith_vendors_commissions_notes: Total rows added: 1 in 0.00 seconds
+0079.379 (0) Table up_28_yith_vendors_commissions_notes: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_yith_vendors_commissions_notes.table.gz - 0.4 Kb)
+0079.388 (0) Table up_32_commentmeta: Total expected rows (approximate): 0
+0079.393 (0) Table up_32_commentmeta: Total rows added: 0 in 0.00 seconds
+0079.397 (0) Table up_32_commentmeta: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_commentmeta.table.gz - 0.4 Kb)
+0079.408 (0) Table up_32_comments: Total expected rows (approximate): 48
+0079.414 (0) Table up_32_comments: Total rows added: 48 in 0.00 seconds
+0079.420 (0) Table up_32_comments: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_comments.table.gz - 1.5 Kb)
+0079.428 (0) Table up_32_links: Total expected rows (approximate): 0
+0079.433 (0) Table up_32_links: Total rows added: 0 in 0.00 seconds
+0079.438 (0) Table up_32_links: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_links.table.gz - 0.4 Kb)
+0079.448 (0) Table up_32_maintenance_page: Total expected rows (approximate): 0
+0079.452 (0) Table up_32_maintenance_page: Total rows added: 0 in 0.00 seconds
+0079.457 (0) Table up_32_maintenance_page: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_maintenance_page.table.gz - 0.3 Kb)
+0079.467 (0) Table up_32_options: Total expected rows (approximate): 752
+0079.490 (0) Table up_32_options: Total rows added: 761 in 0.02 seconds
+0079.495 (0) Table up_32_options: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_options.table.gz - 43.7 Kb)
+0079.505 (0) Table up_32_postmeta: Total expected rows (approximate): 2177
+0079.541 (0) Table up_32_postmeta: Total rows added: 2379 in 0.03 seconds
+0079.546 (0) Table up_32_postmeta: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_postmeta.table.gz - 27 Kb)
+0079.556 (0) Table up_32_posts: Total expected rows (approximate): 478
+0079.585 (0) Table up_32_posts: Total rows added: 243 in 0.02 seconds
+0079.589 (0) Table up_32_posts: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_posts.table.gz - 57.5 Kb)
+0079.600 (0) Table up_32_snippets: Total expected rows (approximate): 0
+0079.604 (0) Table up_32_snippets: Total rows added: 0 in 0.00 seconds
+0079.608 (0) Table up_32_snippets: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_snippets.table.gz - 0.3 Kb)
+0079.617 (0) Table up_32_term_relationships: Total expected rows (approximate): 32
+0079.622 (0) Table up_32_term_relationships: Total rows added: 32 in 0.00 seconds
+0079.626 (0) Table up_32_term_relationships: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_term_relationships.table.gz - 0.5 Kb)
+0079.637 (0) Table up_32_term_taxonomy: Total expected rows (approximate): 33
+0079.642 (0) Table up_32_term_taxonomy: Total rows added: 33 in 0.00 seconds
+0079.646 (0) Table up_32_term_taxonomy: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_term_taxonomy.table.gz - 0.8 Kb)
+0079.657 (0) Table up_32_terms: Total expected rows (approximate): 33
+0079.662 (0) Table up_32_terms: Total rows added: 33 in 0.00 seconds
+0079.666 (0) Table up_32_terms: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_terms.table.gz - 0.8 Kb)
+0079.676 (0) Table up_32_woocommerce_api_keys: Total expected rows (approximate): 0
+0079.681 (0) Table up_32_woocommerce_api_keys: Total rows added: 0 in 0.00 seconds
+0079.686 (0) Table up_32_woocommerce_api_keys: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_woocommerce_api_keys.table.gz - 0.4 Kb)
+0079.695 (0) Table up_32_woocommerce_attribute_taxonomies: Total expected rows (approximate): 0
+0079.700 (0) Table up_32_woocommerce_attribute_taxonomies: Total rows added: 0 in 0.00 seconds
+0079.704 (0) Table up_32_woocommerce_attribute_taxonomies: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_woocommerce_attribute_taxonomies.table.gz - 0.4 Kb)
+0079.713 (0) Table up_32_woocommerce_downloadable_product_permissions: Total expected rows (approximate): 0
+0079.718 (0) Table up_32_woocommerce_downloadable_product_permissions: Total rows added: 0 in 0.00 seconds
+0079.722 (0) Table up_32_woocommerce_downloadable_product_permissions: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_woocommerce_downloadable_product_permissions.table.gz - 0.5 Kb)
+0079.732 (0) Table up_32_woocommerce_order_itemmeta: Total expected rows (approximate): 197
+0079.740 (0) Table up_32_woocommerce_order_itemmeta: Total rows added: 276 in 0.00 seconds
+0079.744 (0) Table up_32_woocommerce_order_itemmeta: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_woocommerce_order_itemmeta.table.gz - 2.8 Kb)
+0079.753 (0) Table up_32_woocommerce_order_items: Total expected rows (approximate): 34
+0079.758 (0) Table up_32_woocommerce_order_items: Total rows added: 34 in 0.00 seconds
+0079.762 (0) Table up_32_woocommerce_order_items: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_woocommerce_order_items.table.gz - 0.6 Kb)
+0079.771 (0) Table up_32_woocommerce_tax_rate_locations: Total expected rows (approximate): 0
+0079.775 (0) Table up_32_woocommerce_tax_rate_locations: Total rows added: 0 in 0.00 seconds
+0079.779 (0) Table up_32_woocommerce_tax_rate_locations: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_woocommerce_tax_rate_locations.table.gz - 0.4 Kb)
+0079.788 (0) Table up_32_woocommerce_tax_rates: Total expected rows (approximate): 30
+0079.794 (0) Table up_32_woocommerce_tax_rates: Total rows added: 30 in 0.00 seconds
+0079.798 (0) Table up_32_woocommerce_tax_rates: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_woocommerce_tax_rates.table.gz - 0.9 Kb)
+0079.808 (0) Table up_32_woocommerce_termmeta: Total expected rows (approximate): 12
+0079.813 (0) Table up_32_woocommerce_termmeta: Total rows added: 12 in 0.00 seconds
+0079.817 (0) Table up_32_woocommerce_termmeta: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_woocommerce_termmeta.table.gz - 0.6 Kb)
+0079.827 (0) Table up_32_yith_vendors_commissions: Total expected rows (approximate): 2
+0079.832 (0) Table up_32_yith_vendors_commissions: Total rows added: 2 in 0.00 seconds
+0079.837 (0) Table up_32_yith_vendors_commissions: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_yith_vendors_commissions.table.gz - 0.5 Kb)
+0079.848 (0) Table up_32_yith_vendors_commissions_notes: Total expected rows (approximate): 2
+0079.853 (0) Table up_32_yith_vendors_commissions_notes: Total rows added: 2 in 0.00 seconds
+0079.857 (0) Table up_32_yith_vendors_commissions_notes: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_yith_vendors_commissions_notes.table.gz - 0.5 Kb)
+0079.867 (0) Table up_38_commentmeta: Total expected rows (approximate): 0
+0079.871 (0) Table up_38_commentmeta: Total rows added: 0 in 0.00 seconds
+0079.876 (0) Table up_38_commentmeta: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_commentmeta.table.gz - 0.4 Kb)
+0079.885 (0) Table up_38_comments: Total expected rows (approximate): 35
+0079.891 (0) Table up_38_comments: Total rows added: 35 in 0.00 seconds
+0079.896 (0) Table up_38_comments: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_comments.table.gz - 1.3 Kb)
+0079.905 (0) Table up_38_links: Total expected rows (approximate): 0
+0079.910 (0) Table up_38_links: Total rows added: 0 in 0.00 seconds
+0079.914 (0) Table up_38_links: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_links.table.gz - 0.4 Kb)
+0079.924 (0) Table up_38_maintenance_page: Total expected rows (approximate): 0
+0079.929 (0) Table up_38_maintenance_page: Total rows added: 0 in 0.00 seconds
+0079.933 (0) Table up_38_maintenance_page: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_maintenance_page.table.gz - 0.3 Kb)
+0079.944 (0) Table up_38_options: Total expected rows (approximate): 803
+0079.965 (0) Table up_38_options: Total rows added: 671 in 0.02 seconds
+0079.969 (0) Table up_38_options: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_options.table.gz - 40.1 Kb)
+0079.981 (0) Table up_38_postmeta: Total expected rows (approximate): 1930
+0080.012 (0) Table up_38_postmeta: Total rows added: 1998 in 0.03 seconds
+0080.017 (0) Table up_38_postmeta: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_postmeta.table.gz - 24.8 Kb)
+0080.028 (0) Table up_38_posts: Total expected rows (approximate): 190
+0080.057 (0) Table up_38_posts: Total rows added: 235 in 0.02 seconds
+0080.061 (0) Table up_38_posts: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_posts.table.gz - 58.6 Kb)
+0080.072 (0) Table up_38_snippets: Total expected rows (approximate): 0
+0080.076 (0) Table up_38_snippets: Total rows added: 0 in 0.00 seconds
+0080.080 (0) Table up_38_snippets: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_snippets.table.gz - 0.3 Kb)
+0080.088 (0) Table up_38_term_relationships: Total expected rows (approximate): 32
+0080.093 (0) Table up_38_term_relationships: Total rows added: 32 in 0.00 seconds
+0080.097 (0) Table up_38_term_relationships: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_term_relationships.table.gz - 0.5 Kb)
+0080.107 (0) Table up_38_term_taxonomy: Total expected rows (approximate): 33
+0080.112 (0) Table up_38_term_taxonomy: Total rows added: 33 in 0.00 seconds
+0080.116 (0) Table up_38_term_taxonomy: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_term_taxonomy.table.gz - 0.8 Kb)
+0080.124 (0) Table up_38_terms: Total expected rows (approximate): 33
+0080.129 (0) Table up_38_terms: Total rows added: 33 in 0.00 seconds
+0080.134 (0) Table up_38_terms: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_terms.table.gz - 0.8 Kb)
+0080.144 (0) Table up_38_woocommerce_api_keys: Total expected rows (approximate): 0
+0080.148 (0) Table up_38_woocommerce_api_keys: Total rows added: 0 in 0.00 seconds
+0080.151 (0) Table up_38_woocommerce_api_keys: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_woocommerce_api_keys.table.gz - 0.4 Kb)
+0080.165 (0) Table up_38_woocommerce_attribute_taxonomies: Total expected rows (approximate): 0
+0080.170 (0) Table up_38_woocommerce_attribute_taxonomies: Total rows added: 0 in 0.00 seconds
+0080.174 (0) Table up_38_woocommerce_attribute_taxonomies: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_woocommerce_attribute_taxonomies.table.gz - 0.4 Kb)
+0080.184 (0) Table up_38_woocommerce_downloadable_product_permissions: Total expected rows (approximate): 0
+0080.189 (0) Table up_38_woocommerce_downloadable_product_permissions: Total rows added: 0 in 0.00 seconds
+0080.192 (0) Table up_38_woocommerce_downloadable_product_permissions: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_woocommerce_downloadable_product_permissions.table.gz - 0.5 Kb)
+0080.200 (0) Table up_38_woocommerce_order_itemmeta: Total expected rows (approximate): 21
+0080.206 (0) Table up_38_woocommerce_order_itemmeta: Total rows added: 21 in 0.00 seconds
+0080.210 (0) Table up_38_woocommerce_order_itemmeta: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_woocommerce_order_itemmeta.table.gz - 0.9 Kb)
+0080.220 (0) Table up_38_woocommerce_order_items: Total expected rows (approximate): 2
+0080.224 (0) Table up_38_woocommerce_order_items: Total rows added: 2 in 0.00 seconds
+0080.228 (0) Table up_38_woocommerce_order_items: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_woocommerce_order_items.table.gz - 0.4 Kb)
+0080.237 (0) Table up_38_woocommerce_tax_rate_locations: Total expected rows (approximate): 0
+0080.241 (0) Table up_38_woocommerce_tax_rate_locations: Total rows added: 0 in 0.00 seconds
+0080.245 (0) Table up_38_woocommerce_tax_rate_locations: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_woocommerce_tax_rate_locations.table.gz - 0.4 Kb)
+0080.255 (0) Table up_38_woocommerce_tax_rates: Total expected rows (approximate): 30
+0080.261 (0) Table up_38_woocommerce_tax_rates: Total rows added: 30 in 0.00 seconds
+0080.265 (0) Table up_38_woocommerce_tax_rates: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_woocommerce_tax_rates.table.gz - 0.9 Kb)
+0080.273 (0) Table up_38_woocommerce_termmeta: Total expected rows (approximate): 16
+0080.278 (0) Table up_38_woocommerce_termmeta: Total rows added: 16 in 0.00 seconds
+0080.283 (0) Table up_38_woocommerce_termmeta: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_woocommerce_termmeta.table.gz - 0.7 Kb)
+0080.291 (0) Table up_38_yith_vendors_commissions: Total expected rows (approximate): 0
+0080.296 (0) Table up_38_yith_vendors_commissions: Total rows added: 0 in 0.00 seconds
+0080.300 (0) Table up_38_yith_vendors_commissions: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_yith_vendors_commissions.table.gz - 0.4 Kb)
+0080.309 (0) Table up_38_yith_vendors_commissions_notes: Total expected rows (approximate): 0
+0080.314 (0) Table up_38_yith_vendors_commissions_notes: Total rows added: 0 in 0.00 seconds
+0080.318 (0) Table up_38_yith_vendors_commissions_notes: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_yith_vendors_commissions_notes.table.gz - 0.4 Kb)
+0080.328 (0) Table up_cron_status: Total expected rows (approximate): 8
+0080.333 (0) Table up_cron_status: Total rows added: 8 in 0.00 seconds
+0080.337 (0) Table up_cron_status: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_cron_status.table.gz - 0.5 Kb)
+0080.347 (0) Table up_food_attributes: Total expected rows (approximate): 0
+0080.351 (0) Table up_food_attributes: Total rows added: 0 in 0.00 seconds
+0080.355 (0) Table up_food_attributes: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_food_attributes.table.gz - 0.4 Kb)
+0080.363 (0) Table up_food_categories: Total expected rows (approximate): 18
+0080.368 (0) Table up_food_categories: Total rows added: 18 in 0.00 seconds
+0080.373 (0) Table up_food_categories: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_food_categories.table.gz - 0.8 Kb)
+0080.384 (0) Table up_food_micros: Total expected rows (approximate): 172102
+0080.391 (0) [Warning] Tabelle up_food_micros hat sehr viele Zeilen (172102) - wir hoffen, dass dein Webhoster dir genügend Ressourcen für einen Dump dieser Tabelle in die SIcherung.
+0088.416 (0) Table up_food_micros: Total rows added: 172032 in 8.02 seconds
+0088.424 (0) Table up_food_micros: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_food_micros.table.gz - 1287.4 Kb)
+0088.434 (0) Table up_foods: Total expected rows (approximate): 2675
+0088.863 (0) Table up_foods: Total rows added: 2688 in 0.42 seconds
+0088.871 (0) Table up_foods: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_foods.table.gz - 50.3 Kb)
+0088.880 (0) Table up_icl_content_status: Total expected rows (approximate): 0
+0088.886 (0) Table up_icl_content_status: Total rows added: 0 in 0.00 seconds
+0088.890 (0) Table up_icl_content_status: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_content_status.table.gz - 0.3 Kb)
+0088.900 (0) Table up_icl_core_status: Total expected rows (approximate): 0
+0088.904 (0) Table up_icl_core_status: Total rows added: 0 in 0.00 seconds
+0088.909 (0) Table up_icl_core_status: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_core_status.table.gz - 0.3 Kb)
+0088.920 (0) Table up_icl_flags: Total expected rows (approximate): 64
+0088.925 (0) Table up_icl_flags: Total rows added: 64 in 0.00 seconds
+0088.930 (0) Table up_icl_flags: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_flags.table.gz - 0.9 Kb)
+0088.940 (0) Table up_icl_languages: Total expected rows (approximate): 64
+0088.946 (0) Table up_icl_languages: Total rows added: 64 in 0.00 seconds
+0088.951 (0) Table up_icl_languages: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_languages.table.gz - 1.5 Kb)
+0088.961 (0) Table up_icl_languages_translations: Total expected rows (approximate): 4738
+0089.032 (0) Table up_icl_languages_translations: Total rows added: 4096 in 0.07 seconds
+0089.037 (0) Table up_icl_languages_translations: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_languages_translations.table.gz - 31.9 Kb)
+0089.048 (0) Table up_icl_locale_map: Total expected rows (approximate): 2
+0089.052 (0) Table up_icl_locale_map: Total rows added: 2 in 0.00 seconds
+0089.057 (0) Table up_icl_locale_map: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_locale_map.table.gz - 0.3 Kb)
+0089.067 (0) Table up_icl_message_status: Total expected rows (approximate): 0
+0089.072 (0) Table up_icl_message_status: Total rows added: 0 in 0.00 seconds
+0089.076 (0) Table up_icl_message_status: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_message_status.table.gz - 0.4 Kb)
+0089.084 (0) Table up_icl_node: Total expected rows (approximate): 0
+0089.089 (0) Table up_icl_node: Total rows added: 0 in 0.00 seconds
+0089.093 (0) Table up_icl_node: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_node.table.gz - 0.3 Kb)
+0089.103 (0) Table up_icl_reminders: Total expected rows (approximate): 0
+0089.108 (0) Table up_icl_reminders: Total rows added: 0 in 0.00 seconds
+0089.112 (0) Table up_icl_reminders: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_reminders.table.gz - 0.3 Kb)
+0089.121 (0) Table up_icl_string_positions: Total expected rows (approximate): 0
+0089.126 (0) Table up_icl_string_positions: Total rows added: 0 in 0.00 seconds
+0089.130 (0) Table up_icl_string_positions: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_string_positions.table.gz - 0.3 Kb)
+0089.141 (0) Table up_icl_string_status: Total expected rows (approximate): 0
+0089.145 (0) Table up_icl_string_status: Total rows added: 0 in 0.00 seconds
+0089.149 (0) Table up_icl_string_status: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_string_status.table.gz - 0.4 Kb)
+0089.160 (0) Table up_icl_string_translations: Total expected rows (approximate): 0
+0089.164 (0) Table up_icl_string_translations: Total rows added: 0 in 0.00 seconds
+0089.168 (0) Table up_icl_string_translations: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_string_translations.table.gz - 0.4 Kb)
+0089.177 (0) Table up_icl_strings: Total expected rows (approximate): 0
+0089.182 (0) Table up_icl_strings: Total rows added: 0 in 0.00 seconds
+0089.186 (0) Table up_icl_strings: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_strings.table.gz - 0.4 Kb)
+0089.195 (0) Table up_icl_translate: Total expected rows (approximate): 0
+0089.199 (0) Table up_icl_translate: Total rows added: 0 in 0.00 seconds
+0089.204 (0) Table up_icl_translate: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_translate.table.gz - 0.4 Kb)
+0089.212 (0) Table up_icl_translate_job: Total expected rows (approximate): 0
+0089.217 (0) Table up_icl_translate_job: Total rows added: 0 in 0.00 seconds
+0089.221 (0) Table up_icl_translate_job: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_translate_job.table.gz - 0.4 Kb)
+0089.231 (0) Table up_icl_translation_status: Total expected rows (approximate): 0
+0089.235 (0) Table up_icl_translation_status: Total rows added: 0 in 0.00 seconds
+0089.239 (0) Table up_icl_translation_status: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_translation_status.table.gz - 0.4 Kb)
+0089.248 (0) Table up_icl_translations: Total expected rows (approximate): 584
+0089.265 (0) Table up_icl_translations: Total rows added: 714 in 0.01 seconds
+0089.269 (0) Table up_icl_translations: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_translations.table.gz - 6.6 Kb)
+0089.279 (0) Table up_itsec_lockouts: Total expected rows (approximate): 0
+0089.284 (0) Table up_itsec_lockouts: Total rows added: 0 in 0.00 seconds
+0089.288 (0) Table up_itsec_lockouts: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_itsec_lockouts.table.gz - 0.4 Kb)
+0089.296 (0) Table up_itsec_log: Total expected rows (approximate): 0
+0089.301 (0) Table up_itsec_log: Total rows added: 0 in 0.00 seconds
+0089.305 (0) Table up_itsec_log: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_itsec_log.table.gz - 0.4 Kb)
+0089.315 (0) Table up_itsec_temp: Total expected rows (approximate): 0
+0089.320 (0) Table up_itsec_temp: Total rows added: 0 in 0.00 seconds
+0089.324 (0) Table up_itsec_temp: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_itsec_temp.table.gz - 0.4 Kb)
+0089.333 (0) Table up_maintenance_page: Total expected rows (approximate): 0
+0089.338 (0) Table up_maintenance_page: Total rows added: 0 in 0.00 seconds
+0089.342 (0) Table up_maintenance_page: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_maintenance_page.table.gz - 0.3 Kb)
+0089.351 (0) Table up_mcc_blogs_groups: Total expected rows (approximate): 0
+0089.356 (0) Table up_mcc_blogs_groups: Total rows added: 0 in 0.00 seconds
+0089.360 (0) Table up_mcc_blogs_groups: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_mcc_blogs_groups.table.gz - 0.3 Kb)
+0089.368 (0) Table up_mcc_blogs_groups_relationship: Total expected rows (approximate): 0
+0089.372 (0) Table up_mcc_blogs_groups_relationship: Total rows added: 0 in 0.00 seconds
+0089.376 (0) Table up_mcc_blogs_groups_relationship: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_mcc_blogs_groups_relationship.table.gz - 0.3 Kb)
+0089.386 (0) Table up_mcc_queue: Total expected rows (approximate): 0
+0089.390 (0) Table up_mcc_queue: Total rows added: 0 in 0.00 seconds
+0089.395 (0) Table up_mcc_queue: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_mcc_queue.table.gz - 0.3 Kb)
+0089.403 (0) Table up_mcc_synced_posts_relationships: Total expected rows (approximate): 0
+0089.408 (0) Table up_mcc_synced_posts_relationships: Total rows added: 0 in 0.00 seconds
+0089.412 (0) Table up_mcc_synced_posts_relationships: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_mcc_synced_posts_relationships.table.gz - 0.4 Kb)
+0089.420 (0) Table up_meal_categories: Total expected rows (approximate): 4
+0089.425 (0) Table up_meal_categories: Total rows added: 4 in 0.00 seconds
+0089.430 (0) Table up_meal_categories: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_meal_categories.table.gz - 0.5 Kb)
+0089.442 (0) Table up_meal_ingredients: Total expected rows (approximate): 3167
+0089.564 (0) Table up_meal_ingredients: Total rows added: 3578 in 0.12 seconds
+0089.569 (0) Table up_meal_ingredients: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_meal_ingredients.table.gz - 35.3 Kb)
+0089.579 (0) Table up_meal_instructions: Total expected rows (approximate): 487
+0089.612 (0) Table up_meal_instructions: Total rows added: 466 in 0.03 seconds
+0089.616 (0) Table up_meal_instructions: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_meal_instructions.table.gz - 47 Kb)
+0089.625 (0) Table up_meals: Total expected rows (approximate): 427
+0089.640 (0) Table up_meals: Total rows added: 466 in 0.01 seconds
+0089.644 (0) Table up_meals: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_meals.table.gz - 6.7 Kb)
+0089.653 (0) Table up_micro_master: Total expected rows (approximate): 57
+0089.658 (0) Table up_micro_master: Total rows added: 57 in 0.00 seconds
+0089.663 (0) Table up_micro_master: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_micro_master.table.gz - 0.8 Kb)
+0089.671 (0) Table up_novalnet_aff_account_detail: Total expected rows (approximate): 0
+0089.675 (0) Table up_novalnet_aff_account_detail: Total rows added: 0 in 0.00 seconds
+0089.680 (0) Table up_novalnet_aff_account_detail: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_novalnet_aff_account_detail.table.gz - 0.5 Kb)
+0089.688 (0) Table up_novalnet_aff_user_detail: Total expected rows (approximate): 0
+0089.693 (0) Table up_novalnet_aff_user_detail: Total rows added: 0 in 0.00 seconds
+0089.697 (0) Table up_novalnet_aff_user_detail: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_novalnet_aff_user_detail.table.gz - 0.4 Kb)
+0089.708 (0) Table up_novalnet_callback_history: Total expected rows (approximate): 0
+0089.712 (0) Table up_novalnet_callback_history: Total rows added: 0 in 0.00 seconds
+0089.716 (0) Table up_novalnet_callback_history: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_novalnet_callback_history.table.gz - 0.5 Kb)
+0089.727 (0) Table up_novalnet_invoice_details: Total expected rows (approximate): 0
+0089.731 (0) Table up_novalnet_invoice_details: Total rows added: 0 in 0.00 seconds
+0089.735 (0) Table up_novalnet_invoice_details: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_novalnet_invoice_details.table.gz - 0.5 Kb)
+0089.743 (0) Table up_novalnet_subscription_details: Total expected rows (approximate): 0
+0089.748 (0) Table up_novalnet_subscription_details: Total rows added: 0 in 0.00 seconds
+0089.752 (0) Table up_novalnet_subscription_details: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_novalnet_subscription_details.table.gz - 0.6 Kb)
+0089.761 (0) Table up_novalnet_transaction_detail: Total expected rows (approximate): 0
+0089.766 (0) Table up_novalnet_transaction_detail: Total rows added: 0 in 0.00 seconds
+0089.770 (0) Table up_novalnet_transaction_detail: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_novalnet_transaction_detail.table.gz - 0.8 Kb)
+0089.781 (0) Table up_order_meals: Total expected rows (approximate): 83645
+0091.603 (0) Table up_order_meals: Total rows added: 77532 in 1.82 seconds
+0091.609 (0) Table up_order_meals: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_order_meals.table.gz - 696 Kb)
+0091.621 (0) Table up_plan_logs: Total expected rows (approximate): 3478
+0091.806 (0) Table up_plan_logs: Total rows added: 2624 in 0.18 seconds
+0091.812 (0) Table up_plan_logs: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_plan_logs.table.gz - 239 Kb)
+0091.821 (0) Table up_pmxi_files: Total expected rows (approximate): 0
+0091.826 (0) Table up_pmxi_files: Total rows added: 0 in 0.00 seconds
+0091.830 (0) Table up_pmxi_files: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_pmxi_files.table.gz - 0.4 Kb)
+0091.841 (0) Table up_pmxi_history: Total expected rows (approximate): 0
+0091.845 (0) Table up_pmxi_history: Total rows added: 0 in 0.00 seconds
+0091.850 (0) Table up_pmxi_history: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_pmxi_history.table.gz - 0.4 Kb)
+0091.860 (0) Table up_pmxi_imports: Total expected rows (approximate): 0
+0091.864 (0) Table up_pmxi_imports: Total rows added: 0 in 0.00 seconds
+0091.869 (0) Table up_pmxi_imports: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_pmxi_imports.table.gz - 0.6 Kb)
+0091.880 (0) Table up_pmxi_posts: Total expected rows (approximate): 0
+0091.885 (0) Table up_pmxi_posts: Total rows added: 0 in 0.00 seconds
+0091.890 (0) Table up_pmxi_posts: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_pmxi_posts.table.gz - 0.3 Kb)
+0091.900 (0) Table up_pmxi_templates: Total expected rows (approximate): 0
+0091.906 (0) Table up_pmxi_templates: Total rows added: 0 in 0.00 seconds
+0091.911 (0) Table up_pmxi_templates: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_pmxi_templates.table.gz - 0.4 Kb)
+0091.920 (0) Table up_price_levels: Total expected rows (approximate): 3
+0091.925 (0) Table up_price_levels: Total rows added: 3 in 0.00 seconds
+0091.930 (0) Table up_price_levels: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_price_levels.table.gz - 0.5 Kb)
+0091.940 (0) Table up_shopping_list_categories: Total expected rows (approximate): 6
+0091.945 (0) Table up_shopping_list_categories: Total rows added: 6 in 0.00 seconds
+0091.949 (0) Table up_shopping_list_categories: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_shopping_list_categories.table.gz - 0.6 Kb)
+0091.960 (0) Table up_units: Total expected rows (approximate): 27
+0091.966 (0) Table up_units: Total rows added: 27 in 0.00 seconds
+0091.970 (0) Table up_units: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_units.table.gz - 0.8 Kb)
+0091.979 (0) Table up_user_nutrition_plans: Total expected rows (approximate): 287
+0092.002 (0) Table up_user_nutrition_plans: Total rows added: 271 in 0.02 seconds
+0092.006 (0) Table up_user_nutrition_plans: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_user_nutrition_plans.table.gz - 17.4 Kb)
+0092.015 (0) Table up_woocommerce_api_keys: Total expected rows (approximate): 0
+0092.020 (0) Table up_woocommerce_api_keys: Total rows added: 0 in 0.00 seconds
+0092.024 (0) Table up_woocommerce_api_keys: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_woocommerce_api_keys.table.gz - 0.4 Kb)
+0092.033 (0) Table up_woocommerce_attribute_taxonomies: Total expected rows (approximate): 0
+0092.038 (0) Table up_woocommerce_attribute_taxonomies: Total rows added: 0 in 0.00 seconds
+0092.042 (0) Table up_woocommerce_attribute_taxonomies: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_woocommerce_attribute_taxonomies.table.gz - 0.4 Kb)
+0092.051 (0) Table up_woocommerce_downloadable_product_permissions: Total expected rows (approximate): 3
+0092.056 (0) Table up_woocommerce_downloadable_product_permissions: Total rows added: 3 in 0.00 seconds
+0092.061 (0) Table up_woocommerce_downloadable_product_permissions: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_woocommerce_downloadable_product_permissions.table.gz - 0.6 Kb)
+0092.071 (0) Table up_woocommerce_order_items: Total expected rows (approximate): 33
+0092.076 (0) Table up_woocommerce_order_items: Total rows added: 33 in 0.00 seconds
+0092.081 (0) Table up_woocommerce_order_items: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_woocommerce_order_items.table.gz - 0.7 Kb)
+0092.091 (0) Table up_woocommerce_tax_rate_locations: Total expected rows (approximate): 0
+0092.095 (0) Table up_woocommerce_tax_rate_locations: Total rows added: 0 in 0.00 seconds
+0092.099 (0) Table up_woocommerce_tax_rate_locations: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_woocommerce_tax_rate_locations.table.gz - 0.4 Kb)
+0092.108 (0) Table up_woocommerce_tax_rates: Total expected rows (approximate): 32
+0092.114 (0) Table up_woocommerce_tax_rates: Total rows added: 32 in 0.00 seconds
+0092.119 (0) Table up_woocommerce_tax_rates: finishing file (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_woocommerce_tax_rates.table.gz - 0.9 Kb)
+0092.125 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_options.table.gz (1/193): adding to final database dump
+0092.179 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_users.table.gz (2/193): adding to final database dump
+0092.183 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_usermeta.table.gz (3/193): adding to final database dump
+0092.190 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_blog_versions.table.gz (4/193): adding to final database dump
+0092.194 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_blogs.table.gz (5/193): adding to final database dump
+0092.199 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_commentmeta.table.gz (6/193): adding to final database dump
+0092.202 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_comments.table.gz (7/193): adding to final database dump
+0092.207 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_links.table.gz (8/193): adding to final database dump
+0092.211 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_ms_snippets.table.gz (9/193): adding to final database dump
+0092.214 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_postmeta.table.gz (10/193): adding to final database dump
+0092.228 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_posts.table.gz (11/193): adding to final database dump
+0092.373 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_registration_log.table.gz (12/193): adding to final database dump
+0092.377 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_signups.table.gz (13/193): adding to final database dump
+0092.382 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_site.table.gz (14/193): adding to final database dump
+0092.386 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_sitemeta.table.gz (15/193): adding to final database dump
+0092.394 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_snippets.table.gz (16/193): adding to final database dump
+0092.398 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_term_relationships.table.gz (17/193): adding to final database dump
+0092.402 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_term_taxonomy.table.gz (18/193): adding to final database dump
+0092.406 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_terms.table.gz (19/193): adding to final database dump
+0092.409 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_woocommerce_order_itemmeta.table.gz (20/193): adding to final database dump
+0092.414 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_woocommerce_termmeta.table.gz (21/193): adding to final database dump
+0092.418 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_yith_vendors_commissions.table.gz (22/193): adding to final database dump
+0092.422 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_yith_vendors_commissions_notes.table.gz (23/193): adding to final database dump
+0092.426 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_commentmeta.table.gz (24/193): adding to final database dump
+0092.430 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_comments.table.gz (25/193): adding to final database dump
+0092.442 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_duplicator_packages.table.gz (26/193): adding to final database dump
+0092.446 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_links.table.gz (27/193): adding to final database dump
+0092.450 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_maintenance_page.table.gz (28/193): adding to final database dump
+0092.453 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_options.table.gz (29/193): adding to final database dump
+0092.467 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_postmeta.table.gz (30/193): adding to final database dump
+0092.614 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_posts.table.gz (31/193): adding to final database dump
+0092.634 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_snippets.table.gz (32/193): adding to final database dump
+0092.638 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_term_relationships.table.gz (33/193): adding to final database dump
+0092.642 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_term_taxonomy.table.gz (34/193): adding to final database dump
+0092.646 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_terms.table.gz (35/193): adding to final database dump
+0092.650 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_woocommerce_api_keys.table.gz (36/193): adding to final database dump
+0092.654 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_woocommerce_attribute_taxonomies.table.gz (37/193): adding to final database dump
+0092.658 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_woocommerce_downloadable_product_permissions.table.gz (38/193): adding to final database dump
+0092.662 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_woocommerce_order_itemmeta.table.gz (39/193): adding to final database dump
+0092.666 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_woocommerce_order_items.table.gz (40/193): adding to final database dump
+0092.670 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_woocommerce_tax_rate_locations.table.gz (41/193): adding to final database dump
+0092.674 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_woocommerce_tax_rates.table.gz (42/193): adding to final database dump
+0092.678 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_woocommerce_termmeta.table.gz (43/193): adding to final database dump
+0092.682 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_xyz_ips_short_code.table.gz (44/193): adding to final database dump
+0092.686 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_yith_vendors_commissions.table.gz (45/193): adding to final database dump
+0092.690 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_23_yith_vendors_commissions_notes.table.gz (46/193): adding to final database dump
+0092.693 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_24_duplicator_packages.table.gz (47/193): adding to final database dump
+0092.696 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_commentmeta.table.gz (48/193): adding to final database dump
+0092.700 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_comments.table.gz (49/193): adding to final database dump
+0092.706 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_duplicator_packages.table.gz (50/193): adding to final database dump
+0092.709 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_links.table.gz (51/193): adding to final database dump
+0092.713 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_maintenance_page.table.gz (52/193): adding to final database dump
+0092.717 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_options.table.gz (53/193): adding to final database dump
+0092.743 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_postmeta.table.gz (54/193): adding to final database dump
+0092.770 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_posts.table.gz (55/193): adding to final database dump
+0092.789 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_snippets.table.gz (56/193): adding to final database dump
+0092.793 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_term_relationships.table.gz (57/193): adding to final database dump
+0092.797 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_term_taxonomy.table.gz (58/193): adding to final database dump
+0092.801 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_terms.table.gz (59/193): adding to final database dump
+0092.805 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_woocommerce_api_keys.table.gz (60/193): adding to final database dump
+0092.809 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_woocommerce_attribute_taxonomies.table.gz (61/193): adding to final database dump
+0092.813 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_woocommerce_downloadable_product_permissions.table.gz (62/193): adding to final database dump
+0092.817 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_woocommerce_order_itemmeta.table.gz (63/193): adding to final database dump
+0092.822 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_woocommerce_order_items.table.gz (64/193): adding to final database dump
+0092.826 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_woocommerce_tax_rate_locations.table.gz (65/193): adding to final database dump
+0092.829 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_woocommerce_tax_rates.table.gz (66/193): adding to final database dump
+0092.833 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_woocommerce_termmeta.table.gz (67/193): adding to final database dump
+0092.837 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_yith_vendors_commissions.table.gz (68/193): adding to final database dump
+0092.841 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_25_yith_vendors_commissions_notes.table.gz (69/193): adding to final database dump
+0092.845 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_commentmeta.table.gz (70/193): adding to final database dump
+0092.849 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_comments.table.gz (71/193): adding to final database dump
+0092.853 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_duplicator_packages.table.gz (72/193): adding to final database dump
+0092.857 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_links.table.gz (73/193): adding to final database dump
+0092.861 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_maintenance_page.table.gz (74/193): adding to final database dump
+0092.865 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_options.table.gz (75/193): adding to final database dump
+0092.884 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_postmeta.table.gz (76/193): adding to final database dump
+0092.896 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_posts.table.gz (77/193): adding to final database dump
+0092.912 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_snippets.table.gz (78/193): adding to final database dump
+0092.916 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_term_relationships.table.gz (79/193): adding to final database dump
+0092.920 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_term_taxonomy.table.gz (80/193): adding to final database dump
+0092.924 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_terms.table.gz (81/193): adding to final database dump
+0092.928 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_woocommerce_api_keys.table.gz (82/193): adding to final database dump
+0092.933 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_woocommerce_attribute_taxonomies.table.gz (83/193): adding to final database dump
+0092.937 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_woocommerce_downloadable_product_permissions.table.gz (84/193): adding to final database dump
+0092.940 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_woocommerce_order_itemmeta.table.gz (85/193): adding to final database dump
+0092.945 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_woocommerce_order_items.table.gz (86/193): adding to final database dump
+0092.950 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_woocommerce_tax_rate_locations.table.gz (87/193): adding to final database dump
+0092.954 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_woocommerce_tax_rates.table.gz (88/193): adding to final database dump
+0092.960 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_woocommerce_termmeta.table.gz (89/193): adding to final database dump
+0092.965 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_yith_vendors_commissions.table.gz (90/193): adding to final database dump
+0092.970 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_28_yith_vendors_commissions_notes.table.gz (91/193): adding to final database dump
+0092.975 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_commentmeta.table.gz (92/193): adding to final database dump
+0092.979 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_comments.table.gz (93/193): adding to final database dump
+0092.984 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_links.table.gz (94/193): adding to final database dump
+0092.988 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_maintenance_page.table.gz (95/193): adding to final database dump
+0092.992 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_options.table.gz (96/193): adding to final database dump
+0093.005 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_postmeta.table.gz (97/193): adding to final database dump
+0093.018 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_posts.table.gz (98/193): adding to final database dump
+0093.034 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_snippets.table.gz (99/193): adding to final database dump
+0093.040 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_term_relationships.table.gz (100/193): adding to final database dump
+0093.044 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_term_taxonomy.table.gz (101/193): adding to final database dump
+0093.048 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_terms.table.gz (102/193): adding to final database dump
+0093.052 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_woocommerce_api_keys.table.gz (103/193): adding to final database dump
+0093.056 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_woocommerce_attribute_taxonomies.table.gz (104/193): adding to final database dump
+0093.059 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_woocommerce_downloadable_product_permissions.table.gz (105/193): adding to final database dump
+0093.064 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_woocommerce_order_itemmeta.table.gz (106/193): adding to final database dump
+0093.069 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_woocommerce_order_items.table.gz (107/193): adding to final database dump
+0093.073 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_woocommerce_tax_rate_locations.table.gz (108/193): adding to final database dump
+0093.077 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_woocommerce_tax_rates.table.gz (109/193): adding to final database dump
+0093.081 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_woocommerce_termmeta.table.gz (110/193): adding to final database dump
+0093.085 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_yith_vendors_commissions.table.gz (111/193): adding to final database dump
+0093.089 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_32_yith_vendors_commissions_notes.table.gz (112/193): adding to final database dump
+0093.093 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_commentmeta.table.gz (113/193): adding to final database dump
+0093.097 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_comments.table.gz (114/193): adding to final database dump
+0093.101 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_links.table.gz (115/193): adding to final database dump
+0093.105 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_maintenance_page.table.gz (116/193): adding to final database dump
+0093.109 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_options.table.gz (117/193): adding to final database dump
+0093.121 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_postmeta.table.gz (118/193): adding to final database dump
+0093.133 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_posts.table.gz (119/193): adding to final database dump
+0093.149 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_snippets.table.gz (120/193): adding to final database dump
+0093.153 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_term_relationships.table.gz (121/193): adding to final database dump
+0093.157 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_term_taxonomy.table.gz (122/193): adding to final database dump
+0093.161 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_terms.table.gz (123/193): adding to final database dump
+0093.165 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_woocommerce_api_keys.table.gz (124/193): adding to final database dump
+0093.168 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_woocommerce_attribute_taxonomies.table.gz (125/193): adding to final database dump
+0093.172 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_woocommerce_downloadable_product_permissions.table.gz (126/193): adding to final database dump
+0093.176 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_woocommerce_order_itemmeta.table.gz (127/193): adding to final database dump
+0093.180 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_woocommerce_order_items.table.gz (128/193): adding to final database dump
+0093.184 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_woocommerce_tax_rate_locations.table.gz (129/193): adding to final database dump
+0093.188 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_woocommerce_tax_rates.table.gz (130/193): adding to final database dump
+0093.192 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_woocommerce_termmeta.table.gz (131/193): adding to final database dump
+0093.196 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_yith_vendors_commissions.table.gz (132/193): adding to final database dump
+0093.200 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_38_yith_vendors_commissions_notes.table.gz (133/193): adding to final database dump
+0093.204 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_cron_status.table.gz (134/193): adding to final database dump
+0093.208 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_food_attributes.table.gz (135/193): adding to final database dump
+0093.212 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_food_categories.table.gz (136/193): adding to final database dump
+0093.216 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_food_micros.table.gz (137/193): adding to final database dump
+0093.765 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_foods.table.gz (138/193): adding to final database dump
+0093.790 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_content_status.table.gz (139/193): adding to final database dump
+0093.794 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_core_status.table.gz (140/193): adding to final database dump
+0093.798 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_flags.table.gz (141/193): adding to final database dump
+0093.802 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_languages.table.gz (142/193): adding to final database dump
+0093.806 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_languages_translations.table.gz (143/193): adding to final database dump
+0093.822 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_locale_map.table.gz (144/193): adding to final database dump
+0093.826 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_message_status.table.gz (145/193): adding to final database dump
+0093.830 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_node.table.gz (146/193): adding to final database dump
+0093.834 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_reminders.table.gz (147/193): adding to final database dump
+0093.837 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_string_positions.table.gz (148/193): adding to final database dump
+0093.841 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_string_status.table.gz (149/193): adding to final database dump
+0093.845 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_string_translations.table.gz (150/193): adding to final database dump
+0093.849 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_strings.table.gz (151/193): adding to final database dump
+0093.853 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_translate.table.gz (152/193): adding to final database dump
+0093.857 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_translate_job.table.gz (153/193): adding to final database dump
+0093.860 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_translation_status.table.gz (154/193): adding to final database dump
+0093.864 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_icl_translations.table.gz (155/193): adding to final database dump
+0093.870 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_itsec_lockouts.table.gz (156/193): adding to final database dump
+0093.874 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_itsec_log.table.gz (157/193): adding to final database dump
+0093.878 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_itsec_temp.table.gz (158/193): adding to final database dump
+0093.882 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_maintenance_page.table.gz (159/193): adding to final database dump
+0093.884 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_mcc_blogs_groups.table.gz (160/193): adding to final database dump
+0093.888 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_mcc_blogs_groups_relationship.table.gz (161/193): adding to final database dump
+0093.892 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_mcc_queue.table.gz (162/193): adding to final database dump
+0093.896 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_mcc_synced_posts_relationships.table.gz (163/193): adding to final database dump
+0093.899 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_meal_categories.table.gz (164/193): adding to final database dump
+0093.903 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_meal_ingredients.table.gz (165/193): adding to final database dump
+0093.921 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_meal_instructions.table.gz (166/193): adding to final database dump
+0093.936 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_meals.table.gz (167/193): adding to final database dump
+0093.942 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_micro_master.table.gz (168/193): adding to final database dump
+0093.946 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_novalnet_aff_account_detail.table.gz (169/193): adding to final database dump
+0093.951 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_novalnet_aff_user_detail.table.gz (170/193): adding to final database dump
+0093.954 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_novalnet_callback_history.table.gz (171/193): adding to final database dump
+0093.958 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_novalnet_invoice_details.table.gz (172/193): adding to final database dump
+0093.963 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_novalnet_subscription_details.table.gz (173/193): adding to final database dump
+0093.966 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_novalnet_transaction_detail.table.gz (174/193): adding to final database dump
+0093.970 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_order_meals.table.gz (175/193): adding to final database dump
+0094.281 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_plan_logs.table.gz (176/193): adding to final database dump
+0094.362 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_pmxi_files.table.gz (177/193): adding to final database dump
+0094.366 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_pmxi_history.table.gz (178/193): adding to final database dump
+0094.370 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_pmxi_imports.table.gz (179/193): adding to final database dump
+0094.374 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_pmxi_posts.table.gz (180/193): adding to final database dump
+0094.377 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_pmxi_templates.table.gz (181/193): adding to final database dump
+0094.381 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_price_levels.table.gz (182/193): adding to final database dump
+0094.385 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_shopping_list_categories.table.gz (183/193): adding to final database dump
+0094.389 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_units.table.gz (184/193): adding to final database dump
+0094.393 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_user_nutrition_plans.table.gz (185/193): adding to final database dump
+0094.403 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_woocommerce_api_keys.table.gz (186/193): adding to final database dump
+0094.407 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_woocommerce_attribute_taxonomies.table.gz (187/193): adding to final database dump
+0094.410 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_woocommerce_downloadable_product_permissions.table.gz (188/193): adding to final database dump
+0094.415 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_woocommerce_order_items.table.gz (189/193): adding to final database dump
+0094.419 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_woocommerce_tax_rate_locations.table.gz (190/193): adding to final database dump
+0094.423 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db-table-up_woocommerce_tax_rates.table.gz (191/193): adding to final database dump
+0094.427 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db.gz: finished writing out complete database file (4352 Kb)
+0094.462 (0) Total database tables backed up: 191 (backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db.gz, size: 4464908, checksum (SHA1): c0672d6e2bf7a7b3999295e8e1a44164552de1a0)
+0094.467 (0) Saving backup history
+0094.481 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0094.486 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0094.490 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0094.493 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads2.zip: uploads: This file has not yet been successfully uploaded: will queue
+0094.497 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-others.zip: others: This file has not yet been successfully uploaded: will queue
+0094.500 (0) backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db.gz: db: This file has not yet been successfully uploaded: will queue
+0094.508 (0) Requesting upload of the files that have not yet been successfully uploaded (6)
+0094.516 (0) Cloud backup selection (1/1): ftp (last)
+0094.519 (0) Beginning dispatch of backup to remote (ftp)
+0094.641 (0) FTP upload attempt: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip -> ftp://u82662043@upfit.at//updraft_backup/point-of-power.upfit.de/backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip
+0094.663 (0) Ftp chunked upload: 1.9 % uploaded
+0094.681 (0) Ftp chunked upload: 3.8 % uploaded
+0094.699 (0) Ftp chunked upload: 5.8 % uploaded
+0094.714 (0) Ftp chunked upload: 7.7 % uploaded
+0094.731 (0) Ftp chunked upload: 9.6 % uploaded
+0094.747 (0) Ftp chunked upload: 11.5 % uploaded
+0094.762 (0) Ftp chunked upload: 13.4 % uploaded
+0094.779 (0) Ftp chunked upload: 15.4 % uploaded
+0094.794 (0) Ftp chunked upload: 17.3 % uploaded
+0094.810 (0) Ftp chunked upload: 19.2 % uploaded
+0094.826 (0) Ftp chunked upload: 21.1 % uploaded
+0094.842 (0) Ftp chunked upload: 23.1 % uploaded
+0094.859 (0) Ftp chunked upload: 25 % uploaded
+0094.875 (0) Ftp chunked upload: 26.9 % uploaded
+0094.892 (0) Ftp chunked upload: 28.8 % uploaded
+0094.909 (0) Ftp chunked upload: 30.7 % uploaded
+0094.927 (0) Ftp chunked upload: 32.7 % uploaded
+0094.943 (0) Ftp chunked upload: 34.6 % uploaded
+0094.959 (0) Ftp chunked upload: 36.5 % uploaded
+0094.978 (0) Ftp chunked upload: 38.4 % uploaded
+0094.995 (0) Ftp chunked upload: 40.3 % uploaded
+0095.011 (0) Ftp chunked upload: 42.3 % uploaded
+0095.027 (0) Ftp chunked upload: 44.2 % uploaded
+0095.043 (0) Ftp chunked upload: 46.1 % uploaded
+0095.058 (0) Ftp chunked upload: 48 % uploaded
+0095.073 (0) Ftp chunked upload: 50 % uploaded
+0095.090 (0) Ftp chunked upload: 51.9 % uploaded
+0095.106 (0) Ftp chunked upload: 53.8 % uploaded
+0095.123 (0) Ftp chunked upload: 55.7 % uploaded
+0095.139 (0) Ftp chunked upload: 57.6 % uploaded
+0095.154 (0) Ftp chunked upload: 59.6 % uploaded
+0095.171 (0) Ftp chunked upload: 61.5 % uploaded
+0095.187 (0) Ftp chunked upload: 63.4 % uploaded
+0095.202 (0) Ftp chunked upload: 65.3 % uploaded
+0095.218 (0) Ftp chunked upload: 67.2 % uploaded
+0095.234 (0) Ftp chunked upload: 69.2 % uploaded
+0095.250 (0) Ftp chunked upload: 71.1 % uploaded
+0095.266 (0) Ftp chunked upload: 73 % uploaded
+0095.282 (0) Ftp chunked upload: 74.9 % uploaded
+0095.299 (0) Ftp chunked upload: 76.9 % uploaded
+0095.315 (0) Ftp chunked upload: 78.8 % uploaded
+0095.331 (0) Ftp chunked upload: 80.7 % uploaded
+0095.347 (0) Ftp chunked upload: 82.6 % uploaded
+0095.362 (0) Ftp chunked upload: 84.5 % uploaded
+0095.378 (0) Ftp chunked upload: 86.5 % uploaded
+0095.394 (0) Ftp chunked upload: 88.4 % uploaded
+0095.410 (0) Ftp chunked upload: 90.3 % uploaded
+0095.426 (0) Ftp chunked upload: 92.2 % uploaded
+0095.441 (0) Ftp chunked upload: 94.1 % uploaded
+0095.457 (0) Ftp chunked upload: 96.1 % uploaded
+0095.474 (0) Ftp chunked upload: 98 % uploaded
+0095.489 (0) Ftp chunked upload: 99.9 % uploaded
+0095.496 (0) FTP upload attempt successful (26850.9Kb in 0.85s)
+0095.502 (0) Recording as successfully uploaded: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip (d5eb323d0a1f100678d32fddb99c7d1b)
+0095.517 (0) Deleting local file: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-plugins.zip: OK
+0095.521 (0) FTP upload attempt: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-themes.zip -> ftp://u82662043@upfit.at//updraft_backup/point-of-power.upfit.de/backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-themes.zip
+0095.537 (0) Ftp chunked upload: 1.1 % uploaded
+0095.554 (0) Ftp chunked upload: 2.2 % uploaded
+0095.570 (0) Ftp chunked upload: 3.3 % uploaded
+0095.585 (0) Ftp chunked upload: 4.4 % uploaded
+0095.602 (0) Ftp chunked upload: 5.5 % uploaded
+0095.618 (0) Ftp chunked upload: 6.6 % uploaded
+0095.634 (0) Ftp chunked upload: 7.7 % uploaded
+0095.650 (0) Ftp chunked upload: 8.8 % uploaded
+0095.667 (0) Ftp chunked upload: 9.9 % uploaded
+0095.682 (0) Ftp chunked upload: 11 % uploaded
+0095.698 (0) Ftp chunked upload: 12.1 % uploaded
+0095.715 (0) Ftp chunked upload: 13.2 % uploaded
+0095.731 (0) Ftp chunked upload: 14.3 % uploaded
+0095.746 (0) Ftp chunked upload: 15.3 % uploaded
+0095.762 (0) Ftp chunked upload: 16.4 % uploaded
+0095.778 (0) Ftp chunked upload: 17.5 % uploaded
+0095.794 (0) Ftp chunked upload: 18.6 % uploaded
+0095.810 (0) Ftp chunked upload: 19.7 % uploaded
+0095.826 (0) Ftp chunked upload: 20.8 % uploaded
+0095.841 (0) Ftp chunked upload: 21.9 % uploaded
+0095.858 (0) Ftp chunked upload: 23 % uploaded
+0095.874 (0) Ftp chunked upload: 24.1 % uploaded
+0095.890 (0) Ftp chunked upload: 25.2 % uploaded
+0095.906 (0) Ftp chunked upload: 26.3 % uploaded
+0095.922 (0) Ftp chunked upload: 27.4 % uploaded
+0095.937 (0) Ftp chunked upload: 28.5 % uploaded
+0095.952 (0) Ftp chunked upload: 29.6 % uploaded
+0095.968 (0) Ftp chunked upload: 30.7 % uploaded
+0095.985 (0) Ftp chunked upload: 31.8 % uploaded
+0096.000 (0) Ftp chunked upload: 32.9 % uploaded
+0096.016 (0) Ftp chunked upload: 34 % uploaded
+0096.032 (0) Ftp chunked upload: 35.1 % uploaded
+0096.048 (0) Ftp chunked upload: 36.2 % uploaded
+0096.064 (0) Ftp chunked upload: 37.3 % uploaded
+0096.080 (0) Ftp chunked upload: 38.4 % uploaded
+0096.096 (0) Ftp chunked upload: 39.5 % uploaded
+0096.112 (0) Ftp chunked upload: 40.6 % uploaded
+0096.128 (0) Ftp chunked upload: 41.7 % uploaded
+0096.144 (0) Ftp chunked upload: 42.8 % uploaded
+0096.160 (0) Ftp chunked upload: 43.9 % uploaded
+0096.177 (0) Ftp chunked upload: 45 % uploaded
+0096.193 (0) Ftp chunked upload: 46 % uploaded
+0096.209 (0) Ftp chunked upload: 47.1 % uploaded
+0096.225 (0) Ftp chunked upload: 48.2 % uploaded
+0096.241 (0) Ftp chunked upload: 49.3 % uploaded
+0096.257 (0) Ftp chunked upload: 50.4 % uploaded
+0096.273 (0) Ftp chunked upload: 51.5 % uploaded
+0096.289 (0) Ftp chunked upload: 52.6 % uploaded
+0096.306 (0) Ftp chunked upload: 53.7 % uploaded
+0096.335 (0) Ftp chunked upload: 54.8 % uploaded
+0096.351 (0) Ftp chunked upload: 55.9 % uploaded
+0096.366 (0) Ftp chunked upload: 57 % uploaded
+0096.382 (0) Ftp chunked upload: 58.1 % uploaded
+0096.397 (0) Ftp chunked upload: 59.2 % uploaded
+0096.413 (0) Ftp chunked upload: 60.3 % uploaded
+0096.429 (0) Ftp chunked upload: 61.4 % uploaded
+0096.445 (0) Ftp chunked upload: 62.5 % uploaded
+0096.462 (0) Ftp chunked upload: 63.6 % uploaded
+0096.478 (0) Ftp chunked upload: 64.7 % uploaded
+0096.493 (0) Ftp chunked upload: 65.8 % uploaded
+0096.509 (0) Ftp chunked upload: 66.9 % uploaded
+0096.525 (0) Ftp chunked upload: 68 % uploaded
+0096.540 (0) Ftp chunked upload: 69.1 % uploaded
+0096.554 (0) Ftp chunked upload: 70.2 % uploaded
+0096.569 (0) Ftp chunked upload: 71.3 % uploaded
+0096.585 (0) Ftp chunked upload: 72.4 % uploaded
+0096.602 (0) Ftp chunked upload: 73.5 % uploaded
+0096.618 (0) Ftp chunked upload: 74.6 % uploaded
+0096.633 (0) Ftp chunked upload: 75.7 % uploaded
+0096.649 (0) Ftp chunked upload: 76.7 % uploaded
+0096.664 (0) Ftp chunked upload: 77.8 % uploaded
+0096.680 (0) Ftp chunked upload: 78.9 % uploaded
+0096.696 (0) Ftp chunked upload: 80 % uploaded
+0096.712 (0) Ftp chunked upload: 81.1 % uploaded
+0096.727 (0) Ftp chunked upload: 82.2 % uploaded
+0096.742 (0) Ftp chunked upload: 83.3 % uploaded
+0096.757 (0) Ftp chunked upload: 84.4 % uploaded
+0096.773 (0) Ftp chunked upload: 85.5 % uploaded
+0096.789 (0) Ftp chunked upload: 86.6 % uploaded
+0096.805 (0) Ftp chunked upload: 87.7 % uploaded
+0096.821 (0) Ftp chunked upload: 88.8 % uploaded
+0096.836 (0) Ftp chunked upload: 89.9 % uploaded
+0096.853 (0) Ftp chunked upload: 91 % uploaded
+0096.869 (0) Ftp chunked upload: 92.1 % uploaded
+0096.885 (0) Ftp chunked upload: 93.2 % uploaded
+0096.902 (0) Ftp chunked upload: 94.3 % uploaded
+0096.918 (0) Ftp chunked upload: 95.4 % uploaded
+0096.933 (0) Ftp chunked upload: 96.5 % uploaded
+0096.949 (0) Ftp chunked upload: 97.6 % uploaded
+0096.966 (0) Ftp chunked upload: 98.7 % uploaded
+0096.982 (0) Ftp chunked upload: 99.8 % uploaded
+0096.988 (0) FTP upload attempt successful (47051.3Kb in 1.46s)
+0096.994 (0) Recording as successfully uploaded: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-themes.zip (e277b1621a353ed09815c3fecb4eb7f1)
+0097.010 (0) Deleting local file: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-themes.zip: OK
+0097.013 (0) FTP upload attempt: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads.zip -> ftp://u82662043@upfit.at//updraft_backup/point-of-power.upfit.de/backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads.zip
+0097.031 (0) Ftp chunked upload: 0.1 % uploaded
+0097.046 (0) Ftp chunked upload: 0.2 % uploaded
+0097.061 (0) Ftp chunked upload: 0.3 % uploaded
+0097.076 (0) Ftp chunked upload: 0.4 % uploaded
+0097.091 (0) Ftp chunked upload: 0.5 % uploaded
+0097.106 (0) Ftp chunked upload: 0.6 % uploaded
+0097.120 (0) Ftp chunked upload: 0.7 % uploaded
+0097.136 (0) Ftp chunked upload: 0.8 % uploaded
+0097.152 (0) Ftp chunked upload: 0.9 % uploaded
+0097.166 (0) Ftp chunked upload: 1 % uploaded
+0097.181 (0) Ftp chunked upload: 1.1 % uploaded
+0097.196 (0) Ftp chunked upload: 1.2 % uploaded
+0097.212 (0) Ftp chunked upload: 1.3 % uploaded
+0097.228 (0) Ftp chunked upload: 1.4 % uploaded
+0097.245 (0) Ftp chunked upload: 1.5 % uploaded
+0097.261 (0) Ftp chunked upload: 1.6 % uploaded
+0097.278 (0) Ftp chunked upload: 1.7 % uploaded
+0097.293 (0) Ftp chunked upload: 1.8 % uploaded
+0097.309 (0) Ftp chunked upload: 1.9 % uploaded
+0097.326 (0) Ftp chunked upload: 2 % uploaded
+0097.342 (0) Ftp chunked upload: 2.1 % uploaded
+0097.358 (0) Ftp chunked upload: 2.2 % uploaded
+0097.375 (0) Ftp chunked upload: 2.3 % uploaded
+0097.389 (0) Ftp chunked upload: 2.4 % uploaded
+0097.405 (0) Ftp chunked upload: 2.5 % uploaded
+0097.421 (0) Ftp chunked upload: 2.6 % uploaded
+0097.438 (0) Ftp chunked upload: 2.7 % uploaded
+0097.454 (0) Ftp chunked upload: 2.8 % uploaded
+0097.469 (0) Ftp chunked upload: 2.9 % uploaded
+0097.485 (0) Ftp chunked upload: 3 % uploaded
+0097.501 (0) Ftp chunked upload: 3.2 % uploaded
+0097.517 (0) Ftp chunked upload: 3.3 % uploaded
+0097.533 (0) Ftp chunked upload: 3.4 % uploaded
+0097.554 (0) Ftp chunked upload: 3.5 % uploaded
+0097.570 (0) Ftp chunked upload: 3.6 % uploaded
+0097.586 (0) Ftp chunked upload: 3.7 % uploaded
+0097.603 (0) Ftp chunked upload: 3.8 % uploaded
+0097.618 (0) Ftp chunked upload: 3.9 % uploaded
+0097.634 (0) Ftp chunked upload: 4 % uploaded
+0097.650 (0) Ftp chunked upload: 4.1 % uploaded
+0097.666 (0) Ftp chunked upload: 4.2 % uploaded
+0097.683 (0) Ftp chunked upload: 4.3 % uploaded
+0097.699 (0) Ftp chunked upload: 4.4 % uploaded
+0097.715 (0) Ftp chunked upload: 4.5 % uploaded
+0097.731 (0) Ftp chunked upload: 4.6 % uploaded
+0097.747 (0) Ftp chunked upload: 4.7 % uploaded
+0097.762 (0) Ftp chunked upload: 4.8 % uploaded
+0097.777 (0) Ftp chunked upload: 4.9 % uploaded
+0097.794 (0) Ftp chunked upload: 5 % uploaded
+0097.809 (0) Ftp chunked upload: 5.1 % uploaded
+0097.825 (0) Ftp chunked upload: 5.2 % uploaded
+0097.842 (0) Ftp chunked upload: 5.3 % uploaded
+0097.857 (0) Ftp chunked upload: 5.4 % uploaded
+0097.874 (0) Ftp chunked upload: 5.5 % uploaded
+0097.890 (0) Ftp chunked upload: 5.6 % uploaded
+0097.906 (0) Ftp chunked upload: 5.7 % uploaded
+0097.923 (0) Ftp chunked upload: 5.8 % uploaded
+0097.938 (0) Ftp chunked upload: 5.9 % uploaded
+0097.953 (0) Ftp chunked upload: 6 % uploaded
+0097.969 (0) Ftp chunked upload: 6.1 % uploaded
+0097.987 (0) Ftp chunked upload: 6.2 % uploaded
+0098.002 (0) Ftp chunked upload: 6.3 % uploaded
+0098.017 (0) Ftp chunked upload: 6.4 % uploaded
+0098.033 (0) Ftp chunked upload: 6.5 % uploaded
+0098.048 (0) Ftp chunked upload: 6.6 % uploaded
+0098.064 (0) Ftp chunked upload: 6.7 % uploaded
+0098.080 (0) Ftp chunked upload: 6.8 % uploaded
+0098.096 (0) Ftp chunked upload: 6.9 % uploaded
+0098.113 (0) Ftp chunked upload: 7 % uploaded
+0098.129 (0) Ftp chunked upload: 7.1 % uploaded
+0098.144 (0) Ftp chunked upload: 7.2 % uploaded
+0098.160 (0) Ftp chunked upload: 7.3 % uploaded
+0098.177 (0) Ftp chunked upload: 7.4 % uploaded
+0098.193 (0) Ftp chunked upload: 7.5 % uploaded
+0098.209 (0) Ftp chunked upload: 7.6 % uploaded
+0098.226 (0) Ftp chunked upload: 7.7 % uploaded
+0098.241 (0) Ftp chunked upload: 7.8 % uploaded
+0098.257 (0) Ftp chunked upload: 7.9 % uploaded
+0098.273 (0) Ftp chunked upload: 8 % uploaded
+0098.289 (0) Ftp chunked upload: 8.1 % uploaded
+0098.305 (0) Ftp chunked upload: 8.2 % uploaded
+0098.320 (0) Ftp chunked upload: 8.3 % uploaded
+0098.336 (0) Ftp chunked upload: 8.4 % uploaded
+0098.353 (0) Ftp chunked upload: 8.5 % uploaded
+0098.369 (0) Ftp chunked upload: 8.6 % uploaded
+0098.385 (0) Ftp chunked upload: 8.7 % uploaded
+0098.401 (0) Ftp chunked upload: 8.8 % uploaded
+0098.417 (0) Ftp chunked upload: 8.9 % uploaded
+0098.434 (0) Ftp chunked upload: 9 % uploaded
+0098.449 (0) Ftp chunked upload: 9.1 % uploaded
+0098.466 (0) Ftp chunked upload: 9.2 % uploaded
+0098.481 (0) Ftp chunked upload: 9.4 % uploaded
+0098.497 (0) Ftp chunked upload: 9.5 % uploaded
+0098.513 (0) Ftp chunked upload: 9.6 % uploaded
+0098.530 (0) Ftp chunked upload: 9.7 % uploaded
+0098.546 (0) Ftp chunked upload: 9.8 % uploaded
+0098.561 (0) Ftp chunked upload: 9.9 % uploaded
+0098.577 (0) Ftp chunked upload: 10 % uploaded
+0098.593 (0) Ftp chunked upload: 10.1 % uploaded
+0098.609 (0) Ftp chunked upload: 10.2 % uploaded
+0098.625 (0) Ftp chunked upload: 10.3 % uploaded
+0098.642 (0) Ftp chunked upload: 10.4 % uploaded
+0098.658 (0) Ftp chunked upload: 10.5 % uploaded
+0098.673 (0) Ftp chunked upload: 10.6 % uploaded
+0098.690 (0) Ftp chunked upload: 10.7 % uploaded
+0098.706 (0) Ftp chunked upload: 10.8 % uploaded
+0098.722 (0) Ftp chunked upload: 10.9 % uploaded
+0098.737 (0) Ftp chunked upload: 11 % uploaded
+0098.753 (0) Ftp chunked upload: 11.1 % uploaded
+0098.769 (0) Ftp chunked upload: 11.2 % uploaded
+0098.786 (0) Ftp chunked upload: 11.3 % uploaded
+0098.800 (0) Ftp chunked upload: 11.4 % uploaded
+0098.816 (0) Ftp chunked upload: 11.5 % uploaded
+0098.832 (0) Ftp chunked upload: 11.6 % uploaded
+0098.848 (0) Ftp chunked upload: 11.7 % uploaded
+0098.864 (0) Ftp chunked upload: 11.8 % uploaded
+0098.880 (0) Ftp chunked upload: 11.9 % uploaded
+0098.896 (0) Ftp chunked upload: 12 % uploaded
+0098.912 (0) Ftp chunked upload: 12.1 % uploaded
+0098.928 (0) Ftp chunked upload: 12.2 % uploaded
+0098.944 (0) Ftp chunked upload: 12.3 % uploaded
+0098.960 (0) Ftp chunked upload: 12.4 % uploaded
+0098.977 (0) Ftp chunked upload: 12.5 % uploaded
+0098.993 (0) Ftp chunked upload: 12.6 % uploaded
+0099.009 (0) Ftp chunked upload: 12.7 % uploaded
+0099.025 (0) Ftp chunked upload: 12.8 % uploaded
+0099.041 (0) Ftp chunked upload: 12.9 % uploaded
+0099.058 (0) Ftp chunked upload: 13 % uploaded
+0099.074 (0) Ftp chunked upload: 13.1 % uploaded
+0099.090 (0) Ftp chunked upload: 13.2 % uploaded
+0099.106 (0) Ftp chunked upload: 13.3 % uploaded
+0099.121 (0) Ftp chunked upload: 13.4 % uploaded
+0099.136 (0) Ftp chunked upload: 13.5 % uploaded
+0099.152 (0) Ftp chunked upload: 13.6 % uploaded
+0099.168 (0) Ftp chunked upload: 13.7 % uploaded
+0099.183 (0) Ftp chunked upload: 13.8 % uploaded
+0099.197 (0) Ftp chunked upload: 13.9 % uploaded
+0099.213 (0) Ftp chunked upload: 14 % uploaded
+0099.229 (0) Ftp chunked upload: 14.1 % uploaded
+0099.245 (0) Ftp chunked upload: 14.2 % uploaded
+0099.261 (0) Ftp chunked upload: 14.3 % uploaded
+0099.279 (0) Ftp chunked upload: 14.4 % uploaded
+0099.294 (0) Ftp chunked upload: 14.5 % uploaded
+0099.310 (0) Ftp chunked upload: 14.6 % uploaded
+0099.326 (0) Ftp chunked upload: 14.7 % uploaded
+0099.341 (0) Ftp chunked upload: 14.8 % uploaded
+0099.357 (0) Ftp chunked upload: 14.9 % uploaded
+0099.373 (0) Ftp chunked upload: 15 % uploaded
+0099.389 (0) Ftp chunked upload: 15.1 % uploaded
+0099.405 (0) Ftp chunked upload: 15.2 % uploaded
+0099.421 (0) Ftp chunked upload: 15.3 % uploaded
+0099.437 (0) Ftp chunked upload: 15.4 % uploaded
+0099.453 (0) Ftp chunked upload: 15.5 % uploaded
+0099.469 (0) Ftp chunked upload: 15.7 % uploaded
+0099.485 (0) Ftp chunked upload: 15.8 % uploaded
+0099.501 (0) Ftp chunked upload: 15.9 % uploaded
+0099.517 (0) Ftp chunked upload: 16 % uploaded
+0099.533 (0) Ftp chunked upload: 16.1 % uploaded
+0099.549 (0) Ftp chunked upload: 16.2 % uploaded
+0099.565 (0) Ftp chunked upload: 16.3 % uploaded
+0099.580 (0) Ftp chunked upload: 16.4 % uploaded
+0099.596 (0) Ftp chunked upload: 16.5 % uploaded
+0099.612 (0) Ftp chunked upload: 16.6 % uploaded
+0099.628 (0) Ftp chunked upload: 16.7 % uploaded
+0099.644 (0) Ftp chunked upload: 16.8 % uploaded
+0099.660 (0) Ftp chunked upload: 16.9 % uploaded
+0099.676 (0) Ftp chunked upload: 17 % uploaded
+0099.690 (0) Ftp chunked upload: 17.1 % uploaded
+0099.706 (0) Ftp chunked upload: 17.2 % uploaded
+0099.721 (0) Ftp chunked upload: 17.3 % uploaded
+0099.741 (0) Ftp chunked upload: 17.4 % uploaded
+0099.757 (0) Ftp chunked upload: 17.5 % uploaded
+0099.773 (0) Ftp chunked upload: 17.6 % uploaded
+0099.789 (0) Ftp chunked upload: 17.7 % uploaded
+0099.804 (0) Ftp chunked upload: 17.8 % uploaded
+0099.820 (0) Ftp chunked upload: 17.9 % uploaded
+0099.836 (0) Ftp chunked upload: 18 % uploaded
+0099.926 (0) Ftp chunked upload: 18.1 % uploaded
+0099.941 (0) Ftp chunked upload: 18.2 % uploaded
+0099.957 (0) Ftp chunked upload: 18.3 % uploaded
+0099.972 (0) Ftp chunked upload: 18.4 % uploaded
+0099.988 (0) Ftp chunked upload: 18.5 % uploaded
+0100.004 (0) Ftp chunked upload: 18.6 % uploaded
+0100.020 (0) Ftp chunked upload: 18.7 % uploaded
+0100.036 (0) Ftp chunked upload: 18.8 % uploaded
+0100.052 (0) Ftp chunked upload: 18.9 % uploaded
+0100.068 (0) Ftp chunked upload: 19 % uploaded
+0100.084 (0) Ftp chunked upload: 19.1 % uploaded
+0100.102 (0) Ftp chunked upload: 19.2 % uploaded
+0100.118 (0) Ftp chunked upload: 19.3 % uploaded
+0100.133 (0) Ftp chunked upload: 19.4 % uploaded
+0100.148 (0) Ftp chunked upload: 19.5 % uploaded
+0100.164 (0) Ftp chunked upload: 19.6 % uploaded
+0100.180 (0) Ftp chunked upload: 19.7 % uploaded
+0100.194 (0) Ftp chunked upload: 19.8 % uploaded
+0100.209 (0) Ftp chunked upload: 19.9 % uploaded
+0100.225 (0) Ftp chunked upload: 20 % uploaded
+0100.241 (0) Ftp chunked upload: 20.1 % uploaded
+0100.259 (0) Ftp chunked upload: 20.2 % uploaded
+0100.273 (0) Ftp chunked upload: 20.3 % uploaded
+0100.289 (0) Ftp chunked upload: 20.4 % uploaded
+0100.305 (0) Ftp chunked upload: 20.5 % uploaded
+0100.321 (0) Ftp chunked upload: 20.6 % uploaded
+0100.337 (0) Ftp chunked upload: 20.7 % uploaded
+0100.353 (0) Ftp chunked upload: 20.8 % uploaded
+0100.369 (0) Ftp chunked upload: 20.9 % uploaded
+0100.385 (0) Ftp chunked upload: 21 % uploaded
+0100.400 (0) Ftp chunked upload: 21.1 % uploaded
+0100.416 (0) Ftp chunked upload: 21.2 % uploaded
+0100.432 (0) Ftp chunked upload: 21.3 % uploaded
+0100.448 (0) Ftp chunked upload: 21.4 % uploaded
+0100.462 (0) Ftp chunked upload: 21.5 % uploaded
+0100.478 (0) Ftp chunked upload: 21.6 % uploaded
+0100.493 (0) Ftp chunked upload: 21.7 % uploaded
+0100.509 (0) Ftp chunked upload: 21.9 % uploaded
+0100.525 (0) Ftp chunked upload: 22 % uploaded
+0100.541 (0) Ftp chunked upload: 22.1 % uploaded
+0100.557 (0) Ftp chunked upload: 22.2 % uploaded
+0100.572 (0) Ftp chunked upload: 22.3 % uploaded
+0100.588 (0) Ftp chunked upload: 22.4 % uploaded
+0100.604 (0) Ftp chunked upload: 22.5 % uploaded
+0100.620 (0) Ftp chunked upload: 22.6 % uploaded
+0100.636 (0) Ftp chunked upload: 22.7 % uploaded
+0100.652 (0) Ftp chunked upload: 22.8 % uploaded
+0100.668 (0) Ftp chunked upload: 22.9 % uploaded
+0100.682 (0) Ftp chunked upload: 23 % uploaded
+0100.696 (0) Ftp chunked upload: 23.1 % uploaded
+0100.712 (0) Ftp chunked upload: 23.2 % uploaded
+0100.729 (0) Ftp chunked upload: 23.3 % uploaded
+0100.745 (0) Ftp chunked upload: 23.4 % uploaded
+0100.761 (0) Ftp chunked upload: 23.5 % uploaded
+0100.776 (0) Ftp chunked upload: 23.6 % uploaded
+0100.860 (0) Ftp chunked upload: 23.7 % uploaded
+0100.877 (0) Ftp chunked upload: 23.8 % uploaded
+0100.893 (0) Ftp chunked upload: 23.9 % uploaded
+0100.908 (0) Ftp chunked upload: 24 % uploaded
+0100.924 (0) Ftp chunked upload: 24.1 % uploaded
+0100.940 (0) Ftp chunked upload: 24.2 % uploaded
+0100.956 (0) Ftp chunked upload: 24.3 % uploaded
+0100.972 (0) Ftp chunked upload: 24.4 % uploaded
+0100.988 (0) Ftp chunked upload: 24.5 % uploaded
+0101.005 (0) Ftp chunked upload: 24.6 % uploaded
+0101.020 (0) Ftp chunked upload: 24.7 % uploaded
+0101.036 (0) Ftp chunked upload: 24.8 % uploaded
+0101.050 (0) Ftp chunked upload: 24.9 % uploaded
+0101.065 (0) Ftp chunked upload: 25 % uploaded
+0101.081 (0) Ftp chunked upload: 25.1 % uploaded
+0101.096 (0) Ftp chunked upload: 25.2 % uploaded
+0101.112 (0) Ftp chunked upload: 25.3 % uploaded
+0101.128 (0) Ftp chunked upload: 25.4 % uploaded
+0101.144 (0) Ftp chunked upload: 25.5 % uploaded
+0101.158 (0) Ftp chunked upload: 25.6 % uploaded
+0101.173 (0) Ftp chunked upload: 25.7 % uploaded
+0101.188 (0) Ftp chunked upload: 25.8 % uploaded
+0101.204 (0) Ftp chunked upload: 25.9 % uploaded
+0101.220 (0) Ftp chunked upload: 26 % uploaded
+0101.234 (0) Ftp chunked upload: 26.1 % uploaded
+0101.249 (0) Ftp chunked upload: 26.2 % uploaded
+0101.264 (0) Ftp chunked upload: 26.3 % uploaded
+0101.281 (0) Ftp chunked upload: 26.4 % uploaded
+0101.297 (0) Ftp chunked upload: 26.5 % uploaded
+0101.314 (0) Ftp chunked upload: 26.6 % uploaded
+0101.330 (0) Ftp chunked upload: 26.7 % uploaded
+0101.345 (0) Ftp chunked upload: 26.8 % uploaded
+0101.362 (0) Ftp chunked upload: 26.9 % uploaded
+0101.378 (0) Ftp chunked upload: 27 % uploaded
+0101.395 (0) Ftp chunked upload: 27.1 % uploaded
+0101.410 (0) Ftp chunked upload: 27.2 % uploaded
+0101.425 (0) Ftp chunked upload: 27.3 % uploaded
+0101.441 (0) Ftp chunked upload: 27.4 % uploaded
+0101.457 (0) Ftp chunked upload: 27.5 % uploaded
+0101.474 (0) Ftp chunked upload: 27.6 % uploaded
+0101.490 (0) Ftp chunked upload: 27.7 % uploaded
+0101.506 (0) Ftp chunked upload: 27.8 % uploaded
+0101.521 (0) Ftp chunked upload: 27.9 % uploaded
+0101.538 (0) Ftp chunked upload: 28.1 % uploaded
+0101.554 (0) Ftp chunked upload: 28.2 % uploaded
+0101.569 (0) Ftp chunked upload: 28.3 % uploaded
+0101.585 (0) Ftp chunked upload: 28.4 % uploaded
+0101.647 (0) Ftp chunked upload: 28.5 % uploaded
+0101.662 (0) Ftp chunked upload: 28.6 % uploaded
+0101.677 (0) Ftp chunked upload: 28.7 % uploaded
+0101.693 (0) Ftp chunked upload: 28.8 % uploaded
+0101.709 (0) Ftp chunked upload: 28.9 % uploaded
+0101.726 (0) Ftp chunked upload: 29 % uploaded
+0101.741 (0) Ftp chunked upload: 29.1 % uploaded
+0101.758 (0) Ftp chunked upload: 29.2 % uploaded
+0101.794 (0) Ftp chunked upload: 29.3 % uploaded
+0101.809 (0) Ftp chunked upload: 29.4 % uploaded
+0101.825 (0) Ftp chunked upload: 29.5 % uploaded
+0101.841 (0) Ftp chunked upload: 29.6 % uploaded
+0101.857 (0) Ftp chunked upload: 29.7 % uploaded
+0101.873 (0) Ftp chunked upload: 29.8 % uploaded
+0101.889 (0) Ftp chunked upload: 29.9 % uploaded
+0101.905 (0) Ftp chunked upload: 30 % uploaded
+0101.922 (0) Ftp chunked upload: 30.1 % uploaded
+0101.938 (0) Ftp chunked upload: 30.2 % uploaded
+0101.953 (0) Ftp chunked upload: 30.3 % uploaded
+0101.969 (0) Ftp chunked upload: 30.4 % uploaded
+0101.985 (0) Ftp chunked upload: 30.5 % uploaded
+0102.001 (0) Ftp chunked upload: 30.6 % uploaded
+0102.018 (0) Ftp chunked upload: 30.7 % uploaded
+0102.034 (0) Ftp chunked upload: 30.8 % uploaded
+0102.049 (0) Ftp chunked upload: 30.9 % uploaded
+0102.066 (0) Ftp chunked upload: 31 % uploaded
+0102.082 (0) Ftp chunked upload: 31.1 % uploaded
+0102.096 (0) Ftp chunked upload: 31.2 % uploaded
+0102.112 (0) Ftp chunked upload: 31.3 % uploaded
+0102.128 (0) Ftp chunked upload: 31.4 % uploaded
+0102.143 (0) Ftp chunked upload: 31.5 % uploaded
+0102.158 (0) Ftp chunked upload: 31.6 % uploaded
+0102.174 (0) Ftp chunked upload: 31.7 % uploaded
+0102.190 (0) Ftp chunked upload: 31.8 % uploaded
+0102.205 (0) Ftp chunked upload: 31.9 % uploaded
+0102.220 (0) Ftp chunked upload: 32 % uploaded
+0102.237 (0) Ftp chunked upload: 32.1 % uploaded
+0102.253 (0) Ftp chunked upload: 32.2 % uploaded
+0102.272 (0) Ftp chunked upload: 32.3 % uploaded
+0102.287 (0) Ftp chunked upload: 32.4 % uploaded
+0102.302 (0) Ftp chunked upload: 32.5 % uploaded
+0102.330 (0) Ftp chunked upload: 32.6 % uploaded
+0102.346 (0) Ftp chunked upload: 32.7 % uploaded
+0102.361 (0) Ftp chunked upload: 32.8 % uploaded
+0102.378 (0) Ftp chunked upload: 32.9 % uploaded
+0102.394 (0) Ftp chunked upload: 33 % uploaded
+0102.410 (0) Ftp chunked upload: 33.1 % uploaded
+0102.425 (0) Ftp chunked upload: 33.2 % uploaded
+0102.441 (0) Ftp chunked upload: 33.3 % uploaded
+0102.457 (0) Ftp chunked upload: 33.4 % uploaded
+0102.474 (0) Ftp chunked upload: 33.5 % uploaded
+0102.490 (0) Ftp chunked upload: 33.6 % uploaded
+0102.506 (0) Ftp chunked upload: 33.7 % uploaded
+0102.521 (0) Ftp chunked upload: 33.8 % uploaded
+0102.538 (0) Ftp chunked upload: 33.9 % uploaded
+0102.554 (0) Ftp chunked upload: 34 % uploaded
+0102.571 (0) Ftp chunked upload: 34.1 % uploaded
+0102.586 (0) Ftp chunked upload: 34.3 % uploaded
+0102.603 (0) Ftp chunked upload: 34.4 % uploaded
+0102.619 (0) Ftp chunked upload: 34.5 % uploaded
+0102.634 (0) Ftp chunked upload: 34.6 % uploaded
+0102.649 (0) Ftp chunked upload: 34.7 % uploaded
+0102.666 (0) Ftp chunked upload: 34.8 % uploaded
+0102.683 (0) Ftp chunked upload: 34.9 % uploaded
+0102.698 (0) Ftp chunked upload: 35 % uploaded
+0102.714 (0) Ftp chunked upload: 35.1 % uploaded
+0102.730 (0) Ftp chunked upload: 35.2 % uploaded
+0102.746 (0) Ftp chunked upload: 35.3 % uploaded
+0102.761 (0) Ftp chunked upload: 35.4 % uploaded
+0102.777 (0) Ftp chunked upload: 35.5 % uploaded
+0102.794 (0) Ftp chunked upload: 35.6 % uploaded
+0102.810 (0) Ftp chunked upload: 35.7 % uploaded
+0102.826 (0) Ftp chunked upload: 35.8 % uploaded
+0102.842 (0) Ftp chunked upload: 35.9 % uploaded
+0102.858 (0) Ftp chunked upload: 36 % uploaded
+0102.874 (0) Ftp chunked upload: 36.1 % uploaded
+0102.889 (0) Ftp chunked upload: 36.2 % uploaded
+0102.906 (0) Ftp chunked upload: 36.3 % uploaded
+0102.923 (0) Ftp chunked upload: 36.4 % uploaded
+0102.939 (0) Ftp chunked upload: 36.5 % uploaded
+0102.954 (0) Ftp chunked upload: 36.6 % uploaded
+0102.970 (0) Ftp chunked upload: 36.7 % uploaded
+0102.986 (0) Ftp chunked upload: 36.8 % uploaded
+0103.002 (0) Ftp chunked upload: 36.9 % uploaded
+0103.017 (0) Ftp chunked upload: 37 % uploaded
+0103.033 (0) Ftp chunked upload: 37.1 % uploaded
+0103.049 (0) Ftp chunked upload: 37.2 % uploaded
+0103.066 (0) Ftp chunked upload: 37.3 % uploaded
+0103.082 (0) Ftp chunked upload: 37.4 % uploaded
+0103.097 (0) Ftp chunked upload: 37.5 % uploaded
+0103.114 (0) Ftp chunked upload: 37.6 % uploaded
+0103.130 (0) Ftp chunked upload: 37.7 % uploaded
+0103.146 (0) Ftp chunked upload: 37.8 % uploaded
+0103.162 (0) Ftp chunked upload: 37.9 % uploaded
+0103.177 (0) Ftp chunked upload: 38 % uploaded
+0103.193 (0) Ftp chunked upload: 38.1 % uploaded
+0103.210 (0) Ftp chunked upload: 38.2 % uploaded
+0103.227 (0) Ftp chunked upload: 38.3 % uploaded
+0103.243 (0) Ftp chunked upload: 38.4 % uploaded
+0103.258 (0) Ftp chunked upload: 38.5 % uploaded
+0103.274 (0) Ftp chunked upload: 38.6 % uploaded
+0103.290 (0) Ftp chunked upload: 38.7 % uploaded
+0103.306 (0) Ftp chunked upload: 38.8 % uploaded
+0103.322 (0) Ftp chunked upload: 38.9 % uploaded
+0103.337 (0) Ftp chunked upload: 39 % uploaded
+0103.353 (0) Ftp chunked upload: 39.1 % uploaded
+0103.369 (0) Ftp chunked upload: 39.2 % uploaded
+0103.385 (0) Ftp chunked upload: 39.3 % uploaded
+0103.401 (0) Ftp chunked upload: 39.4 % uploaded
+0103.417 (0) Ftp chunked upload: 39.5 % uploaded
+0103.434 (0) Ftp chunked upload: 39.6 % uploaded
+0103.449 (0) Ftp chunked upload: 39.7 % uploaded
+0103.466 (0) Ftp chunked upload: 39.8 % uploaded
+0103.483 (0) Ftp chunked upload: 39.9 % uploaded
+0103.497 (0) Ftp chunked upload: 40 % uploaded
+0103.513 (0) Ftp chunked upload: 40.1 % uploaded
+0103.529 (0) Ftp chunked upload: 40.2 % uploaded
+0103.647 (0) Ftp chunked upload: 40.3 % uploaded
+0103.662 (0) Ftp chunked upload: 40.4 % uploaded
+0103.678 (0) Ftp chunked upload: 40.6 % uploaded
+0103.694 (0) Ftp chunked upload: 40.7 % uploaded
+0103.709 (0) Ftp chunked upload: 40.8 % uploaded
+0103.725 (0) Ftp chunked upload: 40.9 % uploaded
+0103.741 (0) Ftp chunked upload: 41 % uploaded
+0103.757 (0) Ftp chunked upload: 41.1 % uploaded
+0103.774 (0) Ftp chunked upload: 41.2 % uploaded
+0103.789 (0) Ftp chunked upload: 41.3 % uploaded
+0103.805 (0) Ftp chunked upload: 41.4 % uploaded
+0103.821 (0) Ftp chunked upload: 41.5 % uploaded
+0103.836 (0) Ftp chunked upload: 41.6 % uploaded
+0103.853 (0) Ftp chunked upload: 41.7 % uploaded
+0103.868 (0) Ftp chunked upload: 41.8 % uploaded
+0103.884 (0) Ftp chunked upload: 41.9 % uploaded
+0103.900 (0) Ftp chunked upload: 42 % uploaded
+0103.916 (0) Ftp chunked upload: 42.1 % uploaded
+0103.932 (0) Ftp chunked upload: 42.2 % uploaded
+0103.948 (0) Ftp chunked upload: 42.3 % uploaded
+0103.965 (0) Ftp chunked upload: 42.4 % uploaded
+0103.981 (0) Ftp chunked upload: 42.5 % uploaded
+0103.997 (0) Ftp chunked upload: 42.6 % uploaded
+0104.013 (0) Ftp chunked upload: 42.7 % uploaded
+0104.029 (0) Ftp chunked upload: 42.8 % uploaded
+0104.045 (0) Ftp chunked upload: 42.9 % uploaded
+0104.060 (0) Ftp chunked upload: 43 % uploaded
+0104.076 (0) Ftp chunked upload: 43.1 % uploaded
+0104.092 (0) Ftp chunked upload: 43.2 % uploaded
+0104.108 (0) Ftp chunked upload: 43.3 % uploaded
+0104.125 (0) Ftp chunked upload: 43.4 % uploaded
+0104.140 (0) Ftp chunked upload: 43.5 % uploaded
+0104.157 (0) Ftp chunked upload: 43.6 % uploaded
+0104.173 (0) Ftp chunked upload: 43.7 % uploaded
+0104.189 (0) Ftp chunked upload: 43.8 % uploaded
+0104.205 (0) Ftp chunked upload: 43.9 % uploaded
+0104.221 (0) Ftp chunked upload: 44 % uploaded
+0104.237 (0) Ftp chunked upload: 44.1 % uploaded
+0104.254 (0) Ftp chunked upload: 44.2 % uploaded
+0104.270 (0) Ftp chunked upload: 44.3 % uploaded
+0104.285 (0) Ftp chunked upload: 44.4 % uploaded
+0104.300 (0) Ftp chunked upload: 44.5 % uploaded
+0104.316 (0) Ftp chunked upload: 44.6 % uploaded
+0104.332 (0) Ftp chunked upload: 44.7 % uploaded
+0104.349 (0) Ftp chunked upload: 44.8 % uploaded
+0104.364 (0) Ftp chunked upload: 44.9 % uploaded
+0104.380 (0) Ftp chunked upload: 45 % uploaded
+0104.396 (0) Ftp chunked upload: 45.1 % uploaded
+0104.413 (0) Ftp chunked upload: 45.2 % uploaded
+0104.429 (0) Ftp chunked upload: 45.3 % uploaded
+0104.445 (0) Ftp chunked upload: 45.4 % uploaded
+0104.461 (0) Ftp chunked upload: 45.5 % uploaded
+0104.478 (0) Ftp chunked upload: 45.6 % uploaded
+0104.494 (0) Ftp chunked upload: 45.7 % uploaded
+0104.510 (0) Ftp chunked upload: 45.8 % uploaded
+0104.525 (0) Ftp chunked upload: 45.9 % uploaded
+0104.542 (0) Ftp chunked upload: 46 % uploaded
+0104.558 (0) Ftp chunked upload: 46.1 % uploaded
+0104.575 (0) Ftp chunked upload: 46.2 % uploaded
+0104.590 (0) Ftp chunked upload: 46.3 % uploaded
+0104.606 (0) Ftp chunked upload: 46.4 % uploaded
+0104.622 (0) Ftp chunked upload: 46.5 % uploaded
+0104.637 (0) Ftp chunked upload: 46.6 % uploaded
+0104.653 (0) Ftp chunked upload: 46.8 % uploaded
+0104.669 (0) Ftp chunked upload: 46.9 % uploaded
+0104.686 (0) Ftp chunked upload: 47 % uploaded
+0104.702 (0) Ftp chunked upload: 47.1 % uploaded
+0104.718 (0) Ftp chunked upload: 47.2 % uploaded
+0104.734 (0) Ftp chunked upload: 47.3 % uploaded
+0104.749 (0) Ftp chunked upload: 47.4 % uploaded
+0104.773 (0) Ftp chunked upload: 47.5 % uploaded
+0104.789 (0) Ftp chunked upload: 47.6 % uploaded
+0104.804 (0) Ftp chunked upload: 47.7 % uploaded
+0104.820 (0) Ftp chunked upload: 47.8 % uploaded
+0104.836 (0) Ftp chunked upload: 47.9 % uploaded
+0104.850 (0) Ftp chunked upload: 48 % uploaded
+0104.865 (0) Ftp chunked upload: 48.1 % uploaded
+0104.881 (0) Ftp chunked upload: 48.2 % uploaded
+0104.896 (0) Ftp chunked upload: 48.3 % uploaded
+0104.912 (0) Ftp chunked upload: 48.4 % uploaded
+0104.928 (0) Ftp chunked upload: 48.5 % uploaded
+0104.944 (0) Ftp chunked upload: 48.6 % uploaded
+0104.960 (0) Ftp chunked upload: 48.7 % uploaded
+0104.974 (0) Ftp chunked upload: 48.8 % uploaded
+0104.989 (0) Ftp chunked upload: 48.9 % uploaded
+0105.004 (0) Ftp chunked upload: 49 % uploaded
+0105.020 (0) Ftp chunked upload: 49.1 % uploaded
+0105.036 (0) Ftp chunked upload: 49.2 % uploaded
+0105.050 (0) Ftp chunked upload: 49.3 % uploaded
+0105.065 (0) Ftp chunked upload: 49.4 % uploaded
+0105.081 (0) Ftp chunked upload: 49.5 % uploaded
+0105.096 (0) Ftp chunked upload: 49.6 % uploaded
+0105.113 (0) Ftp chunked upload: 49.7 % uploaded
+0105.128 (0) Ftp chunked upload: 49.8 % uploaded
+0105.144 (0) Ftp chunked upload: 49.9 % uploaded
+0105.160 (0) Ftp chunked upload: 50 % uploaded
+0105.176 (0) Ftp chunked upload: 50.1 % uploaded
+0105.190 (0) Ftp chunked upload: 50.2 % uploaded
+0105.205 (0) Ftp chunked upload: 50.3 % uploaded
+0105.220 (0) Ftp chunked upload: 50.4 % uploaded
+0105.237 (0) Ftp chunked upload: 50.5 % uploaded
+0105.252 (0) Ftp chunked upload: 50.6 % uploaded
+0105.268 (0) Ftp chunked upload: 50.7 % uploaded
+0105.284 (0) Ftp chunked upload: 50.8 % uploaded
+0105.300 (0) Ftp chunked upload: 50.9 % uploaded
+0105.317 (0) Ftp chunked upload: 51 % uploaded
+0105.335 (0) Ftp chunked upload: 51.1 % uploaded
+0105.351 (0) Ftp chunked upload: 51.2 % uploaded
+0105.369 (0) Ftp chunked upload: 51.3 % uploaded
+0105.384 (0) Ftp chunked upload: 51.4 % uploaded
+0105.400 (0) Ftp chunked upload: 51.5 % uploaded
+0105.417 (0) Ftp chunked upload: 51.6 % uploaded
+0105.434 (0) Ftp chunked upload: 51.7 % uploaded
+0105.450 (0) Ftp chunked upload: 51.8 % uploaded
+0105.466 (0) Ftp chunked upload: 51.9 % uploaded
+0105.482 (0) Ftp chunked upload: 52 % uploaded
+0105.497 (0) Ftp chunked upload: 52.1 % uploaded
+0105.513 (0) Ftp chunked upload: 52.2 % uploaded
+0105.529 (0) Ftp chunked upload: 52.3 % uploaded
+0105.545 (0) Ftp chunked upload: 52.4 % uploaded
+0105.561 (0) Ftp chunked upload: 52.5 % uploaded
+0105.577 (0) Ftp chunked upload: 52.6 % uploaded
+0105.593 (0) Ftp chunked upload: 52.7 % uploaded
+0105.625 (0) Ftp chunked upload: 52.8 % uploaded
+0105.640 (0) Ftp chunked upload: 53 % uploaded
+0105.657 (0) Ftp chunked upload: 53.1 % uploaded
+0105.672 (0) Ftp chunked upload: 53.2 % uploaded
+0105.689 (0) Ftp chunked upload: 53.3 % uploaded
+0105.705 (0) Ftp chunked upload: 53.4 % uploaded
+0105.721 (0) Ftp chunked upload: 53.5 % uploaded
+0105.737 (0) Ftp chunked upload: 53.6 % uploaded
+0105.753 (0) Ftp chunked upload: 53.7 % uploaded
+0105.769 (0) Ftp chunked upload: 53.8 % uploaded
+0105.785 (0) Ftp chunked upload: 53.9 % uploaded
+0105.802 (0) Ftp chunked upload: 54 % uploaded
+0105.817 (0) Ftp chunked upload: 54.1 % uploaded
+0105.834 (0) Ftp chunked upload: 54.2 % uploaded
+0105.850 (0) Ftp chunked upload: 54.3 % uploaded
+0105.865 (0) Ftp chunked upload: 54.4 % uploaded
+0105.881 (0) Ftp chunked upload: 54.5 % uploaded
+0105.897 (0) Ftp chunked upload: 54.6 % uploaded
+0105.914 (0) Ftp chunked upload: 54.7 % uploaded
+0105.930 (0) Ftp chunked upload: 54.8 % uploaded
+0105.945 (0) Ftp chunked upload: 54.9 % uploaded
+0105.961 (0) Ftp chunked upload: 55 % uploaded
+0105.978 (0) Ftp chunked upload: 55.1 % uploaded
+0105.994 (0) Ftp chunked upload: 55.2 % uploaded
+0106.009 (0) Ftp chunked upload: 55.3 % uploaded
+0106.025 (0) Ftp chunked upload: 55.4 % uploaded
+0106.041 (0) Ftp chunked upload: 55.5 % uploaded
+0106.057 (0) Ftp chunked upload: 55.6 % uploaded
+0106.074 (0) Ftp chunked upload: 55.7 % uploaded
+0106.090 (0) Ftp chunked upload: 55.8 % uploaded
+0106.106 (0) Ftp chunked upload: 55.9 % uploaded
+0106.121 (0) Ftp chunked upload: 56 % uploaded
+0106.137 (0) Ftp chunked upload: 56.1 % uploaded
+0106.154 (0) Ftp chunked upload: 56.2 % uploaded
+0106.170 (0) Ftp chunked upload: 56.3 % uploaded
+0106.184 (0) Ftp chunked upload: 56.4 % uploaded
+0106.201 (0) Ftp chunked upload: 56.5 % uploaded
+0106.216 (0) Ftp chunked upload: 56.6 % uploaded
+0106.234 (0) Ftp chunked upload: 56.7 % uploaded
+0106.250 (0) Ftp chunked upload: 56.8 % uploaded
+0106.267 (0) Ftp chunked upload: 56.9 % uploaded
+0106.282 (0) Ftp chunked upload: 57 % uploaded
+0106.297 (0) Ftp chunked upload: 57.1 % uploaded
+0106.327 (0) Ftp chunked upload: 57.2 % uploaded
+0106.342 (0) Ftp chunked upload: 57.3 % uploaded
+0106.358 (0) Ftp chunked upload: 57.4 % uploaded
+0106.374 (0) Ftp chunked upload: 57.5 % uploaded
+0106.388 (0) Ftp chunked upload: 57.6 % uploaded
+0106.406 (0) Ftp chunked upload: 57.7 % uploaded
+0106.422 (0) Ftp chunked upload: 57.8 % uploaded
+0106.437 (0) Ftp chunked upload: 57.9 % uploaded
+0106.455 (0) Ftp chunked upload: 58 % uploaded
+0106.470 (0) Ftp chunked upload: 58.1 % uploaded
+0106.487 (0) Ftp chunked upload: 58.2 % uploaded
+0106.502 (0) Ftp chunked upload: 58.3 % uploaded
+0106.518 (0) Ftp chunked upload: 58.4 % uploaded
+0106.534 (0) Ftp chunked upload: 58.5 % uploaded
+0106.550 (0) Ftp chunked upload: 58.6 % uploaded
+0106.567 (0) Ftp chunked upload: 58.7 % uploaded
+0106.582 (0) Ftp chunked upload: 58.8 % uploaded
+0106.599 (0) Ftp chunked upload: 58.9 % uploaded
+0106.615 (0) Ftp chunked upload: 59 % uploaded
+0106.634 (0) Ftp chunked upload: 59.2 % uploaded
+0106.651 (0) Ftp chunked upload: 59.3 % uploaded
+0106.669 (0) Ftp chunked upload: 59.4 % uploaded
+0106.685 (0) Ftp chunked upload: 59.5 % uploaded
+0106.702 (0) Ftp chunked upload: 59.6 % uploaded
+0106.717 (0) Ftp chunked upload: 59.7 % uploaded
+0106.734 (0) Ftp chunked upload: 59.8 % uploaded
+0106.751 (0) Ftp chunked upload: 59.9 % uploaded
+0106.766 (0) Ftp chunked upload: 60 % uploaded
+0106.783 (0) Ftp chunked upload: 60.1 % uploaded
+0106.799 (0) Ftp chunked upload: 60.2 % uploaded
+0106.815 (0) Ftp chunked upload: 60.3 % uploaded
+0106.830 (0) Ftp chunked upload: 60.4 % uploaded
+0106.846 (0) Ftp chunked upload: 60.5 % uploaded
+0106.862 (0) Ftp chunked upload: 60.6 % uploaded
+0106.878 (0) Ftp chunked upload: 60.7 % uploaded
+0106.893 (0) Ftp chunked upload: 60.8 % uploaded
+0106.911 (0) Ftp chunked upload: 60.9 % uploaded
+0106.927 (0) Ftp chunked upload: 61 % uploaded
+0106.942 (0) Ftp chunked upload: 61.1 % uploaded
+0106.957 (0) Ftp chunked upload: 61.2 % uploaded
+0106.974 (0) Ftp chunked upload: 61.3 % uploaded
+0106.989 (0) Ftp chunked upload: 61.4 % uploaded
+0107.006 (0) Ftp chunked upload: 61.5 % uploaded
+0107.022 (0) Ftp chunked upload: 61.6 % uploaded
+0107.037 (0) Ftp chunked upload: 61.7 % uploaded
+0107.053 (0) Ftp chunked upload: 61.8 % uploaded
+0107.070 (0) Ftp chunked upload: 61.9 % uploaded
+0107.086 (0) Ftp chunked upload: 62 % uploaded
+0107.102 (0) Ftp chunked upload: 62.1 % uploaded
+0107.118 (0) Ftp chunked upload: 62.2 % uploaded
+0107.135 (0) Ftp chunked upload: 62.3 % uploaded
+0107.150 (0) Ftp chunked upload: 62.4 % uploaded
+0107.166 (0) Ftp chunked upload: 62.5 % uploaded
+0107.181 (0) Ftp chunked upload: 62.6 % uploaded
+0107.198 (0) Ftp chunked upload: 62.7 % uploaded
+0107.213 (0) Ftp chunked upload: 62.8 % uploaded
+0107.231 (0) Ftp chunked upload: 62.9 % uploaded
+0107.245 (0) Ftp chunked upload: 63 % uploaded
+0107.261 (0) Ftp chunked upload: 63.1 % uploaded
+0107.278 (0) Ftp chunked upload: 63.2 % uploaded
+0107.293 (0) Ftp chunked upload: 63.3 % uploaded
+0107.310 (0) Ftp chunked upload: 63.4 % uploaded
+0107.328 (0) Ftp chunked upload: 63.5 % uploaded
+0107.347 (0) Ftp chunked upload: 63.6 % uploaded
+0107.362 (0) Ftp chunked upload: 63.7 % uploaded
+0107.378 (0) Ftp chunked upload: 63.8 % uploaded
+0107.394 (0) Ftp chunked upload: 63.9 % uploaded
+0107.409 (0) Ftp chunked upload: 64 % uploaded
+0107.425 (0) Ftp chunked upload: 64.1 % uploaded
+0107.441 (0) Ftp chunked upload: 64.2 % uploaded
+0107.458 (0) Ftp chunked upload: 64.3 % uploaded
+0107.473 (0) Ftp chunked upload: 64.4 % uploaded
+0107.489 (0) Ftp chunked upload: 64.5 % uploaded
+0107.505 (0) Ftp chunked upload: 64.6 % uploaded
+0107.521 (0) Ftp chunked upload: 64.7 % uploaded
+0107.537 (0) Ftp chunked upload: 64.8 % uploaded
+0107.553 (0) Ftp chunked upload: 64.9 % uploaded
+0107.569 (0) Ftp chunked upload: 65 % uploaded
+0107.585 (0) Ftp chunked upload: 65.1 % uploaded
+0107.601 (0) Ftp chunked upload: 65.2 % uploaded
+0107.617 (0) Ftp chunked upload: 65.3 % uploaded
+0107.634 (0) Ftp chunked upload: 65.5 % uploaded
+0107.649 (0) Ftp chunked upload: 65.6 % uploaded
+0107.666 (0) Ftp chunked upload: 65.7 % uploaded
+0107.681 (0) Ftp chunked upload: 65.8 % uploaded
+0107.697 (0) Ftp chunked upload: 65.9 % uploaded
+0107.713 (0) Ftp chunked upload: 66 % uploaded
+0107.730 (0) Ftp chunked upload: 66.1 % uploaded
+0107.746 (0) Ftp chunked upload: 66.2 % uploaded
+0107.762 (0) Ftp chunked upload: 66.3 % uploaded
+0107.778 (0) Ftp chunked upload: 66.4 % uploaded
+0107.793 (0) Ftp chunked upload: 66.5 % uploaded
+0107.809 (0) Ftp chunked upload: 66.6 % uploaded
+0107.825 (0) Ftp chunked upload: 66.7 % uploaded
+0107.841 (0) Ftp chunked upload: 66.8 % uploaded
+0107.857 (0) Ftp chunked upload: 66.9 % uploaded
+0107.873 (0) Ftp chunked upload: 67 % uploaded
+0107.889 (0) Ftp chunked upload: 67.1 % uploaded
+0107.904 (0) Ftp chunked upload: 67.2 % uploaded
+0107.920 (0) Ftp chunked upload: 67.3 % uploaded
+0107.936 (0) Ftp chunked upload: 67.4 % uploaded
+0107.952 (0) Ftp chunked upload: 67.5 % uploaded
+0107.968 (0) Ftp chunked upload: 67.6 % uploaded
+0107.984 (0) Ftp chunked upload: 67.7 % uploaded
+0108.000 (0) Ftp chunked upload: 67.8 % uploaded
+0108.016 (0) Ftp chunked upload: 67.9 % uploaded
+0108.032 (0) Ftp chunked upload: 68 % uploaded
+0108.048 (0) Ftp chunked upload: 68.1 % uploaded
+0108.064 (0) Ftp chunked upload: 68.2 % uploaded
+0108.078 (0) Ftp chunked upload: 68.3 % uploaded
+0108.094 (0) Ftp chunked upload: 68.4 % uploaded
+0108.110 (0) Ftp chunked upload: 68.5 % uploaded
+0108.125 (0) Ftp chunked upload: 68.6 % uploaded
+0108.141 (0) Ftp chunked upload: 68.7 % uploaded
+0108.157 (0) Ftp chunked upload: 68.8 % uploaded
+0108.173 (0) Ftp chunked upload: 68.9 % uploaded
+0108.189 (0) Ftp chunked upload: 69 % uploaded
+0108.205 (0) Ftp chunked upload: 69.1 % uploaded
+0108.221 (0) Ftp chunked upload: 69.2 % uploaded
+0108.237 (0) Ftp chunked upload: 69.3 % uploaded
+0108.253 (0) Ftp chunked upload: 69.4 % uploaded
+0108.269 (0) Ftp chunked upload: 69.5 % uploaded
+0108.285 (0) Ftp chunked upload: 69.6 % uploaded
+0108.301 (0) Ftp chunked upload: 69.7 % uploaded
+0108.329 (0) Ftp chunked upload: 69.8 % uploaded
+0108.345 (0) Ftp chunked upload: 69.9 % uploaded
+0108.361 (0) Ftp chunked upload: 70 % uploaded
+0108.377 (0) Ftp chunked upload: 70.1 % uploaded
+0108.393 (0) Ftp chunked upload: 70.2 % uploaded
+0108.409 (0) Ftp chunked upload: 70.3 % uploaded
+0108.424 (0) Ftp chunked upload: 70.4 % uploaded
+0108.439 (0) Ftp chunked upload: 70.5 % uploaded
+0108.454 (0) Ftp chunked upload: 70.6 % uploaded
+0108.468 (0) Ftp chunked upload: 70.7 % uploaded
+0108.484 (0) Ftp chunked upload: 70.8 % uploaded
+0108.500 (0) Ftp chunked upload: 70.9 % uploaded
+0108.516 (0) Ftp chunked upload: 71 % uploaded
+0108.533 (0) Ftp chunked upload: 71.1 % uploaded
+0108.549 (0) Ftp chunked upload: 71.2 % uploaded
+0108.598 (0) Ftp chunked upload: 71.3 % uploaded
+0108.613 (0) Ftp chunked upload: 71.4 % uploaded
+0108.630 (0) Ftp chunked upload: 71.5 % uploaded
+0108.646 (0) Ftp chunked upload: 71.7 % uploaded
+0108.661 (0) Ftp chunked upload: 71.8 % uploaded
+0108.679 (0) Ftp chunked upload: 71.9 % uploaded
+0108.695 (0) Ftp chunked upload: 72 % uploaded
+0108.710 (0) Ftp chunked upload: 72.1 % uploaded
+0108.727 (0) Ftp chunked upload: 72.2 % uploaded
+0108.742 (0) Ftp chunked upload: 72.3 % uploaded
+0108.758 (0) Ftp chunked upload: 72.4 % uploaded
+0108.775 (0) Ftp chunked upload: 72.5 % uploaded
+0108.790 (0) Ftp chunked upload: 72.6 % uploaded
+0108.805 (0) Ftp chunked upload: 72.7 % uploaded
+0108.821 (0) Ftp chunked upload: 72.8 % uploaded
+0108.838 (0) Ftp chunked upload: 72.9 % uploaded
+0108.854 (0) Ftp chunked upload: 73 % uploaded
+0108.869 (0) Ftp chunked upload: 73.1 % uploaded
+0108.885 (0) Ftp chunked upload: 73.2 % uploaded
+0108.901 (0) Ftp chunked upload: 73.3 % uploaded
+0108.918 (0) Ftp chunked upload: 73.4 % uploaded
+0108.934 (0) Ftp chunked upload: 73.5 % uploaded
+0108.950 (0) Ftp chunked upload: 73.6 % uploaded
+0108.966 (0) Ftp chunked upload: 73.7 % uploaded
+0108.981 (0) Ftp chunked upload: 73.8 % uploaded
+0108.997 (0) Ftp chunked upload: 73.9 % uploaded
+0109.013 (0) Ftp chunked upload: 74 % uploaded
+0109.029 (0) Ftp chunked upload: 74.1 % uploaded
+0109.046 (0) Ftp chunked upload: 74.2 % uploaded
+0109.061 (0) Ftp chunked upload: 74.3 % uploaded
+0109.078 (0) Ftp chunked upload: 74.4 % uploaded
+0109.094 (0) Ftp chunked upload: 74.5 % uploaded
+0109.110 (0) Ftp chunked upload: 74.6 % uploaded
+0109.125 (0) Ftp chunked upload: 74.7 % uploaded
+0109.141 (0) Ftp chunked upload: 74.8 % uploaded
+0109.176 (0) Ftp chunked upload: 74.9 % uploaded
+0109.192 (0) Ftp chunked upload: 75 % uploaded
+0109.208 (0) Ftp chunked upload: 75.1 % uploaded
+0109.225 (0) Ftp chunked upload: 75.2 % uploaded
+0109.241 (0) Ftp chunked upload: 75.3 % uploaded
+0109.257 (0) Ftp chunked upload: 75.4 % uploaded
+0109.273 (0) Ftp chunked upload: 75.5 % uploaded
+0109.289 (0) Ftp chunked upload: 75.6 % uploaded
+0109.305 (0) Ftp chunked upload: 75.7 % uploaded
+0109.329 (0) Ftp chunked upload: 75.8 % uploaded
+0109.345 (0) Ftp chunked upload: 75.9 % uploaded
+0109.361 (0) Ftp chunked upload: 76 % uploaded
+0109.377 (0) Ftp chunked upload: 76.1 % uploaded
+0109.393 (0) Ftp chunked upload: 76.2 % uploaded
+0109.410 (0) Ftp chunked upload: 76.3 % uploaded
+0109.426 (0) Ftp chunked upload: 76.4 % uploaded
+0109.441 (0) Ftp chunked upload: 76.5 % uploaded
+0109.457 (0) Ftp chunked upload: 76.6 % uploaded
+0109.473 (0) Ftp chunked upload: 76.7 % uploaded
+0109.489 (0) Ftp chunked upload: 76.8 % uploaded
+0109.505 (0) Ftp chunked upload: 76.9 % uploaded
+0109.521 (0) Ftp chunked upload: 77 % uploaded
+0109.537 (0) Ftp chunked upload: 77.1 % uploaded
+0109.553 (0) Ftp chunked upload: 77.2 % uploaded
+0109.569 (0) Ftp chunked upload: 77.3 % uploaded
+0109.585 (0) Ftp chunked upload: 77.4 % uploaded
+0109.634 (0) Ftp chunked upload: 77.5 % uploaded
+0109.649 (0) Ftp chunked upload: 77.6 % uploaded
+0109.665 (0) Ftp chunked upload: 77.7 % uploaded
+0109.681 (0) Ftp chunked upload: 77.9 % uploaded
+0109.697 (0) Ftp chunked upload: 78 % uploaded
+0109.713 (0) Ftp chunked upload: 78.1 % uploaded
+0109.729 (0) Ftp chunked upload: 78.2 % uploaded
+0109.745 (0) Ftp chunked upload: 78.3 % uploaded
+0109.761 (0) Ftp chunked upload: 78.4 % uploaded
+0109.777 (0) Ftp chunked upload: 78.5 % uploaded
+0109.793 (0) Ftp chunked upload: 78.6 % uploaded
+0109.809 (0) Ftp chunked upload: 78.7 % uploaded
+0109.825 (0) Ftp chunked upload: 78.8 % uploaded
+0109.841 (0) Ftp chunked upload: 78.9 % uploaded
+0109.858 (0) Ftp chunked upload: 79 % uploaded
+0109.873 (0) Ftp chunked upload: 79.1 % uploaded
+0109.889 (0) Ftp chunked upload: 79.2 % uploaded
+0109.905 (0) Ftp chunked upload: 79.3 % uploaded
+0109.921 (0) Ftp chunked upload: 79.4 % uploaded
+0109.937 (0) Ftp chunked upload: 79.5 % uploaded
+0109.970 (0) Ftp chunked upload: 79.6 % uploaded
+0109.986 (0) Ftp chunked upload: 79.7 % uploaded
+0110.001 (0) Ftp chunked upload: 79.8 % uploaded
+0110.017 (0) Ftp chunked upload: 79.9 % uploaded
+0110.033 (0) Ftp chunked upload: 80 % uploaded
+0110.049 (0) Ftp chunked upload: 80.1 % uploaded
+0110.065 (0) Ftp chunked upload: 80.2 % uploaded
+0110.083 (0) Ftp chunked upload: 80.3 % uploaded
+0110.098 (0) Ftp chunked upload: 80.4 % uploaded
+0110.114 (0) Ftp chunked upload: 80.5 % uploaded
+0110.129 (0) Ftp chunked upload: 80.6 % uploaded
+0110.145 (0) Ftp chunked upload: 80.7 % uploaded
+0110.161 (0) Ftp chunked upload: 80.8 % uploaded
+0110.178 (0) Ftp chunked upload: 80.9 % uploaded
+0110.194 (0) Ftp chunked upload: 81 % uploaded
+0110.209 (0) Ftp chunked upload: 81.1 % uploaded
+0110.225 (0) Ftp chunked upload: 81.2 % uploaded
+0110.241 (0) Ftp chunked upload: 81.3 % uploaded
+0110.258 (0) Ftp chunked upload: 81.4 % uploaded
+0110.274 (0) Ftp chunked upload: 81.5 % uploaded
+0110.288 (0) Ftp chunked upload: 81.6 % uploaded
+0110.305 (0) Ftp chunked upload: 81.7 % uploaded
+0110.339 (0) Ftp chunked upload: 81.8 % uploaded
+0110.354 (0) Ftp chunked upload: 81.9 % uploaded
+0110.370 (0) Ftp chunked upload: 82 % uploaded
+0110.384 (0) Ftp chunked upload: 82.1 % uploaded
+0110.400 (0) Ftp chunked upload: 82.2 % uploaded
+0110.416 (0) Ftp chunked upload: 82.3 % uploaded
+0110.433 (0) Ftp chunked upload: 82.4 % uploaded
+0110.448 (0) Ftp chunked upload: 82.5 % uploaded
+0110.465 (0) Ftp chunked upload: 82.6 % uploaded
+0110.481 (0) Ftp chunked upload: 82.7 % uploaded
+0110.496 (0) Ftp chunked upload: 82.8 % uploaded
+0110.512 (0) Ftp chunked upload: 82.9 % uploaded
+0110.528 (0) Ftp chunked upload: 83 % uploaded
+0110.544 (0) Ftp chunked upload: 83.1 % uploaded
+0110.559 (0) Ftp chunked upload: 83.2 % uploaded
+0110.574 (0) Ftp chunked upload: 83.3 % uploaded
+0110.590 (0) Ftp chunked upload: 83.4 % uploaded
+0110.606 (0) Ftp chunked upload: 83.5 % uploaded
+0110.621 (0) Ftp chunked upload: 83.6 % uploaded
+0110.637 (0) Ftp chunked upload: 83.7 % uploaded
+0110.653 (0) Ftp chunked upload: 83.8 % uploaded
+0110.670 (0) Ftp chunked upload: 83.9 % uploaded
+0110.686 (0) Ftp chunked upload: 84.1 % uploaded
+0110.701 (0) Ftp chunked upload: 84.2 % uploaded
+0110.717 (0) Ftp chunked upload: 84.3 % uploaded
+0110.733 (0) Ftp chunked upload: 84.4 % uploaded
+0110.749 (0) Ftp chunked upload: 84.5 % uploaded
+0110.765 (0) Ftp chunked upload: 84.6 % uploaded
+0110.780 (0) Ftp chunked upload: 84.7 % uploaded
+0110.796 (0) Ftp chunked upload: 84.8 % uploaded
+0110.812 (0) Ftp chunked upload: 84.9 % uploaded
+0110.828 (0) Ftp chunked upload: 85 % uploaded
+0110.844 (0) Ftp chunked upload: 85.1 % uploaded
+0110.860 (0) Ftp chunked upload: 85.2 % uploaded
+0110.876 (0) Ftp chunked upload: 85.3 % uploaded
+0110.892 (0) Ftp chunked upload: 85.4 % uploaded
+0110.908 (0) Ftp chunked upload: 85.5 % uploaded
+0110.924 (0) Ftp chunked upload: 85.6 % uploaded
+0110.940 (0) Ftp chunked upload: 85.7 % uploaded
+0110.956 (0) Ftp chunked upload: 85.8 % uploaded
+0110.972 (0) Ftp chunked upload: 85.9 % uploaded
+0110.988 (0) Ftp chunked upload: 86 % uploaded
+0111.004 (0) Ftp chunked upload: 86.1 % uploaded
+0111.032 (0) Ftp chunked upload: 86.2 % uploaded
+0111.057 (0) Ftp chunked upload: 86.3 % uploaded
+0111.073 (0) Ftp chunked upload: 86.4 % uploaded
+0111.089 (0) Ftp chunked upload: 86.5 % uploaded
+0111.105 (0) Ftp chunked upload: 86.6 % uploaded
+0111.121 (0) Ftp chunked upload: 86.7 % uploaded
+0111.137 (0) Ftp chunked upload: 86.8 % uploaded
+0111.152 (0) Ftp chunked upload: 86.9 % uploaded
+0111.168 (0) Ftp chunked upload: 87 % uploaded
+0111.185 (0) Ftp chunked upload: 87.1 % uploaded
+0111.201 (0) Ftp chunked upload: 87.2 % uploaded
+0111.217 (0) Ftp chunked upload: 87.3 % uploaded
+0111.233 (0) Ftp chunked upload: 87.4 % uploaded
+0111.249 (0) Ftp chunked upload: 87.5 % uploaded
+0111.265 (0) Ftp chunked upload: 87.6 % uploaded
+0111.281 (0) Ftp chunked upload: 87.7 % uploaded
+0111.297 (0) Ftp chunked upload: 87.8 % uploaded
+0111.312 (0) Ftp chunked upload: 87.9 % uploaded
+0111.334 (0) Ftp chunked upload: 88 % uploaded
+0111.349 (0) Ftp chunked upload: 88.1 % uploaded
+0111.365 (0) Ftp chunked upload: 88.2 % uploaded
+0111.380 (0) Ftp chunked upload: 88.3 % uploaded
+0111.396 (0) Ftp chunked upload: 88.4 % uploaded
+0111.410 (0) Ftp chunked upload: 88.5 % uploaded
+0111.425 (0) Ftp chunked upload: 88.6 % uploaded
+0111.440 (0) Ftp chunked upload: 88.7 % uploaded
+0111.457 (0) Ftp chunked upload: 88.8 % uploaded
+0111.473 (0) Ftp chunked upload: 88.9 % uploaded
+0111.488 (0) Ftp chunked upload: 89 % uploaded
+0111.504 (0) Ftp chunked upload: 89.1 % uploaded
+0111.520 (0) Ftp chunked upload: 89.2 % uploaded
+0111.534 (0) Ftp chunked upload: 89.3 % uploaded
+0111.549 (0) Ftp chunked upload: 89.4 % uploaded
+0111.565 (0) Ftp chunked upload: 89.5 % uploaded
+0111.580 (0) Ftp chunked upload: 89.6 % uploaded
+0111.596 (0) Ftp chunked upload: 89.7 % uploaded
+0111.610 (0) Ftp chunked upload: 89.8 % uploaded
+0111.625 (0) Ftp chunked upload: 89.9 % uploaded
+0111.640 (0) Ftp chunked upload: 90 % uploaded
+0111.656 (0) Ftp chunked upload: 90.1 % uploaded
+0111.672 (0) Ftp chunked upload: 90.2 % uploaded
+0111.688 (0) Ftp chunked upload: 90.4 % uploaded
+0111.704 (0) Ftp chunked upload: 90.5 % uploaded
+0111.720 (0) Ftp chunked upload: 90.6 % uploaded
+0111.736 (0) Ftp chunked upload: 90.7 % uploaded
+0111.752 (0) Ftp chunked upload: 90.8 % uploaded
+0111.768 (0) Ftp chunked upload: 90.9 % uploaded
+0111.785 (0) Ftp chunked upload: 91 % uploaded
+0111.801 (0) Ftp chunked upload: 91.1 % uploaded
+0111.817 (0) Ftp chunked upload: 91.2 % uploaded
+0111.833 (0) Ftp chunked upload: 91.3 % uploaded
+0111.850 (0) Ftp chunked upload: 91.4 % uploaded
+0111.865 (0) Ftp chunked upload: 91.5 % uploaded
+0111.881 (0) Ftp chunked upload: 91.6 % uploaded
+0111.898 (0) Ftp chunked upload: 91.7 % uploaded
+0111.914 (0) Ftp chunked upload: 91.8 % uploaded
+0111.930 (0) Ftp chunked upload: 91.9 % uploaded
+0111.945 (0) Ftp chunked upload: 92 % uploaded
+0111.961 (0) Ftp chunked upload: 92.1 % uploaded
+0111.977 (0) Ftp chunked upload: 92.2 % uploaded
+0111.993 (0) Ftp chunked upload: 92.3 % uploaded
+0112.009 (0) Ftp chunked upload: 92.4 % uploaded
+0112.025 (0) Ftp chunked upload: 92.5 % uploaded
+0112.041 (0) Ftp chunked upload: 92.6 % uploaded
+0112.057 (0) Ftp chunked upload: 92.7 % uploaded
+0112.073 (0) Ftp chunked upload: 92.8 % uploaded
+0112.088 (0) Ftp chunked upload: 92.9 % uploaded
+0112.105 (0) Ftp chunked upload: 93 % uploaded
+0112.121 (0) Ftp chunked upload: 93.1 % uploaded
+0112.137 (0) Ftp chunked upload: 93.2 % uploaded
+0112.154 (0) Ftp chunked upload: 93.3 % uploaded
+0112.170 (0) Ftp chunked upload: 93.4 % uploaded
+0112.186 (0) Ftp chunked upload: 93.5 % uploaded
+0112.202 (0) Ftp chunked upload: 93.6 % uploaded
+0112.218 (0) Ftp chunked upload: 93.7 % uploaded
+0112.234 (0) Ftp chunked upload: 93.8 % uploaded
+0112.249 (0) Ftp chunked upload: 93.9 % uploaded
+0112.265 (0) Ftp chunked upload: 94 % uploaded
+0112.281 (0) Ftp chunked upload: 94.1 % uploaded
+0112.297 (0) Ftp chunked upload: 94.2 % uploaded
+0112.313 (0) Ftp chunked upload: 94.3 % uploaded
+0112.332 (0) Ftp chunked upload: 94.4 % uploaded
+0112.348 (0) Ftp chunked upload: 94.5 % uploaded
+0112.364 (0) Ftp chunked upload: 94.6 % uploaded
+0112.381 (0) Ftp chunked upload: 94.7 % uploaded
+0112.397 (0) Ftp chunked upload: 94.8 % uploaded
+0112.413 (0) Ftp chunked upload: 94.9 % uploaded
+0112.429 (0) Ftp chunked upload: 95 % uploaded
+0112.445 (0) Ftp chunked upload: 95.1 % uploaded
+0112.461 (0) Ftp chunked upload: 95.2 % uploaded
+0112.478 (0) Ftp chunked upload: 95.3 % uploaded
+0112.494 (0) Ftp chunked upload: 95.4 % uploaded
+0112.509 (0) Ftp chunked upload: 95.5 % uploaded
+0112.525 (0) Ftp chunked upload: 95.6 % uploaded
+0112.541 (0) Ftp chunked upload: 95.7 % uploaded
+0112.558 (0) Ftp chunked upload: 95.8 % uploaded
+0112.574 (0) Ftp chunked upload: 95.9 % uploaded
+0112.590 (0) Ftp chunked upload: 96 % uploaded
+0112.605 (0) Ftp chunked upload: 96.1 % uploaded
+0112.621 (0) Ftp chunked upload: 96.2 % uploaded
+0112.638 (0) Ftp chunked upload: 96.3 % uploaded
+0112.654 (0) Ftp chunked upload: 96.4 % uploaded
+0112.708 (0) Ftp chunked upload: 96.6 % uploaded
+0112.775 (0) Ftp chunked upload: 96.7 % uploaded
+0112.790 (0) Ftp chunked upload: 96.8 % uploaded
+0112.806 (0) Ftp chunked upload: 96.9 % uploaded
+0112.821 (0) Ftp chunked upload: 97 % uploaded
+0112.837 (0) Ftp chunked upload: 97.1 % uploaded
+0112.854 (0) Ftp chunked upload: 97.2 % uploaded
+0112.870 (0) Ftp chunked upload: 97.3 % uploaded
+0112.886 (0) Ftp chunked upload: 97.4 % uploaded
+0112.900 (0) Ftp chunked upload: 97.5 % uploaded
+0112.917 (0) Ftp chunked upload: 97.6 % uploaded
+0112.933 (0) Ftp chunked upload: 97.7 % uploaded
+0112.950 (0) Ftp chunked upload: 97.8 % uploaded
+0112.966 (0) Ftp chunked upload: 97.9 % uploaded
+0112.981 (0) Ftp chunked upload: 98 % uploaded
+0113.005 (0) Ftp chunked upload: 98.1 % uploaded
+0113.021 (0) Ftp chunked upload: 98.2 % uploaded
+0113.037 (0) Ftp chunked upload: 98.3 % uploaded
+0113.053 (0) Ftp chunked upload: 98.4 % uploaded
+0113.069 (0) Ftp chunked upload: 98.5 % uploaded
+0113.086 (0) Ftp chunked upload: 98.6 % uploaded
+0113.102 (0) Ftp chunked upload: 98.7 % uploaded
+0113.118 (0) Ftp chunked upload: 98.8 % uploaded
+0113.133 (0) Ftp chunked upload: 98.9 % uploaded
+0113.150 (0) Ftp chunked upload: 99 % uploaded
+0113.165 (0) Ftp chunked upload: 99.1 % uploaded
+0113.181 (0) Ftp chunked upload: 99.2 % uploaded
+0113.197 (0) Ftp chunked upload: 99.3 % uploaded
+0113.213 (0) Ftp chunked upload: 99.4 % uploaded
+0113.230 (0) Ftp chunked upload: 99.5 % uploaded
+0113.246 (0) Ftp chunked upload: 99.6 % uploaded
+0113.261 (0) Ftp chunked upload: 99.7 % uploaded
+0113.277 (0) Ftp chunked upload: 99.8 % uploaded
+0113.293 (0) Ftp chunked upload: 99.9 % uploaded
+0113.312 (0) FTP upload attempt successful (507587.6Kb in 16.3s)
+0113.320 (0) Recording as successfully uploaded: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads.zip (1b3f4d6d0cdc3802d3c1be012d86b09a)
+0113.414 (0) Deleting local file: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads.zip: OK
+0113.418 (0) FTP upload attempt: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads2.zip -> ftp://u82662043@upfit.at//updraft_backup/point-of-power.upfit.de/backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads2.zip
+0113.444 (0) Ftp chunked upload: 0.2 % uploaded
+0113.460 (0) Ftp chunked upload: 0.5 % uploaded
+0113.476 (0) Ftp chunked upload: 0.7 % uploaded
+0113.493 (0) Ftp chunked upload: 1 % uploaded
+0113.510 (0) Ftp chunked upload: 1.2 % uploaded
+0113.527 (0) Ftp chunked upload: 1.5 % uploaded
+0113.542 (0) Ftp chunked upload: 1.7 % uploaded
+0113.558 (0) Ftp chunked upload: 2 % uploaded
+0113.574 (0) Ftp chunked upload: 2.2 % uploaded
+0113.591 (0) Ftp chunked upload: 2.5 % uploaded
+0113.607 (0) Ftp chunked upload: 2.7 % uploaded
+0113.622 (0) Ftp chunked upload: 3 % uploaded
+0113.638 (0) Ftp chunked upload: 3.2 % uploaded
+0113.654 (0) Ftp chunked upload: 3.5 % uploaded
+0113.670 (0) Ftp chunked upload: 3.7 % uploaded
+0113.686 (0) Ftp chunked upload: 4 % uploaded
+0113.701 (0) Ftp chunked upload: 4.2 % uploaded
+0113.717 (0) Ftp chunked upload: 4.5 % uploaded
+0113.733 (0) Ftp chunked upload: 4.7 % uploaded
+0113.768 (0) Ftp chunked upload: 5 % uploaded
+0113.785 (0) Ftp chunked upload: 5.2 % uploaded
+0113.800 (0) Ftp chunked upload: 5.5 % uploaded
+0113.817 (0) Ftp chunked upload: 5.7 % uploaded
+0113.834 (0) Ftp chunked upload: 6 % uploaded
+0113.851 (0) Ftp chunked upload: 6.2 % uploaded
+0113.866 (0) Ftp chunked upload: 6.5 % uploaded
+0113.881 (0) Ftp chunked upload: 6.7 % uploaded
+0113.897 (0) Ftp chunked upload: 7 % uploaded
+0113.914 (0) Ftp chunked upload: 7.2 % uploaded
+0113.930 (0) Ftp chunked upload: 7.5 % uploaded
+0113.945 (0) Ftp chunked upload: 7.7 % uploaded
+0113.961 (0) Ftp chunked upload: 8 % uploaded
+0113.978 (0) Ftp chunked upload: 8.2 % uploaded
+0113.993 (0) Ftp chunked upload: 8.5 % uploaded
+0114.009 (0) Ftp chunked upload: 8.7 % uploaded
+0114.026 (0) Ftp chunked upload: 9 % uploaded
+0114.041 (0) Ftp chunked upload: 9.2 % uploaded
+0114.059 (0) Ftp chunked upload: 9.5 % uploaded
+0114.074 (0) Ftp chunked upload: 9.7 % uploaded
+0114.091 (0) Ftp chunked upload: 10 % uploaded
+0114.106 (0) Ftp chunked upload: 10.2 % uploaded
+0114.122 (0) Ftp chunked upload: 10.5 % uploaded
+0114.138 (0) Ftp chunked upload: 10.7 % uploaded
+0114.154 (0) Ftp chunked upload: 11 % uploaded
+0114.170 (0) Ftp chunked upload: 11.2 % uploaded
+0114.186 (0) Ftp chunked upload: 11.5 % uploaded
+0114.202 (0) Ftp chunked upload: 11.7 % uploaded
+0114.218 (0) Ftp chunked upload: 12 % uploaded
+0114.234 (0) Ftp chunked upload: 12.2 % uploaded
+0114.250 (0) Ftp chunked upload: 12.5 % uploaded
+0114.266 (0) Ftp chunked upload: 12.7 % uploaded
+0114.282 (0) Ftp chunked upload: 13 % uploaded
+0114.297 (0) Ftp chunked upload: 13.2 % uploaded
+0114.315 (0) Ftp chunked upload: 13.5 % uploaded
+0114.338 (0) Ftp chunked upload: 13.7 % uploaded
+0114.354 (0) Ftp chunked upload: 14 % uploaded
+0114.370 (0) Ftp chunked upload: 14.2 % uploaded
+0114.386 (0) Ftp chunked upload: 14.5 % uploaded
+0114.402 (0) Ftp chunked upload: 14.7 % uploaded
+0114.417 (0) Ftp chunked upload: 15 % uploaded
+0114.434 (0) Ftp chunked upload: 15.2 % uploaded
+0114.450 (0) Ftp chunked upload: 15.4 % uploaded
+0114.466 (0) Ftp chunked upload: 15.7 % uploaded
+0114.482 (0) Ftp chunked upload: 15.9 % uploaded
+0114.498 (0) Ftp chunked upload: 16.2 % uploaded
+0114.514 (0) Ftp chunked upload: 16.4 % uploaded
+0114.529 (0) Ftp chunked upload: 16.7 % uploaded
+0114.545 (0) Ftp chunked upload: 16.9 % uploaded
+0114.561 (0) Ftp chunked upload: 17.2 % uploaded
+0114.577 (0) Ftp chunked upload: 17.4 % uploaded
+0114.594 (0) Ftp chunked upload: 17.7 % uploaded
+0114.610 (0) Ftp chunked upload: 17.9 % uploaded
+0114.625 (0) Ftp chunked upload: 18.2 % uploaded
+0114.641 (0) Ftp chunked upload: 18.4 % uploaded
+0114.658 (0) Ftp chunked upload: 18.7 % uploaded
+0114.674 (0) Ftp chunked upload: 18.9 % uploaded
+0114.689 (0) Ftp chunked upload: 19.2 % uploaded
+0114.705 (0) Ftp chunked upload: 19.4 % uploaded
+0114.721 (0) Ftp chunked upload: 19.7 % uploaded
+0114.738 (0) Ftp chunked upload: 19.9 % uploaded
+0114.754 (0) Ftp chunked upload: 20.2 % uploaded
+0114.770 (0) Ftp chunked upload: 20.4 % uploaded
+0114.786 (0) Ftp chunked upload: 20.7 % uploaded
+0114.801 (0) Ftp chunked upload: 20.9 % uploaded
+0114.817 (0) Ftp chunked upload: 21.2 % uploaded
+0114.833 (0) Ftp chunked upload: 21.4 % uploaded
+0114.849 (0) Ftp chunked upload: 21.7 % uploaded
+0114.866 (0) Ftp chunked upload: 21.9 % uploaded
+0114.881 (0) Ftp chunked upload: 22.2 % uploaded
+0114.898 (0) Ftp chunked upload: 22.4 % uploaded
+0114.914 (0) Ftp chunked upload: 22.7 % uploaded
+0114.930 (0) Ftp chunked upload: 22.9 % uploaded
+0114.945 (0) Ftp chunked upload: 23.2 % uploaded
+0114.961 (0) Ftp chunked upload: 23.4 % uploaded
+0114.977 (0) Ftp chunked upload: 23.7 % uploaded
+0114.993 (0) Ftp chunked upload: 23.9 % uploaded
+0115.009 (0) Ftp chunked upload: 24.2 % uploaded
+0115.025 (0) Ftp chunked upload: 24.4 % uploaded
+0115.041 (0) Ftp chunked upload: 24.7 % uploaded
+0115.056 (0) Ftp chunked upload: 24.9 % uploaded
+0115.072 (0) Ftp chunked upload: 25.2 % uploaded
+0115.088 (0) Ftp chunked upload: 25.4 % uploaded
+0115.104 (0) Ftp chunked upload: 25.7 % uploaded
+0115.120 (0) Ftp chunked upload: 25.9 % uploaded
+0115.136 (0) Ftp chunked upload: 26.2 % uploaded
+0115.153 (0) Ftp chunked upload: 26.4 % uploaded
+0115.169 (0) Ftp chunked upload: 26.7 % uploaded
+0115.185 (0) Ftp chunked upload: 26.9 % uploaded
+0115.201 (0) Ftp chunked upload: 27.2 % uploaded
+0115.218 (0) Ftp chunked upload: 27.4 % uploaded
+0115.234 (0) Ftp chunked upload: 27.7 % uploaded
+0115.249 (0) Ftp chunked upload: 27.9 % uploaded
+0115.264 (0) Ftp chunked upload: 28.2 % uploaded
+0115.280 (0) Ftp chunked upload: 28.4 % uploaded
+0115.296 (0) Ftp chunked upload: 28.7 % uploaded
+0115.312 (0) Ftp chunked upload: 28.9 % uploaded
+0115.327 (0) Ftp chunked upload: 29.2 % uploaded
+0115.343 (0) Ftp chunked upload: 29.4 % uploaded
+0115.366 (0) Ftp chunked upload: 29.7 % uploaded
+0115.382 (0) Ftp chunked upload: 29.9 % uploaded
+0115.398 (0) Ftp chunked upload: 30.2 % uploaded
+0115.414 (0) Ftp chunked upload: 30.4 % uploaded
+0115.429 (0) Ftp chunked upload: 30.6 % uploaded
+0115.459 (0) Ftp chunked upload: 30.9 % uploaded
+0115.475 (0) Ftp chunked upload: 31.1 % uploaded
+0115.492 (0) Ftp chunked upload: 31.4 % uploaded
+0115.508 (0) Ftp chunked upload: 31.6 % uploaded
+0115.524 (0) Ftp chunked upload: 31.9 % uploaded
+0115.540 (0) Ftp chunked upload: 32.1 % uploaded
+0115.556 (0) Ftp chunked upload: 32.4 % uploaded
+0115.573 (0) Ftp chunked upload: 32.6 % uploaded
+0115.589 (0) Ftp chunked upload: 32.9 % uploaded
+0115.605 (0) Ftp chunked upload: 33.1 % uploaded
+0115.621 (0) Ftp chunked upload: 33.4 % uploaded
+0115.637 (0) Ftp chunked upload: 33.6 % uploaded
+0115.653 (0) Ftp chunked upload: 33.9 % uploaded
+0115.668 (0) Ftp chunked upload: 34.1 % uploaded
+0115.685 (0) Ftp chunked upload: 34.4 % uploaded
+0115.701 (0) Ftp chunked upload: 34.6 % uploaded
+0115.716 (0) Ftp chunked upload: 34.9 % uploaded
+0115.732 (0) Ftp chunked upload: 35.1 % uploaded
+0115.753 (0) Ftp chunked upload: 35.4 % uploaded
+0115.769 (0) Ftp chunked upload: 35.6 % uploaded
+0115.785 (0) Ftp chunked upload: 35.9 % uploaded
+0115.800 (0) Ftp chunked upload: 36.1 % uploaded
+0115.816 (0) Ftp chunked upload: 36.4 % uploaded
+0115.832 (0) Ftp chunked upload: 36.6 % uploaded
+0115.848 (0) Ftp chunked upload: 36.9 % uploaded
+0115.865 (0) Ftp chunked upload: 37.1 % uploaded
+0115.881 (0) Ftp chunked upload: 37.4 % uploaded
+0115.897 (0) Ftp chunked upload: 37.6 % uploaded
+0115.913 (0) Ftp chunked upload: 37.9 % uploaded
+0115.929 (0) Ftp chunked upload: 38.1 % uploaded
+0115.945 (0) Ftp chunked upload: 38.4 % uploaded
+0115.961 (0) Ftp chunked upload: 38.6 % uploaded
+0115.978 (0) Ftp chunked upload: 38.9 % uploaded
+0115.993 (0) Ftp chunked upload: 39.1 % uploaded
+0116.010 (0) Ftp chunked upload: 39.4 % uploaded
+0116.026 (0) Ftp chunked upload: 39.6 % uploaded
+0116.041 (0) Ftp chunked upload: 39.9 % uploaded
+0116.057 (0) Ftp chunked upload: 40.1 % uploaded
+0116.073 (0) Ftp chunked upload: 40.4 % uploaded
+0116.089 (0) Ftp chunked upload: 40.6 % uploaded
+0116.108 (0) Ftp chunked upload: 40.9 % uploaded
+0116.124 (0) Ftp chunked upload: 41.1 % uploaded
+0116.143 (0) Ftp chunked upload: 41.4 % uploaded
+0116.158 (0) Ftp chunked upload: 41.6 % uploaded
+0116.174 (0) Ftp chunked upload: 41.9 % uploaded
+0116.190 (0) Ftp chunked upload: 42.1 % uploaded
+0116.205 (0) Ftp chunked upload: 42.4 % uploaded
+0116.221 (0) Ftp chunked upload: 42.6 % uploaded
+0116.237 (0) Ftp chunked upload: 42.9 % uploaded
+0116.254 (0) Ftp chunked upload: 43.1 % uploaded
+0116.270 (0) Ftp chunked upload: 43.4 % uploaded
+0116.287 (0) Ftp chunked upload: 43.6 % uploaded
+0116.302 (0) Ftp chunked upload: 43.9 % uploaded
+0116.317 (0) Ftp chunked upload: 44.1 % uploaded
+0116.333 (0) Ftp chunked upload: 44.4 % uploaded
+0116.350 (0) Ftp chunked upload: 44.6 % uploaded
+0116.365 (0) Ftp chunked upload: 44.9 % uploaded
+0116.381 (0) Ftp chunked upload: 45.1 % uploaded
+0116.398 (0) Ftp chunked upload: 45.4 % uploaded
+0116.414 (0) Ftp chunked upload: 45.6 % uploaded
+0116.429 (0) Ftp chunked upload: 45.8 % uploaded
+0116.445 (0) Ftp chunked upload: 46.1 % uploaded
+0116.461 (0) Ftp chunked upload: 46.3 % uploaded
+0116.478 (0) Ftp chunked upload: 46.6 % uploaded
+0116.494 (0) Ftp chunked upload: 46.8 % uploaded
+0116.509 (0) Ftp chunked upload: 47.1 % uploaded
+0116.525 (0) Ftp chunked upload: 47.3 % uploaded
+0116.541 (0) Ftp chunked upload: 47.6 % uploaded
+0116.557 (0) Ftp chunked upload: 47.8 % uploaded
+0116.573 (0) Ftp chunked upload: 48.1 % uploaded
+0116.589 (0) Ftp chunked upload: 48.3 % uploaded
+0116.605 (0) Ftp chunked upload: 48.6 % uploaded
+0116.621 (0) Ftp chunked upload: 48.8 % uploaded
+0116.637 (0) Ftp chunked upload: 49.1 % uploaded
+0116.653 (0) Ftp chunked upload: 49.3 % uploaded
+0116.670 (0) Ftp chunked upload: 49.6 % uploaded
+0116.686 (0) Ftp chunked upload: 49.8 % uploaded
+0116.702 (0) Ftp chunked upload: 50.1 % uploaded
+0116.717 (0) Ftp chunked upload: 50.3 % uploaded
+0116.733 (0) Ftp chunked upload: 50.6 % uploaded
+0116.749 (0) Ftp chunked upload: 50.8 % uploaded
+0116.765 (0) Ftp chunked upload: 51.1 % uploaded
+0116.780 (0) Ftp chunked upload: 51.3 % uploaded
+0116.796 (0) Ftp chunked upload: 51.6 % uploaded
+0116.812 (0) Ftp chunked upload: 51.8 % uploaded
+0116.828 (0) Ftp chunked upload: 52.1 % uploaded
+0116.844 (0) Ftp chunked upload: 52.3 % uploaded
+0116.860 (0) Ftp chunked upload: 52.6 % uploaded
+0116.877 (0) Ftp chunked upload: 52.8 % uploaded
+0116.894 (0) Ftp chunked upload: 53.1 % uploaded
+0116.910 (0) Ftp chunked upload: 53.3 % uploaded
+0116.925 (0) Ftp chunked upload: 53.6 % uploaded
+0116.941 (0) Ftp chunked upload: 53.8 % uploaded
+0116.956 (0) Ftp chunked upload: 54.1 % uploaded
+0116.973 (0) Ftp chunked upload: 54.3 % uploaded
+0116.988 (0) Ftp chunked upload: 54.6 % uploaded
+0117.005 (0) Ftp chunked upload: 54.8 % uploaded
+0117.021 (0) Ftp chunked upload: 55.1 % uploaded
+0117.036 (0) Ftp chunked upload: 55.3 % uploaded
+0117.052 (0) Ftp chunked upload: 55.6 % uploaded
+0117.069 (0) Ftp chunked upload: 55.8 % uploaded
+0117.085 (0) Ftp chunked upload: 56.1 % uploaded
+0117.106 (0) Ftp chunked upload: 56.3 % uploaded
+0117.124 (0) Ftp chunked upload: 56.6 % uploaded
+0117.140 (0) Ftp chunked upload: 56.8 % uploaded
+0117.157 (0) Ftp chunked upload: 57.1 % uploaded
+0117.174 (0) Ftp chunked upload: 57.3 % uploaded
+0117.189 (0) Ftp chunked upload: 57.6 % uploaded
+0117.206 (0) Ftp chunked upload: 57.8 % uploaded
+0117.221 (0) Ftp chunked upload: 58.1 % uploaded
+0117.238 (0) Ftp chunked upload: 58.3 % uploaded
+0117.254 (0) Ftp chunked upload: 58.6 % uploaded
+0117.270 (0) Ftp chunked upload: 58.8 % uploaded
+0117.303 (0) Ftp chunked upload: 59.1 % uploaded
+0117.330 (0) Ftp chunked upload: 59.3 % uploaded
+0117.351 (0) Ftp chunked upload: 59.6 % uploaded
+0117.369 (0) Ftp chunked upload: 59.8 % uploaded
+0117.385 (0) Ftp chunked upload: 60.1 % uploaded
+0117.401 (0) Ftp chunked upload: 60.3 % uploaded
+0117.418 (0) Ftp chunked upload: 60.6 % uploaded
+0117.433 (0) Ftp chunked upload: 60.8 % uploaded
+0117.450 (0) Ftp chunked upload: 61 % uploaded
+0117.466 (0) Ftp chunked upload: 61.3 % uploaded
+0117.481 (0) Ftp chunked upload: 61.5 % uploaded
+0117.498 (0) Ftp chunked upload: 61.8 % uploaded
+0117.514 (0) Ftp chunked upload: 62 % uploaded
+0117.528 (0) Ftp chunked upload: 62.3 % uploaded
+0117.548 (0) Ftp chunked upload: 62.5 % uploaded
+0117.564 (0) Ftp chunked upload: 62.8 % uploaded
+0117.583 (0) Ftp chunked upload: 63 % uploaded
+0117.598 (0) Ftp chunked upload: 63.3 % uploaded
+0117.614 (0) Ftp chunked upload: 63.5 % uploaded
+0117.629 (0) Ftp chunked upload: 63.8 % uploaded
+0117.644 (0) Ftp chunked upload: 64 % uploaded
+0117.660 (0) Ftp chunked upload: 64.3 % uploaded
+0117.676 (0) Ftp chunked upload: 64.5 % uploaded
+0117.692 (0) Ftp chunked upload: 64.8 % uploaded
+0117.709 (0) Ftp chunked upload: 65 % uploaded
+0117.724 (0) Ftp chunked upload: 65.3 % uploaded
+0117.755 (0) Ftp chunked upload: 65.5 % uploaded
+0117.769 (0) Ftp chunked upload: 65.8 % uploaded
+0117.785 (0) Ftp chunked upload: 66 % uploaded
+0117.801 (0) Ftp chunked upload: 66.3 % uploaded
+0117.817 (0) Ftp chunked upload: 66.5 % uploaded
+0117.833 (0) Ftp chunked upload: 66.8 % uploaded
+0117.851 (0) Ftp chunked upload: 67 % uploaded
+0117.865 (0) Ftp chunked upload: 67.3 % uploaded
+0117.881 (0) Ftp chunked upload: 67.5 % uploaded
+0117.897 (0) Ftp chunked upload: 67.8 % uploaded
+0117.914 (0) Ftp chunked upload: 68 % uploaded
+0117.930 (0) Ftp chunked upload: 68.3 % uploaded
+0117.945 (0) Ftp chunked upload: 68.5 % uploaded
+0117.961 (0) Ftp chunked upload: 68.8 % uploaded
+0117.979 (0) Ftp chunked upload: 69 % uploaded
+0117.994 (0) Ftp chunked upload: 69.3 % uploaded
+0118.010 (0) Ftp chunked upload: 69.5 % uploaded
+0118.026 (0) Ftp chunked upload: 69.8 % uploaded
+0118.041 (0) Ftp chunked upload: 70 % uploaded
+0118.057 (0) Ftp chunked upload: 70.3 % uploaded
+0118.073 (0) Ftp chunked upload: 70.5 % uploaded
+0118.088 (0) Ftp chunked upload: 70.8 % uploaded
+0118.105 (0) Ftp chunked upload: 71 % uploaded
+0118.121 (0) Ftp chunked upload: 71.3 % uploaded
+0118.138 (0) Ftp chunked upload: 71.5 % uploaded
+0118.154 (0) Ftp chunked upload: 71.8 % uploaded
+0118.168 (0) Ftp chunked upload: 72 % uploaded
+0118.184 (0) Ftp chunked upload: 72.3 % uploaded
+0118.200 (0) Ftp chunked upload: 72.5 % uploaded
+0118.216 (0) Ftp chunked upload: 72.8 % uploaded
+0118.233 (0) Ftp chunked upload: 73 % uploaded
+0118.250 (0) Ftp chunked upload: 73.3 % uploaded
+0118.267 (0) Ftp chunked upload: 73.5 % uploaded
+0118.282 (0) Ftp chunked upload: 73.8 % uploaded
+0118.298 (0) Ftp chunked upload: 74 % uploaded
+0118.314 (0) Ftp chunked upload: 74.3 % uploaded
+0118.329 (0) Ftp chunked upload: 74.5 % uploaded
+0118.346 (0) Ftp chunked upload: 74.8 % uploaded
+0118.365 (0) Ftp chunked upload: 75 % uploaded
+0118.382 (0) Ftp chunked upload: 75.3 % uploaded
+0118.398 (0) Ftp chunked upload: 75.5 % uploaded
+0118.413 (0) Ftp chunked upload: 75.8 % uploaded
+0118.429 (0) Ftp chunked upload: 76 % uploaded
+0118.445 (0) Ftp chunked upload: 76.2 % uploaded
+0118.462 (0) Ftp chunked upload: 76.5 % uploaded
+0118.479 (0) Ftp chunked upload: 76.7 % uploaded
+0118.494 (0) Ftp chunked upload: 77 % uploaded
+0118.509 (0) Ftp chunked upload: 77.2 % uploaded
+0118.525 (0) Ftp chunked upload: 77.5 % uploaded
+0118.541 (0) Ftp chunked upload: 77.7 % uploaded
+0118.557 (0) Ftp chunked upload: 78 % uploaded
+0118.574 (0) Ftp chunked upload: 78.2 % uploaded
+0118.590 (0) Ftp chunked upload: 78.5 % uploaded
+0118.606 (0) Ftp chunked upload: 78.7 % uploaded
+0118.621 (0) Ftp chunked upload: 79 % uploaded
+0118.637 (0) Ftp chunked upload: 79.2 % uploaded
+0118.653 (0) Ftp chunked upload: 79.5 % uploaded
+0118.675 (0) Ftp chunked upload: 79.7 % uploaded
+0118.697 (0) Ftp chunked upload: 80 % uploaded
+0118.713 (0) Ftp chunked upload: 80.2 % uploaded
+0118.748 (0) Ftp chunked upload: 80.5 % uploaded
+0118.765 (0) Ftp chunked upload: 80.7 % uploaded
+0118.781 (0) Ftp chunked upload: 81 % uploaded
+0118.797 (0) Ftp chunked upload: 81.2 % uploaded
+0118.812 (0) Ftp chunked upload: 81.5 % uploaded
+0118.828 (0) Ftp chunked upload: 81.7 % uploaded
+0118.844 (0) Ftp chunked upload: 82 % uploaded
+0118.861 (0) Ftp chunked upload: 82.2 % uploaded
+0118.877 (0) Ftp chunked upload: 82.5 % uploaded
+0118.893 (0) Ftp chunked upload: 82.7 % uploaded
+0118.909 (0) Ftp chunked upload: 83 % uploaded
+0118.925 (0) Ftp chunked upload: 83.2 % uploaded
+0118.942 (0) Ftp chunked upload: 83.5 % uploaded
+0118.959 (0) Ftp chunked upload: 83.7 % uploaded
+0118.974 (0) Ftp chunked upload: 84 % uploaded
+0118.989 (0) Ftp chunked upload: 84.2 % uploaded
+0119.005 (0) Ftp chunked upload: 84.5 % uploaded
+0119.020 (0) Ftp chunked upload: 84.7 % uploaded
+0119.036 (0) Ftp chunked upload: 85 % uploaded
+0119.052 (0) Ftp chunked upload: 85.2 % uploaded
+0119.068 (0) Ftp chunked upload: 85.5 % uploaded
+0119.085 (0) Ftp chunked upload: 85.7 % uploaded
+0119.101 (0) Ftp chunked upload: 86 % uploaded
+0119.118 (0) Ftp chunked upload: 86.2 % uploaded
+0119.134 (0) Ftp chunked upload: 86.5 % uploaded
+0119.149 (0) Ftp chunked upload: 86.7 % uploaded
+0119.165 (0) Ftp chunked upload: 87 % uploaded
+0119.181 (0) Ftp chunked upload: 87.2 % uploaded
+0119.198 (0) Ftp chunked upload: 87.5 % uploaded
+0119.214 (0) Ftp chunked upload: 87.7 % uploaded
+0119.231 (0) Ftp chunked upload: 88 % uploaded
+0119.246 (0) Ftp chunked upload: 88.2 % uploaded
+0119.262 (0) Ftp chunked upload: 88.5 % uploaded
+0119.278 (0) Ftp chunked upload: 88.7 % uploaded
+0119.294 (0) Ftp chunked upload: 89 % uploaded
+0119.309 (0) Ftp chunked upload: 89.2 % uploaded
+0119.325 (0) Ftp chunked upload: 89.5 % uploaded
+0119.341 (0) Ftp chunked upload: 89.7 % uploaded
+0119.363 (0) Ftp chunked upload: 90 % uploaded
+0119.379 (0) Ftp chunked upload: 90.2 % uploaded
+0119.394 (0) Ftp chunked upload: 90.5 % uploaded
+0119.410 (0) Ftp chunked upload: 90.7 % uploaded
+0119.425 (0) Ftp chunked upload: 91 % uploaded
+0119.441 (0) Ftp chunked upload: 91.2 % uploaded
+0119.458 (0) Ftp chunked upload: 91.4 % uploaded
+0119.474 (0) Ftp chunked upload: 91.7 % uploaded
+0119.490 (0) Ftp chunked upload: 91.9 % uploaded
+0119.505 (0) Ftp chunked upload: 92.2 % uploaded
+0119.521 (0) Ftp chunked upload: 92.4 % uploaded
+0119.537 (0) Ftp chunked upload: 92.7 % uploaded
+0119.553 (0) Ftp chunked upload: 92.9 % uploaded
+0119.569 (0) Ftp chunked upload: 93.2 % uploaded
+0119.586 (0) Ftp chunked upload: 93.4 % uploaded
+0119.602 (0) Ftp chunked upload: 93.7 % uploaded
+0119.617 (0) Ftp chunked upload: 93.9 % uploaded
+0119.633 (0) Ftp chunked upload: 94.2 % uploaded
+0119.650 (0) Ftp chunked upload: 94.4 % uploaded
+0119.666 (0) Ftp chunked upload: 94.7 % uploaded
+0119.681 (0) Ftp chunked upload: 94.9 % uploaded
+0119.706 (0) Ftp chunked upload: 95.2 % uploaded
+0119.721 (0) Ftp chunked upload: 95.4 % uploaded
+0119.738 (0) Ftp chunked upload: 95.7 % uploaded
+0119.755 (0) Ftp chunked upload: 95.9 % uploaded
+0119.769 (0) Ftp chunked upload: 96.2 % uploaded
+0119.786 (0) Ftp chunked upload: 96.4 % uploaded
+0119.802 (0) Ftp chunked upload: 96.7 % uploaded
+0119.817 (0) Ftp chunked upload: 96.9 % uploaded
+0119.832 (0) Ftp chunked upload: 97.2 % uploaded
+0119.848 (0) Ftp chunked upload: 97.4 % uploaded
+0119.864 (0) Ftp chunked upload: 97.7 % uploaded
+0119.880 (0) Ftp chunked upload: 97.9 % uploaded
+0119.895 (0) Ftp chunked upload: 98.2 % uploaded
+0119.909 (0) Ftp chunked upload: 98.4 % uploaded
+0119.926 (0) Ftp chunked upload: 98.7 % uploaded
+0119.941 (0) Ftp chunked upload: 98.9 % uploaded
+0119.957 (0) Ftp chunked upload: 99.2 % uploaded
+0119.973 (0) Ftp chunked upload: 99.4 % uploaded
+0119.988 (0) Ftp chunked upload: 99.7 % uploaded
+0120.004 (0) Ftp chunked upload: 99.9 % uploaded
+0120.037 (0) FTP upload attempt successful (207029Kb in 6.61s)
+0120.042 (0) Recording as successfully uploaded: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads2.zip (7fca892e9802f0e11f5414f5a29f8867)
+0120.088 (0) Deleting local file: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-uploads2.zip: OK
+0120.092 (0) FTP upload attempt: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-others.zip -> ftp://u82662043@upfit.at//updraft_backup/point-of-power.upfit.de/backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-others.zip
+0120.108 (0) Ftp chunked upload: 42.1 % uploaded
+0120.124 (0) Ftp chunked upload: 84.2 % uploaded
+0120.134 (0) FTP upload attempt successful (1224.9Kb in 0.04s)
+0120.141 (0) Recording as successfully uploaded: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-others.zip (e8fcc784c7d696b4a022f24bfe0d9d4d)
+0120.148 (0) Deleting local file: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-others.zip: OK
+0120.152 (0) FTP upload attempt: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db.gz -> ftp://u82662043@upfit.at//updraft_backup/point-of-power.upfit.de/backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db.gz
+0120.168 (0) Ftp chunked upload: 11.8 % uploaded
+0120.182 (0) Ftp chunked upload: 23.7 % uploaded
+0120.197 (0) Ftp chunked upload: 35.5 % uploaded
+0120.213 (0) Ftp chunked upload: 47.3 % uploaded
+0120.229 (0) Ftp chunked upload: 59.2 % uploaded
+0120.245 (0) Ftp chunked upload: 71 % uploaded
+0120.261 (0) Ftp chunked upload: 82.8 % uploaded
+0120.276 (0) Ftp chunked upload: 94.7 % uploaded
+0120.287 (0) FTP upload attempt successful (4360.3Kb in 0.13s)
+0120.292 (0) Recording as successfully uploaded: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db.gz (1e913941b6afbeb1d18572175f910d30)
+0120.300 (0) Deleting local file: backup_2016-02-02-1450_Point_of_Power_Upfit_8d9fc2dd641f-db.gz: OK
+0120.307 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=7, retain_db=7
+0120.310 (0) Number of backup sets in history: 3
+0120.313 (0) Examining backup set with datestamp: 1454421004 (Feb 02 2016 13:50:04)
+0120.317 (0) 1454421004: this backup set remains non-empty (1/1); will retain in history
+0120.320 (0) Examining backup set with datestamp: 1453816205 (Jan 26 2016 13:50:05)
+0120.324 (0) 1453816205: this backup set remains non-empty (1/1); will retain in history
+0120.327 (0) Examining backup set with datestamp: 1453211408 (Jan 19 2016 13:50:08)
+0120.331 (0) 1453211408: this backup set remains non-empty (1/1); will retain in history
+0120.334 (0) Retain: saving new backup history (sets now: 3) and finishing retain operation
+0120.345 (0) Resume backup (8d9fc2dd641f, 0): finish run
+0120.354 (0) Decremented the semaphore (fd) by 1
+0120.358 (0) Semaphore (fd) unlocked
+0120.360 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0120.368 (0) The backup apparently succeeded and is now complete
+0120.371 (0) No email will/can be sent - the user has not configured an email address.
+0120.375 (0) Die Sicherung war anscheinend erfolgreich und ist nun vollständig

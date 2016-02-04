@@ -1,0 +1,397 @@
+.font-size-color { font-size: 24px;}
+.letterspacing_1 { letter-spacing: 0.5px;}
+.letterspacing_5 { letter-spacing: 0.4px;}
+.shopping_hr_border { background: #bec8cc; width: 100%; height: 0.0315em; margin-top: 5px; margin-bottom: 2px;	}
+.font-size-same { font-size: 11px;}
+/*----------------- Page 1 ------------------*/
+.grey{
+background:#f0eeef !important;
+}
+.white{
+background:#fff !important;
+}
+
+.last_div_text{
+color:#70848e;margin-bottom:0px;
+list-style:none; font-size:10px; line-height:14px; text-align:left;
+}
+.first_last_div{ background: #FFF; color:#70848e;list-style:none; font-size:10px; line-height:14px; text-align:left;
+}
+.second_last_div{
+background: #FFF;/* padding: 10px; margin: 0px  15px 0px 15px; */border-radius: 5px; /*width:60mm;*/padding-top:10px; 
+/*float:left;*/
+/*margin-left:80mm;*/
+/*page-break-before:always;
+box-decoration-break:clonebycss;*/
+color:#70848e;
+
+list-style:none; font-size:10px; line-height:14px; text-align:left;
+
+}
+
+.p1-main-heading{
+	font-size:28px;color:#162c5d;line-height:38px; font-weight:normal;margin:40px 0px;font-weight:normal;
+}
+h1,h2,h3,h4{
+font-weight:normal !important;
+}
+body { margin: 0mm !important; padding: 0mm  !important; font-family:Avenir !important; background:#f0eeef;} 
+
+.p1-sub-heading{
+	color: #162c5d;font-size: 14px;font-weight:bold;display:block;margin-bottom:4.5px;font-weight:normal;
+}
+.p1-content{
+	color:#70848e; font-size:14px; width:60%;margin-top:0px;margin-bottom:20px;
+}
+.p1-content p{
+	line-height:22px;
+}
+.p1-list-style {
+	margin-top:20px;
+}
+.p1-list-style div{
+	line-height:26px;
+	font-size:14px;
+}
+.p1-list-style p {
+	padding:0px 0px;
+	line-height:23px;
+	margin:0px;
+}
+ 
+.bubble_details_icon { width:100%;}
+.bubble_details_icon .p2-list-style { float:left; width:80%;}
+
+
+/*------------------ Page 2 ------------------*/
+
+	.p2-main-heading{
+		font-size:28px;color:#162c5d;line-height:38px; font-weight:normal;margin:40px 0px
+	}
+	
+	 
+	  .p2-sub-heading{
+	  color: #162c5d;font-size: 14px;font-weight:bold;display:block;margin-bottom:4.5px;font-weight:normal;
+	  }
+	  .p2-content{
+	color:#70848e; font-size:14px; width:60%;margin-top:0px;margin-bottom:20px;line-height:22px;
+	  }
+	 
+	  .p2-list-style {
+		margin-top:14px;
+		float:left;
+  }
+	  .p2-list-style div{
+		line-height:26px;
+		font-size:14px;
+		}
+		.p2-list-style p {
+			padding:0px 0px;
+			line-height:23px;
+			margin:0px;
+		}
+.price_tag2{
+	background: #feda46;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    text-align: center;
+    position: absolute;
+	float:right;
+	top:0px
+    z-index: 999;
+    }
+/*------------------ Page 3 ------------------*/
+
+.p3-listStyleP p {	font-size:10px !important; letter-spacing: 0.4px;}
+.p3-listStyleP {
+	list-style:none;margin:0 0 0 0;padding:0px; font-size:10px; line-height:14px; text-align:left;
+}
+.p3_sub_headdings {
+	color: #162c5d;font-size: 11px;line-height: 13px;margin-top:0px; margin-bottom:0;padding-bottom:0px; float:left;font-weight:normal; letter-spacing: 0.5px;
+}
+.p3-eBook_buttons {
+	color: green;
+	font-size: 13px;
+	padding:10px 0;
+	text-align:center;
+	border-radius:30px;
+	border:1px solid green;
+	width:86%;
+	margin-top:5px;
+	margin-bottom:0px;
+
+}
+.p3-eBook_buttons a {
+	color: green;
+	text-decoration:none;
+}
+.p3-main-div {
+	background:#FFF;padding:10px 16px;margin:15px 15px 0px 0px;border-radius:5px;position: relative;
+	min-height:180mm; height: 100%;
+}
+.p3_details { margin-top: 7px;border-bottom:0.0315em solid #bec8cc; margin-bottom:16.5px; padding-bottom:16px; letter-spacing: 0.4px; font-size: 10px;}
+.p3-listStyleP div.p3_last_details .p3_details { border-bottom: 0 none;}
+
+/*------------------ Page 4 ------------------*/
+/*.upfit_icon_p4 { width: 100%; margin: 0 auto; overflow: hidden; text-align: center;}
+.upfit_icon_p4 span.upfi_ico { width: 40px; height: 40px; margin: 0 6px; float: left;}
+.upfit_icon_p4 span.p4-iconDescription { clear: both; width: 100%; }*/
+.listStyleP p {
+	font-size:10px !important;
+}
+.p4_meal_heading{
+	font-size:15px;margin:0px 0;font-weight:normal; color:#162c5d;padding-top: 5px;padding-bottom: 3px;
+}
+.p4-listStyleP{page-break-after:avoid; letter-spacing: 0.4px;box-decoration-break:clone;list-style:none;margin:0px;padding:0px; font-size:10px; line-height:14px; text-align:left;
+}
+.p4-sub_headdings {
+	color: #162c5d;font-size: 12px;line-height: 13px;margin-top:0px; margin-bottom:0;padding-bottom:0px; float:left;font-weight:normal; letter-spacing: 0.5px;
+}
+.p4-upfiticon {
+	text-align:center;
+	margin: 0px auto;
+	padding:0px;
+	
+}
+.p4-upfiticon img {
+	height:48px; width:48px;vertical-align:middle; 
+	
+}
+.p4-iconDescription { 
+	font-size:11px;
+	
+	color:#70848e;
+}
+table.p4-listingingredients tr td {
+	font-size:11px;
+	color:#70848e;
+	padding:1px 0px; word-break: break-all; vertical-align: top;
+}
+.p4-header_green {
+	color: #2cab50;
+	font-size: 13px;
+	padding:8px 0;
+	text-align:center;
+	border-radius:30px;
+	border:1px solid #2cab50;
+	width:75%;
+	margin-top:7px;
+	margin-bottom:0px;
+
+}
+.main-div {
+	position: relative;
+	height: auto; margin: 0 auto;
+	min-height: 165mm; height:97.1%;		
+}
+	.p4-upfiticon td span { clear: both; width: 100%;}
+	
+/*------------------ Page 5 Shopping ------------------*/
+
+.container{
+width:100%;margin:0 ;padding:0 38.4px 0px 38.4px;text-align:center;overflow:hidden; color:#70848e;
+}
+
+.page_wrapper{
+	box-decoration-break:clone;height:185mm;width:100%;text-align:center; background:#FFF; float:left; border-radius:5px;padding-bottom:0;margin:0px auto; 
+}
+.category_name{
+	text-align:left;color: #162c5d;font-size:14px;line-height:10px;padding-top:0px;margin-top:0px;margin-bottom:0px;padding-bottom:0px; letter-spacing: 0.5px; text-transform: uppercase;
+}
+.shopping_list_column{box-decoration-break:clone;
+	width:22%;float:left;padding:10px 10px 0px 10px;font-size:12px;
+}
+.ing_listing{
+	float: left;
+	width: 100%;
+
+	margin-bottom: 5px;
+}
+
+		.p5-listStyleP {box-decoration-break:clone;
+		list-style:none;margin:0;padding:0px; font-size:10px; line-height:14px; text-align:left;letter-spacing: 0.4px;
+		}
+		.p5-sub_headdings {
+			color: #162c5d;font-size: 12px;line-height: 13px;margin-top:0px; margin-bottom:0;padding-bottom:0px; float:left;font-weight:normal;
+		}
+		.p5-upfiticon {text-align:center;margin: 0px auto;padding:0px;}
+		.p5-upfiticon img {
+			height:48px; width:48px;vertical-align:middle; 
+			
+		}
+		.p5-iconDescription { 
+			font-size:11px;
+			color:#70848e;
+		}
+		table.p5-listingingredients tr td {
+			font-size:10px;
+			color:#70848e;
+			padding:1px 0px;
+		}
+
+	table.listingingredientslistingingredients tr td {
+			font-size:10px;
+			color:#70848e;
+			padding:1px 0px;
+		}	
+		
+/*------------------ Page 6 ------------------*/
+
+		.listStyleP p {
+			font-size:10px;letter-spacing: 0.4px;
+		}
+		.p6-listStyleP {
+		
+		list-style:none;margin:0;padding:0px; font-size:10px; line-height:14px; text-align:left;
+		
+		}
+		.p6-sub_headdings {
+			color: #162c5d;font-size:12px;line-height: 13px;margin-top:0px; margin-bottom:0;padding-bottom:0px; float:left;font-weight:normal;
+		}
+		.p6-upfiticon {
+			text-align:center;
+			margin: 0px auto;
+			padding:0px;
+			
+		}
+		.p6-upfiticon img {
+			height:48px; width:48px;vertical-align:middle; 
+			
+		}
+		.p6-iconDescription { 
+		    text-transform: capitalize;
+			font-size:10px;
+			color:#70848e;
+			float:left;
+		}
+		table.listingingredients {
+		margin-top:5px;
+		}
+		table.listingingredients tr td {
+			font-size:10px;
+			color:#70848e;
+			padding:1px 0px; letter-spacing: 0.4px;
+		}
+		
+/*------------------ Page 7 ------------------*/
+
+  .p7-eBookswrapper {
+		width:100%;
+		
+		margin-bottom: 40px;
+		padding-bottom: 50px;
+	}
+	.p7-left_content {
+		width:49%;
+		float:left;
+	}
+	.p7-left_content strong {
+		font-size:14px;
+		color:#162c5d;
+		line-height:38px;
+		font-weight:normal;
+		margin:50px 0px;
+	}
+	.p7-left_content h2 {
+		font-size:24px;
+		color:#162c5d;
+		line-height:34px;
+		font-weight:normal;
+		margin:30px 0px;
+	}
+	
+	.p7-eBook_buttons a:hover { background:none !important;}
+	.p7-eBook_buttons a { 
+		color: #fff !important;text-decoration:none !important; font-size: 17px;padding: 22px 0; width: 100%;
+	} 
+	.p7-eBook_buttons { cursor: pointer;
+		text-align:center;
+		border-radius:30px;
+		background: url("http://upfit.de/wp-content/themes/shopkeeper-child/images/pdf_ebook_btn.png") no-repeat right center;
+		width:100%; height: 60px;line-height: 60px;
+		margin-bottom:20px; position: relative;
+	}
+	.p7-left_content b {
+		font-size:13px;
+		line-height:23px;
+		font-weight:normal;
+		color:#70848e;
+		text-align:center;
+	}
+	.p7-right_content {
+		width:40%;
+		float:right;
+		text-align:center;
+		position: relative;
+		background:url("http://upfit.de/wp-content/themes/shopkeeper-child/images/e-book_img.png") no-repeat center bottom;
+		height: 460px;
+	}
+	.p7-footerBottom {
+		width:100%;
+		float:left;
+		padding-top:50px;border-top:1px solid #bec8cc;
+	}
+	.yellow_bubble { float: right; background: #feda46; border-radius: 50%; height: 110px; width: 110px; text-align: center;color: #162c5d;}
+
+/*------------------ Page 8 ------------------*/
+
+	
+	.p8-main-heading{
+		font-size:28px;color:#162c5d;line-height:38px; font-weight:normal;margin:40px 0px 10px;font-weight:normal;
+	}
+	  body { margin: 0; padding: 0; }
+	 
+	  .p8-sub-heading{
+	  color: #162c5d;font-size: 14px;font-weight:bold;display:block;margin-bottom:15px;font-weight:normal;
+	  }
+	  .p8-content{
+	color:#70848e; font-size:14px; width:60%;margin-top:15px;margin-bottom:20px;
+	  }
+	  .p8-content p{
+		line-height:23px;
+	  }
+	  .p8-list-style {
+	  margin-top:30px;
+	}
+	  .p8-list-style div{
+		line-height:26px;
+		font-size:14px;
+		}
+		.p8-list-style p {
+			padding:7px 0px;
+			line-height:0px;
+			margin:0px;
+		}
+		.p8-listing_brand {
+			width:100%;
+		}
+		.p8-leftImages {
+			float:left;
+			width:20%;
+		}
+		
+		.p8-centerDescription {
+			float:left;
+			width:20%;
+		}
+		.p8-rightbuttons {
+			float:right;
+			width:20%;
+			
+		}
+		.p8-eBook_buttons {
+		color: #fff;
+		font-size: 17px;
+		padding: 12px 18px 12px 8px;
+		text-align:center;
+		border-radius:30px;
+		background: url("http://upfit.de/wp-content/themes/shopkeeper-child/images/pdf_ebook_btn.png") no-repeat right center;
+		width:100%; height: 36px;line-height: 36px; letter-spacing: 1px;
+	
+		}
+		.p8-eBook_buttons a {
+			color: #fff !important;
+			text-decoration:none !important;
+		}
+	
