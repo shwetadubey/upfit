@@ -23,7 +23,14 @@
     } else {
         $page_title_option = "on";
     }   
-    
+    //------------------- belboon session variable-------------------//
+	if(empty($_SESSION['belboon'])) { // If $_SESSION['belboon'] not set
+
+	// example: http://www.abc.de?belboon=0001cb000205005e720005f2,2022994 
+
+		$_SESSION['belboon'] = $_GET['belboon']; // value of $_GET['belboon'] will be saved in server session 
+
+	}
      get_header(); ?>
      <style type="text/css">
          #menu{text-align: center;  background: #EBEAEA; width: 100%; height: 50px;}

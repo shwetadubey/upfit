@@ -1246,17 +1246,18 @@ function checkout_tooltip(){
 			  async: false,
               data: "action=check_plan_validation&nutrition_type=" + nutrition_type+"&allergies=" + allergies +"&nuts=" + nuts+"&fruit="+ fruit+"&exclude="+ exclude+"&preparation_time="+preparation_time
 			}).done(function(res){
-			////	console.log(parseInt(res));
+				console.log(parseInt(res));
 			//	console.log(parseInt(res) < 56);
 				if(parseInt(res) < 56)
-					{
-						meal_error=err_msg[44];
-						errors=true;
-					}
-					else
-					{
-						meal_error="";
-					}
+				{
+					meal_error=err_msg[44];
+					errors=true;					//return;
+				}
+				else
+				{
+					meal_error="";
+				}
+				if(!meal_error){
 					$cweight=$c_cur_weight;
 					//alert($cweight)
 					$weeknum=1;
@@ -1287,48 +1288,36 @@ function checkout_tooltip(){
 						$lossweight+=$te;
 					}
 					$cw=$c_cur_weight-$c_desired_weight;
+				
 					if($lossweight*1.75<=$cw ){
 						jQuery('.plan_tool_tip').remove();
 						jQuery('.pricing_table').addClass('active');
 						var tooltiphtml="";
 						if(jQuery(window).width()>979){
-							if(meal_error == ''){
+							
+							
+								
 								jQuery('.pricing_table').append('<div class="plan_tool_tip '+datap+'"><span class="plan_arrow "></span><div class="tool_cnt"><span>'+err_msg[43]+'<span></div><div class="tool_btn blue_hover"><a class="accept_plan" data-id='+planid+' href="javascript:void(0)">Ok, Los geht\'s <i class="vc_btn3-icon fa fa-angle-right"></i></a></div></div>');	
-							}
-							else
-							{
-								jQuery('.pricing_table').append('<div class="plan_tool_tip '+datap+' tool"><span class="plan_arrow "></span><div class="tool_cnt tool_fullwidth"><span>'+meal_error+'<span></div></div>');	
-							}
+							
+							
 						}
 						else if(jQuery(window).width()<979 && jQuery(window).width()>640){
 							if(datap==="plan_1" || datap==="plan_2"){
 								errors=true;
-								if(meal_error == ''){
+								
 									jQuery('div.price_table[datap="plan_2"]').parents('.price_table_wrapper ').after('<div class="plan_tool_tip '+datap+'"><span class="plan_arrow "></span><div class="tool_cnt"><span>'+err_msg[43]+'<span></div><div class="tool_btn blue_hover"><a class="accept_plan" data-id='+planid+' href="javascript:void(0)">Ok, Los geht\'s <i class="vc_btn3-icon fa fa-angle-right"></i></a></div></div>');
-								}
-								else
-								{
-									jQuery('div.price_table[datap="plan_2"]').parents('.price_table_wrapper ').after('<div class="plan_tool_tip '+datap+' tool"><span class="plan_arrow"></span><div class="tool_cnt tool_fullwidth"><span>'+meal_error+'<span></div></div>');	
-								}
+								
 							}else{
-								if(meal_error == ''){
+								
 									jQuery('div.price_table[datap="plan_4"]').parents('.price_table_wrapper ').after('<div class="plan_tool_tip '+datap+'"><span class="plan_arrow "></span><div class="tool_cnt"><span>'+err_msg[43]+'<span></div><div class="tool_btn blue_hover"><a class="accept_plan" data-id='+planid+' href="javascript:void(0)">Ok, Los geht\'s <i class="vc_btn3-icon fa fa-angle-right"></i></a></div></div>');
-								}
-								else
-								{
-									jQuery('div.price_table[datap="plan_4"]').parents('.price_table_wrapper ').after('<div class="plan_tool_tip '+datap+' tool"><span class="plan_arrow "></span><div class="tool_cnt tool_fullwidth"><span>'+meal_error+'<span></div></div>');	
-								}
+								
 							}
 							errors=true;
 						}
 						else if(jQuery(window).width()<640){
-							if(meal_error == '')
-							{
+
 								jQuery('div.price_table[datap="'+datap+'"]').parents('.price_table_wrapper ').after('<div class="plan_tool_tip '+datap+'"><span class="plan_arrow "></span><div class="tool_cnt"><span>'+err_msg[43]+'<span></div><div class="tool_btn blue_hover"><a class="accept_plan" data-id='+planid+' href="javascript:void(0)">Ok, Los geht\'s <i class="vc_btn3-icon fa fa-angle-right"></i></a></div></div>');
-							}else
-							{
-								jQuery('div.price_table[datap="'+datap+'"]').parents('.price_table_wrapper ').after('<div class="plan_tool_tip '+datap+' tool"><span class="plan_arrow "></span><div class="tool_cnt tool_fullwidth"><span>'+ meal_error+'<span></div></div>');	
-							}
+							
 							errors=true;
 						}
 						jQuery('html,body').animate({scrollTop: jQuery('.plan_tool_tip').offset().top-jQuery(window).height()/4 }, 1000);
@@ -1337,9 +1326,44 @@ function checkout_tooltip(){
 						errors=true;
 					}
 					else{
-					errors=false;
+						errors=false;
 					redirects_checkout();
-					}		
+					}
+				}
+				else{
+					jQuery('.plan_tool_tip').remove();
+						jQuery('.pricing_table').addClass('active');
+					if(jQuery(window).width()>979){
+							
+							
+								jQuery('.pricing_table').append('<div class="plan_tool_tip '+datap+' tool"><span class="plan_arrow "></span><div class="tool_cnt tool_fullwidth"><span>'+meal_error+'<span></div></div>');	
+
+						}
+						else if(jQuery(window).width()<979 && jQuery(window).width()>640){
+							if(datap==="plan_1" || datap==="plan_2"){
+								errors=true;
+								
+									jQuery('div.price_table[datap="plan_2"]').parents('.price_table_wrapper ').after('<div class="plan_tool_tip '+datap+' tool"><span class="plan_arrow"></span><div class="tool_cnt tool_fullwidth"><span>'+meal_error+'<span></div></div>');	
+								
+							}else{
+								
+									jQuery('div.price_table[datap="plan_4"]').parents('.price_table_wrapper ').after('<div class="plan_tool_tip '+datap+' tool"><span class="plan_arrow "></span><div class="tool_cnt tool_fullwidth"><span>'+meal_error+'<span></div></div>');	
+								
+							}
+							errors=true;
+						}
+						else if(jQuery(window).width()<640){
+							
+							
+								jQuery('div.price_table[datap="'+datap+'"]').parents('.price_table_wrapper ').after('<div class="plan_tool_tip '+datap+' tool"><span class="plan_arrow "></span><div class="tool_cnt tool_fullwidth"><span>'+ meal_error+'<span></div></div>');	
+							
+							errors=true;
+						}
+						jQuery('html,body').animate({scrollTop: jQuery('.plan_tool_tip').offset().top-jQuery(window).height()/4 }, 1000);
+						
+						jQuery('.loader_plan').remove();
+						errors=true;
+				}
 			});	
 	}
 	else{
@@ -1427,6 +1451,7 @@ jQuery(document).on('click','.price_table',function(e){
 	e.preventDefault();
 	var plan;
 	datap=jQuery(this).attr('datap');
+	
 	$c_weeks=jQuery(this).children('div.center_description').children('a.plan_redirect_btn').attr('weeks');
 	 planid=jQuery(this).find('.plan_redirect_btn').attr('data-id');
 	var url=jQuery(this).find('.plan_redirect_btn').attr('href');;
@@ -1437,7 +1462,7 @@ jQuery(document).on('click','.price_table',function(e){
 		sec_5_error_check();
 			/*---------------------------------------*/
 			setTimeout(function(){
-			if(errors===false && (jQuery('.diet_error').lenght===jQuery('.error_color').lenght)){
+			if(errors===false && (jQuery('.diet_error').length===jQuery('.error_color').length)){
 				checkout_tooltip();
 			}
 			else{

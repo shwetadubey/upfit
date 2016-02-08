@@ -28,7 +28,14 @@
     $siteurl = site_url();
 	$uppath = $siteurl.'/wp-content/uploads'.'/foodies/';
      get_header(); 
-     
+//------------------- belboon session variable-------------------//
+	if(empty($_SESSION['belboon'])) { // If $_SESSION['belboon'] not set
+
+	// example: http://www.abc.de?belboon=0001cb000205005e720005f2,2022994 
+
+		$_SESSION['belboon'] = $_GET['belboon']; // value of $_GET['belboon'] will be saved in server session 
+
+	}
      if(function_exists(test1)){
 		test1();
 	 }

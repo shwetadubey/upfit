@@ -1,0 +1,2583 @@
+0000.000 (0) Opened log file at time: Fri, 05 Feb 2016 20:18:06 +0000 on https://upfit.de/
+0000.006 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.11.23 WP: 4.3.3 PHP: 5.5.9-1ubuntu4.14 (Linux localhost.localdomain 3.13.0-24-generic #47-Ubuntu SMP Fri May 2 23:30:00 UTC 2014 x86_64) MySQL: 5.5.47 Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 16.2M | 17M) multisite: Y mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.008 (0) Free space on disk containing Updraft's temporary directory: 143096.4 Mb
+0000.013 (0) Tasks: Backup files: 1 (schedule: weekly) Backup DB:  (schedule: weekly)
+0000.017 (0) Processed schedules. Tasks now: Backup files: 1 Backup DB: 1
+0000.025 (0) Requesting semaphore lock (fd)
+0000.034 (0) Set semaphore last lock (fd) time to 2016-02-05 20:18:06
+0000.036 (0) Semaphore lock (fd) complete
+0000.063 (0) Backup run: resumption=0, nonce=fc6c109a113b, begun at=1454703486 (0s ago), job type=backup
+0000.070 (0) Scheduling a resumption (1) after 300 seconds (1454703786) in case this run gets aborted
+0000.089 (0) Checking if we have a zip executable available
+0000.096 (0) Creation of backups of directories: beginning
+0000.105 (0) Beginning creation of dump of plugins (split every: 500 Mb)
+0001.584 (0) Total entities for the zip file: 812 directories, 4717 files (0 skipped as non-modified), 66.9 Mb
+0001.623 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 100 files added (on-disk size: 0 Kb)
+0001.650 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 200 files added (on-disk size: 0 Kb)
+0001.678 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 300 files added (on-disk size: 0 Kb)
+0001.707 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 400 files added (on-disk size: 0 Kb)
+0001.735 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 500 files added (on-disk size: 0 Kb)
+0001.739 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (6.3 Mb, 4717 files batched, 501 (501) added so far); re-opening (prior size: 0 Kb)
+0002.159 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 600 files added (on-disk size: 1693.2 Kb)
+0002.188 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 700 files added (on-disk size: 1693.2 Kb)
+0002.217 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 800 files added (on-disk size: 1693.2 Kb)
+0002.246 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 900 files added (on-disk size: 1693.2 Kb)
+0002.275 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 1000 files added (on-disk size: 1693.2 Kb)
+0002.279 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (8.9 Mb, 4717 files batched, 501 (1002) added so far); re-opening (prior size: 1693.2 Kb)
+0002.853 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 1100 files added (on-disk size: 5596.7 Kb)
+0002.881 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 1200 files added (on-disk size: 5596.7 Kb)
+0002.910 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 1300 files added (on-disk size: 5596.7 Kb)
+0002.941 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 1400 files added (on-disk size: 5596.7 Kb)
+0002.971 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 1500 files added (on-disk size: 5596.7 Kb)
+0002.975 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (8.4 Mb, 4717 files batched, 501 (1503) added so far); re-opening (prior size: 5596.7 Kb)
+0003.687 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 1600 files added (on-disk size: 10215.5 Kb)
+0003.722 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 1700 files added (on-disk size: 10215.5 Kb)
+0003.757 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 1800 files added (on-disk size: 10215.5 Kb)
+0003.791 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 1900 files added (on-disk size: 10215.5 Kb)
+0003.829 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 2000 files added (on-disk size: 10215.5 Kb)
+0003.842 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (6.1 Mb, 4717 files batched, 501 (2004) added so far); re-opening (prior size: 10215.5 Kb)
+0004.485 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 2100 files added (on-disk size: 11918.4 Kb)
+0004.522 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 2200 files added (on-disk size: 11918.4 Kb)
+0004.556 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 2300 files added (on-disk size: 11918.4 Kb)
+0004.591 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 2400 files added (on-disk size: 11918.4 Kb)
+0004.626 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 2500 files added (on-disk size: 11918.4 Kb)
+0004.631 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (7 Mb, 4717 files batched, 501 (2505) added so far); re-opening (prior size: 11918.4 Kb)
+0005.275 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 2600 files added (on-disk size: 14251.4 Kb)
+0005.311 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 2700 files added (on-disk size: 14251.4 Kb)
+0005.347 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 2800 files added (on-disk size: 14251.4 Kb)
+0005.383 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 2900 files added (on-disk size: 14251.4 Kb)
+0005.419 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 3000 files added (on-disk size: 14251.4 Kb)
+0005.425 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.8 Mb, 4717 files batched, 501 (3006) added so far); re-opening (prior size: 14251.4 Kb)
+0005.746 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 3100 files added (on-disk size: 15091.8 Kb)
+0005.781 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 3200 files added (on-disk size: 15091.8 Kb)
+0005.818 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 3300 files added (on-disk size: 15091.8 Kb)
+0005.855 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 3400 files added (on-disk size: 15091.8 Kb)
+0005.894 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 3500 files added (on-disk size: 15091.8 Kb)
+0005.901 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (7.4 Mb, 4717 files batched, 501 (3507) added so far); re-opening (prior size: 15091.8 Kb)
+0006.562 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 3600 files added (on-disk size: 17760.8 Kb)
+0006.597 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 3700 files added (on-disk size: 17760.8 Kb)
+0006.632 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 3800 files added (on-disk size: 17760.8 Kb)
+0006.668 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 3900 files added (on-disk size: 17760.8 Kb)
+0006.707 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 4000 files added (on-disk size: 17760.8 Kb)
+0006.715 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (17.6 Mb, 4717 files batched, 501 (4008) added so far); re-opening (prior size: 17760.8 Kb)
+0008.358 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 4100 files added (on-disk size: 23592.7 Kb)
+0008.400 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 4200 files added (on-disk size: 23592.7 Kb)
+0008.446 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 4300 files added (on-disk size: 23592.7 Kb)
+0008.492 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 4400 files added (on-disk size: 23592.7 Kb)
+0008.537 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 4500 files added (on-disk size: 23592.7 Kb)
+0008.545 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.5 Mb, 4717 files batched, 501 (4509) added so far); re-opening (prior size: 23592.7 Kb)
+0008.818 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 4600 files added (on-disk size: 24133.6 Kb)
+0008.864 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip.tmp: 4700 files added (on-disk size: 24133.6 Kb)
+0009.170 (0) Created plugins zip (0) - 24510.1 Kb in 9.1 s (2705.5 Kb/s) (SHA1 checksum: 7ae191eccb765e505a48196d09dba812f55854a4)
+0009.177 (0) Beginning creation of dump of themes (split every: 500 Mb)
+0009.631 (0) Total entities for the zip file: 230 directories, 1498 files (0 skipped as non-modified), 76.8 Mb
+0009.658 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-themes.zip.tmp: 100 files added (on-disk size: 0 Kb)
+0009.682 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-themes.zip.tmp: 200 files added (on-disk size: 0 Kb)
+0009.698 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 25 Mb added on this batch (25.3 Mb, 1498 files batched, 257 (257) added so far); re-opening (prior size: 0 Kb)
+0011.759 (0) A useful amount of data was added after this amount of zip processing: 2.8 s (normalised: 2.8 s, rate: 9258.7 Kb/s)
+0011.766 (0) Performance is good - will increase the amount of data we attempt to batch (time=2.7956140041351, normalised_time=2.7649609966324, max_time=-1, data points known=0, old_max_bytes=26214400, new_max_bytes=56885576)
+0011.782 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-themes.zip.tmp: 300 files added (on-disk size: 10024.8 Kb)
+0011.806 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-themes.zip.tmp: 400 files added (on-disk size: 10024.8 Kb)
+0011.832 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-themes.zip.tmp: 500 files added (on-disk size: 10024.8 Kb)
+0011.858 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-themes.zip.tmp: 600 files added (on-disk size: 10024.8 Kb)
+0011.885 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-themes.zip.tmp: 700 files added (on-disk size: 10024.8 Kb)
+0011.902 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (37.8 Mb, 1498 files batched, 501 (758) added so far); re-opening (prior size: 10024.8 Kb)
+0013.976 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-themes.zip.tmp: 800 files added (on-disk size: 39929.9 Kb)
+0014.010 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-themes.zip.tmp: 900 files added (on-disk size: 39929.9 Kb)
+0014.046 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-themes.zip.tmp: 1000 files added (on-disk size: 39929.9 Kb)
+0014.081 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-themes.zip.tmp: 1100 files added (on-disk size: 39929.9 Kb)
+0014.115 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-themes.zip.tmp: 1200 files added (on-disk size: 39929.9 Kb)
+0014.134 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (10.5 Mb, 1498 files batched, 501 (1259) added so far); re-opening (prior size: 39929.9 Kb)
+0014.955 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-themes.zip.tmp: 1300 files added (on-disk size: 45573.7 Kb)
+0014.986 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-themes.zip.tmp: 1400 files added (on-disk size: 45573.7 Kb)
+0015.610 (0) Created themes zip (0) - 47115.9 Kb in 6.4 s (7331.6 Kb/s) (SHA1 checksum: 2a8d8d719222b51c5ecb9d795699088515892f18)
+0015.621 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone
+0015.625 (0) Looking for candidates to back up in: /var/www/vhosts/upfit.de/httpdocs/wp-content/uploads
+0015.630 (0) finding files: ithemes-security: adding to list (1)
+0015.634 (0) finding files: wc-logs: adding to list (2)
+0015.637 (0) finding files: 2015: adding to list (3)
+0015.641 (0) finding files: woocommerce_uploads: adding to list (4)
+0015.643 (0) finding files: js_composer: adding to list (5)
+0015.648 (0) finding files: sites: adding to list (6)
+0015.651 (0) finding files: foodies: adding to list (7)
+0015.655 (0) finding files: 2016: adding to list (8)
+0015.659 (0) finding files: pdf: adding to list (9)
+0015.663 (0) finding files: GeoIPv6.dat: adding to list (10)
+0015.667 (0) finding files: redux: adding to list (11)
+0015.671 (0) finding files: csv: adding to list (12)
+0015.675 (0) finding files: wpallimport: adding to list (13)
+0015.679 (0) finding files: GeoIP.dat: adding to list (14)
+0015.684 (0) finding files: json: adding to list (15)
+0015.688 (0) Beginning creation of dump of uploads (split every: 500 Mb)
+0016.344 (0) Total entities for the zip file: 180 directories, 2553 files (0 skipped as non-modified), 798 Mb
+0016.368 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads.zip.tmp: 100 files added (on-disk size: 0 Kb)
+0016.392 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads.zip.tmp: 200 files added (on-disk size: 0 Kb)
+0016.419 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads.zip.tmp: 300 files added (on-disk size: 0 Kb)
+0016.446 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads.zip.tmp: 400 files added (on-disk size: 0 Kb)
+0016.473 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads.zip.tmp: 500 files added (on-disk size: 0 Kb)
+0016.478 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (30.5 Mb, 2553 files batched, 501 (501) added so far); re-opening (prior size: 0 Kb)
+0017.637 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads.zip.tmp: 600 files added (on-disk size: 30091.4 Kb)
+0017.665 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads.zip.tmp: 700 files added (on-disk size: 30091.4 Kb)
+0017.690 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 54.3 Mb added on this batch (55.7 Mb, 2553 files batched, 284 (785) added so far); re-opening (prior size: 30091.4 Kb)
+0020.081 (0) A useful amount of data was added after this amount of zip processing: 3.1 s (normalised: 3 s, rate: 18279.7 Kb/s)
+0020.086 (0) Performance is good - will increase the amount of data we attempt to batch (time=3.1175889968872, normalised_time=3.0390188281898, max_time=-1, data points known=0, old_max_bytes=56885576, new_max_bytes=112310411)
+0020.096 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads.zip.tmp: 800 files added (on-disk size: 85621.6 Kb)
+0020.124 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads.zip.tmp: 900 files added (on-disk size: 85621.6 Kb)
+0020.153 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads.zip.tmp: 1000 files added (on-disk size: 85621.6 Kb)
+0020.182 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads.zip.tmp: 1100 files added (on-disk size: 85621.6 Kb)
+0020.212 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads.zip.tmp: 1200 files added (on-disk size: 85621.6 Kb)
+0020.230 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 107.1 Mb added on this batch (107.8 Mb, 2553 files batched, 472 (1257) added so far); re-opening (prior size: 85621.6 Kb)
+0025.832 (0) A useful amount of data was added after this amount of zip processing: 5.9 s (normalised: 5.8 s, rate: 18807.8 Kb/s)
+0025.838 (0) Performance is good - will increase the amount of data we attempt to batch (time=5.8679521083832, normalised_time=5.8315269799601, max_time=-1, data points known=0, old_max_bytes=112310411, new_max_bytes=115555062)
+0025.856 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads.zip.tmp: 1300 files added (on-disk size: 193076.8 Kb)
+0025.885 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads.zip.tmp: 1400 files added (on-disk size: 193076.8 Kb)
+0025.915 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads.zip.tmp: 1500 files added (on-disk size: 193076.8 Kb)
+0025.945 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads.zip.tmp: 1600 files added (on-disk size: 193076.8 Kb)
+0025.968 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 110.2 Mb added on this batch (110.3 Mb, 2553 files batched, 412 (1669) added so far); re-opening (prior size: 193076.8 Kb)
+0032.679 (0) A useful amount of data was added after this amount of zip processing: 7.7 s (normalised: 7.7 s, rate: 14642.2 Kb/s)
+0032.699 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads.zip.tmp: 1700 files added (on-disk size: 302654.5 Kb)
+0032.731 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads.zip.tmp: 1800 files added (on-disk size: 302654.5 Kb)
+0032.759 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 110.2 Mb added on this batch (115.1 Mb, 2553 files batched, 224 (1893) added so far); re-opening (prior size: 302654.5 Kb)
+0040.127 (0) A useful amount of data was added after this amount of zip processing: 8.2 s (normalised: 7.8 s, rate: 14434.9 Kb/s)
+0040.139 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads.zip.tmp: 1900 files added (on-disk size: 417849.4 Kb)
+0040.170 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads.zip.tmp: 2000 files added (on-disk size: 417849.4 Kb)
+0040.202 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads.zip.tmp: 2100 files added (on-disk size: 417849.4 Kb)
+0040.210 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): possibly approaching split limit (89 Mb, 220 (2113) files added so far); last ratio: 0.9776; re-opening (prior size: 417849.4 Kb)
+0047.062 (0) Zip size is at/near split limit (494.5 Mb / 500 Mb) - bumping index (from: 0)
+0049.101 (0) Created uploads zip (0) - 506395.9 Kb in 31.4 s (16139.7 Kb/s) (SHA1 checksum: 342157e5e0d861a212e42ab0a89bdc3b25f18c3d)
+0049.127 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads2.zip.tmp: 2200 files added (on-disk size: 0 Kb)
+0049.152 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads2.zip.tmp: 2300 files added (on-disk size: 0 Kb)
+0049.175 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 110.2 Mb added on this batch (113.3 Mb, 2553 files batched, 285 (2398) added so far); re-opening (prior size: 0 Kb)
+0054.915 (0) A useful amount of data was added after this amount of zip processing: 8 s (normalised: 7.7 s, rate: 14590.2 Kb/s)
+0054.921 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads2.zip.tmp: 2400 files added (on-disk size: 111723 Kb)
+0054.931 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 110.2 Mb added on this batch (110.9 Mb, 2553 files batched, 38 (2436) added so far); re-opening (prior size: 111723 Kb)
+0061.810 (0) A useful amount of data was added after this amount of zip processing: 7.8 s (normalised: 7.8 s, rate: 14478.3 Kb/s)
+0061.827 (0) Zip: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads2.zip.tmp: 2500 files added (on-disk size: 218383.5 Kb)
+0075.103 (0) Created uploads zip (1) - 236570.8 Kb in 26 s (9099.4 Kb/s) (SHA1 checksum: 5f0c093d652849d94291c62034104c8be1ff825f)
+0075.112 (0) Beginning backup of other directories found in the content directory (index: 0)
+0075.116 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql
+0075.121 (0) Looking for candidates to back up in: /var/www/vhosts/upfit.de/httpdocs/wp-content
+0075.125 (0) finding files: languages: adding to list (1)
+0075.127 (0) finding files: index.php: adding to list (2)
+0075.130 (0) finding files: plugins: skipping: this is the plugins directory
+0075.132 (0) finding files: uploads: skipping: this is the uploads directory
+0075.135 (0) finding files: upgrade: skipping: excluded by options
+0075.137 (0) finding files: images: adding to list (3)
+0075.139 (0) finding files: test.html: adding to list (4)
+0075.143 (0) finding files: themes: skipping: this is the themes directory
+0075.146 (0) finding files: updraft: skipping: this is the updraft directory
+0075.161 (0) Total entities for the zip file: 4 directories, 32 files (0 skipped as non-modified), 4.6 Mb
+0075.839 (0) Created others zip (0) - 1224.9 Kb in 0.7 s (1779.1 Kb/s) (SHA1 checksum: 8c8e371f37d11a8bdacd542787fff4b79d018627)
+0075.851 (0) Saving backup status to database (elements: 9)
+0075.859 (0) Beginning creation of database dump (WordPress DB)
+0075.905 (0) Table up_options: Total expected rows (approximate): 2270
+0075.999 (0) Table up_options: Total rows added: 3278 in 0.09 seconds
+0076.004 (0) Table up_options: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_options.table.gz - 237.8 Kb)
+0076.012 (0) Table up_site: Total expected rows (approximate): 1
+0076.017 (0) Table up_site: Total rows added: 1 in 0.00 seconds
+0076.022 (0) Table up_site: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_site.table.gz - 0.4 Kb)
+0076.032 (0) Table up_blogs: Total expected rows (approximate): 6
+0076.037 (0) Table up_blogs: Total rows added: 6 in 0.00 seconds
+0076.041 (0) Table up_blogs: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_blogs.table.gz - 0.7 Kb)
+0076.052 (0) Table up_users: Total expected rows (approximate): 14
+0076.057 (0) Table up_users: Total rows added: 14 in 0.00 seconds
+0076.061 (0) Table up_users: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_users.table.gz - 1.6 Kb)
+0076.074 (0) Table up_usermeta: Total expected rows (approximate): 555
+0076.088 (0) Table up_usermeta: Total rows added: 724 in 0.01 seconds
+0076.092 (0) Table up_usermeta: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_usermeta.table.gz - 12.3 Kb)
+0076.100 (0) Table up_blog_versions: Total expected rows (approximate): 0
+0076.104 (0) Table up_blog_versions: Total rows added: 0 in 0.00 seconds
+0076.108 (0) Table up_blog_versions: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_blog_versions.table.gz - 0.3 Kb)
+0076.120 (0) Table up_commentmeta: Total expected rows (approximate): 0
+0076.124 (0) Table up_commentmeta: Total rows added: 0 in 0.00 seconds
+0076.128 (0) Table up_commentmeta: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_commentmeta.table.gz - 0.4 Kb)
+0076.161 (0) Table up_comments: Total expected rows (approximate): 31
+0076.167 (0) Table up_comments: Total rows added: 31 in 0.00 seconds
+0076.171 (0) Table up_comments: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_comments.table.gz - 1.3 Kb)
+0076.180 (0) Table up_links: Total expected rows (approximate): 0
+0076.185 (0) Table up_links: Total rows added: 0 in 0.00 seconds
+0076.189 (0) Table up_links: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_links.table.gz - 0.4 Kb)
+0076.200 (0) Table up_ms_snippets: Total expected rows (approximate): 0
+0076.204 (0) Table up_ms_snippets: Total rows added: 0 in 0.00 seconds
+0076.208 (0) Table up_ms_snippets: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_ms_snippets.table.gz - 0.3 Kb)
+0076.221 (0) Table up_postmeta: Total expected rows (approximate): 4643
+0076.267 (0) Table up_postmeta: Total rows added: 2955 in 0.04 seconds
+0076.272 (0) Table up_postmeta: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_postmeta.table.gz - 33.7 Kb)
+0076.282 (0) Table up_posts: Total expected rows (approximate): 1987
+0076.538 (0) Table up_posts: Total rows added: 1583 in 0.25 seconds
+0076.543 (0) Table up_posts: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_posts.table.gz - 480.7 Kb)
+0076.553 (0) Table up_registration_log: Total expected rows (approximate): 37
+0076.559 (0) Table up_registration_log: Total rows added: 37 in 0.00 seconds
+0076.563 (0) Table up_registration_log: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_registration_log.table.gz - 1 Kb)
+0076.572 (0) Table up_signups: Total expected rows (approximate): 23
+0076.578 (0) Table up_signups: Total rows added: 23 in 0.00 seconds
+0076.584 (0) Table up_signups: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_signups.table.gz - 1.6 Kb)
+0076.596 (0) Table up_sitemeta: Total expected rows (approximate): 142
+0076.606 (0) Table up_sitemeta: Total rows added: 150 in 0.01 seconds
+0076.610 (0) Table up_sitemeta: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_sitemeta.table.gz - 18.9 Kb)
+0076.619 (0) Table up_snippets: Total expected rows (approximate): 1
+0076.624 (0) Table up_snippets: Total rows added: 1 in 0.00 seconds
+0076.628 (0) Table up_snippets: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_snippets.table.gz - 0.5 Kb)
+0076.639 (0) Table up_term_relationships: Total expected rows (approximate): 27
+0076.644 (0) Table up_term_relationships: Total rows added: 27 in 0.00 seconds
+0076.649 (0) Table up_term_relationships: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_term_relationships.table.gz - 0.5 Kb)
+0076.660 (0) Table up_term_taxonomy: Total expected rows (approximate): 32
+0076.664 (0) Table up_term_taxonomy: Total rows added: 32 in 0.00 seconds
+0076.669 (0) Table up_term_taxonomy: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_term_taxonomy.table.gz - 0.8 Kb)
+0076.680 (0) Table up_terms: Total expected rows (approximate): 32
+0076.685 (0) Table up_terms: Total rows added: 32 in 0.00 seconds
+0076.689 (0) Table up_terms: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_terms.table.gz - 0.8 Kb)
+0076.700 (0) Table up_woocommerce_order_itemmeta: Total expected rows (approximate): 386
+0076.711 (0) Table up_woocommerce_order_itemmeta: Total rows added: 472 in 0.01 seconds
+0076.715 (0) Table up_woocommerce_order_itemmeta: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_woocommerce_order_itemmeta.table.gz - 4.6 Kb)
+0076.724 (0) Table up_woocommerce_termmeta: Total expected rows (approximate): 19
+0076.729 (0) Table up_woocommerce_termmeta: Total rows added: 19 in 0.00 seconds
+0076.733 (0) Table up_woocommerce_termmeta: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_woocommerce_termmeta.table.gz - 0.7 Kb)
+0076.744 (0) Table up_yith_vendors_commissions: Total expected rows (approximate): 9
+0076.750 (0) Table up_yith_vendors_commissions: Total rows added: 9 in 0.00 seconds
+0076.753 (0) Table up_yith_vendors_commissions: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_yith_vendors_commissions.table.gz - 0.6 Kb)
+0076.763 (0) Table up_yith_vendors_commissions_notes: Total expected rows (approximate): 1
+0076.768 (0) Table up_yith_vendors_commissions_notes: Total rows added: 1 in 0.00 seconds
+0076.773 (0) Table up_yith_vendors_commissions_notes: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_yith_vendors_commissions_notes.table.gz - 0.4 Kb)
+0076.780 (0) Skipping table (lacks our prefix (up_)): questionnaire
+0076.784 (0) Skipping table (lacks our prefix (up_)): temp
+0076.791 (0) Table up_23_commentmeta: Total expected rows (approximate): 2
+0076.796 (0) Table up_23_commentmeta: Total rows added: 2 in 0.00 seconds
+0076.800 (0) Table up_23_commentmeta: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_commentmeta.table.gz - 0.4 Kb)
+0076.813 (0) Table up_23_comments: Total expected rows (approximate): 1235
+0076.868 (0) Table up_23_comments: Total rows added: 1283 in 0.05 seconds
+0076.873 (0) Table up_23_comments: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_comments.table.gz - 19.2 Kb)
+0076.884 (0) Table up_23_duplicator_packages: Total expected rows (approximate): 0
+0076.889 (0) Table up_23_duplicator_packages: Total rows added: 0 in 0.00 seconds
+0076.893 (0) Table up_23_duplicator_packages: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_duplicator_packages.table.gz - 0.4 Kb)
+0076.904 (0) Table up_23_links: Total expected rows (approximate): 0
+0076.909 (0) Table up_23_links: Total rows added: 0 in 0.00 seconds
+0076.913 (0) Table up_23_links: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_links.table.gz - 0.4 Kb)
+0076.924 (0) Table up_23_maintenance_page: Total expected rows (approximate): 0
+0076.928 (0) Table up_23_maintenance_page: Total rows added: 0 in 0.00 seconds
+0076.933 (0) Table up_23_maintenance_page: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_maintenance_page.table.gz - 0.3 Kb)
+0076.945 (0) Table up_23_options: Total expected rows (approximate): 889
+0076.966 (0) Table up_23_options: Total rows added: 610 in 0.02 seconds
+0076.972 (0) Table up_23_options: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_options.table.gz - 52.1 Kb)
+0076.984 (0) Table up_23_postmeta: Total expected rows (approximate): 44250
+0078.022 (0) Table up_23_postmeta: Total rows added: 44289 in 1.03 seconds
+0078.028 (0) Table up_23_postmeta: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_postmeta.table.gz - 337.4 Kb)
+0078.040 (0) Table up_23_posts: Total expected rows (approximate): 1144
+0078.107 (0) Table up_23_posts: Total rows added: 547 in 0.06 seconds
+0078.111 (0) Table up_23_posts: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_posts.table.gz - 96 Kb)
+0078.124 (0) Table up_23_snippets: Total expected rows (approximate): 0
+0078.129 (0) Table up_23_snippets: Total rows added: 0 in 0.00 seconds
+0078.133 (0) Table up_23_snippets: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_snippets.table.gz - 0.3 Kb)
+0078.144 (0) Table up_23_term_relationships: Total expected rows (approximate): 49
+0078.149 (0) Table up_23_term_relationships: Total rows added: 49 in 0.00 seconds
+0078.154 (0) Table up_23_term_relationships: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_term_relationships.table.gz - 0.5 Kb)
+0078.163 (0) Table up_23_term_taxonomy: Total expected rows (approximate): 40
+0078.169 (0) Table up_23_term_taxonomy: Total rows added: 40 in 0.00 seconds
+0078.173 (0) Table up_23_term_taxonomy: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_term_taxonomy.table.gz - 0.9 Kb)
+0078.184 (0) Table up_23_terms: Total expected rows (approximate): 40
+0078.190 (0) Table up_23_terms: Total rows added: 40 in 0.00 seconds
+0078.194 (0) Table up_23_terms: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_terms.table.gz - 0.9 Kb)
+0078.205 (0) Table up_23_woocommerce_api_keys: Total expected rows (approximate): 0
+0078.210 (0) Table up_23_woocommerce_api_keys: Total rows added: 0 in 0.00 seconds
+0078.214 (0) Table up_23_woocommerce_api_keys: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_woocommerce_api_keys.table.gz - 0.4 Kb)
+0078.225 (0) Table up_23_woocommerce_attribute_taxonomies: Total expected rows (approximate): 0
+0078.229 (0) Table up_23_woocommerce_attribute_taxonomies: Total rows added: 0 in 0.00 seconds
+0078.233 (0) Table up_23_woocommerce_attribute_taxonomies: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_woocommerce_attribute_taxonomies.table.gz - 0.4 Kb)
+0078.243 (0) Table up_23_woocommerce_downloadable_product_permissions: Total expected rows (approximate): 0
+0078.248 (0) Table up_23_woocommerce_downloadable_product_permissions: Total rows added: 0 in 0.00 seconds
+0078.252 (0) Table up_23_woocommerce_downloadable_product_permissions: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_woocommerce_downloadable_product_permissions.table.gz - 0.5 Kb)
+0078.260 (0) Table up_23_woocommerce_order_itemmeta: Total expected rows (approximate): 52
+0078.266 (0) Table up_23_woocommerce_order_itemmeta: Total rows added: 52 in 0.00 seconds
+0078.269 (0) Table up_23_woocommerce_order_itemmeta: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_woocommerce_order_itemmeta.table.gz - 1.2 Kb)
+0078.279 (0) Table up_23_woocommerce_order_items: Total expected rows (approximate): 5
+0078.283 (0) Table up_23_woocommerce_order_items: Total rows added: 5 in 0.00 seconds
+0078.287 (0) Table up_23_woocommerce_order_items: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_woocommerce_order_items.table.gz - 0.5 Kb)
+0078.296 (0) Table up_23_woocommerce_tax_rate_locations: Total expected rows (approximate): 0
+0078.300 (0) Table up_23_woocommerce_tax_rate_locations: Total rows added: 0 in 0.00 seconds
+0078.304 (0) Table up_23_woocommerce_tax_rate_locations: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_woocommerce_tax_rate_locations.table.gz - 0.4 Kb)
+0078.312 (0) Table up_23_woocommerce_tax_rates: Total expected rows (approximate): 31
+0078.317 (0) Table up_23_woocommerce_tax_rates: Total rows added: 31 in 0.00 seconds
+0078.321 (0) Table up_23_woocommerce_tax_rates: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_woocommerce_tax_rates.table.gz - 0.9 Kb)
+0078.331 (0) Table up_23_woocommerce_termmeta: Total expected rows (approximate): 19
+0078.336 (0) Table up_23_woocommerce_termmeta: Total rows added: 19 in 0.00 seconds
+0078.340 (0) Table up_23_woocommerce_termmeta: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_woocommerce_termmeta.table.gz - 0.7 Kb)
+0078.348 (0) Table up_23_xyz_ips_short_code: Total expected rows (approximate): 0
+0078.353 (0) Table up_23_xyz_ips_short_code: Total rows added: 0 in 0.00 seconds
+0078.356 (0) Table up_23_xyz_ips_short_code: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_xyz_ips_short_code.table.gz - 0.3 Kb)
+0078.364 (0) Table up_23_yith_vendors_commissions: Total expected rows (approximate): 8
+0078.369 (0) Table up_23_yith_vendors_commissions: Total rows added: 8 in 0.00 seconds
+0078.373 (0) Table up_23_yith_vendors_commissions: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_yith_vendors_commissions.table.gz - 0.7 Kb)
+0078.383 (0) Table up_23_yith_vendors_commissions_notes: Total expected rows (approximate): 7
+0078.388 (0) Table up_23_yith_vendors_commissions_notes: Total rows added: 7 in 0.00 seconds
+0078.392 (0) Table up_23_yith_vendors_commissions_notes: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_yith_vendors_commissions_notes.table.gz - 0.5 Kb)
+0078.403 (0) Table up_24_duplicator_packages: Total expected rows (approximate): 0
+0078.407 (0) Table up_24_duplicator_packages: Total rows added: 0 in 0.00 seconds
+0078.411 (0) Table up_24_duplicator_packages: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_24_duplicator_packages.table.gz - 0.4 Kb)
+0078.420 (0) Table up_25_commentmeta: Total expected rows (approximate): 3
+0078.425 (0) Table up_25_commentmeta: Total rows added: 3 in 0.00 seconds
+0078.429 (0) Table up_25_commentmeta: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_commentmeta.table.gz - 0.4 Kb)
+0078.441 (0) Table up_25_comments: Total expected rows (approximate): 239
+0078.456 (0) Table up_25_comments: Total rows added: 261 in 0.01 seconds
+0078.460 (0) Table up_25_comments: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_comments.table.gz - 4.2 Kb)
+0078.468 (0) Table up_25_duplicator_packages: Total expected rows (approximate): 0
+0078.472 (0) Table up_25_duplicator_packages: Total rows added: 0 in 0.00 seconds
+0078.476 (0) Table up_25_duplicator_packages: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_duplicator_packages.table.gz - 0.4 Kb)
+0078.487 (0) Table up_25_links: Total expected rows (approximate): 0
+0078.492 (0) Table up_25_links: Total rows added: 0 in 0.00 seconds
+0078.496 (0) Table up_25_links: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_links.table.gz - 0.4 Kb)
+0078.507 (0) Table up_25_maintenance_page: Total expected rows (approximate): 0
+0078.512 (0) Table up_25_maintenance_page: Total rows added: 0 in 0.00 seconds
+0078.516 (0) Table up_25_maintenance_page: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_maintenance_page.table.gz - 0.3 Kb)
+0078.527 (0) Table up_25_options: Total expected rows (approximate): 3305
+0078.578 (0) Table up_25_options: Total rows added: 2150 in 0.05 seconds
+0078.583 (0) Table up_25_options: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_options.table.gz - 95.4 Kb)
+0078.592 (0) Table up_25_postmeta: Total expected rows (approximate): 7130
+0078.692 (0) Table up_25_postmeta: Total rows added: 6640 in 0.10 seconds
+0078.698 (0) Table up_25_postmeta: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_postmeta.table.gz - 61.7 Kb)
+0078.705 (0) Table up_25_posts: Total expected rows (approximate): 509
+0078.742 (0) Table up_25_posts: Total rows added: 289 in 0.03 seconds
+0078.746 (0) Table up_25_posts: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_posts.table.gz - 83.5 Kb)
+0078.753 (0) Table up_25_snippets: Total expected rows (approximate): 0
+0078.757 (0) Table up_25_snippets: Total rows added: 0 in 0.00 seconds
+0078.761 (0) Table up_25_snippets: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_snippets.table.gz - 0.3 Kb)
+0078.772 (0) Table up_25_term_relationships: Total expected rows (approximate): 32
+0078.777 (0) Table up_25_term_relationships: Total rows added: 32 in 0.00 seconds
+0078.781 (0) Table up_25_term_relationships: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_term_relationships.table.gz - 0.5 Kb)
+0078.791 (0) Table up_25_term_taxonomy: Total expected rows (approximate): 33
+0078.796 (0) Table up_25_term_taxonomy: Total rows added: 33 in 0.00 seconds
+0078.800 (0) Table up_25_term_taxonomy: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_term_taxonomy.table.gz - 0.8 Kb)
+0078.811 (0) Table up_25_terms: Total expected rows (approximate): 33
+0078.816 (0) Table up_25_terms: Total rows added: 33 in 0.00 seconds
+0078.820 (0) Table up_25_terms: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_terms.table.gz - 0.9 Kb)
+0078.831 (0) Table up_25_woocommerce_api_keys: Total expected rows (approximate): 0
+0078.835 (0) Table up_25_woocommerce_api_keys: Total rows added: 0 in 0.00 seconds
+0078.840 (0) Table up_25_woocommerce_api_keys: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_woocommerce_api_keys.table.gz - 0.4 Kb)
+0078.848 (0) Table up_25_woocommerce_attribute_taxonomies: Total expected rows (approximate): 0
+0078.853 (0) Table up_25_woocommerce_attribute_taxonomies: Total rows added: 0 in 0.00 seconds
+0078.857 (0) Table up_25_woocommerce_attribute_taxonomies: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_woocommerce_attribute_taxonomies.table.gz - 0.4 Kb)
+0078.867 (0) Table up_25_woocommerce_downloadable_product_permissions: Total expected rows (approximate): 0
+0078.871 (0) Table up_25_woocommerce_downloadable_product_permissions: Total rows added: 0 in 0.00 seconds
+0078.875 (0) Table up_25_woocommerce_downloadable_product_permissions: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_woocommerce_downloadable_product_permissions.table.gz - 0.5 Kb)
+0078.884 (0) Table up_25_woocommerce_order_itemmeta: Total expected rows (approximate): 294
+0078.893 (0) Table up_25_woocommerce_order_itemmeta: Total rows added: 353 in 0.01 seconds
+0078.898 (0) Table up_25_woocommerce_order_itemmeta: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_woocommerce_order_itemmeta.table.gz - 3.5 Kb)
+0078.908 (0) Table up_25_woocommerce_order_items: Total expected rows (approximate): 33
+0078.913 (0) Table up_25_woocommerce_order_items: Total rows added: 33 in 0.00 seconds
+0078.918 (0) Table up_25_woocommerce_order_items: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_woocommerce_order_items.table.gz - 0.6 Kb)
+0078.928 (0) Table up_25_woocommerce_tax_rate_locations: Total expected rows (approximate): 0
+0078.932 (0) Table up_25_woocommerce_tax_rate_locations: Total rows added: 0 in 0.00 seconds
+0078.936 (0) Table up_25_woocommerce_tax_rate_locations: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_woocommerce_tax_rate_locations.table.gz - 0.4 Kb)
+0078.947 (0) Table up_25_woocommerce_tax_rates: Total expected rows (approximate): 30
+0078.952 (0) Table up_25_woocommerce_tax_rates: Total rows added: 30 in 0.00 seconds
+0078.957 (0) Table up_25_woocommerce_tax_rates: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_woocommerce_tax_rates.table.gz - 0.9 Kb)
+0078.967 (0) Table up_25_woocommerce_termmeta: Total expected rows (approximate): 27
+0078.973 (0) Table up_25_woocommerce_termmeta: Total rows added: 27 in 0.00 seconds
+0078.977 (0) Table up_25_woocommerce_termmeta: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_woocommerce_termmeta.table.gz - 0.8 Kb)
+0078.987 (0) Table up_25_yith_vendors_commissions: Total expected rows (approximate): 4
+0078.992 (0) Table up_25_yith_vendors_commissions: Total rows added: 4 in 0.00 seconds
+0078.996 (0) Table up_25_yith_vendors_commissions: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_yith_vendors_commissions.table.gz - 0.6 Kb)
+0079.005 (0) Table up_25_yith_vendors_commissions_notes: Total expected rows (approximate): 3
+0079.010 (0) Table up_25_yith_vendors_commissions_notes: Total rows added: 3 in 0.00 seconds
+0079.014 (0) Table up_25_yith_vendors_commissions_notes: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_yith_vendors_commissions_notes.table.gz - 0.5 Kb)
+0079.023 (0) Table up_28_commentmeta: Total expected rows (approximate): 0
+0079.028 (0) Table up_28_commentmeta: Total rows added: 0 in 0.00 seconds
+0079.032 (0) Table up_28_commentmeta: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_commentmeta.table.gz - 0.4 Kb)
+0079.042 (0) Table up_28_comments: Total expected rows (approximate): 24
+0079.048 (0) Table up_28_comments: Total rows added: 24 in 0.00 seconds
+0079.052 (0) Table up_28_comments: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_comments.table.gz - 1.1 Kb)
+0079.062 (0) Table up_28_duplicator_packages: Total expected rows (approximate): 0
+0079.067 (0) Table up_28_duplicator_packages: Total rows added: 0 in 0.00 seconds
+0079.070 (0) Table up_28_duplicator_packages: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_duplicator_packages.table.gz - 0.4 Kb)
+0079.079 (0) Table up_28_links: Total expected rows (approximate): 0
+0079.083 (0) Table up_28_links: Total rows added: 0 in 0.00 seconds
+0079.087 (0) Table up_28_links: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_links.table.gz - 0.4 Kb)
+0079.092 (0) Table up_28_maintenance_page: Total expected rows (approximate): 0
+0079.096 (0) Table up_28_maintenance_page: Total rows added: 0 in 0.00 seconds
+0079.100 (0) Table up_28_maintenance_page: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_maintenance_page.table.gz - 0.3 Kb)
+0079.108 (0) Table up_28_options: Total expected rows (approximate): 1209
+0079.144 (0) Table up_28_options: Total rows added: 1403 in 0.03 seconds
+0079.149 (0) Table up_28_options: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_options.table.gz - 63.9 Kb)
+0079.162 (0) Table up_28_postmeta: Total expected rows (approximate): 1869
+0079.191 (0) Table up_28_postmeta: Total rows added: 1830 in 0.03 seconds
+0079.196 (0) Table up_28_postmeta: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_postmeta.table.gz - 21.6 Kb)
+0079.204 (0) Table up_28_posts: Total expected rows (approximate): 182
+0079.233 (0) Table up_28_posts: Total rows added: 210 in 0.02 seconds
+0079.237 (0) Table up_28_posts: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_posts.table.gz - 59.2 Kb)
+0079.244 (0) Table up_28_snippets: Total expected rows (approximate): 0
+0079.248 (0) Table up_28_snippets: Total rows added: 0 in 0.00 seconds
+0079.252 (0) Table up_28_snippets: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_snippets.table.gz - 0.3 Kb)
+0079.262 (0) Table up_28_term_relationships: Total expected rows (approximate): 29
+0079.267 (0) Table up_28_term_relationships: Total rows added: 29 in 0.00 seconds
+0079.271 (0) Table up_28_term_relationships: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_term_relationships.table.gz - 0.5 Kb)
+0079.280 (0) Table up_28_term_taxonomy: Total expected rows (approximate): 32
+0079.285 (0) Table up_28_term_taxonomy: Total rows added: 32 in 0.00 seconds
+0079.289 (0) Table up_28_term_taxonomy: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_term_taxonomy.table.gz - 0.8 Kb)
+0079.300 (0) Table up_28_terms: Total expected rows (approximate): 32
+0079.305 (0) Table up_28_terms: Total rows added: 32 in 0.00 seconds
+0079.309 (0) Table up_28_terms: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_terms.table.gz - 0.8 Kb)
+0079.319 (0) Table up_28_woocommerce_api_keys: Total expected rows (approximate): 0
+0079.323 (0) Table up_28_woocommerce_api_keys: Total rows added: 0 in 0.00 seconds
+0079.328 (0) Table up_28_woocommerce_api_keys: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_woocommerce_api_keys.table.gz - 0.4 Kb)
+0079.336 (0) Table up_28_woocommerce_attribute_taxonomies: Total expected rows (approximate): 0
+0079.341 (0) Table up_28_woocommerce_attribute_taxonomies: Total rows added: 0 in 0.00 seconds
+0079.345 (0) Table up_28_woocommerce_attribute_taxonomies: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_woocommerce_attribute_taxonomies.table.gz - 0.4 Kb)
+0079.356 (0) Table up_28_woocommerce_downloadable_product_permissions: Total expected rows (approximate): 0
+0079.361 (0) Table up_28_woocommerce_downloadable_product_permissions: Total rows added: 0 in 0.00 seconds
+0079.365 (0) Table up_28_woocommerce_downloadable_product_permissions: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_woocommerce_downloadable_product_permissions.table.gz - 0.5 Kb)
+0079.375 (0) Table up_28_woocommerce_order_itemmeta: Total expected rows (approximate): 197
+0079.383 (0) Table up_28_woocommerce_order_itemmeta: Total rows added: 270 in 0.00 seconds
+0079.387 (0) Table up_28_woocommerce_order_itemmeta: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_woocommerce_order_itemmeta.table.gz - 2.8 Kb)
+0079.396 (0) Table up_28_woocommerce_order_items: Total expected rows (approximate): 33
+0079.401 (0) Table up_28_woocommerce_order_items: Total rows added: 33 in 0.00 seconds
+0079.405 (0) Table up_28_woocommerce_order_items: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_woocommerce_order_items.table.gz - 0.6 Kb)
+0079.416 (0) Table up_28_woocommerce_tax_rate_locations: Total expected rows (approximate): 0
+0079.421 (0) Table up_28_woocommerce_tax_rate_locations: Total rows added: 0 in 0.00 seconds
+0079.425 (0) Table up_28_woocommerce_tax_rate_locations: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_woocommerce_tax_rate_locations.table.gz - 0.4 Kb)
+0079.436 (0) Table up_28_woocommerce_tax_rates: Total expected rows (approximate): 30
+0079.442 (0) Table up_28_woocommerce_tax_rates: Total rows added: 30 in 0.00 seconds
+0079.446 (0) Table up_28_woocommerce_tax_rates: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_woocommerce_tax_rates.table.gz - 0.9 Kb)
+0079.456 (0) Table up_28_woocommerce_termmeta: Total expected rows (approximate): 18
+0079.461 (0) Table up_28_woocommerce_termmeta: Total rows added: 18 in 0.00 seconds
+0079.466 (0) Table up_28_woocommerce_termmeta: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_woocommerce_termmeta.table.gz - 0.7 Kb)
+0079.476 (0) Table up_28_yith_vendors_commissions: Total expected rows (approximate): 2
+0079.481 (0) Table up_28_yith_vendors_commissions: Total rows added: 2 in 0.00 seconds
+0079.485 (0) Table up_28_yith_vendors_commissions: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_yith_vendors_commissions.table.gz - 0.5 Kb)
+0079.496 (0) Table up_28_yith_vendors_commissions_notes: Total expected rows (approximate): 6
+0079.501 (0) Table up_28_yith_vendors_commissions_notes: Total rows added: 6 in 0.00 seconds
+0079.505 (0) Table up_28_yith_vendors_commissions_notes: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_yith_vendors_commissions_notes.table.gz - 0.6 Kb)
+0079.516 (0) Table up_32_commentmeta: Total expected rows (approximate): 0
+0079.520 (0) Table up_32_commentmeta: Total rows added: 0 in 0.00 seconds
+0079.524 (0) Table up_32_commentmeta: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_commentmeta.table.gz - 0.4 Kb)
+0079.536 (0) Table up_32_comments: Total expected rows (approximate): 46
+0079.543 (0) Table up_32_comments: Total rows added: 46 in 0.00 seconds
+0079.547 (0) Table up_32_comments: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_comments.table.gz - 1.4 Kb)
+0079.556 (0) Table up_32_links: Total expected rows (approximate): 0
+0079.561 (0) Table up_32_links: Total rows added: 0 in 0.00 seconds
+0079.565 (0) Table up_32_links: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_links.table.gz - 0.4 Kb)
+0079.576 (0) Table up_32_maintenance_page: Total expected rows (approximate): 0
+0079.581 (0) Table up_32_maintenance_page: Total rows added: 0 in 0.00 seconds
+0079.585 (0) Table up_32_maintenance_page: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_maintenance_page.table.gz - 0.3 Kb)
+0079.593 (0) Table up_32_options: Total expected rows (approximate): 883
+0079.616 (0) Table up_32_options: Total rows added: 752 in 0.02 seconds
+0079.621 (0) Table up_32_options: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_options.table.gz - 43.9 Kb)
+0079.630 (0) Table up_32_postmeta: Total expected rows (approximate): 1597
+0079.664 (0) Table up_32_postmeta: Total rows added: 2187 in 0.03 seconds
+0079.669 (0) Table up_32_postmeta: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_postmeta.table.gz - 24.3 Kb)
+0079.681 (0) Table up_32_posts: Total expected rows (approximate): 353
+0079.707 (0) Table up_32_posts: Total rows added: 198 in 0.02 seconds
+0079.711 (0) Table up_32_posts: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_posts.table.gz - 52.9 Kb)
+0079.720 (0) Table up_32_snippets: Total expected rows (approximate): 0
+0079.725 (0) Table up_32_snippets: Total rows added: 0 in 0.00 seconds
+0079.729 (0) Table up_32_snippets: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_snippets.table.gz - 0.3 Kb)
+0079.740 (0) Table up_32_term_relationships: Total expected rows (approximate): 29
+0079.745 (0) Table up_32_term_relationships: Total rows added: 29 in 0.00 seconds
+0079.749 (0) Table up_32_term_relationships: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_term_relationships.table.gz - 0.5 Kb)
+0079.760 (0) Table up_32_term_taxonomy: Total expected rows (approximate): 32
+0079.764 (0) Table up_32_term_taxonomy: Total rows added: 32 in 0.00 seconds
+0079.768 (0) Table up_32_term_taxonomy: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_term_taxonomy.table.gz - 0.8 Kb)
+0079.779 (0) Table up_32_terms: Total expected rows (approximate): 32
+0079.784 (0) Table up_32_terms: Total rows added: 32 in 0.00 seconds
+0079.789 (0) Table up_32_terms: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_terms.table.gz - 0.8 Kb)
+0079.800 (0) Table up_32_woocommerce_api_keys: Total expected rows (approximate): 0
+0079.805 (0) Table up_32_woocommerce_api_keys: Total rows added: 0 in 0.00 seconds
+0079.809 (0) Table up_32_woocommerce_api_keys: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_woocommerce_api_keys.table.gz - 0.4 Kb)
+0079.820 (0) Table up_32_woocommerce_attribute_taxonomies: Total expected rows (approximate): 0
+0079.825 (0) Table up_32_woocommerce_attribute_taxonomies: Total rows added: 0 in 0.00 seconds
+0079.829 (0) Table up_32_woocommerce_attribute_taxonomies: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_woocommerce_attribute_taxonomies.table.gz - 0.4 Kb)
+0079.840 (0) Table up_32_woocommerce_downloadable_product_permissions: Total expected rows (approximate): 0
+0079.845 (0) Table up_32_woocommerce_downloadable_product_permissions: Total rows added: 0 in 0.00 seconds
+0079.849 (0) Table up_32_woocommerce_downloadable_product_permissions: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_woocommerce_downloadable_product_permissions.table.gz - 0.5 Kb)
+0079.861 (0) Table up_32_woocommerce_order_itemmeta: Total expected rows (approximate): 197
+0079.869 (0) Table up_32_woocommerce_order_itemmeta: Total rows added: 276 in 0.00 seconds
+0079.873 (0) Table up_32_woocommerce_order_itemmeta: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_woocommerce_order_itemmeta.table.gz - 2.8 Kb)
+0079.886 (0) Table up_32_woocommerce_order_items: Total expected rows (approximate): 34
+0079.891 (0) Table up_32_woocommerce_order_items: Total rows added: 34 in 0.00 seconds
+0079.895 (0) Table up_32_woocommerce_order_items: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_woocommerce_order_items.table.gz - 0.6 Kb)
+0079.904 (0) Table up_32_woocommerce_tax_rate_locations: Total expected rows (approximate): 0
+0079.908 (0) Table up_32_woocommerce_tax_rate_locations: Total rows added: 0 in 0.00 seconds
+0079.912 (0) Table up_32_woocommerce_tax_rate_locations: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_woocommerce_tax_rate_locations.table.gz - 0.4 Kb)
+0079.923 (0) Table up_32_woocommerce_tax_rates: Total expected rows (approximate): 30
+0079.929 (0) Table up_32_woocommerce_tax_rates: Total rows added: 30 in 0.00 seconds
+0079.933 (0) Table up_32_woocommerce_tax_rates: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_woocommerce_tax_rates.table.gz - 0.9 Kb)
+0079.944 (0) Table up_32_woocommerce_termmeta: Total expected rows (approximate): 13
+0079.949 (0) Table up_32_woocommerce_termmeta: Total rows added: 13 in 0.00 seconds
+0079.953 (0) Table up_32_woocommerce_termmeta: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_woocommerce_termmeta.table.gz - 0.6 Kb)
+0079.963 (0) Table up_32_yith_vendors_commissions: Total expected rows (approximate): 2
+0079.968 (0) Table up_32_yith_vendors_commissions: Total rows added: 2 in 0.00 seconds
+0079.972 (0) Table up_32_yith_vendors_commissions: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_yith_vendors_commissions.table.gz - 0.5 Kb)
+0079.983 (0) Table up_32_yith_vendors_commissions_notes: Total expected rows (approximate): 2
+0079.988 (0) Table up_32_yith_vendors_commissions_notes: Total rows added: 2 in 0.00 seconds
+0079.992 (0) Table up_32_yith_vendors_commissions_notes: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_yith_vendors_commissions_notes.table.gz - 0.5 Kb)
+0080.001 (0) Table up_38_commentmeta: Total expected rows (approximate): 0
+0080.005 (0) Table up_38_commentmeta: Total rows added: 0 in 0.00 seconds
+0080.010 (0) Table up_38_commentmeta: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_commentmeta.table.gz - 0.4 Kb)
+0080.020 (0) Table up_38_comments: Total expected rows (approximate): 33
+0080.026 (0) Table up_38_comments: Total rows added: 33 in 0.00 seconds
+0080.030 (0) Table up_38_comments: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_comments.table.gz - 1.2 Kb)
+0080.040 (0) Table up_38_links: Total expected rows (approximate): 0
+0080.045 (0) Table up_38_links: Total rows added: 0 in 0.00 seconds
+0080.049 (0) Table up_38_links: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_links.table.gz - 0.4 Kb)
+0080.059 (0) Table up_38_maintenance_page: Total expected rows (approximate): 0
+0080.064 (0) Table up_38_maintenance_page: Total rows added: 0 in 0.00 seconds
+0080.068 (0) Table up_38_maintenance_page: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_maintenance_page.table.gz - 0.3 Kb)
+0080.077 (0) Table up_38_options: Total expected rows (approximate): 356
+0080.099 (0) Table up_38_options: Total rows added: 658 in 0.02 seconds
+0080.104 (0) Table up_38_options: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_options.table.gz - 39.6 Kb)
+0080.113 (0) Table up_38_postmeta: Total expected rows (approximate): 1327
+0080.141 (0) Table up_38_postmeta: Total rows added: 1811 in 0.02 seconds
+0080.146 (0) Table up_38_postmeta: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_postmeta.table.gz - 22 Kb)
+0080.157 (0) Table up_38_posts: Total expected rows (approximate): 165
+0080.183 (0) Table up_38_posts: Total rows added: 194 in 0.02 seconds
+0080.188 (0) Table up_38_posts: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_posts.table.gz - 54.1 Kb)
+0080.196 (0) Table up_38_snippets: Total expected rows (approximate): 0
+0080.201 (0) Table up_38_snippets: Total rows added: 0 in 0.00 seconds
+0080.205 (0) Table up_38_snippets: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_snippets.table.gz - 0.3 Kb)
+0080.216 (0) Table up_38_term_relationships: Total expected rows (approximate): 29
+0080.221 (0) Table up_38_term_relationships: Total rows added: 29 in 0.00 seconds
+0080.225 (0) Table up_38_term_relationships: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_term_relationships.table.gz - 0.5 Kb)
+0080.235 (0) Table up_38_term_taxonomy: Total expected rows (approximate): 32
+0080.240 (0) Table up_38_term_taxonomy: Total rows added: 32 in 0.00 seconds
+0080.245 (0) Table up_38_term_taxonomy: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_term_taxonomy.table.gz - 0.8 Kb)
+0080.255 (0) Table up_38_terms: Total expected rows (approximate): 32
+0080.260 (0) Table up_38_terms: Total rows added: 32 in 0.00 seconds
+0080.264 (0) Table up_38_terms: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_terms.table.gz - 0.8 Kb)
+0080.272 (0) Table up_38_woocommerce_api_keys: Total expected rows (approximate): 0
+0080.277 (0) Table up_38_woocommerce_api_keys: Total rows added: 0 in 0.00 seconds
+0080.281 (0) Table up_38_woocommerce_api_keys: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_woocommerce_api_keys.table.gz - 0.4 Kb)
+0080.291 (0) Table up_38_woocommerce_attribute_taxonomies: Total expected rows (approximate): 0
+0080.295 (0) Table up_38_woocommerce_attribute_taxonomies: Total rows added: 0 in 0.00 seconds
+0080.300 (0) Table up_38_woocommerce_attribute_taxonomies: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_woocommerce_attribute_taxonomies.table.gz - 0.4 Kb)
+0080.308 (0) Table up_38_woocommerce_downloadable_product_permissions: Total expected rows (approximate): 0
+0080.313 (0) Table up_38_woocommerce_downloadable_product_permissions: Total rows added: 0 in 0.00 seconds
+0080.317 (0) Table up_38_woocommerce_downloadable_product_permissions: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_woocommerce_downloadable_product_permissions.table.gz - 0.5 Kb)
+0080.329 (0) Table up_38_woocommerce_order_itemmeta: Total expected rows (approximate): 21
+0080.333 (0) Table up_38_woocommerce_order_itemmeta: Total rows added: 21 in 0.00 seconds
+0080.338 (0) Table up_38_woocommerce_order_itemmeta: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_woocommerce_order_itemmeta.table.gz - 0.9 Kb)
+0080.349 (0) Table up_38_woocommerce_order_items: Total expected rows (approximate): 2
+0080.354 (0) Table up_38_woocommerce_order_items: Total rows added: 2 in 0.00 seconds
+0080.357 (0) Table up_38_woocommerce_order_items: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_woocommerce_order_items.table.gz - 0.4 Kb)
+0080.369 (0) Table up_38_woocommerce_tax_rate_locations: Total expected rows (approximate): 0
+0080.373 (0) Table up_38_woocommerce_tax_rate_locations: Total rows added: 0 in 0.00 seconds
+0080.377 (0) Table up_38_woocommerce_tax_rate_locations: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_woocommerce_tax_rate_locations.table.gz - 0.4 Kb)
+0080.388 (0) Table up_38_woocommerce_tax_rates: Total expected rows (approximate): 30
+0080.394 (0) Table up_38_woocommerce_tax_rates: Total rows added: 30 in 0.00 seconds
+0080.398 (0) Table up_38_woocommerce_tax_rates: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_woocommerce_tax_rates.table.gz - 0.9 Kb)
+0080.409 (0) Table up_38_woocommerce_termmeta: Total expected rows (approximate): 17
+0080.415 (0) Table up_38_woocommerce_termmeta: Total rows added: 17 in 0.00 seconds
+0080.419 (0) Table up_38_woocommerce_termmeta: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_woocommerce_termmeta.table.gz - 0.7 Kb)
+0080.428 (0) Table up_38_yith_vendors_commissions: Total expected rows (approximate): 0
+0080.432 (0) Table up_38_yith_vendors_commissions: Total rows added: 0 in 0.00 seconds
+0080.437 (0) Table up_38_yith_vendors_commissions: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_yith_vendors_commissions.table.gz - 0.4 Kb)
+0080.448 (0) Table up_38_yith_vendors_commissions_notes: Total expected rows (approximate): 0
+0080.453 (0) Table up_38_yith_vendors_commissions_notes: Total rows added: 0 in 0.00 seconds
+0080.457 (0) Table up_38_yith_vendors_commissions_notes: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_yith_vendors_commissions_notes.table.gz - 0.4 Kb)
+0080.467 (0) Table up_cron_status: Total expected rows (approximate): 8
+0080.472 (0) Table up_cron_status: Total rows added: 8 in 0.00 seconds
+0080.476 (0) Table up_cron_status: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_cron_status.table.gz - 0.5 Kb)
+0080.484 (0) Table up_food_attributes: Total expected rows (approximate): 0
+0080.488 (0) Table up_food_attributes: Total rows added: 0 in 0.00 seconds
+0080.492 (0) Table up_food_attributes: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_food_attributes.table.gz - 0.4 Kb)
+0080.502 (0) Table up_food_categories: Total expected rows (approximate): 18
+0080.508 (0) Table up_food_categories: Total rows added: 18 in 0.00 seconds
+0080.512 (0) Table up_food_categories: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_food_categories.table.gz - 0.8 Kb)
+0080.524 (0) Table up_food_micros: Total expected rows (approximate): 172186
+0080.531 (0) [Warning] Tabelle up_food_micros hat sehr viele Zeilen (172186) - wir hoffen, dass dein Webhoster dir genügend Ressourcen für einen Dump dieser Tabelle in die SIcherung.
+0088.540 (0) Table up_food_micros: Total rows added: 172032 in 8.00 seconds
+0088.562 (0) Table up_food_micros: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_food_micros.table.gz - 1287.4 Kb)
+0088.572 (0) Table up_foods: Total expected rows (approximate): 2744
+0088.988 (0) Table up_foods: Total rows added: 2688 in 0.41 seconds
+0088.995 (0) Table up_foods: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_foods.table.gz - 50.3 Kb)
+0089.004 (0) Table up_icl_content_status: Total expected rows (approximate): 0
+0089.009 (0) Table up_icl_content_status: Total rows added: 0 in 0.00 seconds
+0089.013 (0) Table up_icl_content_status: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_content_status.table.gz - 0.3 Kb)
+0089.022 (0) Table up_icl_core_status: Total expected rows (approximate): 0
+0089.027 (0) Table up_icl_core_status: Total rows added: 0 in 0.00 seconds
+0089.030 (0) Table up_icl_core_status: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_core_status.table.gz - 0.3 Kb)
+0089.039 (0) Table up_icl_flags: Total expected rows (approximate): 64
+0089.044 (0) Table up_icl_flags: Total rows added: 64 in 0.00 seconds
+0089.048 (0) Table up_icl_flags: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_flags.table.gz - 0.9 Kb)
+0089.059 (0) Table up_icl_languages: Total expected rows (approximate): 64
+0089.065 (0) Table up_icl_languages: Total rows added: 64 in 0.00 seconds
+0089.069 (0) Table up_icl_languages: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_languages.table.gz - 1.5 Kb)
+0089.081 (0) Table up_icl_languages_translations: Total expected rows (approximate): 4613
+0089.149 (0) Table up_icl_languages_translations: Total rows added: 4096 in 0.06 seconds
+0089.154 (0) Table up_icl_languages_translations: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_languages_translations.table.gz - 31.9 Kb)
+0089.163 (0) Table up_icl_locale_map: Total expected rows (approximate): 2
+0089.167 (0) Table up_icl_locale_map: Total rows added: 2 in 0.00 seconds
+0089.171 (0) Table up_icl_locale_map: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_locale_map.table.gz - 0.3 Kb)
+0089.180 (0) Table up_icl_message_status: Total expected rows (approximate): 0
+0089.185 (0) Table up_icl_message_status: Total rows added: 0 in 0.00 seconds
+0089.188 (0) Table up_icl_message_status: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_message_status.table.gz - 0.4 Kb)
+0089.197 (0) Table up_icl_node: Total expected rows (approximate): 0
+0089.201 (0) Table up_icl_node: Total rows added: 0 in 0.00 seconds
+0089.205 (0) Table up_icl_node: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_node.table.gz - 0.3 Kb)
+0089.216 (0) Table up_icl_reminders: Total expected rows (approximate): 0
+0089.220 (0) Table up_icl_reminders: Total rows added: 0 in 0.00 seconds
+0089.224 (0) Table up_icl_reminders: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_reminders.table.gz - 0.3 Kb)
+0089.235 (0) Table up_icl_string_positions: Total expected rows (approximate): 0
+0089.239 (0) Table up_icl_string_positions: Total rows added: 0 in 0.00 seconds
+0089.243 (0) Table up_icl_string_positions: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_string_positions.table.gz - 0.3 Kb)
+0089.252 (0) Table up_icl_string_status: Total expected rows (approximate): 0
+0089.257 (0) Table up_icl_string_status: Total rows added: 0 in 0.00 seconds
+0089.261 (0) Table up_icl_string_status: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_string_status.table.gz - 0.4 Kb)
+0089.271 (0) Table up_icl_string_translations: Total expected rows (approximate): 0
+0089.275 (0) Table up_icl_string_translations: Total rows added: 0 in 0.00 seconds
+0089.279 (0) Table up_icl_string_translations: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_string_translations.table.gz - 0.4 Kb)
+0089.288 (0) Table up_icl_strings: Total expected rows (approximate): 0
+0089.292 (0) Table up_icl_strings: Total rows added: 0 in 0.00 seconds
+0089.296 (0) Table up_icl_strings: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_strings.table.gz - 0.4 Kb)
+0089.305 (0) Table up_icl_translate: Total expected rows (approximate): 0
+0089.309 (0) Table up_icl_translate: Total rows added: 0 in 0.00 seconds
+0089.313 (0) Table up_icl_translate: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_translate.table.gz - 0.4 Kb)
+0089.323 (0) Table up_icl_translate_job: Total expected rows (approximate): 0
+0089.327 (0) Table up_icl_translate_job: Total rows added: 0 in 0.00 seconds
+0089.331 (0) Table up_icl_translate_job: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_translate_job.table.gz - 0.4 Kb)
+0089.340 (0) Table up_icl_translation_status: Total expected rows (approximate): 0
+0089.344 (0) Table up_icl_translation_status: Total rows added: 0 in 0.00 seconds
+0089.348 (0) Table up_icl_translation_status: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_translation_status.table.gz - 0.4 Kb)
+0089.360 (0) Table up_icl_translations: Total expected rows (approximate): 584
+0089.376 (0) Table up_icl_translations: Total rows added: 714 in 0.01 seconds
+0089.380 (0) Table up_icl_translations: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_translations.table.gz - 6.6 Kb)
+0089.387 (0) Table up_itsec_lockouts: Total expected rows (approximate): 0
+0089.392 (0) Table up_itsec_lockouts: Total rows added: 0 in 0.00 seconds
+0089.396 (0) Table up_itsec_lockouts: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_itsec_lockouts.table.gz - 0.4 Kb)
+0089.407 (0) Table up_itsec_log: Total expected rows (approximate): 0
+0089.412 (0) Table up_itsec_log: Total rows added: 0 in 0.00 seconds
+0089.416 (0) Table up_itsec_log: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_itsec_log.table.gz - 0.4 Kb)
+0089.425 (0) Table up_itsec_temp: Total expected rows (approximate): 0
+0089.429 (0) Table up_itsec_temp: Total rows added: 0 in 0.00 seconds
+0089.433 (0) Table up_itsec_temp: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_itsec_temp.table.gz - 0.4 Kb)
+0089.443 (0) Table up_maintenance_page: Total expected rows (approximate): 0
+0089.447 (0) Table up_maintenance_page: Total rows added: 0 in 0.00 seconds
+0089.451 (0) Table up_maintenance_page: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_maintenance_page.table.gz - 0.3 Kb)
+0089.460 (0) Table up_mcc_blogs_groups: Total expected rows (approximate): 0
+0089.465 (0) Table up_mcc_blogs_groups: Total rows added: 0 in 0.00 seconds
+0089.469 (0) Table up_mcc_blogs_groups: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_mcc_blogs_groups.table.gz - 0.3 Kb)
+0089.480 (0) Table up_mcc_blogs_groups_relationship: Total expected rows (approximate): 0
+0089.484 (0) Table up_mcc_blogs_groups_relationship: Total rows added: 0 in 0.00 seconds
+0089.488 (0) Table up_mcc_blogs_groups_relationship: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_mcc_blogs_groups_relationship.table.gz - 0.3 Kb)
+0089.499 (0) Table up_mcc_queue: Total expected rows (approximate): 0
+0089.503 (0) Table up_mcc_queue: Total rows added: 0 in 0.00 seconds
+0089.507 (0) Table up_mcc_queue: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_mcc_queue.table.gz - 0.3 Kb)
+0089.516 (0) Table up_mcc_synced_posts_relationships: Total expected rows (approximate): 0
+0089.520 (0) Table up_mcc_synced_posts_relationships: Total rows added: 0 in 0.00 seconds
+0089.524 (0) Table up_mcc_synced_posts_relationships: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_mcc_synced_posts_relationships.table.gz - 0.4 Kb)
+0089.532 (0) Table up_meal_categories: Total expected rows (approximate): 4
+0089.537 (0) Table up_meal_categories: Total rows added: 4 in 0.00 seconds
+0089.540 (0) Table up_meal_categories: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_meal_categories.table.gz - 0.5 Kb)
+0089.553 (0) Table up_meal_ingredients: Total expected rows (approximate): 3919
+0089.674 (0) Table up_meal_ingredients: Total rows added: 3578 in 0.12 seconds
+0089.679 (0) Table up_meal_ingredients: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_meal_ingredients.table.gz - 35.3 Kb)
+0089.688 (0) Table up_meal_instructions: Total expected rows (approximate): 391
+0089.720 (0) Table up_meal_instructions: Total rows added: 466 in 0.03 seconds
+0089.725 (0) Table up_meal_instructions: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_meal_instructions.table.gz - 47 Kb)
+0089.732 (0) Table up_meals: Total expected rows (approximate): 532
+0089.747 (0) Table up_meals: Total rows added: 466 in 0.01 seconds
+0089.752 (0) Table up_meals: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_meals.table.gz - 6.7 Kb)
+0089.759 (0) Table up_micro_master: Total expected rows (approximate): 57
+0089.764 (0) Table up_micro_master: Total rows added: 57 in 0.00 seconds
+0089.768 (0) Table up_micro_master: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_micro_master.table.gz - 0.8 Kb)
+0089.776 (0) Table up_novalnet_aff_account_detail: Total expected rows (approximate): 0
+0089.781 (0) Table up_novalnet_aff_account_detail: Total rows added: 0 in 0.00 seconds
+0089.785 (0) Table up_novalnet_aff_account_detail: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_novalnet_aff_account_detail.table.gz - 0.5 Kb)
+0089.795 (0) Table up_novalnet_aff_user_detail: Total expected rows (approximate): 0
+0089.800 (0) Table up_novalnet_aff_user_detail: Total rows added: 0 in 0.00 seconds
+0089.804 (0) Table up_novalnet_aff_user_detail: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_novalnet_aff_user_detail.table.gz - 0.4 Kb)
+0089.813 (0) Table up_novalnet_callback_history: Total expected rows (approximate): 0
+0089.817 (0) Table up_novalnet_callback_history: Total rows added: 0 in 0.00 seconds
+0089.820 (0) Table up_novalnet_callback_history: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_novalnet_callback_history.table.gz - 0.5 Kb)
+0089.828 (0) Table up_novalnet_invoice_details: Total expected rows (approximate): 0
+0089.833 (0) Table up_novalnet_invoice_details: Total rows added: 0 in 0.00 seconds
+0089.837 (0) Table up_novalnet_invoice_details: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_novalnet_invoice_details.table.gz - 0.5 Kb)
+0089.846 (0) Table up_novalnet_subscription_details: Total expected rows (approximate): 0
+0089.850 (0) Table up_novalnet_subscription_details: Total rows added: 0 in 0.00 seconds
+0089.855 (0) Table up_novalnet_subscription_details: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_novalnet_subscription_details.table.gz - 0.6 Kb)
+0089.863 (0) Table up_novalnet_transaction_detail: Total expected rows (approximate): 0
+0089.868 (0) Table up_novalnet_transaction_detail: Total rows added: 0 in 0.00 seconds
+0089.872 (0) Table up_novalnet_transaction_detail: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_novalnet_transaction_detail.table.gz - 0.8 Kb)
+0089.880 (0) Table up_order_meals: Total expected rows (approximate): 87708
+0091.704 (0) Table up_order_meals: Total rows added: 78200 in 1.82 seconds
+0091.709 (0) Table up_order_meals: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_order_meals.table.gz - 701.4 Kb)
+0091.720 (0) Table up_plan_logs: Total expected rows (approximate): 2929
+0091.913 (0) Table up_plan_logs: Total rows added: 2720 in 0.19 seconds
+0091.918 (0) Table up_plan_logs: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_plan_logs.table.gz - 244 Kb)
+0091.925 (0) Table up_pmxi_files: Total expected rows (approximate): 0
+0091.929 (0) Table up_pmxi_files: Total rows added: 0 in 0.00 seconds
+0091.933 (0) Table up_pmxi_files: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_pmxi_files.table.gz - 0.4 Kb)
+0091.942 (0) Table up_pmxi_history: Total expected rows (approximate): 0
+0091.945 (0) Table up_pmxi_history: Total rows added: 0 in 0.00 seconds
+0091.949 (0) Table up_pmxi_history: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_pmxi_history.table.gz - 0.4 Kb)
+0091.960 (0) Table up_pmxi_imports: Total expected rows (approximate): 0
+0091.964 (0) Table up_pmxi_imports: Total rows added: 0 in 0.00 seconds
+0091.968 (0) Table up_pmxi_imports: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_pmxi_imports.table.gz - 0.6 Kb)
+0091.979 (0) Table up_pmxi_posts: Total expected rows (approximate): 0
+0091.984 (0) Table up_pmxi_posts: Total rows added: 0 in 0.00 seconds
+0091.987 (0) Table up_pmxi_posts: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_pmxi_posts.table.gz - 0.3 Kb)
+0091.995 (0) Table up_pmxi_templates: Total expected rows (approximate): 0
+0091.999 (0) Table up_pmxi_templates: Total rows added: 0 in 0.00 seconds
+0092.003 (0) Table up_pmxi_templates: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_pmxi_templates.table.gz - 0.4 Kb)
+0092.012 (0) Table up_price_levels: Total expected rows (approximate): 3
+0092.016 (0) Table up_price_levels: Total rows added: 3 in 0.00 seconds
+0092.020 (0) Table up_price_levels: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_price_levels.table.gz - 0.5 Kb)
+0092.028 (0) Table up_shopping_list_categories: Total expected rows (approximate): 6
+0092.033 (0) Table up_shopping_list_categories: Total rows added: 6 in 0.00 seconds
+0092.037 (0) Table up_shopping_list_categories: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_shopping_list_categories.table.gz - 0.6 Kb)
+0092.048 (0) Table up_units: Total expected rows (approximate): 27
+0092.053 (0) Table up_units: Total rows added: 27 in 0.00 seconds
+0092.057 (0) Table up_units: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_units.table.gz - 0.8 Kb)
+0092.067 (0) Table up_user_nutrition_plans: Total expected rows (approximate): 221
+0092.091 (0) Table up_user_nutrition_plans: Total rows added: 279 in 0.02 seconds
+0092.096 (0) Table up_user_nutrition_plans: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_user_nutrition_plans.table.gz - 17.9 Kb)
+0092.104 (0) Table up_woocommerce_api_keys: Total expected rows (approximate): 0
+0092.109 (0) Table up_woocommerce_api_keys: Total rows added: 0 in 0.00 seconds
+0092.113 (0) Table up_woocommerce_api_keys: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_woocommerce_api_keys.table.gz - 0.4 Kb)
+0092.123 (0) Table up_woocommerce_attribute_taxonomies: Total expected rows (approximate): 0
+0092.127 (0) Table up_woocommerce_attribute_taxonomies: Total rows added: 0 in 0.00 seconds
+0092.131 (0) Table up_woocommerce_attribute_taxonomies: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_woocommerce_attribute_taxonomies.table.gz - 0.4 Kb)
+0092.143 (0) Table up_woocommerce_downloadable_product_permissions: Total expected rows (approximate): 3
+0092.148 (0) Table up_woocommerce_downloadable_product_permissions: Total rows added: 3 in 0.00 seconds
+0092.152 (0) Table up_woocommerce_downloadable_product_permissions: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_woocommerce_downloadable_product_permissions.table.gz - 0.6 Kb)
+0092.162 (0) Table up_woocommerce_order_items: Total expected rows (approximate): 50
+0092.167 (0) Table up_woocommerce_order_items: Total rows added: 50 in 0.00 seconds
+0092.171 (0) Table up_woocommerce_order_items: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_woocommerce_order_items.table.gz - 0.8 Kb)
+0092.180 (0) Table up_woocommerce_tax_rate_locations: Total expected rows (approximate): 0
+0092.184 (0) Table up_woocommerce_tax_rate_locations: Total rows added: 0 in 0.00 seconds
+0092.189 (0) Table up_woocommerce_tax_rate_locations: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_woocommerce_tax_rate_locations.table.gz - 0.4 Kb)
+0092.199 (0) Table up_woocommerce_tax_rates: Total expected rows (approximate): 32
+0092.204 (0) Table up_woocommerce_tax_rates: Total rows added: 32 in 0.00 seconds
+0092.208 (0) Table up_woocommerce_tax_rates: finishing file (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_woocommerce_tax_rates.table.gz - 0.9 Kb)
+0092.215 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_options.table.gz (1/193): adding to final database dump
+0092.269 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_site.table.gz (2/193): adding to final database dump
+0092.273 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_blogs.table.gz (3/193): adding to final database dump
+0092.277 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_users.table.gz (4/193): adding to final database dump
+0092.280 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_usermeta.table.gz (5/193): adding to final database dump
+0092.287 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_blog_versions.table.gz (6/193): adding to final database dump
+0092.291 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_commentmeta.table.gz (7/193): adding to final database dump
+0092.295 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_comments.table.gz (8/193): adding to final database dump
+0092.299 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_links.table.gz (9/193): adding to final database dump
+0092.302 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_ms_snippets.table.gz (10/193): adding to final database dump
+0092.306 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_postmeta.table.gz (11/193): adding to final database dump
+0092.319 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_posts.table.gz (12/193): adding to final database dump
+0092.468 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_registration_log.table.gz (13/193): adding to final database dump
+0092.472 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_signups.table.gz (14/193): adding to final database dump
+0092.477 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_sitemeta.table.gz (15/193): adding to final database dump
+0092.485 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_snippets.table.gz (16/193): adding to final database dump
+0092.489 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_term_relationships.table.gz (17/193): adding to final database dump
+0092.493 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_term_taxonomy.table.gz (18/193): adding to final database dump
+0092.497 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_terms.table.gz (19/193): adding to final database dump
+0092.501 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_woocommerce_order_itemmeta.table.gz (20/193): adding to final database dump
+0092.506 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_woocommerce_termmeta.table.gz (21/193): adding to final database dump
+0092.510 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_yith_vendors_commissions.table.gz (22/193): adding to final database dump
+0092.514 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_yith_vendors_commissions_notes.table.gz (23/193): adding to final database dump
+0092.518 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_commentmeta.table.gz (24/193): adding to final database dump
+0092.522 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_comments.table.gz (25/193): adding to final database dump
+0092.533 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_duplicator_packages.table.gz (26/193): adding to final database dump
+0092.538 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_links.table.gz (27/193): adding to final database dump
+0092.541 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_maintenance_page.table.gz (28/193): adding to final database dump
+0092.545 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_options.table.gz (29/193): adding to final database dump
+0092.559 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_postmeta.table.gz (30/193): adding to final database dump
+0092.707 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_posts.table.gz (31/193): adding to final database dump
+0092.740 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_snippets.table.gz (32/193): adding to final database dump
+0092.743 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_term_relationships.table.gz (33/193): adding to final database dump
+0092.747 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_term_taxonomy.table.gz (34/193): adding to final database dump
+0092.752 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_terms.table.gz (35/193): adding to final database dump
+0092.755 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_woocommerce_api_keys.table.gz (36/193): adding to final database dump
+0092.758 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_woocommerce_attribute_taxonomies.table.gz (37/193): adding to final database dump
+0092.762 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_woocommerce_downloadable_product_permissions.table.gz (38/193): adding to final database dump
+0092.764 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_woocommerce_order_itemmeta.table.gz (39/193): adding to final database dump
+0092.768 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_woocommerce_order_items.table.gz (40/193): adding to final database dump
+0092.771 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_woocommerce_tax_rate_locations.table.gz (41/193): adding to final database dump
+0092.775 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_woocommerce_tax_rates.table.gz (42/193): adding to final database dump
+0092.780 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_woocommerce_termmeta.table.gz (43/193): adding to final database dump
+0092.784 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_xyz_ips_short_code.table.gz (44/193): adding to final database dump
+0092.788 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_yith_vendors_commissions.table.gz (45/193): adding to final database dump
+0092.791 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_23_yith_vendors_commissions_notes.table.gz (46/193): adding to final database dump
+0092.795 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_24_duplicator_packages.table.gz (47/193): adding to final database dump
+0092.799 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_commentmeta.table.gz (48/193): adding to final database dump
+0092.804 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_comments.table.gz (49/193): adding to final database dump
+0092.809 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_duplicator_packages.table.gz (50/193): adding to final database dump
+0092.812 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_links.table.gz (51/193): adding to final database dump
+0092.816 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_maintenance_page.table.gz (52/193): adding to final database dump
+0092.820 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_options.table.gz (53/193): adding to final database dump
+0092.845 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_postmeta.table.gz (54/193): adding to final database dump
+0092.872 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_posts.table.gz (55/193): adding to final database dump
+0092.892 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_snippets.table.gz (56/193): adding to final database dump
+0092.896 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_term_relationships.table.gz (57/193): adding to final database dump
+0092.900 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_term_taxonomy.table.gz (58/193): adding to final database dump
+0092.904 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_terms.table.gz (59/193): adding to final database dump
+0092.907 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_woocommerce_api_keys.table.gz (60/193): adding to final database dump
+0092.910 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_woocommerce_attribute_taxonomies.table.gz (61/193): adding to final database dump
+0092.914 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_woocommerce_downloadable_product_permissions.table.gz (62/193): adding to final database dump
+0092.916 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_woocommerce_order_itemmeta.table.gz (63/193): adding to final database dump
+0092.921 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_woocommerce_order_items.table.gz (64/193): adding to final database dump
+0092.925 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_woocommerce_tax_rate_locations.table.gz (65/193): adding to final database dump
+0092.928 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_woocommerce_tax_rates.table.gz (66/193): adding to final database dump
+0092.932 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_woocommerce_termmeta.table.gz (67/193): adding to final database dump
+0092.936 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_yith_vendors_commissions.table.gz (68/193): adding to final database dump
+0092.940 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_25_yith_vendors_commissions_notes.table.gz (69/193): adding to final database dump
+0092.943 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_commentmeta.table.gz (70/193): adding to final database dump
+0092.948 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_comments.table.gz (71/193): adding to final database dump
+0092.952 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_duplicator_packages.table.gz (72/193): adding to final database dump
+0092.955 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_links.table.gz (73/193): adding to final database dump
+0092.959 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_maintenance_page.table.gz (74/193): adding to final database dump
+0092.962 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_options.table.gz (75/193): adding to final database dump
+0092.979 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_postmeta.table.gz (76/193): adding to final database dump
+0092.990 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_posts.table.gz (77/193): adding to final database dump
+0093.006 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_snippets.table.gz (78/193): adding to final database dump
+0093.010 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_term_relationships.table.gz (79/193): adding to final database dump
+0093.014 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_term_taxonomy.table.gz (80/193): adding to final database dump
+0093.018 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_terms.table.gz (81/193): adding to final database dump
+0093.021 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_woocommerce_api_keys.table.gz (82/193): adding to final database dump
+0093.025 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_woocommerce_attribute_taxonomies.table.gz (83/193): adding to final database dump
+0093.029 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_woocommerce_downloadable_product_permissions.table.gz (84/193): adding to final database dump
+0093.033 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_woocommerce_order_itemmeta.table.gz (85/193): adding to final database dump
+0093.037 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_woocommerce_order_items.table.gz (86/193): adding to final database dump
+0093.040 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_woocommerce_tax_rate_locations.table.gz (87/193): adding to final database dump
+0093.046 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_woocommerce_tax_rates.table.gz (88/193): adding to final database dump
+0093.050 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_woocommerce_termmeta.table.gz (89/193): adding to final database dump
+0093.054 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_yith_vendors_commissions.table.gz (90/193): adding to final database dump
+0093.057 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_28_yith_vendors_commissions_notes.table.gz (91/193): adding to final database dump
+0093.061 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_commentmeta.table.gz (92/193): adding to final database dump
+0093.065 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_comments.table.gz (93/193): adding to final database dump
+0093.069 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_links.table.gz (94/193): adding to final database dump
+0093.073 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_maintenance_page.table.gz (95/193): adding to final database dump
+0093.077 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_options.table.gz (96/193): adding to final database dump
+0093.091 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_postmeta.table.gz (97/193): adding to final database dump
+0093.102 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_posts.table.gz (98/193): adding to final database dump
+0093.116 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_snippets.table.gz (99/193): adding to final database dump
+0093.123 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_term_relationships.table.gz (100/193): adding to final database dump
+0093.127 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_term_taxonomy.table.gz (101/193): adding to final database dump
+0093.131 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_terms.table.gz (102/193): adding to final database dump
+0093.134 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_woocommerce_api_keys.table.gz (103/193): adding to final database dump
+0093.136 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_woocommerce_attribute_taxonomies.table.gz (104/193): adding to final database dump
+0093.140 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_woocommerce_downloadable_product_permissions.table.gz (105/193): adding to final database dump
+0093.143 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_woocommerce_order_itemmeta.table.gz (106/193): adding to final database dump
+0093.148 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_woocommerce_order_items.table.gz (107/193): adding to final database dump
+0093.152 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_woocommerce_tax_rate_locations.table.gz (108/193): adding to final database dump
+0093.155 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_woocommerce_tax_rates.table.gz (109/193): adding to final database dump
+0093.159 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_woocommerce_termmeta.table.gz (110/193): adding to final database dump
+0093.163 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_yith_vendors_commissions.table.gz (111/193): adding to final database dump
+0093.167 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_32_yith_vendors_commissions_notes.table.gz (112/193): adding to final database dump
+0093.170 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_commentmeta.table.gz (113/193): adding to final database dump
+0093.174 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_comments.table.gz (114/193): adding to final database dump
+0093.177 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_links.table.gz (115/193): adding to final database dump
+0093.180 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_maintenance_page.table.gz (116/193): adding to final database dump
+0093.184 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_options.table.gz (117/193): adding to final database dump
+0093.197 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_postmeta.table.gz (118/193): adding to final database dump
+0093.208 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_posts.table.gz (119/193): adding to final database dump
+0093.223 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_snippets.table.gz (120/193): adding to final database dump
+0093.227 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_term_relationships.table.gz (121/193): adding to final database dump
+0093.231 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_term_taxonomy.table.gz (122/193): adding to final database dump
+0093.236 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_terms.table.gz (123/193): adding to final database dump
+0093.240 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_woocommerce_api_keys.table.gz (124/193): adding to final database dump
+0093.244 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_woocommerce_attribute_taxonomies.table.gz (125/193): adding to final database dump
+0093.248 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_woocommerce_downloadable_product_permissions.table.gz (126/193): adding to final database dump
+0093.251 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_woocommerce_order_itemmeta.table.gz (127/193): adding to final database dump
+0093.255 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_woocommerce_order_items.table.gz (128/193): adding to final database dump
+0093.259 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_woocommerce_tax_rate_locations.table.gz (129/193): adding to final database dump
+0093.263 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_woocommerce_tax_rates.table.gz (130/193): adding to final database dump
+0093.267 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_woocommerce_termmeta.table.gz (131/193): adding to final database dump
+0093.270 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_yith_vendors_commissions.table.gz (132/193): adding to final database dump
+0093.275 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_38_yith_vendors_commissions_notes.table.gz (133/193): adding to final database dump
+0093.278 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_cron_status.table.gz (134/193): adding to final database dump
+0093.282 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_food_attributes.table.gz (135/193): adding to final database dump
+0093.286 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_food_categories.table.gz (136/193): adding to final database dump
+0093.288 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_food_micros.table.gz (137/193): adding to final database dump
+0093.833 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_foods.table.gz (138/193): adding to final database dump
+0093.859 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_content_status.table.gz (139/193): adding to final database dump
+0093.863 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_core_status.table.gz (140/193): adding to final database dump
+0093.867 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_flags.table.gz (141/193): adding to final database dump
+0093.871 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_languages.table.gz (142/193): adding to final database dump
+0093.875 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_languages_translations.table.gz (143/193): adding to final database dump
+0093.892 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_locale_map.table.gz (144/193): adding to final database dump
+0093.895 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_message_status.table.gz (145/193): adding to final database dump
+0093.900 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_node.table.gz (146/193): adding to final database dump
+0093.904 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_reminders.table.gz (147/193): adding to final database dump
+0093.908 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_string_positions.table.gz (148/193): adding to final database dump
+0093.912 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_string_status.table.gz (149/193): adding to final database dump
+0093.916 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_string_translations.table.gz (150/193): adding to final database dump
+0093.919 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_strings.table.gz (151/193): adding to final database dump
+0093.923 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_translate.table.gz (152/193): adding to final database dump
+0093.927 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_translate_job.table.gz (153/193): adding to final database dump
+0093.931 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_translation_status.table.gz (154/193): adding to final database dump
+0093.934 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_icl_translations.table.gz (155/193): adding to final database dump
+0093.941 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_itsec_lockouts.table.gz (156/193): adding to final database dump
+0093.945 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_itsec_log.table.gz (157/193): adding to final database dump
+0093.948 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_itsec_temp.table.gz (158/193): adding to final database dump
+0093.952 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_maintenance_page.table.gz (159/193): adding to final database dump
+0093.956 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_mcc_blogs_groups.table.gz (160/193): adding to final database dump
+0093.960 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_mcc_blogs_groups_relationship.table.gz (161/193): adding to final database dump
+0093.963 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_mcc_queue.table.gz (162/193): adding to final database dump
+0093.967 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_mcc_synced_posts_relationships.table.gz (163/193): adding to final database dump
+0093.970 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_meal_categories.table.gz (164/193): adding to final database dump
+0093.974 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_meal_ingredients.table.gz (165/193): adding to final database dump
+0093.989 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_meal_instructions.table.gz (166/193): adding to final database dump
+0094.005 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_meals.table.gz (167/193): adding to final database dump
+0094.011 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_micro_master.table.gz (168/193): adding to final database dump
+0094.015 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_novalnet_aff_account_detail.table.gz (169/193): adding to final database dump
+0094.019 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_novalnet_aff_user_detail.table.gz (170/193): adding to final database dump
+0094.023 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_novalnet_callback_history.table.gz (171/193): adding to final database dump
+0094.027 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_novalnet_invoice_details.table.gz (172/193): adding to final database dump
+0094.030 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_novalnet_subscription_details.table.gz (173/193): adding to final database dump
+0094.032 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_novalnet_transaction_detail.table.gz (174/193): adding to final database dump
+0094.036 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_order_meals.table.gz (175/193): adding to final database dump
+0094.340 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_plan_logs.table.gz (176/193): adding to final database dump
+0094.422 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_pmxi_files.table.gz (177/193): adding to final database dump
+0094.426 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_pmxi_history.table.gz (178/193): adding to final database dump
+0094.430 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_pmxi_imports.table.gz (179/193): adding to final database dump
+0094.432 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_pmxi_posts.table.gz (180/193): adding to final database dump
+0094.436 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_pmxi_templates.table.gz (181/193): adding to final database dump
+0094.440 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_price_levels.table.gz (182/193): adding to final database dump
+0094.443 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_shopping_list_categories.table.gz (183/193): adding to final database dump
+0094.447 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_units.table.gz (184/193): adding to final database dump
+0094.450 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_user_nutrition_plans.table.gz (185/193): adding to final database dump
+0094.459 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_woocommerce_api_keys.table.gz (186/193): adding to final database dump
+0094.462 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_woocommerce_attribute_taxonomies.table.gz (187/193): adding to final database dump
+0094.464 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_woocommerce_downloadable_product_permissions.table.gz (188/193): adding to final database dump
+0094.468 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_woocommerce_order_items.table.gz (189/193): adding to final database dump
+0094.471 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_woocommerce_tax_rate_locations.table.gz (190/193): adding to final database dump
+0094.475 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db-table-up_woocommerce_tax_rates.table.gz (191/193): adding to final database dump
+0094.478 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db.gz: finished writing out complete database file (4384 Kb)
+0094.514 (0) Total database tables backed up: 191 (backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db.gz, size: 4506562, checksum (SHA1): 618c091632d755dae9b015bb737d4a5269f4a481)
+0094.520 (0) Saving backup history
+0094.533 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0094.535 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0094.539 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0094.542 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads2.zip: uploads: This file has not yet been successfully uploaded: will queue
+0094.546 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-others.zip: others: This file has not yet been successfully uploaded: will queue
+0094.548 (0) backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db.gz: db: This file has not yet been successfully uploaded: will queue
+0094.554 (0) Requesting upload of the files that have not yet been successfully uploaded (6)
+0094.560 (0) Cloud backup selection (1/1): ftp (last)
+0094.563 (0) Beginning dispatch of backup to remote (ftp)
+0094.696 (0) FTP upload attempt: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip -> ftp://u82662043@upfit.at//updraft_backup/easyfitness.upfit.de/backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip
+0094.723 (0) Ftp chunked upload: 2.1 % uploaded
+0094.740 (0) Ftp chunked upload: 4.2 % uploaded
+0094.759 (0) Ftp chunked upload: 6.3 % uploaded
+0094.776 (0) Ftp chunked upload: 8.4 % uploaded
+0094.795 (0) Ftp chunked upload: 10.5 % uploaded
+0094.812 (0) Ftp chunked upload: 12.6 % uploaded
+0094.830 (0) Ftp chunked upload: 14.7 % uploaded
+0094.848 (0) Ftp chunked upload: 16.8 % uploaded
+0094.866 (0) Ftp chunked upload: 18.9 % uploaded
+0094.883 (0) Ftp chunked upload: 21 % uploaded
+0094.902 (0) Ftp chunked upload: 23.2 % uploaded
+0094.920 (0) Ftp chunked upload: 25.3 % uploaded
+0094.938 (0) Ftp chunked upload: 27.4 % uploaded
+0094.955 (0) Ftp chunked upload: 29.5 % uploaded
+0094.974 (0) Ftp chunked upload: 31.6 % uploaded
+0094.992 (0) Ftp chunked upload: 33.7 % uploaded
+0095.010 (0) Ftp chunked upload: 35.8 % uploaded
+0095.027 (0) Ftp chunked upload: 37.9 % uploaded
+0095.046 (0) Ftp chunked upload: 40 % uploaded
+0095.065 (0) Ftp chunked upload: 42.1 % uploaded
+0095.083 (0) Ftp chunked upload: 44.2 % uploaded
+0095.102 (0) Ftp chunked upload: 46.3 % uploaded
+0095.120 (0) Ftp chunked upload: 48.4 % uploaded
+0095.139 (0) Ftp chunked upload: 50.5 % uploaded
+0095.156 (0) Ftp chunked upload: 52.6 % uploaded
+0095.174 (0) Ftp chunked upload: 54.7 % uploaded
+0095.192 (0) Ftp chunked upload: 56.8 % uploaded
+0095.211 (0) Ftp chunked upload: 58.9 % uploaded
+0095.228 (0) Ftp chunked upload: 61 % uploaded
+0095.246 (0) Ftp chunked upload: 63.1 % uploaded
+0095.262 (0) Ftp chunked upload: 65.2 % uploaded
+0095.278 (0) Ftp chunked upload: 67.4 % uploaded
+0095.294 (0) Ftp chunked upload: 69.5 % uploaded
+0095.311 (0) Ftp chunked upload: 71.6 % uploaded
+0095.330 (0) Ftp chunked upload: 73.7 % uploaded
+0095.347 (0) Ftp chunked upload: 75.8 % uploaded
+0095.366 (0) Ftp chunked upload: 77.9 % uploaded
+0095.383 (0) Ftp chunked upload: 80 % uploaded
+0095.399 (0) Ftp chunked upload: 82.1 % uploaded
+0095.418 (0) Ftp chunked upload: 84.2 % uploaded
+0095.437 (0) Ftp chunked upload: 86.3 % uploaded
+0095.455 (0) Ftp chunked upload: 88.4 % uploaded
+0095.474 (0) Ftp chunked upload: 90.5 % uploaded
+0095.491 (0) Ftp chunked upload: 92.6 % uploaded
+0095.510 (0) Ftp chunked upload: 94.7 % uploaded
+0095.528 (0) Ftp chunked upload: 96.8 % uploaded
+0095.546 (0) Ftp chunked upload: 98.9 % uploaded
+0095.567 (0) FTP upload attempt successful (24510.1Kb in 0.87s)
+0095.574 (0) Recording as successfully uploaded: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip (e5f7bf91334b4a68191a582e90a986cd)
+0095.588 (0) Deleting local file: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-plugins.zip: OK
+0095.592 (0) FTP upload attempt: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-themes.zip -> ftp://u82662043@upfit.at//updraft_backup/easyfitness.upfit.de/backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-themes.zip
+0095.611 (0) Ftp chunked upload: 1.1 % uploaded
+0095.627 (0) Ftp chunked upload: 2.2 % uploaded
+0095.643 (0) Ftp chunked upload: 3.3 % uploaded
+0095.659 (0) Ftp chunked upload: 4.4 % uploaded
+0095.675 (0) Ftp chunked upload: 5.5 % uploaded
+0095.691 (0) Ftp chunked upload: 6.6 % uploaded
+0095.707 (0) Ftp chunked upload: 7.7 % uploaded
+0095.723 (0) Ftp chunked upload: 8.8 % uploaded
+0095.739 (0) Ftp chunked upload: 9.9 % uploaded
+0095.755 (0) Ftp chunked upload: 10.9 % uploaded
+0095.771 (0) Ftp chunked upload: 12 % uploaded
+0095.787 (0) Ftp chunked upload: 13.1 % uploaded
+0095.803 (0) Ftp chunked upload: 14.2 % uploaded
+0095.821 (0) Ftp chunked upload: 15.3 % uploaded
+0095.839 (0) Ftp chunked upload: 16.4 % uploaded
+0095.854 (0) Ftp chunked upload: 17.5 % uploaded
+0095.870 (0) Ftp chunked upload: 18.6 % uploaded
+0095.887 (0) Ftp chunked upload: 19.7 % uploaded
+0095.903 (0) Ftp chunked upload: 20.8 % uploaded
+0095.919 (0) Ftp chunked upload: 21.9 % uploaded
+0095.935 (0) Ftp chunked upload: 23 % uploaded
+0095.951 (0) Ftp chunked upload: 24.1 % uploaded
+0095.969 (0) Ftp chunked upload: 25.2 % uploaded
+0095.986 (0) Ftp chunked upload: 26.3 % uploaded
+0096.004 (0) Ftp chunked upload: 27.4 % uploaded
+0096.022 (0) Ftp chunked upload: 28.5 % uploaded
+0096.040 (0) Ftp chunked upload: 29.6 % uploaded
+0096.057 (0) Ftp chunked upload: 30.7 % uploaded
+0096.073 (0) Ftp chunked upload: 31.8 % uploaded
+0096.091 (0) Ftp chunked upload: 32.8 % uploaded
+0096.106 (0) Ftp chunked upload: 33.9 % uploaded
+0096.122 (0) Ftp chunked upload: 35 % uploaded
+0096.139 (0) Ftp chunked upload: 36.1 % uploaded
+0096.155 (0) Ftp chunked upload: 37.2 % uploaded
+0096.171 (0) Ftp chunked upload: 38.3 % uploaded
+0096.187 (0) Ftp chunked upload: 39.4 % uploaded
+0096.204 (0) Ftp chunked upload: 40.5 % uploaded
+0096.220 (0) Ftp chunked upload: 41.6 % uploaded
+0096.237 (0) Ftp chunked upload: 42.7 % uploaded
+0096.255 (0) Ftp chunked upload: 43.8 % uploaded
+0096.273 (0) Ftp chunked upload: 44.9 % uploaded
+0096.290 (0) Ftp chunked upload: 46 % uploaded
+0096.307 (0) Ftp chunked upload: 47.1 % uploaded
+0096.323 (0) Ftp chunked upload: 48.2 % uploaded
+0096.353 (0) Ftp chunked upload: 49.3 % uploaded
+0096.369 (0) Ftp chunked upload: 50.4 % uploaded
+0096.387 (0) Ftp chunked upload: 51.5 % uploaded
+0096.403 (0) Ftp chunked upload: 52.6 % uploaded
+0096.418 (0) Ftp chunked upload: 53.7 % uploaded
+0096.435 (0) Ftp chunked upload: 54.7 % uploaded
+0096.451 (0) Ftp chunked upload: 55.8 % uploaded
+0096.467 (0) Ftp chunked upload: 56.9 % uploaded
+0096.483 (0) Ftp chunked upload: 58 % uploaded
+0096.498 (0) Ftp chunked upload: 59.1 % uploaded
+0096.514 (0) Ftp chunked upload: 60.2 % uploaded
+0096.531 (0) Ftp chunked upload: 61.3 % uploaded
+0096.547 (0) Ftp chunked upload: 62.4 % uploaded
+0096.563 (0) Ftp chunked upload: 63.5 % uploaded
+0096.581 (0) Ftp chunked upload: 64.6 % uploaded
+0096.599 (0) Ftp chunked upload: 65.7 % uploaded
+0096.615 (0) Ftp chunked upload: 66.8 % uploaded
+0096.630 (0) Ftp chunked upload: 67.9 % uploaded
+0096.646 (0) Ftp chunked upload: 69 % uploaded
+0096.662 (0) Ftp chunked upload: 70.1 % uploaded
+0096.679 (0) Ftp chunked upload: 71.2 % uploaded
+0096.695 (0) Ftp chunked upload: 72.3 % uploaded
+0096.711 (0) Ftp chunked upload: 73.4 % uploaded
+0096.727 (0) Ftp chunked upload: 74.5 % uploaded
+0096.742 (0) Ftp chunked upload: 75.5 % uploaded
+0096.758 (0) Ftp chunked upload: 76.6 % uploaded
+0096.774 (0) Ftp chunked upload: 77.7 % uploaded
+0096.791 (0) Ftp chunked upload: 78.8 % uploaded
+0096.806 (0) Ftp chunked upload: 79.9 % uploaded
+0096.822 (0) Ftp chunked upload: 81 % uploaded
+0096.838 (0) Ftp chunked upload: 82.1 % uploaded
+0096.854 (0) Ftp chunked upload: 83.2 % uploaded
+0096.870 (0) Ftp chunked upload: 84.3 % uploaded
+0096.886 (0) Ftp chunked upload: 85.4 % uploaded
+0096.902 (0) Ftp chunked upload: 86.5 % uploaded
+0096.918 (0) Ftp chunked upload: 87.6 % uploaded
+0096.933 (0) Ftp chunked upload: 88.7 % uploaded
+0096.950 (0) Ftp chunked upload: 89.8 % uploaded
+0096.967 (0) Ftp chunked upload: 90.9 % uploaded
+0096.982 (0) Ftp chunked upload: 92 % uploaded
+0096.998 (0) Ftp chunked upload: 93.1 % uploaded
+0097.014 (0) Ftp chunked upload: 94.2 % uploaded
+0097.031 (0) Ftp chunked upload: 95.3 % uploaded
+0097.047 (0) Ftp chunked upload: 96.4 % uploaded
+0097.062 (0) Ftp chunked upload: 97.4 % uploaded
+0097.078 (0) Ftp chunked upload: 98.5 % uploaded
+0097.094 (0) Ftp chunked upload: 99.6 % uploaded
+0097.102 (0) FTP upload attempt successful (47115.9Kb in 1.51s)
+0097.108 (0) Recording as successfully uploaded: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-themes.zip (5a77725a9f1cfd6a25929d45fc5178ec)
+0097.125 (0) Deleting local file: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-themes.zip: OK
+0097.129 (0) FTP upload attempt: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads.zip -> ftp://u82662043@upfit.at//updraft_backup/easyfitness.upfit.de/backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads.zip
+0097.148 (0) Ftp chunked upload: 0.1 % uploaded
+0097.166 (0) Ftp chunked upload: 0.2 % uploaded
+0097.183 (0) Ftp chunked upload: 0.3 % uploaded
+0097.199 (0) Ftp chunked upload: 0.4 % uploaded
+0097.215 (0) Ftp chunked upload: 0.5 % uploaded
+0097.231 (0) Ftp chunked upload: 0.6 % uploaded
+0097.246 (0) Ftp chunked upload: 0.7 % uploaded
+0097.261 (0) Ftp chunked upload: 0.8 % uploaded
+0097.278 (0) Ftp chunked upload: 0.9 % uploaded
+0097.294 (0) Ftp chunked upload: 1 % uploaded
+0097.311 (0) Ftp chunked upload: 1.1 % uploaded
+0097.326 (0) Ftp chunked upload: 1.2 % uploaded
+0097.342 (0) Ftp chunked upload: 1.3 % uploaded
+0097.358 (0) Ftp chunked upload: 1.4 % uploaded
+0097.372 (0) Ftp chunked upload: 1.5 % uploaded
+0097.389 (0) Ftp chunked upload: 1.6 % uploaded
+0097.406 (0) Ftp chunked upload: 1.7 % uploaded
+0097.421 (0) Ftp chunked upload: 1.8 % uploaded
+0097.438 (0) Ftp chunked upload: 1.9 % uploaded
+0097.453 (0) Ftp chunked upload: 2 % uploaded
+0097.472 (0) Ftp chunked upload: 2.1 % uploaded
+0097.489 (0) Ftp chunked upload: 2.2 % uploaded
+0097.506 (0) Ftp chunked upload: 2.3 % uploaded
+0097.522 (0) Ftp chunked upload: 2.4 % uploaded
+0097.539 (0) Ftp chunked upload: 2.5 % uploaded
+0097.554 (0) Ftp chunked upload: 2.6 % uploaded
+0097.570 (0) Ftp chunked upload: 2.8 % uploaded
+0097.586 (0) Ftp chunked upload: 2.9 % uploaded
+0097.602 (0) Ftp chunked upload: 3 % uploaded
+0097.619 (0) Ftp chunked upload: 3.1 % uploaded
+0097.634 (0) Ftp chunked upload: 3.2 % uploaded
+0097.650 (0) Ftp chunked upload: 3.3 % uploaded
+0097.666 (0) Ftp chunked upload: 3.4 % uploaded
+0097.681 (0) Ftp chunked upload: 3.5 % uploaded
+0097.699 (0) Ftp chunked upload: 3.6 % uploaded
+0097.715 (0) Ftp chunked upload: 3.7 % uploaded
+0097.731 (0) Ftp chunked upload: 3.8 % uploaded
+0097.747 (0) Ftp chunked upload: 3.9 % uploaded
+0097.762 (0) Ftp chunked upload: 4 % uploaded
+0097.778 (0) Ftp chunked upload: 4.1 % uploaded
+0097.795 (0) Ftp chunked upload: 4.2 % uploaded
+0097.811 (0) Ftp chunked upload: 4.3 % uploaded
+0097.827 (0) Ftp chunked upload: 4.4 % uploaded
+0097.848 (0) Ftp chunked upload: 4.5 % uploaded
+0097.865 (0) Ftp chunked upload: 4.6 % uploaded
+0097.881 (0) Ftp chunked upload: 4.7 % uploaded
+0097.899 (0) Ftp chunked upload: 4.8 % uploaded
+0097.914 (0) Ftp chunked upload: 4.9 % uploaded
+0097.930 (0) Ftp chunked upload: 5 % uploaded
+0097.945 (0) Ftp chunked upload: 5.1 % uploaded
+0097.962 (0) Ftp chunked upload: 5.2 % uploaded
+0097.977 (0) Ftp chunked upload: 5.3 % uploaded
+0097.994 (0) Ftp chunked upload: 5.4 % uploaded
+0098.010 (0) Ftp chunked upload: 5.5 % uploaded
+0098.027 (0) Ftp chunked upload: 5.6 % uploaded
+0098.042 (0) Ftp chunked upload: 5.7 % uploaded
+0098.059 (0) Ftp chunked upload: 5.8 % uploaded
+0098.075 (0) Ftp chunked upload: 5.9 % uploaded
+0098.091 (0) Ftp chunked upload: 6 % uploaded
+0098.107 (0) Ftp chunked upload: 6.1 % uploaded
+0098.122 (0) Ftp chunked upload: 6.2 % uploaded
+0098.138 (0) Ftp chunked upload: 6.3 % uploaded
+0098.155 (0) Ftp chunked upload: 6.4 % uploaded
+0098.171 (0) Ftp chunked upload: 6.5 % uploaded
+0098.187 (0) Ftp chunked upload: 6.6 % uploaded
+0098.202 (0) Ftp chunked upload: 6.7 % uploaded
+0098.218 (0) Ftp chunked upload: 6.8 % uploaded
+0098.234 (0) Ftp chunked upload: 6.9 % uploaded
+0098.251 (0) Ftp chunked upload: 7 % uploaded
+0098.266 (0) Ftp chunked upload: 7.1 % uploaded
+0098.282 (0) Ftp chunked upload: 7.2 % uploaded
+0098.299 (0) Ftp chunked upload: 7.3 % uploaded
+0098.315 (0) Ftp chunked upload: 7.4 % uploaded
+0098.331 (0) Ftp chunked upload: 7.5 % uploaded
+0098.347 (0) Ftp chunked upload: 7.6 % uploaded
+0098.363 (0) Ftp chunked upload: 7.7 % uploaded
+0098.378 (0) Ftp chunked upload: 7.8 % uploaded
+0098.394 (0) Ftp chunked upload: 7.9 % uploaded
+0098.410 (0) Ftp chunked upload: 8 % uploaded
+0098.426 (0) Ftp chunked upload: 8.1 % uploaded
+0098.442 (0) Ftp chunked upload: 8.3 % uploaded
+0098.458 (0) Ftp chunked upload: 8.4 % uploaded
+0098.474 (0) Ftp chunked upload: 8.5 % uploaded
+0098.490 (0) Ftp chunked upload: 8.6 % uploaded
+0098.506 (0) Ftp chunked upload: 8.7 % uploaded
+0098.523 (0) Ftp chunked upload: 8.8 % uploaded
+0098.539 (0) Ftp chunked upload: 8.9 % uploaded
+0098.555 (0) Ftp chunked upload: 9 % uploaded
+0098.571 (0) Ftp chunked upload: 9.1 % uploaded
+0098.587 (0) Ftp chunked upload: 9.2 % uploaded
+0098.603 (0) Ftp chunked upload: 9.3 % uploaded
+0098.619 (0) Ftp chunked upload: 9.4 % uploaded
+0098.635 (0) Ftp chunked upload: 9.5 % uploaded
+0098.651 (0) Ftp chunked upload: 9.6 % uploaded
+0098.667 (0) Ftp chunked upload: 9.7 % uploaded
+0098.683 (0) Ftp chunked upload: 9.8 % uploaded
+0098.699 (0) Ftp chunked upload: 9.9 % uploaded
+0098.716 (0) Ftp chunked upload: 10 % uploaded
+0098.734 (0) Ftp chunked upload: 10.1 % uploaded
+0098.751 (0) Ftp chunked upload: 10.2 % uploaded
+0098.769 (0) Ftp chunked upload: 10.3 % uploaded
+0098.786 (0) Ftp chunked upload: 10.4 % uploaded
+0098.807 (0) Ftp chunked upload: 10.5 % uploaded
+0098.823 (0) Ftp chunked upload: 10.6 % uploaded
+0098.839 (0) Ftp chunked upload: 10.7 % uploaded
+0098.856 (0) Ftp chunked upload: 10.8 % uploaded
+0098.873 (0) Ftp chunked upload: 10.9 % uploaded
+0098.890 (0) Ftp chunked upload: 11 % uploaded
+0098.907 (0) Ftp chunked upload: 11.1 % uploaded
+0098.923 (0) Ftp chunked upload: 11.2 % uploaded
+0098.939 (0) Ftp chunked upload: 11.3 % uploaded
+0098.955 (0) Ftp chunked upload: 11.4 % uploaded
+0098.973 (0) Ftp chunked upload: 11.5 % uploaded
+0098.990 (0) Ftp chunked upload: 11.6 % uploaded
+0099.007 (0) Ftp chunked upload: 11.7 % uploaded
+0099.023 (0) Ftp chunked upload: 11.8 % uploaded
+0099.042 (0) Ftp chunked upload: 11.9 % uploaded
+0099.060 (0) Ftp chunked upload: 12 % uploaded
+0099.077 (0) Ftp chunked upload: 12.1 % uploaded
+0099.096 (0) Ftp chunked upload: 12.2 % uploaded
+0099.113 (0) Ftp chunked upload: 12.3 % uploaded
+0099.131 (0) Ftp chunked upload: 12.4 % uploaded
+0099.150 (0) Ftp chunked upload: 12.5 % uploaded
+0099.168 (0) Ftp chunked upload: 12.6 % uploaded
+0099.187 (0) Ftp chunked upload: 12.7 % uploaded
+0099.203 (0) Ftp chunked upload: 12.8 % uploaded
+0099.221 (0) Ftp chunked upload: 12.9 % uploaded
+0099.241 (0) Ftp chunked upload: 13 % uploaded
+0099.259 (0) Ftp chunked upload: 13.1 % uploaded
+0099.276 (0) Ftp chunked upload: 13.2 % uploaded
+0099.293 (0) Ftp chunked upload: 13.3 % uploaded
+0099.310 (0) Ftp chunked upload: 13.4 % uploaded
+0099.326 (0) Ftp chunked upload: 13.5 % uploaded
+0099.343 (0) Ftp chunked upload: 13.7 % uploaded
+0099.359 (0) Ftp chunked upload: 13.8 % uploaded
+0099.378 (0) Ftp chunked upload: 13.9 % uploaded
+0099.395 (0) Ftp chunked upload: 14 % uploaded
+0099.414 (0) Ftp chunked upload: 14.1 % uploaded
+0099.432 (0) Ftp chunked upload: 14.2 % uploaded
+0099.450 (0) Ftp chunked upload: 14.3 % uploaded
+0099.468 (0) Ftp chunked upload: 14.4 % uploaded
+0099.486 (0) Ftp chunked upload: 14.5 % uploaded
+0099.502 (0) Ftp chunked upload: 14.6 % uploaded
+0099.518 (0) Ftp chunked upload: 14.7 % uploaded
+0099.534 (0) Ftp chunked upload: 14.8 % uploaded
+0099.551 (0) Ftp chunked upload: 14.9 % uploaded
+0099.567 (0) Ftp chunked upload: 15 % uploaded
+0099.586 (0) Ftp chunked upload: 15.1 % uploaded
+0099.602 (0) Ftp chunked upload: 15.2 % uploaded
+0099.618 (0) Ftp chunked upload: 15.3 % uploaded
+0099.636 (0) Ftp chunked upload: 15.4 % uploaded
+0099.654 (0) Ftp chunked upload: 15.5 % uploaded
+0099.671 (0) Ftp chunked upload: 15.6 % uploaded
+0099.687 (0) Ftp chunked upload: 15.7 % uploaded
+0099.703 (0) Ftp chunked upload: 15.8 % uploaded
+0099.719 (0) Ftp chunked upload: 15.9 % uploaded
+0099.735 (0) Ftp chunked upload: 16 % uploaded
+0099.751 (0) Ftp chunked upload: 16.1 % uploaded
+0099.766 (0) Ftp chunked upload: 16.2 % uploaded
+0099.782 (0) Ftp chunked upload: 16.3 % uploaded
+0099.798 (0) Ftp chunked upload: 16.4 % uploaded
+0099.814 (0) Ftp chunked upload: 16.5 % uploaded
+0099.830 (0) Ftp chunked upload: 16.6 % uploaded
+0099.847 (0) Ftp chunked upload: 16.7 % uploaded
+0099.863 (0) Ftp chunked upload: 16.8 % uploaded
+0099.878 (0) Ftp chunked upload: 16.9 % uploaded
+0099.894 (0) Ftp chunked upload: 17 % uploaded
+0099.910 (0) Ftp chunked upload: 17.1 % uploaded
+0099.927 (0) Ftp chunked upload: 17.2 % uploaded
+0099.943 (0) Ftp chunked upload: 17.3 % uploaded
+0099.959 (0) Ftp chunked upload: 17.4 % uploaded
+0099.975 (0) Ftp chunked upload: 17.5 % uploaded
+0099.991 (0) Ftp chunked upload: 17.6 % uploaded
+0100.007 (0) Ftp chunked upload: 17.7 % uploaded
+0100.023 (0) Ftp chunked upload: 17.8 % uploaded
+0100.039 (0) Ftp chunked upload: 17.9 % uploaded
+0100.056 (0) Ftp chunked upload: 18 % uploaded
+0100.071 (0) Ftp chunked upload: 18.1 % uploaded
+0100.089 (0) Ftp chunked upload: 18.2 % uploaded
+0100.107 (0) Ftp chunked upload: 18.3 % uploaded
+0100.123 (0) Ftp chunked upload: 18.4 % uploaded
+0100.141 (0) Ftp chunked upload: 18.5 % uploaded
+0100.158 (0) Ftp chunked upload: 18.6 % uploaded
+0100.174 (0) Ftp chunked upload: 18.7 % uploaded
+0100.192 (0) Ftp chunked upload: 18.8 % uploaded
+0100.231 (0) Ftp chunked upload: 18.9 % uploaded
+0100.247 (0) Ftp chunked upload: 19.1 % uploaded
+0100.263 (0) Ftp chunked upload: 19.2 % uploaded
+0100.278 (0) Ftp chunked upload: 19.3 % uploaded
+0100.319 (0) Ftp chunked upload: 19.4 % uploaded
+0100.335 (0) Ftp chunked upload: 19.5 % uploaded
+0100.351 (0) Ftp chunked upload: 19.6 % uploaded
+0100.366 (0) Ftp chunked upload: 19.7 % uploaded
+0100.382 (0) Ftp chunked upload: 19.8 % uploaded
+0100.399 (0) Ftp chunked upload: 19.9 % uploaded
+0100.415 (0) Ftp chunked upload: 20 % uploaded
+0100.433 (0) Ftp chunked upload: 20.1 % uploaded
+0100.449 (0) Ftp chunked upload: 20.2 % uploaded
+0100.468 (0) Ftp chunked upload: 20.3 % uploaded
+0100.484 (0) Ftp chunked upload: 20.4 % uploaded
+0100.500 (0) Ftp chunked upload: 20.5 % uploaded
+0100.517 (0) Ftp chunked upload: 20.6 % uploaded
+0100.534 (0) Ftp chunked upload: 20.7 % uploaded
+0100.551 (0) Ftp chunked upload: 20.8 % uploaded
+0100.567 (0) Ftp chunked upload: 20.9 % uploaded
+0100.583 (0) Ftp chunked upload: 21 % uploaded
+0100.599 (0) Ftp chunked upload: 21.1 % uploaded
+0100.615 (0) Ftp chunked upload: 21.2 % uploaded
+0100.632 (0) Ftp chunked upload: 21.3 % uploaded
+0100.650 (0) Ftp chunked upload: 21.4 % uploaded
+0100.666 (0) Ftp chunked upload: 21.5 % uploaded
+0100.682 (0) Ftp chunked upload: 21.6 % uploaded
+0100.698 (0) Ftp chunked upload: 21.7 % uploaded
+0100.715 (0) Ftp chunked upload: 21.8 % uploaded
+0100.731 (0) Ftp chunked upload: 21.9 % uploaded
+0100.747 (0) Ftp chunked upload: 22 % uploaded
+0100.763 (0) Ftp chunked upload: 22.1 % uploaded
+0100.779 (0) Ftp chunked upload: 22.2 % uploaded
+0100.795 (0) Ftp chunked upload: 22.3 % uploaded
+0100.840 (0) Ftp chunked upload: 22.4 % uploaded
+0100.857 (0) Ftp chunked upload: 22.5 % uploaded
+0100.874 (0) Ftp chunked upload: 22.6 % uploaded
+0100.890 (0) Ftp chunked upload: 22.7 % uploaded
+0100.908 (0) Ftp chunked upload: 22.8 % uploaded
+0100.926 (0) Ftp chunked upload: 22.9 % uploaded
+0100.944 (0) Ftp chunked upload: 23 % uploaded
+0100.962 (0) Ftp chunked upload: 23.1 % uploaded
+0100.978 (0) Ftp chunked upload: 23.2 % uploaded
+0100.994 (0) Ftp chunked upload: 23.3 % uploaded
+0101.010 (0) Ftp chunked upload: 23.4 % uploaded
+0101.027 (0) Ftp chunked upload: 23.5 % uploaded
+0101.042 (0) Ftp chunked upload: 23.6 % uploaded
+0101.059 (0) Ftp chunked upload: 23.7 % uploaded
+0101.075 (0) Ftp chunked upload: 23.8 % uploaded
+0101.091 (0) Ftp chunked upload: 23.9 % uploaded
+0101.109 (0) Ftp chunked upload: 24 % uploaded
+0101.126 (0) Ftp chunked upload: 24.1 % uploaded
+0101.142 (0) Ftp chunked upload: 24.2 % uploaded
+0101.158 (0) Ftp chunked upload: 24.3 % uploaded
+0101.176 (0) Ftp chunked upload: 24.4 % uploaded
+0101.211 (0) Ftp chunked upload: 24.6 % uploaded
+0101.229 (0) Ftp chunked upload: 24.7 % uploaded
+0101.246 (0) Ftp chunked upload: 24.8 % uploaded
+0101.262 (0) Ftp chunked upload: 24.9 % uploaded
+0101.278 (0) Ftp chunked upload: 25 % uploaded
+0101.294 (0) Ftp chunked upload: 25.1 % uploaded
+0101.311 (0) Ftp chunked upload: 25.2 % uploaded
+0101.327 (0) Ftp chunked upload: 25.3 % uploaded
+0101.343 (0) Ftp chunked upload: 25.4 % uploaded
+0101.359 (0) Ftp chunked upload: 25.5 % uploaded
+0101.375 (0) Ftp chunked upload: 25.6 % uploaded
+0101.391 (0) Ftp chunked upload: 25.7 % uploaded
+0101.407 (0) Ftp chunked upload: 25.8 % uploaded
+0101.422 (0) Ftp chunked upload: 25.9 % uploaded
+0101.438 (0) Ftp chunked upload: 26 % uploaded
+0101.454 (0) Ftp chunked upload: 26.1 % uploaded
+0101.471 (0) Ftp chunked upload: 26.2 % uploaded
+0101.487 (0) Ftp chunked upload: 26.3 % uploaded
+0101.504 (0) Ftp chunked upload: 26.4 % uploaded
+0101.521 (0) Ftp chunked upload: 26.5 % uploaded
+0101.538 (0) Ftp chunked upload: 26.6 % uploaded
+0101.554 (0) Ftp chunked upload: 26.7 % uploaded
+0101.573 (0) Ftp chunked upload: 26.8 % uploaded
+0101.588 (0) Ftp chunked upload: 26.9 % uploaded
+0101.605 (0) Ftp chunked upload: 27 % uploaded
+0101.622 (0) Ftp chunked upload: 27.1 % uploaded
+0101.639 (0) Ftp chunked upload: 27.2 % uploaded
+0101.655 (0) Ftp chunked upload: 27.3 % uploaded
+0101.670 (0) Ftp chunked upload: 27.4 % uploaded
+0101.687 (0) Ftp chunked upload: 27.5 % uploaded
+0101.703 (0) Ftp chunked upload: 27.6 % uploaded
+0101.719 (0) Ftp chunked upload: 27.7 % uploaded
+0101.735 (0) Ftp chunked upload: 27.8 % uploaded
+0101.751 (0) Ftp chunked upload: 27.9 % uploaded
+0101.767 (0) Ftp chunked upload: 28 % uploaded
+0101.783 (0) Ftp chunked upload: 28.1 % uploaded
+0101.799 (0) Ftp chunked upload: 28.2 % uploaded
+0101.814 (0) Ftp chunked upload: 28.3 % uploaded
+0101.830 (0) Ftp chunked upload: 28.4 % uploaded
+0101.847 (0) Ftp chunked upload: 28.5 % uploaded
+0101.863 (0) Ftp chunked upload: 28.6 % uploaded
+0101.879 (0) Ftp chunked upload: 28.7 % uploaded
+0101.894 (0) Ftp chunked upload: 28.8 % uploaded
+0101.910 (0) Ftp chunked upload: 28.9 % uploaded
+0101.927 (0) Ftp chunked upload: 29 % uploaded
+0101.945 (0) Ftp chunked upload: 29.1 % uploaded
+0101.963 (0) Ftp chunked upload: 29.2 % uploaded
+0101.981 (0) Ftp chunked upload: 29.3 % uploaded
+0101.999 (0) Ftp chunked upload: 29.4 % uploaded
+0102.015 (0) Ftp chunked upload: 29.5 % uploaded
+0102.033 (0) Ftp chunked upload: 29.6 % uploaded
+0102.051 (0) Ftp chunked upload: 29.7 % uploaded
+0102.067 (0) Ftp chunked upload: 29.8 % uploaded
+0102.082 (0) Ftp chunked upload: 30 % uploaded
+0102.099 (0) Ftp chunked upload: 30.1 % uploaded
+0102.114 (0) Ftp chunked upload: 30.2 % uploaded
+0102.131 (0) Ftp chunked upload: 30.3 % uploaded
+0102.146 (0) Ftp chunked upload: 30.4 % uploaded
+0102.163 (0) Ftp chunked upload: 30.5 % uploaded
+0102.179 (0) Ftp chunked upload: 30.6 % uploaded
+0102.195 (0) Ftp chunked upload: 30.7 % uploaded
+0102.211 (0) Ftp chunked upload: 30.8 % uploaded
+0102.229 (0) Ftp chunked upload: 30.9 % uploaded
+0102.246 (0) Ftp chunked upload: 31 % uploaded
+0102.262 (0) Ftp chunked upload: 31.1 % uploaded
+0102.278 (0) Ftp chunked upload: 31.2 % uploaded
+0102.295 (0) Ftp chunked upload: 31.3 % uploaded
+0102.310 (0) Ftp chunked upload: 31.4 % uploaded
+0102.326 (0) Ftp chunked upload: 31.5 % uploaded
+0102.343 (0) Ftp chunked upload: 31.6 % uploaded
+0102.359 (0) Ftp chunked upload: 31.7 % uploaded
+0102.375 (0) Ftp chunked upload: 31.8 % uploaded
+0102.391 (0) Ftp chunked upload: 31.9 % uploaded
+0102.407 (0) Ftp chunked upload: 32 % uploaded
+0102.422 (0) Ftp chunked upload: 32.1 % uploaded
+0102.438 (0) Ftp chunked upload: 32.2 % uploaded
+0102.454 (0) Ftp chunked upload: 32.3 % uploaded
+0102.471 (0) Ftp chunked upload: 32.4 % uploaded
+0102.487 (0) Ftp chunked upload: 32.5 % uploaded
+0102.502 (0) Ftp chunked upload: 32.6 % uploaded
+0102.518 (0) Ftp chunked upload: 32.7 % uploaded
+0102.534 (0) Ftp chunked upload: 32.8 % uploaded
+0102.551 (0) Ftp chunked upload: 32.9 % uploaded
+0102.569 (0) Ftp chunked upload: 33 % uploaded
+0102.629 (0) Ftp chunked upload: 33.1 % uploaded
+0102.645 (0) Ftp chunked upload: 33.2 % uploaded
+0102.663 (0) Ftp chunked upload: 33.3 % uploaded
+0102.679 (0) Ftp chunked upload: 33.4 % uploaded
+0102.695 (0) Ftp chunked upload: 33.5 % uploaded
+0102.713 (0) Ftp chunked upload: 33.6 % uploaded
+0102.731 (0) Ftp chunked upload: 33.7 % uploaded
+0102.747 (0) Ftp chunked upload: 33.8 % uploaded
+0102.763 (0) Ftp chunked upload: 33.9 % uploaded
+0102.780 (0) Ftp chunked upload: 34 % uploaded
+0102.797 (0) Ftp chunked upload: 34.1 % uploaded
+0102.814 (0) Ftp chunked upload: 34.2 % uploaded
+0102.829 (0) Ftp chunked upload: 34.3 % uploaded
+0102.847 (0) Ftp chunked upload: 34.4 % uploaded
+0102.863 (0) Ftp chunked upload: 34.5 % uploaded
+0102.879 (0) Ftp chunked upload: 34.6 % uploaded
+0102.895 (0) Ftp chunked upload: 34.7 % uploaded
+0102.911 (0) Ftp chunked upload: 34.8 % uploaded
+0102.926 (0) Ftp chunked upload: 34.9 % uploaded
+0102.942 (0) Ftp chunked upload: 35 % uploaded
+0102.959 (0) Ftp chunked upload: 35.1 % uploaded
+0102.976 (0) Ftp chunked upload: 35.2 % uploaded
+0102.993 (0) Ftp chunked upload: 35.3 % uploaded
+0103.011 (0) Ftp chunked upload: 35.5 % uploaded
+0103.027 (0) Ftp chunked upload: 35.6 % uploaded
+0103.043 (0) Ftp chunked upload: 35.7 % uploaded
+0103.057 (0) Ftp chunked upload: 35.8 % uploaded
+0103.073 (0) Ftp chunked upload: 35.9 % uploaded
+0103.090 (0) Ftp chunked upload: 36 % uploaded
+0103.106 (0) Ftp chunked upload: 36.1 % uploaded
+0103.123 (0) Ftp chunked upload: 36.2 % uploaded
+0103.139 (0) Ftp chunked upload: 36.3 % uploaded
+0103.155 (0) Ftp chunked upload: 36.4 % uploaded
+0103.171 (0) Ftp chunked upload: 36.5 % uploaded
+0103.187 (0) Ftp chunked upload: 36.6 % uploaded
+0103.202 (0) Ftp chunked upload: 36.7 % uploaded
+0103.218 (0) Ftp chunked upload: 36.8 % uploaded
+0103.232 (0) Ftp chunked upload: 36.9 % uploaded
+0103.249 (0) Ftp chunked upload: 37 % uploaded
+0103.266 (0) Ftp chunked upload: 37.1 % uploaded
+0103.281 (0) Ftp chunked upload: 37.2 % uploaded
+0103.298 (0) Ftp chunked upload: 37.3 % uploaded
+0103.314 (0) Ftp chunked upload: 37.4 % uploaded
+0103.331 (0) Ftp chunked upload: 37.5 % uploaded
+0103.347 (0) Ftp chunked upload: 37.6 % uploaded
+0103.362 (0) Ftp chunked upload: 37.7 % uploaded
+0103.379 (0) Ftp chunked upload: 37.8 % uploaded
+0103.394 (0) Ftp chunked upload: 37.9 % uploaded
+0103.409 (0) Ftp chunked upload: 38 % uploaded
+0103.426 (0) Ftp chunked upload: 38.1 % uploaded
+0103.442 (0) Ftp chunked upload: 38.2 % uploaded
+0103.457 (0) Ftp chunked upload: 38.3 % uploaded
+0103.474 (0) Ftp chunked upload: 38.4 % uploaded
+0103.490 (0) Ftp chunked upload: 38.5 % uploaded
+0103.506 (0) Ftp chunked upload: 38.6 % uploaded
+0103.522 (0) Ftp chunked upload: 38.7 % uploaded
+0103.538 (0) Ftp chunked upload: 38.8 % uploaded
+0103.555 (0) Ftp chunked upload: 38.9 % uploaded
+0103.573 (0) Ftp chunked upload: 39 % uploaded
+0103.591 (0) Ftp chunked upload: 39.1 % uploaded
+0103.606 (0) Ftp chunked upload: 39.2 % uploaded
+0103.622 (0) Ftp chunked upload: 39.3 % uploaded
+0103.639 (0) Ftp chunked upload: 39.4 % uploaded
+0103.657 (0) Ftp chunked upload: 39.5 % uploaded
+0103.675 (0) Ftp chunked upload: 39.6 % uploaded
+0103.691 (0) Ftp chunked upload: 39.7 % uploaded
+0103.707 (0) Ftp chunked upload: 39.8 % uploaded
+0103.723 (0) Ftp chunked upload: 39.9 % uploaded
+0103.739 (0) Ftp chunked upload: 40 % uploaded
+0103.757 (0) Ftp chunked upload: 40.1 % uploaded
+0103.774 (0) Ftp chunked upload: 40.2 % uploaded
+0103.789 (0) Ftp chunked upload: 40.3 % uploaded
+0103.806 (0) Ftp chunked upload: 40.4 % uploaded
+0103.822 (0) Ftp chunked upload: 40.5 % uploaded
+0103.839 (0) Ftp chunked upload: 40.6 % uploaded
+0103.855 (0) Ftp chunked upload: 40.7 % uploaded
+0103.873 (0) Ftp chunked upload: 40.9 % uploaded
+0103.891 (0) Ftp chunked upload: 41 % uploaded
+0103.907 (0) Ftp chunked upload: 41.1 % uploaded
+0103.922 (0) Ftp chunked upload: 41.2 % uploaded
+0103.937 (0) Ftp chunked upload: 41.3 % uploaded
+0103.955 (0) Ftp chunked upload: 41.4 % uploaded
+0103.970 (0) Ftp chunked upload: 41.5 % uploaded
+0103.986 (0) Ftp chunked upload: 41.6 % uploaded
+0104.001 (0) Ftp chunked upload: 41.7 % uploaded
+0104.019 (0) Ftp chunked upload: 41.8 % uploaded
+0104.035 (0) Ftp chunked upload: 41.9 % uploaded
+0104.051 (0) Ftp chunked upload: 42 % uploaded
+0104.069 (0) Ftp chunked upload: 42.1 % uploaded
+0104.087 (0) Ftp chunked upload: 42.2 % uploaded
+0104.103 (0) Ftp chunked upload: 42.3 % uploaded
+0104.118 (0) Ftp chunked upload: 42.4 % uploaded
+0104.133 (0) Ftp chunked upload: 42.5 % uploaded
+0104.151 (0) Ftp chunked upload: 42.6 % uploaded
+0104.166 (0) Ftp chunked upload: 42.7 % uploaded
+0104.182 (0) Ftp chunked upload: 42.8 % uploaded
+0104.199 (0) Ftp chunked upload: 42.9 % uploaded
+0104.218 (0) Ftp chunked upload: 43 % uploaded
+0104.234 (0) Ftp chunked upload: 43.1 % uploaded
+0104.249 (0) Ftp chunked upload: 43.2 % uploaded
+0104.267 (0) Ftp chunked upload: 43.3 % uploaded
+0104.282 (0) Ftp chunked upload: 43.4 % uploaded
+0104.298 (0) Ftp chunked upload: 43.5 % uploaded
+0104.315 (0) Ftp chunked upload: 43.6 % uploaded
+0104.331 (0) Ftp chunked upload: 43.7 % uploaded
+0104.347 (0) Ftp chunked upload: 43.8 % uploaded
+0104.362 (0) Ftp chunked upload: 43.9 % uploaded
+0104.379 (0) Ftp chunked upload: 44 % uploaded
+0104.394 (0) Ftp chunked upload: 44.1 % uploaded
+0104.411 (0) Ftp chunked upload: 44.2 % uploaded
+0104.426 (0) Ftp chunked upload: 44.3 % uploaded
+0104.442 (0) Ftp chunked upload: 44.4 % uploaded
+0104.463 (0) Ftp chunked upload: 44.5 % uploaded
+0104.483 (0) Ftp chunked upload: 44.6 % uploaded
+0104.499 (0) Ftp chunked upload: 44.7 % uploaded
+0104.515 (0) Ftp chunked upload: 44.8 % uploaded
+0104.530 (0) Ftp chunked upload: 44.9 % uploaded
+0104.546 (0) Ftp chunked upload: 45 % uploaded
+0104.563 (0) Ftp chunked upload: 45.1 % uploaded
+0104.579 (0) Ftp chunked upload: 45.2 % uploaded
+0104.595 (0) Ftp chunked upload: 45.3 % uploaded
+0104.614 (0) Ftp chunked upload: 45.4 % uploaded
+0104.630 (0) Ftp chunked upload: 45.5 % uploaded
+0104.647 (0) Ftp chunked upload: 45.6 % uploaded
+0104.662 (0) Ftp chunked upload: 45.7 % uploaded
+0104.677 (0) Ftp chunked upload: 45.8 % uploaded
+0104.694 (0) Ftp chunked upload: 45.9 % uploaded
+0104.711 (0) Ftp chunked upload: 46 % uploaded
+0104.727 (0) Ftp chunked upload: 46.1 % uploaded
+0104.742 (0) Ftp chunked upload: 46.2 % uploaded
+0104.758 (0) Ftp chunked upload: 46.4 % uploaded
+0104.775 (0) Ftp chunked upload: 46.5 % uploaded
+0104.791 (0) Ftp chunked upload: 46.6 % uploaded
+0104.806 (0) Ftp chunked upload: 46.7 % uploaded
+0104.822 (0) Ftp chunked upload: 46.8 % uploaded
+0104.839 (0) Ftp chunked upload: 46.9 % uploaded
+0104.854 (0) Ftp chunked upload: 47 % uploaded
+0104.870 (0) Ftp chunked upload: 47.1 % uploaded
+0104.886 (0) Ftp chunked upload: 47.2 % uploaded
+0104.902 (0) Ftp chunked upload: 47.3 % uploaded
+0104.918 (0) Ftp chunked upload: 47.4 % uploaded
+0104.935 (0) Ftp chunked upload: 47.5 % uploaded
+0104.950 (0) Ftp chunked upload: 47.6 % uploaded
+0104.966 (0) Ftp chunked upload: 47.7 % uploaded
+0104.983 (0) Ftp chunked upload: 47.8 % uploaded
+0105.002 (0) Ftp chunked upload: 47.9 % uploaded
+0105.021 (0) Ftp chunked upload: 48 % uploaded
+0105.039 (0) Ftp chunked upload: 48.1 % uploaded
+0105.055 (0) Ftp chunked upload: 48.2 % uploaded
+0105.072 (0) Ftp chunked upload: 48.3 % uploaded
+0105.090 (0) Ftp chunked upload: 48.4 % uploaded
+0105.109 (0) Ftp chunked upload: 48.5 % uploaded
+0105.127 (0) Ftp chunked upload: 48.6 % uploaded
+0105.143 (0) Ftp chunked upload: 48.7 % uploaded
+0105.159 (0) Ftp chunked upload: 48.8 % uploaded
+0105.177 (0) Ftp chunked upload: 48.9 % uploaded
+0105.196 (0) Ftp chunked upload: 49 % uploaded
+0105.214 (0) Ftp chunked upload: 49.1 % uploaded
+0105.231 (0) Ftp chunked upload: 49.2 % uploaded
+0105.247 (0) Ftp chunked upload: 49.3 % uploaded
+0105.264 (0) Ftp chunked upload: 49.4 % uploaded
+0105.281 (0) Ftp chunked upload: 49.5 % uploaded
+0105.299 (0) Ftp chunked upload: 49.6 % uploaded
+0105.316 (0) Ftp chunked upload: 49.7 % uploaded
+0105.332 (0) Ftp chunked upload: 49.8 % uploaded
+0105.350 (0) Ftp chunked upload: 49.9 % uploaded
+0105.365 (0) Ftp chunked upload: 50 % uploaded
+0105.382 (0) Ftp chunked upload: 50.1 % uploaded
+0105.398 (0) Ftp chunked upload: 50.2 % uploaded
+0105.415 (0) Ftp chunked upload: 50.3 % uploaded
+0105.431 (0) Ftp chunked upload: 50.4 % uploaded
+0105.446 (0) Ftp chunked upload: 50.5 % uploaded
+0105.462 (0) Ftp chunked upload: 50.6 % uploaded
+0105.477 (0) Ftp chunked upload: 50.7 % uploaded
+0105.494 (0) Ftp chunked upload: 50.8 % uploaded
+0105.510 (0) Ftp chunked upload: 50.9 % uploaded
+0105.526 (0) Ftp chunked upload: 51 % uploaded
+0105.542 (0) Ftp chunked upload: 51.1 % uploaded
+0105.558 (0) Ftp chunked upload: 51.2 % uploaded
+0105.574 (0) Ftp chunked upload: 51.3 % uploaded
+0105.591 (0) Ftp chunked upload: 51.4 % uploaded
+0105.607 (0) Ftp chunked upload: 51.5 % uploaded
+0105.626 (0) Ftp chunked upload: 51.6 % uploaded
+0105.643 (0) Ftp chunked upload: 51.8 % uploaded
+0105.662 (0) Ftp chunked upload: 51.9 % uploaded
+0105.680 (0) Ftp chunked upload: 52 % uploaded
+0105.698 (0) Ftp chunked upload: 52.1 % uploaded
+0105.716 (0) Ftp chunked upload: 52.2 % uploaded
+0105.734 (0) Ftp chunked upload: 52.3 % uploaded
+0105.751 (0) Ftp chunked upload: 52.4 % uploaded
+0105.768 (0) Ftp chunked upload: 52.5 % uploaded
+0105.786 (0) Ftp chunked upload: 52.6 % uploaded
+0105.804 (0) Ftp chunked upload: 52.7 % uploaded
+0105.822 (0) Ftp chunked upload: 52.8 % uploaded
+0105.840 (0) Ftp chunked upload: 52.9 % uploaded
+0105.858 (0) Ftp chunked upload: 53 % uploaded
+0105.876 (0) Ftp chunked upload: 53.1 % uploaded
+0105.894 (0) Ftp chunked upload: 53.2 % uploaded
+0105.912 (0) Ftp chunked upload: 53.3 % uploaded
+0105.931 (0) Ftp chunked upload: 53.4 % uploaded
+0105.948 (0) Ftp chunked upload: 53.5 % uploaded
+0106.000 (0) Ftp chunked upload: 53.6 % uploaded
+0106.018 (0) Ftp chunked upload: 53.7 % uploaded
+0106.037 (0) Ftp chunked upload: 53.8 % uploaded
+0106.055 (0) Ftp chunked upload: 53.9 % uploaded
+0106.074 (0) Ftp chunked upload: 54 % uploaded
+0106.092 (0) Ftp chunked upload: 54.1 % uploaded
+0106.110 (0) Ftp chunked upload: 54.2 % uploaded
+0106.127 (0) Ftp chunked upload: 54.3 % uploaded
+0106.145 (0) Ftp chunked upload: 54.4 % uploaded
+0106.164 (0) Ftp chunked upload: 54.5 % uploaded
+0106.183 (0) Ftp chunked upload: 54.6 % uploaded
+0106.199 (0) Ftp chunked upload: 54.7 % uploaded
+0106.216 (0) Ftp chunked upload: 54.8 % uploaded
+0106.235 (0) Ftp chunked upload: 54.9 % uploaded
+0106.252 (0) Ftp chunked upload: 55 % uploaded
+0106.272 (0) Ftp chunked upload: 55.1 % uploaded
+0106.290 (0) Ftp chunked upload: 55.2 % uploaded
+0106.309 (0) Ftp chunked upload: 55.3 % uploaded
+0106.327 (0) Ftp chunked upload: 55.4 % uploaded
+0106.346 (0) Ftp chunked upload: 55.5 % uploaded
+0106.364 (0) Ftp chunked upload: 55.6 % uploaded
+0106.382 (0) Ftp chunked upload: 55.7 % uploaded
+0106.400 (0) Ftp chunked upload: 55.8 % uploaded
+0106.418 (0) Ftp chunked upload: 55.9 % uploaded
+0106.436 (0) Ftp chunked upload: 56 % uploaded
+0106.455 (0) Ftp chunked upload: 56.1 % uploaded
+0106.472 (0) Ftp chunked upload: 56.2 % uploaded
+0106.489 (0) Ftp chunked upload: 56.3 % uploaded
+0106.507 (0) Ftp chunked upload: 56.4 % uploaded
+0106.524 (0) Ftp chunked upload: 56.5 % uploaded
+0106.542 (0) Ftp chunked upload: 56.6 % uploaded
+0106.559 (0) Ftp chunked upload: 56.7 % uploaded
+0106.576 (0) Ftp chunked upload: 56.8 % uploaded
+0106.595 (0) Ftp chunked upload: 56.9 % uploaded
+0106.612 (0) Ftp chunked upload: 57 % uploaded
+0106.630 (0) Ftp chunked upload: 57.2 % uploaded
+0106.647 (0) Ftp chunked upload: 57.3 % uploaded
+0106.665 (0) Ftp chunked upload: 57.4 % uploaded
+0106.683 (0) Ftp chunked upload: 57.5 % uploaded
+0106.699 (0) Ftp chunked upload: 57.6 % uploaded
+0106.715 (0) Ftp chunked upload: 57.7 % uploaded
+0106.730 (0) Ftp chunked upload: 57.8 % uploaded
+0106.746 (0) Ftp chunked upload: 57.9 % uploaded
+0106.763 (0) Ftp chunked upload: 58 % uploaded
+0106.779 (0) Ftp chunked upload: 58.1 % uploaded
+0106.795 (0) Ftp chunked upload: 58.2 % uploaded
+0106.811 (0) Ftp chunked upload: 58.3 % uploaded
+0106.829 (0) Ftp chunked upload: 58.4 % uploaded
+0106.847 (0) Ftp chunked upload: 58.5 % uploaded
+0106.863 (0) Ftp chunked upload: 58.6 % uploaded
+0106.881 (0) Ftp chunked upload: 58.7 % uploaded
+0106.899 (0) Ftp chunked upload: 58.8 % uploaded
+0106.915 (0) Ftp chunked upload: 58.9 % uploaded
+0106.930 (0) Ftp chunked upload: 59 % uploaded
+0106.946 (0) Ftp chunked upload: 59.1 % uploaded
+0106.963 (0) Ftp chunked upload: 59.2 % uploaded
+0106.979 (0) Ftp chunked upload: 59.3 % uploaded
+0106.994 (0) Ftp chunked upload: 59.4 % uploaded
+0107.011 (0) Ftp chunked upload: 59.5 % uploaded
+0107.027 (0) Ftp chunked upload: 59.6 % uploaded
+0107.046 (0) Ftp chunked upload: 59.7 % uploaded
+0107.063 (0) Ftp chunked upload: 59.8 % uploaded
+0107.079 (0) Ftp chunked upload: 59.9 % uploaded
+0107.098 (0) Ftp chunked upload: 60 % uploaded
+0107.115 (0) Ftp chunked upload: 60.1 % uploaded
+0107.133 (0) Ftp chunked upload: 60.2 % uploaded
+0107.151 (0) Ftp chunked upload: 60.3 % uploaded
+0107.168 (0) Ftp chunked upload: 60.4 % uploaded
+0107.186 (0) Ftp chunked upload: 60.5 % uploaded
+0107.204 (0) Ftp chunked upload: 60.6 % uploaded
+0107.221 (0) Ftp chunked upload: 60.7 % uploaded
+0107.239 (0) Ftp chunked upload: 60.8 % uploaded
+0107.256 (0) Ftp chunked upload: 60.9 % uploaded
+0107.276 (0) Ftp chunked upload: 61 % uploaded
+0107.293 (0) Ftp chunked upload: 61.1 % uploaded
+0107.311 (0) Ftp chunked upload: 61.2 % uploaded
+0107.329 (0) Ftp chunked upload: 61.3 % uploaded
+0107.348 (0) Ftp chunked upload: 61.4 % uploaded
+0107.366 (0) Ftp chunked upload: 61.5 % uploaded
+0107.384 (0) Ftp chunked upload: 61.6 % uploaded
+0107.402 (0) Ftp chunked upload: 61.7 % uploaded
+0107.420 (0) Ftp chunked upload: 61.8 % uploaded
+0107.439 (0) Ftp chunked upload: 61.9 % uploaded
+0107.455 (0) Ftp chunked upload: 62 % uploaded
+0107.471 (0) Ftp chunked upload: 62.1 % uploaded
+0107.490 (0) Ftp chunked upload: 62.2 % uploaded
+0107.509 (0) Ftp chunked upload: 62.3 % uploaded
+0107.527 (0) Ftp chunked upload: 62.4 % uploaded
+0107.543 (0) Ftp chunked upload: 62.5 % uploaded
+0107.560 (0) Ftp chunked upload: 62.7 % uploaded
+0107.578 (0) Ftp chunked upload: 62.8 % uploaded
+0107.595 (0) Ftp chunked upload: 62.9 % uploaded
+0107.614 (0) Ftp chunked upload: 63 % uploaded
+0107.631 (0) Ftp chunked upload: 63.1 % uploaded
+0107.648 (0) Ftp chunked upload: 63.2 % uploaded
+0107.666 (0) Ftp chunked upload: 63.3 % uploaded
+0107.683 (0) Ftp chunked upload: 63.4 % uploaded
+0107.701 (0) Ftp chunked upload: 63.5 % uploaded
+0107.719 (0) Ftp chunked upload: 63.6 % uploaded
+0107.736 (0) Ftp chunked upload: 63.7 % uploaded
+0107.753 (0) Ftp chunked upload: 63.8 % uploaded
+0107.771 (0) Ftp chunked upload: 63.9 % uploaded
+0107.788 (0) Ftp chunked upload: 64 % uploaded
+0107.807 (0) Ftp chunked upload: 64.1 % uploaded
+0107.823 (0) Ftp chunked upload: 64.2 % uploaded
+0107.840 (0) Ftp chunked upload: 64.3 % uploaded
+0107.858 (0) Ftp chunked upload: 64.4 % uploaded
+0107.877 (0) Ftp chunked upload: 64.5 % uploaded
+0107.896 (0) Ftp chunked upload: 64.6 % uploaded
+0107.914 (0) Ftp chunked upload: 64.7 % uploaded
+0107.932 (0) Ftp chunked upload: 64.8 % uploaded
+0107.950 (0) Ftp chunked upload: 64.9 % uploaded
+0107.968 (0) Ftp chunked upload: 65 % uploaded
+0107.986 (0) Ftp chunked upload: 65.1 % uploaded
+0108.003 (0) Ftp chunked upload: 65.2 % uploaded
+0108.019 (0) Ftp chunked upload: 65.3 % uploaded
+0108.036 (0) Ftp chunked upload: 65.4 % uploaded
+0108.053 (0) Ftp chunked upload: 65.5 % uploaded
+0108.071 (0) Ftp chunked upload: 65.6 % uploaded
+0108.088 (0) Ftp chunked upload: 65.7 % uploaded
+0108.107 (0) Ftp chunked upload: 65.8 % uploaded
+0108.123 (0) Ftp chunked upload: 65.9 % uploaded
+0108.139 (0) Ftp chunked upload: 66 % uploaded
+0108.155 (0) Ftp chunked upload: 66.1 % uploaded
+0108.171 (0) Ftp chunked upload: 66.2 % uploaded
+0108.187 (0) Ftp chunked upload: 66.3 % uploaded
+0108.204 (0) Ftp chunked upload: 66.4 % uploaded
+0108.222 (0) Ftp chunked upload: 66.5 % uploaded
+0108.240 (0) Ftp chunked upload: 66.6 % uploaded
+0108.257 (0) Ftp chunked upload: 66.7 % uploaded
+0108.280 (0) Ftp chunked upload: 66.8 % uploaded
+0108.298 (0) Ftp chunked upload: 66.9 % uploaded
+0108.316 (0) Ftp chunked upload: 67 % uploaded
+0108.335 (0) Ftp chunked upload: 67.1 % uploaded
+0108.351 (0) Ftp chunked upload: 67.2 % uploaded
+0108.369 (0) Ftp chunked upload: 67.3 % uploaded
+0108.387 (0) Ftp chunked upload: 67.4 % uploaded
+0108.402 (0) Ftp chunked upload: 67.5 % uploaded
+0108.419 (0) Ftp chunked upload: 67.6 % uploaded
+0108.436 (0) Ftp chunked upload: 67.7 % uploaded
+0108.453 (0) Ftp chunked upload: 67.8 % uploaded
+0108.471 (0) Ftp chunked upload: 67.9 % uploaded
+0108.488 (0) Ftp chunked upload: 68.1 % uploaded
+0108.506 (0) Ftp chunked upload: 68.2 % uploaded
+0108.524 (0) Ftp chunked upload: 68.3 % uploaded
+0108.542 (0) Ftp chunked upload: 68.4 % uploaded
+0108.558 (0) Ftp chunked upload: 68.5 % uploaded
+0108.575 (0) Ftp chunked upload: 68.6 % uploaded
+0108.591 (0) Ftp chunked upload: 68.7 % uploaded
+0108.608 (0) Ftp chunked upload: 68.8 % uploaded
+0108.626 (0) Ftp chunked upload: 68.9 % uploaded
+0108.643 (0) Ftp chunked upload: 69 % uploaded
+0108.660 (0) Ftp chunked upload: 69.1 % uploaded
+0108.676 (0) Ftp chunked upload: 69.2 % uploaded
+0108.694 (0) Ftp chunked upload: 69.3 % uploaded
+0108.711 (0) Ftp chunked upload: 69.4 % uploaded
+0108.728 (0) Ftp chunked upload: 69.5 % uploaded
+0108.745 (0) Ftp chunked upload: 69.6 % uploaded
+0108.761 (0) Ftp chunked upload: 69.7 % uploaded
+0108.779 (0) Ftp chunked upload: 69.8 % uploaded
+0108.795 (0) Ftp chunked upload: 69.9 % uploaded
+0108.811 (0) Ftp chunked upload: 70 % uploaded
+0108.829 (0) Ftp chunked upload: 70.1 % uploaded
+0108.847 (0) Ftp chunked upload: 70.2 % uploaded
+0108.865 (0) Ftp chunked upload: 70.3 % uploaded
+0108.883 (0) Ftp chunked upload: 70.4 % uploaded
+0108.901 (0) Ftp chunked upload: 70.5 % uploaded
+0108.919 (0) Ftp chunked upload: 70.6 % uploaded
+0108.935 (0) Ftp chunked upload: 70.7 % uploaded
+0108.953 (0) Ftp chunked upload: 70.8 % uploaded
+0108.974 (0) Ftp chunked upload: 70.9 % uploaded
+0108.992 (0) Ftp chunked upload: 71 % uploaded
+0109.010 (0) Ftp chunked upload: 71.1 % uploaded
+0109.027 (0) Ftp chunked upload: 71.2 % uploaded
+0109.045 (0) Ftp chunked upload: 71.3 % uploaded
+0109.062 (0) Ftp chunked upload: 71.4 % uploaded
+0109.078 (0) Ftp chunked upload: 71.5 % uploaded
+0109.095 (0) Ftp chunked upload: 71.6 % uploaded
+0109.111 (0) Ftp chunked upload: 71.7 % uploaded
+0109.130 (0) Ftp chunked upload: 71.8 % uploaded
+0109.148 (0) Ftp chunked upload: 71.9 % uploaded
+0109.166 (0) Ftp chunked upload: 72 % uploaded
+0109.185 (0) Ftp chunked upload: 72.1 % uploaded
+0109.204 (0) Ftp chunked upload: 72.2 % uploaded
+0109.222 (0) Ftp chunked upload: 72.3 % uploaded
+0109.240 (0) Ftp chunked upload: 72.4 % uploaded
+0109.258 (0) Ftp chunked upload: 72.5 % uploaded
+0109.284 (0) Ftp chunked upload: 72.6 % uploaded
+0109.301 (0) Ftp chunked upload: 72.7 % uploaded
+0109.321 (0) Ftp chunked upload: 72.8 % uploaded
+0109.337 (0) Ftp chunked upload: 72.9 % uploaded
+0109.355 (0) Ftp chunked upload: 73 % uploaded
+0109.371 (0) Ftp chunked upload: 73.1 % uploaded
+0109.386 (0) Ftp chunked upload: 73.2 % uploaded
+0109.402 (0) Ftp chunked upload: 73.3 % uploaded
+0109.418 (0) Ftp chunked upload: 73.4 % uploaded
+0109.434 (0) Ftp chunked upload: 73.6 % uploaded
+0109.481 (0) Ftp chunked upload: 73.7 % uploaded
+0109.499 (0) Ftp chunked upload: 73.8 % uploaded
+0109.515 (0) Ftp chunked upload: 73.9 % uploaded
+0109.531 (0) Ftp chunked upload: 74 % uploaded
+0109.549 (0) Ftp chunked upload: 74.1 % uploaded
+0109.567 (0) Ftp chunked upload: 74.2 % uploaded
+0109.582 (0) Ftp chunked upload: 74.3 % uploaded
+0109.598 (0) Ftp chunked upload: 74.4 % uploaded
+0109.615 (0) Ftp chunked upload: 74.5 % uploaded
+0109.633 (0) Ftp chunked upload: 74.6 % uploaded
+0109.651 (0) Ftp chunked upload: 74.7 % uploaded
+0109.675 (0) Ftp chunked upload: 74.8 % uploaded
+0109.691 (0) Ftp chunked upload: 74.9 % uploaded
+0109.706 (0) Ftp chunked upload: 75 % uploaded
+0109.768 (0) Ftp chunked upload: 75.1 % uploaded
+0109.783 (0) Ftp chunked upload: 75.2 % uploaded
+0109.800 (0) Ftp chunked upload: 75.3 % uploaded
+0109.817 (0) Ftp chunked upload: 75.4 % uploaded
+0109.835 (0) Ftp chunked upload: 75.5 % uploaded
+0109.853 (0) Ftp chunked upload: 75.6 % uploaded
+0109.871 (0) Ftp chunked upload: 75.7 % uploaded
+0109.887 (0) Ftp chunked upload: 75.8 % uploaded
+0109.905 (0) Ftp chunked upload: 75.9 % uploaded
+0109.923 (0) Ftp chunked upload: 76 % uploaded
+0109.939 (0) Ftp chunked upload: 76.1 % uploaded
+0109.955 (0) Ftp chunked upload: 76.2 % uploaded
+0109.973 (0) Ftp chunked upload: 76.3 % uploaded
+0109.990 (0) Ftp chunked upload: 76.4 % uploaded
+0110.007 (0) Ftp chunked upload: 76.5 % uploaded
+0110.023 (0) Ftp chunked upload: 76.6 % uploaded
+0110.040 (0) Ftp chunked upload: 76.7 % uploaded
+0110.058 (0) Ftp chunked upload: 76.8 % uploaded
+0110.076 (0) Ftp chunked upload: 76.9 % uploaded
+0110.093 (0) Ftp chunked upload: 77 % uploaded
+0110.110 (0) Ftp chunked upload: 77.1 % uploaded
+0110.126 (0) Ftp chunked upload: 77.2 % uploaded
+0110.143 (0) Ftp chunked upload: 77.3 % uploaded
+0110.159 (0) Ftp chunked upload: 77.4 % uploaded
+0110.175 (0) Ftp chunked upload: 77.5 % uploaded
+0110.193 (0) Ftp chunked upload: 77.6 % uploaded
+0110.211 (0) Ftp chunked upload: 77.7 % uploaded
+0110.227 (0) Ftp chunked upload: 77.8 % uploaded
+0110.245 (0) Ftp chunked upload: 77.9 % uploaded
+0110.263 (0) Ftp chunked upload: 78 % uploaded
+0110.279 (0) Ftp chunked upload: 78.1 % uploaded
+0110.294 (0) Ftp chunked upload: 78.2 % uploaded
+0110.311 (0) Ftp chunked upload: 78.3 % uploaded
+0110.327 (0) Ftp chunked upload: 78.4 % uploaded
+0110.344 (0) Ftp chunked upload: 78.5 % uploaded
+0110.361 (0) Ftp chunked upload: 78.6 % uploaded
+0110.397 (0) Ftp chunked upload: 78.7 % uploaded
+0110.415 (0) Ftp chunked upload: 78.8 % uploaded
+0110.431 (0) Ftp chunked upload: 79 % uploaded
+0110.446 (0) Ftp chunked upload: 79.1 % uploaded
+0110.461 (0) Ftp chunked upload: 79.2 % uploaded
+0110.477 (0) Ftp chunked upload: 79.3 % uploaded
+0110.495 (0) Ftp chunked upload: 79.4 % uploaded
+0110.512 (0) Ftp chunked upload: 79.5 % uploaded
+0110.529 (0) Ftp chunked upload: 79.6 % uploaded
+0110.547 (0) Ftp chunked upload: 79.7 % uploaded
+0110.566 (0) Ftp chunked upload: 79.8 % uploaded
+0110.582 (0) Ftp chunked upload: 79.9 % uploaded
+0110.604 (0) Ftp chunked upload: 80 % uploaded
+0110.641 (0) Ftp chunked upload: 80.1 % uploaded
+0110.659 (0) Ftp chunked upload: 80.2 % uploaded
+0110.675 (0) Ftp chunked upload: 80.3 % uploaded
+0110.691 (0) Ftp chunked upload: 80.4 % uploaded
+0110.708 (0) Ftp chunked upload: 80.5 % uploaded
+0110.726 (0) Ftp chunked upload: 80.6 % uploaded
+0110.743 (0) Ftp chunked upload: 80.7 % uploaded
+0110.762 (0) Ftp chunked upload: 80.8 % uploaded
+0110.780 (0) Ftp chunked upload: 80.9 % uploaded
+0110.798 (0) Ftp chunked upload: 81 % uploaded
+0110.814 (0) Ftp chunked upload: 81.1 % uploaded
+0110.830 (0) Ftp chunked upload: 81.2 % uploaded
+0110.847 (0) Ftp chunked upload: 81.3 % uploaded
+0110.863 (0) Ftp chunked upload: 81.4 % uploaded
+0110.879 (0) Ftp chunked upload: 81.5 % uploaded
+0110.895 (0) Ftp chunked upload: 81.6 % uploaded
+0110.911 (0) Ftp chunked upload: 81.7 % uploaded
+0110.928 (0) Ftp chunked upload: 81.8 % uploaded
+0110.946 (0) Ftp chunked upload: 81.9 % uploaded
+0110.963 (0) Ftp chunked upload: 82 % uploaded
+0110.979 (0) Ftp chunked upload: 82.1 % uploaded
+0110.995 (0) Ftp chunked upload: 82.2 % uploaded
+0111.014 (0) Ftp chunked upload: 82.3 % uploaded
+0111.031 (0) Ftp chunked upload: 82.4 % uploaded
+0111.047 (0) Ftp chunked upload: 82.5 % uploaded
+0111.063 (0) Ftp chunked upload: 82.6 % uploaded
+0111.080 (0) Ftp chunked upload: 82.7 % uploaded
+0111.099 (0) Ftp chunked upload: 82.8 % uploaded
+0111.115 (0) Ftp chunked upload: 82.9 % uploaded
+0111.133 (0) Ftp chunked upload: 83 % uploaded
+0111.150 (0) Ftp chunked upload: 83.1 % uploaded
+0111.166 (0) Ftp chunked upload: 83.2 % uploaded
+0111.183 (0) Ftp chunked upload: 83.3 % uploaded
+0111.199 (0) Ftp chunked upload: 83.4 % uploaded
+0111.216 (0) Ftp chunked upload: 83.5 % uploaded
+0111.235 (0) Ftp chunked upload: 83.6 % uploaded
+0111.253 (0) Ftp chunked upload: 83.7 % uploaded
+0111.270 (0) Ftp chunked upload: 83.8 % uploaded
+0111.286 (0) Ftp chunked upload: 83.9 % uploaded
+0111.302 (0) Ftp chunked upload: 84 % uploaded
+0111.319 (0) Ftp chunked upload: 84.1 % uploaded
+0111.336 (0) Ftp chunked upload: 84.2 % uploaded
+0111.355 (0) Ftp chunked upload: 84.3 % uploaded
+0111.372 (0) Ftp chunked upload: 84.5 % uploaded
+0111.390 (0) Ftp chunked upload: 84.6 % uploaded
+0111.408 (0) Ftp chunked upload: 84.7 % uploaded
+0111.425 (0) Ftp chunked upload: 84.8 % uploaded
+0111.444 (0) Ftp chunked upload: 84.9 % uploaded
+0111.463 (0) Ftp chunked upload: 85 % uploaded
+0111.480 (0) Ftp chunked upload: 85.1 % uploaded
+0111.498 (0) Ftp chunked upload: 85.2 % uploaded
+0111.515 (0) Ftp chunked upload: 85.3 % uploaded
+0111.533 (0) Ftp chunked upload: 85.4 % uploaded
+0111.551 (0) Ftp chunked upload: 85.5 % uploaded
+0111.568 (0) Ftp chunked upload: 85.6 % uploaded
+0111.585 (0) Ftp chunked upload: 85.7 % uploaded
+0111.603 (0) Ftp chunked upload: 85.8 % uploaded
+0111.621 (0) Ftp chunked upload: 85.9 % uploaded
+0111.639 (0) Ftp chunked upload: 86 % uploaded
+0111.658 (0) Ftp chunked upload: 86.1 % uploaded
+0111.677 (0) Ftp chunked upload: 86.2 % uploaded
+0111.694 (0) Ftp chunked upload: 86.3 % uploaded
+0111.711 (0) Ftp chunked upload: 86.4 % uploaded
+0111.727 (0) Ftp chunked upload: 86.5 % uploaded
+0111.744 (0) Ftp chunked upload: 86.6 % uploaded
+0111.762 (0) Ftp chunked upload: 86.7 % uploaded
+0111.780 (0) Ftp chunked upload: 86.8 % uploaded
+0111.799 (0) Ftp chunked upload: 86.9 % uploaded
+0111.815 (0) Ftp chunked upload: 87 % uploaded
+0111.831 (0) Ftp chunked upload: 87.1 % uploaded
+0111.848 (0) Ftp chunked upload: 87.2 % uploaded
+0111.866 (0) Ftp chunked upload: 87.3 % uploaded
+0111.884 (0) Ftp chunked upload: 87.4 % uploaded
+0111.902 (0) Ftp chunked upload: 87.5 % uploaded
+0111.920 (0) Ftp chunked upload: 87.6 % uploaded
+0111.939 (0) Ftp chunked upload: 87.7 % uploaded
+0111.955 (0) Ftp chunked upload: 87.8 % uploaded
+0111.974 (0) Ftp chunked upload: 87.9 % uploaded
+0111.991 (0) Ftp chunked upload: 88 % uploaded
+0112.009 (0) Ftp chunked upload: 88.1 % uploaded
+0112.027 (0) Ftp chunked upload: 88.2 % uploaded
+0112.046 (0) Ftp chunked upload: 88.3 % uploaded
+0112.063 (0) Ftp chunked upload: 88.4 % uploaded
+0112.082 (0) Ftp chunked upload: 88.5 % uploaded
+0112.101 (0) Ftp chunked upload: 88.6 % uploaded
+0112.118 (0) Ftp chunked upload: 88.7 % uploaded
+0112.135 (0) Ftp chunked upload: 88.8 % uploaded
+0112.151 (0) Ftp chunked upload: 88.9 % uploaded
+0112.168 (0) Ftp chunked upload: 89 % uploaded
+0112.186 (0) Ftp chunked upload: 89.1 % uploaded
+0112.204 (0) Ftp chunked upload: 89.2 % uploaded
+0112.223 (0) Ftp chunked upload: 89.3 % uploaded
+0112.240 (0) Ftp chunked upload: 89.4 % uploaded
+0112.258 (0) Ftp chunked upload: 89.5 % uploaded
+0112.275 (0) Ftp chunked upload: 89.6 % uploaded
+0112.291 (0) Ftp chunked upload: 89.7 % uploaded
+0112.308 (0) Ftp chunked upload: 89.9 % uploaded
+0112.325 (0) Ftp chunked upload: 90 % uploaded
+0112.343 (0) Ftp chunked upload: 90.1 % uploaded
+0112.361 (0) Ftp chunked upload: 90.2 % uploaded
+0112.379 (0) Ftp chunked upload: 90.3 % uploaded
+0112.397 (0) Ftp chunked upload: 90.4 % uploaded
+0112.415 (0) Ftp chunked upload: 90.5 % uploaded
+0112.430 (0) Ftp chunked upload: 90.6 % uploaded
+0112.447 (0) Ftp chunked upload: 90.7 % uploaded
+0112.463 (0) Ftp chunked upload: 90.8 % uploaded
+0112.479 (0) Ftp chunked upload: 90.9 % uploaded
+0112.495 (0) Ftp chunked upload: 91 % uploaded
+0112.513 (0) Ftp chunked upload: 91.1 % uploaded
+0112.532 (0) Ftp chunked upload: 91.2 % uploaded
+0112.550 (0) Ftp chunked upload: 91.3 % uploaded
+0112.568 (0) Ftp chunked upload: 91.4 % uploaded
+0112.586 (0) Ftp chunked upload: 91.5 % uploaded
+0112.608 (0) Ftp chunked upload: 91.6 % uploaded
+0112.625 (0) Ftp chunked upload: 91.7 % uploaded
+0112.643 (0) Ftp chunked upload: 91.8 % uploaded
+0112.662 (0) Ftp chunked upload: 91.9 % uploaded
+0112.680 (0) Ftp chunked upload: 92 % uploaded
+0112.698 (0) Ftp chunked upload: 92.1 % uploaded
+0112.716 (0) Ftp chunked upload: 92.2 % uploaded
+0112.734 (0) Ftp chunked upload: 92.3 % uploaded
+0112.752 (0) Ftp chunked upload: 92.4 % uploaded
+0112.769 (0) Ftp chunked upload: 92.5 % uploaded
+0112.787 (0) Ftp chunked upload: 92.6 % uploaded
+0112.803 (0) Ftp chunked upload: 92.7 % uploaded
+0112.820 (0) Ftp chunked upload: 92.8 % uploaded
+0112.838 (0) Ftp chunked upload: 92.9 % uploaded
+0112.854 (0) Ftp chunked upload: 93 % uploaded
+0112.870 (0) Ftp chunked upload: 93.1 % uploaded
+0112.888 (0) Ftp chunked upload: 93.2 % uploaded
+0112.906 (0) Ftp chunked upload: 93.3 % uploaded
+0112.924 (0) Ftp chunked upload: 93.4 % uploaded
+0112.941 (0) Ftp chunked upload: 93.5 % uploaded
+0112.959 (0) Ftp chunked upload: 93.6 % uploaded
+0112.975 (0) Ftp chunked upload: 93.7 % uploaded
+0112.990 (0) Ftp chunked upload: 93.8 % uploaded
+0113.005 (0) Ftp chunked upload: 93.9 % uploaded
+0113.021 (0) Ftp chunked upload: 94 % uploaded
+0113.038 (0) Ftp chunked upload: 94.1 % uploaded
+0113.053 (0) Ftp chunked upload: 94.2 % uploaded
+0113.070 (0) Ftp chunked upload: 94.3 % uploaded
+0113.086 (0) Ftp chunked upload: 94.4 % uploaded
+0113.101 (0) Ftp chunked upload: 94.5 % uploaded
+0113.118 (0) Ftp chunked upload: 94.6 % uploaded
+0113.135 (0) Ftp chunked upload: 94.7 % uploaded
+0113.153 (0) Ftp chunked upload: 94.8 % uploaded
+0113.170 (0) Ftp chunked upload: 94.9 % uploaded
+0113.186 (0) Ftp chunked upload: 95 % uploaded
+0113.202 (0) Ftp chunked upload: 95.1 % uploaded
+0113.219 (0) Ftp chunked upload: 95.3 % uploaded
+0113.235 (0) Ftp chunked upload: 95.4 % uploaded
+0113.251 (0) Ftp chunked upload: 95.5 % uploaded
+0113.268 (0) Ftp chunked upload: 95.6 % uploaded
+0113.285 (0) Ftp chunked upload: 95.7 % uploaded
+0113.321 (0) Ftp chunked upload: 95.8 % uploaded
+0113.339 (0) Ftp chunked upload: 95.9 % uploaded
+0113.355 (0) Ftp chunked upload: 96 % uploaded
+0113.371 (0) Ftp chunked upload: 96.1 % uploaded
+0113.386 (0) Ftp chunked upload: 96.2 % uploaded
+0113.402 (0) Ftp chunked upload: 96.3 % uploaded
+0113.420 (0) Ftp chunked upload: 96.4 % uploaded
+0113.437 (0) Ftp chunked upload: 96.5 % uploaded
+0113.455 (0) Ftp chunked upload: 96.6 % uploaded
+0113.471 (0) Ftp chunked upload: 96.7 % uploaded
+0113.487 (0) Ftp chunked upload: 96.8 % uploaded
+0113.503 (0) Ftp chunked upload: 96.9 % uploaded
+0113.519 (0) Ftp chunked upload: 97 % uploaded
+0113.534 (0) Ftp chunked upload: 97.1 % uploaded
+0113.550 (0) Ftp chunked upload: 97.2 % uploaded
+0113.566 (0) Ftp chunked upload: 97.3 % uploaded
+0113.582 (0) Ftp chunked upload: 97.4 % uploaded
+0113.597 (0) Ftp chunked upload: 97.5 % uploaded
+0113.614 (0) Ftp chunked upload: 97.6 % uploaded
+0113.630 (0) Ftp chunked upload: 97.7 % uploaded
+0113.647 (0) Ftp chunked upload: 97.8 % uploaded
+0113.663 (0) Ftp chunked upload: 97.9 % uploaded
+0113.679 (0) Ftp chunked upload: 98 % uploaded
+0113.694 (0) Ftp chunked upload: 98.1 % uploaded
+0113.711 (0) Ftp chunked upload: 98.2 % uploaded
+0113.727 (0) Ftp chunked upload: 98.3 % uploaded
+0113.743 (0) Ftp chunked upload: 98.4 % uploaded
+0113.762 (0) Ftp chunked upload: 98.5 % uploaded
+0113.779 (0) Ftp chunked upload: 98.6 % uploaded
+0113.795 (0) Ftp chunked upload: 98.7 % uploaded
+0113.813 (0) Ftp chunked upload: 98.8 % uploaded
+0113.831 (0) Ftp chunked upload: 98.9 % uploaded
+0113.847 (0) Ftp chunked upload: 99 % uploaded
+0113.863 (0) Ftp chunked upload: 99.1 % uploaded
+0113.879 (0) Ftp chunked upload: 99.2 % uploaded
+0113.896 (0) Ftp chunked upload: 99.3 % uploaded
+0113.912 (0) Ftp chunked upload: 99.4 % uploaded
+0113.930 (0) Ftp chunked upload: 99.5 % uploaded
+0113.947 (0) Ftp chunked upload: 99.6 % uploaded
+0113.966 (0) Ftp chunked upload: 99.7 % uploaded
+0113.984 (0) Ftp chunked upload: 99.8 % uploaded
+0114.002 (0) Ftp chunked upload: 99.9 % uploaded
+0114.014 (0) FTP upload attempt successful (506395.9Kb in 16.88s)
+0114.020 (0) Recording as successfully uploaded: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads.zip (03676ccf3a5f2c7f7dad56ea5cb0f726)
+0114.112 (0) Deleting local file: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads.zip: OK
+0114.116 (0) FTP upload attempt: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads2.zip -> ftp://u82662043@upfit.at//updraft_backup/easyfitness.upfit.de/backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads2.zip
+0114.135 (0) Ftp chunked upload: 0.2 % uploaded
+0114.151 (0) Ftp chunked upload: 0.4 % uploaded
+0114.167 (0) Ftp chunked upload: 0.7 % uploaded
+0114.183 (0) Ftp chunked upload: 0.9 % uploaded
+0114.199 (0) Ftp chunked upload: 1.1 % uploaded
+0114.215 (0) Ftp chunked upload: 1.3 % uploaded
+0114.232 (0) Ftp chunked upload: 1.5 % uploaded
+0114.249 (0) Ftp chunked upload: 1.7 % uploaded
+0114.266 (0) Ftp chunked upload: 2 % uploaded
+0114.295 (0) Ftp chunked upload: 2.2 % uploaded
+0114.310 (0) Ftp chunked upload: 2.4 % uploaded
+0114.326 (0) Ftp chunked upload: 2.6 % uploaded
+0114.344 (0) Ftp chunked upload: 2.8 % uploaded
+0114.362 (0) Ftp chunked upload: 3.1 % uploaded
+0114.379 (0) Ftp chunked upload: 3.3 % uploaded
+0114.395 (0) Ftp chunked upload: 3.5 % uploaded
+0114.411 (0) Ftp chunked upload: 3.7 % uploaded
+0114.428 (0) Ftp chunked upload: 3.9 % uploaded
+0114.446 (0) Ftp chunked upload: 4.1 % uploaded
+0114.464 (0) Ftp chunked upload: 4.4 % uploaded
+0114.482 (0) Ftp chunked upload: 4.6 % uploaded
+0114.499 (0) Ftp chunked upload: 4.8 % uploaded
+0114.515 (0) Ftp chunked upload: 5 % uploaded
+0114.531 (0) Ftp chunked upload: 5.2 % uploaded
+0114.547 (0) Ftp chunked upload: 5.5 % uploaded
+0114.562 (0) Ftp chunked upload: 5.7 % uploaded
+0114.578 (0) Ftp chunked upload: 5.9 % uploaded
+0114.595 (0) Ftp chunked upload: 6.1 % uploaded
+0114.611 (0) Ftp chunked upload: 6.3 % uploaded
+0114.627 (0) Ftp chunked upload: 6.5 % uploaded
+0114.645 (0) Ftp chunked upload: 6.8 % uploaded
+0114.663 (0) Ftp chunked upload: 7 % uploaded
+0114.680 (0) Ftp chunked upload: 7.2 % uploaded
+0114.698 (0) Ftp chunked upload: 7.4 % uploaded
+0114.715 (0) Ftp chunked upload: 7.6 % uploaded
+0114.731 (0) Ftp chunked upload: 7.9 % uploaded
+0114.749 (0) Ftp chunked upload: 8.1 % uploaded
+0114.768 (0) Ftp chunked upload: 8.3 % uploaded
+0114.786 (0) Ftp chunked upload: 8.5 % uploaded
+0114.804 (0) Ftp chunked upload: 8.7 % uploaded
+0114.822 (0) Ftp chunked upload: 8.9 % uploaded
+0114.839 (0) Ftp chunked upload: 9.2 % uploaded
+0114.856 (0) Ftp chunked upload: 9.4 % uploaded
+0114.873 (0) Ftp chunked upload: 9.6 % uploaded
+0114.891 (0) Ftp chunked upload: 9.8 % uploaded
+0114.909 (0) Ftp chunked upload: 10 % uploaded
+0114.927 (0) Ftp chunked upload: 10.2 % uploaded
+0114.943 (0) Ftp chunked upload: 10.5 % uploaded
+0114.961 (0) Ftp chunked upload: 10.7 % uploaded
+0114.979 (0) Ftp chunked upload: 10.9 % uploaded
+0114.995 (0) Ftp chunked upload: 11.1 % uploaded
+0115.011 (0) Ftp chunked upload: 11.3 % uploaded
+0115.028 (0) Ftp chunked upload: 11.6 % uploaded
+0115.046 (0) Ftp chunked upload: 11.8 % uploaded
+0115.062 (0) Ftp chunked upload: 12 % uploaded
+0115.078 (0) Ftp chunked upload: 12.2 % uploaded
+0115.095 (0) Ftp chunked upload: 12.4 % uploaded
+0115.111 (0) Ftp chunked upload: 12.6 % uploaded
+0115.127 (0) Ftp chunked upload: 12.9 % uploaded
+0115.143 (0) Ftp chunked upload: 13.1 % uploaded
+0115.160 (0) Ftp chunked upload: 13.3 % uploaded
+0115.177 (0) Ftp chunked upload: 13.5 % uploaded
+0115.195 (0) Ftp chunked upload: 13.7 % uploaded
+0115.212 (0) Ftp chunked upload: 14 % uploaded
+0115.230 (0) Ftp chunked upload: 14.2 % uploaded
+0115.247 (0) Ftp chunked upload: 14.4 % uploaded
+0115.263 (0) Ftp chunked upload: 14.6 % uploaded
+0115.280 (0) Ftp chunked upload: 14.8 % uploaded
+0115.298 (0) Ftp chunked upload: 15 % uploaded
+0115.319 (0) Ftp chunked upload: 15.3 % uploaded
+0115.334 (0) Ftp chunked upload: 15.5 % uploaded
+0115.350 (0) Ftp chunked upload: 15.7 % uploaded
+0115.380 (0) Ftp chunked upload: 15.9 % uploaded
+0115.397 (0) Ftp chunked upload: 16.1 % uploaded
+0115.415 (0) Ftp chunked upload: 16.4 % uploaded
+0115.431 (0) Ftp chunked upload: 16.6 % uploaded
+0115.447 (0) Ftp chunked upload: 16.8 % uploaded
+0115.463 (0) Ftp chunked upload: 17 % uploaded
+0115.478 (0) Ftp chunked upload: 17.2 % uploaded
+0115.493 (0) Ftp chunked upload: 17.4 % uploaded
+0115.511 (0) Ftp chunked upload: 17.7 % uploaded
+0115.526 (0) Ftp chunked upload: 17.9 % uploaded
+0115.542 (0) Ftp chunked upload: 18.1 % uploaded
+0115.558 (0) Ftp chunked upload: 18.3 % uploaded
+0115.575 (0) Ftp chunked upload: 18.5 % uploaded
+0115.591 (0) Ftp chunked upload: 18.8 % uploaded
+0115.607 (0) Ftp chunked upload: 19 % uploaded
+0115.622 (0) Ftp chunked upload: 19.2 % uploaded
+0115.638 (0) Ftp chunked upload: 19.4 % uploaded
+0115.654 (0) Ftp chunked upload: 19.6 % uploaded
+0115.670 (0) Ftp chunked upload: 19.8 % uploaded
+0115.687 (0) Ftp chunked upload: 20.1 % uploaded
+0115.703 (0) Ftp chunked upload: 20.3 % uploaded
+0115.719 (0) Ftp chunked upload: 20.5 % uploaded
+0115.734 (0) Ftp chunked upload: 20.7 % uploaded
+0115.750 (0) Ftp chunked upload: 20.9 % uploaded
+0115.766 (0) Ftp chunked upload: 21.2 % uploaded
+0115.783 (0) Ftp chunked upload: 21.4 % uploaded
+0115.799 (0) Ftp chunked upload: 21.6 % uploaded
+0115.815 (0) Ftp chunked upload: 21.8 % uploaded
+0115.830 (0) Ftp chunked upload: 22 % uploaded
+0115.846 (0) Ftp chunked upload: 22.2 % uploaded
+0115.862 (0) Ftp chunked upload: 22.5 % uploaded
+0115.880 (0) Ftp chunked upload: 22.7 % uploaded
+0115.897 (0) Ftp chunked upload: 22.9 % uploaded
+0115.914 (0) Ftp chunked upload: 23.1 % uploaded
+0115.931 (0) Ftp chunked upload: 23.3 % uploaded
+0115.947 (0) Ftp chunked upload: 23.6 % uploaded
+0115.962 (0) Ftp chunked upload: 23.8 % uploaded
+0115.979 (0) Ftp chunked upload: 24 % uploaded
+0115.995 (0) Ftp chunked upload: 24.2 % uploaded
+0116.011 (0) Ftp chunked upload: 24.4 % uploaded
+0116.026 (0) Ftp chunked upload: 24.6 % uploaded
+0116.043 (0) Ftp chunked upload: 24.9 % uploaded
+0116.059 (0) Ftp chunked upload: 25.1 % uploaded
+0116.074 (0) Ftp chunked upload: 25.3 % uploaded
+0116.090 (0) Ftp chunked upload: 25.5 % uploaded
+0116.107 (0) Ftp chunked upload: 25.7 % uploaded
+0116.124 (0) Ftp chunked upload: 25.9 % uploaded
+0116.142 (0) Ftp chunked upload: 26.2 % uploaded
+0116.158 (0) Ftp chunked upload: 26.4 % uploaded
+0116.174 (0) Ftp chunked upload: 26.6 % uploaded
+0116.190 (0) Ftp chunked upload: 26.8 % uploaded
+0116.206 (0) Ftp chunked upload: 27 % uploaded
+0116.222 (0) Ftp chunked upload: 27.3 % uploaded
+0116.238 (0) Ftp chunked upload: 27.5 % uploaded
+0116.254 (0) Ftp chunked upload: 27.7 % uploaded
+0116.269 (0) Ftp chunked upload: 27.9 % uploaded
+0116.286 (0) Ftp chunked upload: 28.1 % uploaded
+0116.302 (0) Ftp chunked upload: 28.3 % uploaded
+0116.321 (0) Ftp chunked upload: 28.6 % uploaded
+0116.339 (0) Ftp chunked upload: 28.8 % uploaded
+0116.355 (0) Ftp chunked upload: 29 % uploaded
+0116.371 (0) Ftp chunked upload: 29.2 % uploaded
+0116.387 (0) Ftp chunked upload: 29.4 % uploaded
+0116.403 (0) Ftp chunked upload: 29.7 % uploaded
+0116.419 (0) Ftp chunked upload: 29.9 % uploaded
+0116.434 (0) Ftp chunked upload: 30.1 % uploaded
+0116.450 (0) Ftp chunked upload: 30.3 % uploaded
+0116.466 (0) Ftp chunked upload: 30.5 % uploaded
+0116.483 (0) Ftp chunked upload: 30.7 % uploaded
+0116.498 (0) Ftp chunked upload: 31 % uploaded
+0116.513 (0) Ftp chunked upload: 31.2 % uploaded
+0116.530 (0) Ftp chunked upload: 31.4 % uploaded
+0116.546 (0) Ftp chunked upload: 31.6 % uploaded
+0116.562 (0) Ftp chunked upload: 31.8 % uploaded
+0116.579 (0) Ftp chunked upload: 32.1 % uploaded
+0116.594 (0) Ftp chunked upload: 32.3 % uploaded
+0116.610 (0) Ftp chunked upload: 32.5 % uploaded
+0116.626 (0) Ftp chunked upload: 32.7 % uploaded
+0116.642 (0) Ftp chunked upload: 32.9 % uploaded
+0116.658 (0) Ftp chunked upload: 33.1 % uploaded
+0116.674 (0) Ftp chunked upload: 33.4 % uploaded
+0116.690 (0) Ftp chunked upload: 33.6 % uploaded
+0116.706 (0) Ftp chunked upload: 33.8 % uploaded
+0116.722 (0) Ftp chunked upload: 34 % uploaded
+0116.739 (0) Ftp chunked upload: 34.2 % uploaded
+0116.754 (0) Ftp chunked upload: 34.5 % uploaded
+0116.769 (0) Ftp chunked upload: 34.7 % uploaded
+0116.784 (0) Ftp chunked upload: 34.9 % uploaded
+0116.818 (0) Ftp chunked upload: 35.1 % uploaded
+0116.833 (0) Ftp chunked upload: 35.3 % uploaded
+0116.849 (0) Ftp chunked upload: 35.5 % uploaded
+0116.866 (0) Ftp chunked upload: 35.8 % uploaded
+0116.882 (0) Ftp chunked upload: 36 % uploaded
+0116.898 (0) Ftp chunked upload: 36.2 % uploaded
+0116.914 (0) Ftp chunked upload: 36.4 % uploaded
+0116.930 (0) Ftp chunked upload: 36.6 % uploaded
+0116.946 (0) Ftp chunked upload: 36.9 % uploaded
+0116.962 (0) Ftp chunked upload: 37.1 % uploaded
+0116.978 (0) Ftp chunked upload: 37.3 % uploaded
+0116.994 (0) Ftp chunked upload: 37.5 % uploaded
+0117.009 (0) Ftp chunked upload: 37.7 % uploaded
+0117.026 (0) Ftp chunked upload: 37.9 % uploaded
+0117.042 (0) Ftp chunked upload: 38.2 % uploaded
+0117.057 (0) Ftp chunked upload: 38.4 % uploaded
+0117.074 (0) Ftp chunked upload: 38.6 % uploaded
+0117.090 (0) Ftp chunked upload: 38.8 % uploaded
+0117.107 (0) Ftp chunked upload: 39 % uploaded
+0117.123 (0) Ftp chunked upload: 39.3 % uploaded
+0117.139 (0) Ftp chunked upload: 39.5 % uploaded
+0117.156 (0) Ftp chunked upload: 39.7 % uploaded
+0117.173 (0) Ftp chunked upload: 39.9 % uploaded
+0117.189 (0) Ftp chunked upload: 40.1 % uploaded
+0117.207 (0) Ftp chunked upload: 40.3 % uploaded
+0117.224 (0) Ftp chunked upload: 40.6 % uploaded
+0117.241 (0) Ftp chunked upload: 40.8 % uploaded
+0117.259 (0) Ftp chunked upload: 41 % uploaded
+0117.275 (0) Ftp chunked upload: 41.2 % uploaded
+0117.291 (0) Ftp chunked upload: 41.4 % uploaded
+0117.311 (0) Ftp chunked upload: 41.7 % uploaded
+0117.330 (0) Ftp chunked upload: 41.9 % uploaded
+0117.348 (0) Ftp chunked upload: 42.1 % uploaded
+0117.366 (0) Ftp chunked upload: 42.3 % uploaded
+0117.384 (0) Ftp chunked upload: 42.5 % uploaded
+0117.402 (0) Ftp chunked upload: 42.7 % uploaded
+0117.420 (0) Ftp chunked upload: 43 % uploaded
+0117.437 (0) Ftp chunked upload: 43.2 % uploaded
+0117.455 (0) Ftp chunked upload: 43.4 % uploaded
+0117.472 (0) Ftp chunked upload: 43.6 % uploaded
+0117.489 (0) Ftp chunked upload: 43.8 % uploaded
+0117.507 (0) Ftp chunked upload: 44 % uploaded
+0117.523 (0) Ftp chunked upload: 44.3 % uploaded
+0117.539 (0) Ftp chunked upload: 44.5 % uploaded
+0117.556 (0) Ftp chunked upload: 44.7 % uploaded
+0117.574 (0) Ftp chunked upload: 44.9 % uploaded
+0117.591 (0) Ftp chunked upload: 45.1 % uploaded
+0117.607 (0) Ftp chunked upload: 45.4 % uploaded
+0117.624 (0) Ftp chunked upload: 45.6 % uploaded
+0117.642 (0) Ftp chunked upload: 45.8 % uploaded
+0117.660 (0) Ftp chunked upload: 46 % uploaded
+0117.678 (0) Ftp chunked upload: 46.2 % uploaded
+0117.696 (0) Ftp chunked upload: 46.4 % uploaded
+0117.715 (0) Ftp chunked upload: 46.7 % uploaded
+0117.731 (0) Ftp chunked upload: 46.9 % uploaded
+0117.749 (0) Ftp chunked upload: 47.1 % uploaded
+0117.768 (0) Ftp chunked upload: 47.3 % uploaded
+0117.786 (0) Ftp chunked upload: 47.5 % uploaded
+0117.803 (0) Ftp chunked upload: 47.8 % uploaded
+0117.820 (0) Ftp chunked upload: 48 % uploaded
+0117.839 (0) Ftp chunked upload: 48.2 % uploaded
+0117.856 (0) Ftp chunked upload: 48.4 % uploaded
+0117.874 (0) Ftp chunked upload: 48.6 % uploaded
+0117.892 (0) Ftp chunked upload: 48.8 % uploaded
+0117.911 (0) Ftp chunked upload: 49.1 % uploaded
+0117.927 (0) Ftp chunked upload: 49.3 % uploaded
+0117.945 (0) Ftp chunked upload: 49.5 % uploaded
+0117.964 (0) Ftp chunked upload: 49.7 % uploaded
+0117.982 (0) Ftp chunked upload: 49.9 % uploaded
+0118.000 (0) Ftp chunked upload: 50.2 % uploaded
+0118.017 (0) Ftp chunked upload: 50.4 % uploaded
+0118.036 (0) Ftp chunked upload: 50.6 % uploaded
+0118.055 (0) Ftp chunked upload: 50.8 % uploaded
+0118.073 (0) Ftp chunked upload: 51 % uploaded
+0118.092 (0) Ftp chunked upload: 51.2 % uploaded
+0118.110 (0) Ftp chunked upload: 51.5 % uploaded
+0118.126 (0) Ftp chunked upload: 51.7 % uploaded
+0118.143 (0) Ftp chunked upload: 51.9 % uploaded
+0118.159 (0) Ftp chunked upload: 52.1 % uploaded
+0118.177 (0) Ftp chunked upload: 52.3 % uploaded
+0118.195 (0) Ftp chunked upload: 52.6 % uploaded
+0118.211 (0) Ftp chunked upload: 52.8 % uploaded
+0118.227 (0) Ftp chunked upload: 53 % uploaded
+0118.245 (0) Ftp chunked upload: 53.2 % uploaded
+0118.263 (0) Ftp chunked upload: 53.4 % uploaded
+0118.282 (0) Ftp chunked upload: 53.6 % uploaded
+0118.299 (0) Ftp chunked upload: 53.9 % uploaded
+0118.320 (0) Ftp chunked upload: 54.1 % uploaded
+0118.338 (0) Ftp chunked upload: 54.3 % uploaded
+0118.356 (0) Ftp chunked upload: 54.5 % uploaded
+0118.374 (0) Ftp chunked upload: 54.7 % uploaded
+0118.392 (0) Ftp chunked upload: 55 % uploaded
+0118.410 (0) Ftp chunked upload: 55.2 % uploaded
+0118.428 (0) Ftp chunked upload: 55.4 % uploaded
+0118.446 (0) Ftp chunked upload: 55.6 % uploaded
+0118.464 (0) Ftp chunked upload: 55.8 % uploaded
+0118.481 (0) Ftp chunked upload: 56 % uploaded
+0118.499 (0) Ftp chunked upload: 56.3 % uploaded
+0118.515 (0) Ftp chunked upload: 56.5 % uploaded
+0118.531 (0) Ftp chunked upload: 56.7 % uploaded
+0118.549 (0) Ftp chunked upload: 56.9 % uploaded
+0118.567 (0) Ftp chunked upload: 57.1 % uploaded
+0118.584 (0) Ftp chunked upload: 57.4 % uploaded
+0118.601 (0) Ftp chunked upload: 57.6 % uploaded
+0118.620 (0) Ftp chunked upload: 57.8 % uploaded
+0118.642 (0) Ftp chunked upload: 58 % uploaded
+0118.661 (0) Ftp chunked upload: 58.2 % uploaded
+0118.679 (0) Ftp chunked upload: 58.4 % uploaded
+0118.696 (0) Ftp chunked upload: 58.7 % uploaded
+0118.714 (0) Ftp chunked upload: 58.9 % uploaded
+0118.733 (0) Ftp chunked upload: 59.1 % uploaded
+0118.751 (0) Ftp chunked upload: 59.3 % uploaded
+0118.767 (0) Ftp chunked upload: 59.5 % uploaded
+0118.784 (0) Ftp chunked upload: 59.7 % uploaded
+0118.802 (0) Ftp chunked upload: 60 % uploaded
+0118.819 (0) Ftp chunked upload: 60.2 % uploaded
+0118.834 (0) Ftp chunked upload: 60.4 % uploaded
+0118.850 (0) Ftp chunked upload: 60.6 % uploaded
+0118.868 (0) Ftp chunked upload: 60.8 % uploaded
+0118.886 (0) Ftp chunked upload: 61.1 % uploaded
+0118.903 (0) Ftp chunked upload: 61.3 % uploaded
+0118.920 (0) Ftp chunked upload: 61.5 % uploaded
+0118.935 (0) Ftp chunked upload: 61.7 % uploaded
+0118.953 (0) Ftp chunked upload: 61.9 % uploaded
+0118.970 (0) Ftp chunked upload: 62.1 % uploaded
+0118.987 (0) Ftp chunked upload: 62.4 % uploaded
+0119.002 (0) Ftp chunked upload: 62.6 % uploaded
+0119.018 (0) Ftp chunked upload: 62.8 % uploaded
+0119.034 (0) Ftp chunked upload: 63 % uploaded
+0119.051 (0) Ftp chunked upload: 63.2 % uploaded
+0119.067 (0) Ftp chunked upload: 63.5 % uploaded
+0119.083 (0) Ftp chunked upload: 63.7 % uploaded
+0119.099 (0) Ftp chunked upload: 63.9 % uploaded
+0119.115 (0) Ftp chunked upload: 64.1 % uploaded
+0119.131 (0) Ftp chunked upload: 64.3 % uploaded
+0119.147 (0) Ftp chunked upload: 64.5 % uploaded
+0119.165 (0) Ftp chunked upload: 64.8 % uploaded
+0119.201 (0) Ftp chunked upload: 65 % uploaded
+0119.218 (0) Ftp chunked upload: 65.2 % uploaded
+0119.236 (0) Ftp chunked upload: 65.4 % uploaded
+0119.253 (0) Ftp chunked upload: 65.6 % uploaded
+0119.271 (0) Ftp chunked upload: 65.9 % uploaded
+0119.287 (0) Ftp chunked upload: 66.1 % uploaded
+0119.302 (0) Ftp chunked upload: 66.3 % uploaded
+0119.328 (0) Ftp chunked upload: 66.5 % uploaded
+0119.345 (0) Ftp chunked upload: 66.7 % uploaded
+0119.362 (0) Ftp chunked upload: 66.9 % uploaded
+0119.380 (0) Ftp chunked upload: 67.2 % uploaded
+0119.396 (0) Ftp chunked upload: 67.4 % uploaded
+0119.413 (0) Ftp chunked upload: 67.6 % uploaded
+0119.430 (0) Ftp chunked upload: 67.8 % uploaded
+0119.447 (0) Ftp chunked upload: 68 % uploaded
+0119.466 (0) Ftp chunked upload: 68.3 % uploaded
+0119.489 (0) Ftp chunked upload: 68.5 % uploaded
+0119.505 (0) Ftp chunked upload: 68.7 % uploaded
+0119.523 (0) Ftp chunked upload: 68.9 % uploaded
+0119.541 (0) Ftp chunked upload: 69.1 % uploaded
+0119.559 (0) Ftp chunked upload: 69.3 % uploaded
+0119.575 (0) Ftp chunked upload: 69.6 % uploaded
+0119.593 (0) Ftp chunked upload: 69.8 % uploaded
+0119.610 (0) Ftp chunked upload: 70 % uploaded
+0119.626 (0) Ftp chunked upload: 70.2 % uploaded
+0119.642 (0) Ftp chunked upload: 70.4 % uploaded
+0119.659 (0) Ftp chunked upload: 70.7 % uploaded
+0119.676 (0) Ftp chunked upload: 70.9 % uploaded
+0119.693 (0) Ftp chunked upload: 71.1 % uploaded
+0119.711 (0) Ftp chunked upload: 71.3 % uploaded
+0119.727 (0) Ftp chunked upload: 71.5 % uploaded
+0119.743 (0) Ftp chunked upload: 71.7 % uploaded
+0119.762 (0) Ftp chunked upload: 72 % uploaded
+0119.780 (0) Ftp chunked upload: 72.2 % uploaded
+0119.798 (0) Ftp chunked upload: 72.4 % uploaded
+0119.816 (0) Ftp chunked upload: 72.6 % uploaded
+0119.834 (0) Ftp chunked upload: 72.8 % uploaded
+0119.850 (0) Ftp chunked upload: 73.1 % uploaded
+0119.867 (0) Ftp chunked upload: 73.3 % uploaded
+0119.883 (0) Ftp chunked upload: 73.5 % uploaded
+0119.900 (0) Ftp chunked upload: 73.7 % uploaded
+0119.918 (0) Ftp chunked upload: 73.9 % uploaded
+0119.936 (0) Ftp chunked upload: 74.1 % uploaded
+0119.954 (0) Ftp chunked upload: 74.4 % uploaded
+0119.970 (0) Ftp chunked upload: 74.6 % uploaded
+0119.986 (0) Ftp chunked upload: 74.8 % uploaded
+0120.002 (0) Ftp chunked upload: 75 % uploaded
+0120.019 (0) Ftp chunked upload: 75.2 % uploaded
+0120.034 (0) Ftp chunked upload: 75.4 % uploaded
+0120.050 (0) Ftp chunked upload: 75.7 % uploaded
+0120.066 (0) Ftp chunked upload: 75.9 % uploaded
+0120.083 (0) Ftp chunked upload: 76.1 % uploaded
+0120.099 (0) Ftp chunked upload: 76.3 % uploaded
+0120.115 (0) Ftp chunked upload: 76.5 % uploaded
+0120.133 (0) Ftp chunked upload: 76.8 % uploaded
+0120.151 (0) Ftp chunked upload: 77 % uploaded
+0120.167 (0) Ftp chunked upload: 77.2 % uploaded
+0120.185 (0) Ftp chunked upload: 77.4 % uploaded
+0120.204 (0) Ftp chunked upload: 77.6 % uploaded
+0120.222 (0) Ftp chunked upload: 77.8 % uploaded
+0120.239 (0) Ftp chunked upload: 78.1 % uploaded
+0120.257 (0) Ftp chunked upload: 78.3 % uploaded
+0120.275 (0) Ftp chunked upload: 78.5 % uploaded
+0120.291 (0) Ftp chunked upload: 78.7 % uploaded
+0120.307 (0) Ftp chunked upload: 78.9 % uploaded
+0120.328 (0) Ftp chunked upload: 79.2 % uploaded
+0120.345 (0) Ftp chunked upload: 79.4 % uploaded
+0120.362 (0) Ftp chunked upload: 79.6 % uploaded
+0120.378 (0) Ftp chunked upload: 79.8 % uploaded
+0120.394 (0) Ftp chunked upload: 80 % uploaded
+0120.411 (0) Ftp chunked upload: 80.2 % uploaded
+0120.427 (0) Ftp chunked upload: 80.5 % uploaded
+0120.443 (0) Ftp chunked upload: 80.7 % uploaded
+0120.458 (0) Ftp chunked upload: 80.9 % uploaded
+0120.474 (0) Ftp chunked upload: 81.1 % uploaded
+0120.490 (0) Ftp chunked upload: 81.3 % uploaded
+0120.505 (0) Ftp chunked upload: 81.6 % uploaded
+0120.522 (0) Ftp chunked upload: 81.8 % uploaded
+0120.537 (0) Ftp chunked upload: 82 % uploaded
+0120.554 (0) Ftp chunked upload: 82.2 % uploaded
+0120.569 (0) Ftp chunked upload: 82.4 % uploaded
+0120.587 (0) Ftp chunked upload: 82.6 % uploaded
+0120.603 (0) Ftp chunked upload: 82.9 % uploaded
+0120.623 (0) Ftp chunked upload: 83.1 % uploaded
+0120.640 (0) Ftp chunked upload: 83.3 % uploaded
+0120.658 (0) Ftp chunked upload: 83.5 % uploaded
+0120.674 (0) Ftp chunked upload: 83.7 % uploaded
+0120.690 (0) Ftp chunked upload: 84 % uploaded
+0120.706 (0) Ftp chunked upload: 84.2 % uploaded
+0120.722 (0) Ftp chunked upload: 84.4 % uploaded
+0120.740 (0) Ftp chunked upload: 84.6 % uploaded
+0120.758 (0) Ftp chunked upload: 84.8 % uploaded
+0120.775 (0) Ftp chunked upload: 85 % uploaded
+0120.791 (0) Ftp chunked upload: 85.3 % uploaded
+0120.807 (0) Ftp chunked upload: 85.5 % uploaded
+0120.823 (0) Ftp chunked upload: 85.7 % uploaded
+0120.851 (0) Ftp chunked upload: 85.9 % uploaded
+0120.866 (0) Ftp chunked upload: 86.1 % uploaded
+0120.882 (0) Ftp chunked upload: 86.4 % uploaded
+0120.898 (0) Ftp chunked upload: 86.6 % uploaded
+0120.915 (0) Ftp chunked upload: 86.8 % uploaded
+0120.933 (0) Ftp chunked upload: 87 % uploaded
+0120.951 (0) Ftp chunked upload: 87.2 % uploaded
+0120.967 (0) Ftp chunked upload: 87.4 % uploaded
+0120.983 (0) Ftp chunked upload: 87.7 % uploaded
+0120.999 (0) Ftp chunked upload: 87.9 % uploaded
+0121.017 (0) Ftp chunked upload: 88.1 % uploaded
+0121.035 (0) Ftp chunked upload: 88.3 % uploaded
+0121.051 (0) Ftp chunked upload: 88.5 % uploaded
+0121.066 (0) Ftp chunked upload: 88.8 % uploaded
+0121.082 (0) Ftp chunked upload: 89 % uploaded
+0121.118 (0) Ftp chunked upload: 89.2 % uploaded
+0121.134 (0) Ftp chunked upload: 89.4 % uploaded
+0121.151 (0) Ftp chunked upload: 89.6 % uploaded
+0121.166 (0) Ftp chunked upload: 89.8 % uploaded
+0121.183 (0) Ftp chunked upload: 90.1 % uploaded
+0121.199 (0) Ftp chunked upload: 90.3 % uploaded
+0121.216 (0) Ftp chunked upload: 90.5 % uploaded
+0121.233 (0) Ftp chunked upload: 90.7 % uploaded
+0121.251 (0) Ftp chunked upload: 90.9 % uploaded
+0121.267 (0) Ftp chunked upload: 91.2 % uploaded
+0121.282 (0) Ftp chunked upload: 91.4 % uploaded
+0121.299 (0) Ftp chunked upload: 91.6 % uploaded
+0121.314 (0) Ftp chunked upload: 91.8 % uploaded
+0121.332 (0) Ftp chunked upload: 92 % uploaded
+0121.350 (0) Ftp chunked upload: 92.2 % uploaded
+0121.368 (0) Ftp chunked upload: 92.5 % uploaded
+0121.386 (0) Ftp chunked upload: 92.7 % uploaded
+0121.402 (0) Ftp chunked upload: 92.9 % uploaded
+0121.418 (0) Ftp chunked upload: 93.1 % uploaded
+0121.436 (0) Ftp chunked upload: 93.3 % uploaded
+0121.454 (0) Ftp chunked upload: 93.5 % uploaded
+0121.471 (0) Ftp chunked upload: 93.8 % uploaded
+0121.491 (0) Ftp chunked upload: 94 % uploaded
+0121.510 (0) Ftp chunked upload: 94.2 % uploaded
+0121.528 (0) Ftp chunked upload: 94.4 % uploaded
+0121.546 (0) Ftp chunked upload: 94.6 % uploaded
+0121.563 (0) Ftp chunked upload: 94.9 % uploaded
+0121.579 (0) Ftp chunked upload: 95.1 % uploaded
+0121.595 (0) Ftp chunked upload: 95.3 % uploaded
+0121.610 (0) Ftp chunked upload: 95.5 % uploaded
+0121.627 (0) Ftp chunked upload: 95.7 % uploaded
+0121.642 (0) Ftp chunked upload: 95.9 % uploaded
+0121.659 (0) Ftp chunked upload: 96.2 % uploaded
+0121.675 (0) Ftp chunked upload: 96.4 % uploaded
+0121.693 (0) Ftp chunked upload: 96.6 % uploaded
+0121.711 (0) Ftp chunked upload: 96.8 % uploaded
+0121.726 (0) Ftp chunked upload: 97 % uploaded
+0121.743 (0) Ftp chunked upload: 97.3 % uploaded
+0121.759 (0) Ftp chunked upload: 97.5 % uploaded
+0121.775 (0) Ftp chunked upload: 97.7 % uploaded
+0121.793 (0) Ftp chunked upload: 97.9 % uploaded
+0121.810 (0) Ftp chunked upload: 98.1 % uploaded
+0121.828 (0) Ftp chunked upload: 98.3 % uploaded
+0121.846 (0) Ftp chunked upload: 98.6 % uploaded
+0121.863 (0) Ftp chunked upload: 98.8 % uploaded
+0121.879 (0) Ftp chunked upload: 99 % uploaded
+0121.898 (0) Ftp chunked upload: 99.2 % uploaded
+0121.915 (0) Ftp chunked upload: 99.4 % uploaded
+0121.932 (0) Ftp chunked upload: 99.7 % uploaded
+0121.949 (0) Ftp chunked upload: 99.9 % uploaded
+0121.988 (0) FTP upload attempt successful (236570.8Kb in 7.87s)
+0121.993 (0) Recording as successfully uploaded: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads2.zip (383bc1a28ff57c2d105dcdd47b422ffc)
+0122.038 (0) Deleting local file: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-uploads2.zip: OK
+0122.042 (0) FTP upload attempt: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-others.zip -> ftp://u82662043@upfit.at//updraft_backup/easyfitness.upfit.de/backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-others.zip
+0122.061 (0) Ftp chunked upload: 42.1 % uploaded
+0122.078 (0) Ftp chunked upload: 84.2 % uploaded
+0122.088 (0) FTP upload attempt successful (1224.9Kb in 0.04s)
+0122.095 (0) Recording as successfully uploaded: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-others.zip (bf7f7d3f50d78ab6a56dc45c929c52a8)
+0122.103 (0) Deleting local file: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-others.zip: OK
+0122.105 (0) FTP upload attempt: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db.gz -> ftp://u82662043@upfit.at//updraft_backup/easyfitness.upfit.de/backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db.gz
+0122.122 (0) Ftp chunked upload: 11.7 % uploaded
+0122.139 (0) Ftp chunked upload: 23.4 % uploaded
+0122.156 (0) Ftp chunked upload: 35.2 % uploaded
+0122.173 (0) Ftp chunked upload: 46.9 % uploaded
+0122.192 (0) Ftp chunked upload: 58.6 % uploaded
+0122.210 (0) Ftp chunked upload: 70.3 % uploaded
+0122.227 (0) Ftp chunked upload: 82.1 % uploaded
+0122.243 (0) Ftp chunked upload: 93.8 % uploaded
+0122.256 (0) FTP upload attempt successful (4400.9Kb in 0.15s)
+0122.263 (0) Recording as successfully uploaded: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db.gz (97cd21950ed54a83d34f3ed7bcca099b)
+0122.275 (0) Deleting local file: backup_2016-02-05-2018_Easyfitness_Upfit_fc6c109a113b-db.gz: OK
+0122.280 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=7, retain_db=7
+0122.284 (0) Number of backup sets in history: 3
+0122.289 (0) Examining backup set with datestamp: 1454703486 (Feb 05 2016 20:18:06)
+0122.293 (0) This backup set (1454703486) is the backup set just made, so will not be deleted.
+0122.295 (0) This backup set (1454703486) is the backup set just made, so will not be deleted, despite being over the retain limit.
+0122.299 (0) This backup set (1454703486) is the backup set just made, so will not be deleted, despite being over the retain limit.
+0122.299 (0) This backup set (1454703486) is the backup set just made, so will not be deleted, despite being over the retain limit.
+0122.299 (0) This backup set (1454703486) is the backup set just made, so will not be deleted, despite being over the retain limit.
+0122.299 (0) 1454703486: this backup set remains non-empty (1/1); will retain in history
+0122.303 (0) Examining backup set with datestamp: 1454098686 (Jan 29 2016 20:18:06)
+0122.306 (0) 1454098686: this backup set remains non-empty (1/1); will retain in history
+0122.314 (0) Examining backup set with datestamp: 1453493852 (Jan 22 2016 20:17:32)
+0122.320 (0) 1453493852: this backup set remains non-empty (1/1); will retain in history
+0122.323 (0) Retain: saving new backup history (sets now: 3) and finishing retain operation
+0122.331 (0) Resume backup (fc6c109a113b, 0): finish run
+0122.338 (0) Decremented the semaphore (fd) by 1
+0122.343 (0) Semaphore (fd) unlocked
+0122.346 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0122.356 (0) The backup apparently succeeded and is now complete
+0122.359 (0) No email will/can be sent - the user has not configured an email address.
+0122.363 (0) Die Sicherung war anscheinend erfolgreich und ist nun vollständig

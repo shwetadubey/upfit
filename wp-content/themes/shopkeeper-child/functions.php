@@ -741,12 +741,13 @@ function check_plan_validation() {
 	//echo "in action";
 	$type= $_POST['nutrition_type'];
 	$allergies=$_POST['allergies'];
+	
 	$nuts=$_POST['nuts'];
 	$fruit=$_POST['fruit'];
 	$exclude=$_POST['exclude'];
 	$preparation_time=$_POST['preparation_time'];
 	//echo $type;
-	
+
 	$nutrition_types_array = array(
     'nospecial' => '',
     'pescetarian' => 'cw_pescetarian',
@@ -789,19 +790,20 @@ function check_plan_validation() {
 $available_time_condi = $available_time_array[$preparation_time];
 	
 	$nutrition_type = explode(',', $type);
-
-	$alergies = $nuts = $fruit = array();
+	
+	$alergies1 = $nuts1 = $fruit1 = array();
 	if (!empty($allergies)) {
-        $alergies = explode(',', $allergies);
+        $alergies1 = explode(',', $allergies);
 	}
 	if (!empty($nuts)) {
-			$nuts = explode(',', $nuts);
+			$nuts1 = explode(',', $nuts);
 	}
-	$alergies_nuts = array_merge($alergies, $nuts);
+	
+	$alergies_nuts = array_merge($alergies1, $nuts1);
 	if (!empty($fruit)) {
-			$fruit = explode(',', $fruit);
+			$fruit1 = explode(',', $fruit);
 	}
-	$intolerance = array_merge($alergies_nuts, $fruit);
+	$intolerance = array_merge($alergies_nuts, $fruit1);
 	
 	$res_nut_typeval = $res_nut_typeval1 = $nut_type_cond = $nut_type_cond1 = $f1nut_type_cond = $f1nut_type_cond1 = '';
 	if (!empty($nutrition_type)) {
@@ -883,11 +885,11 @@ $q2= "SELECT mi.meal_id ,replace(mi.NAME,',','') AS ingredient_name,replace(f1.e
 //echo $q2."<br><br>";
 $res2 = $wpdb->get_results($q2);
 //echo "<pre>";print_r($res2);
-//exit;
+
 $count=$wpdb->get_var("select count(id) from ".$prefix."order_meals where order_id=".$order_id);
 if($count!=0){
 	$query_del="DELETE from ".$prefix."order_meals where order_id=".$order_id;
-	$wpdb->query($query_del);
+//	$wpdb->query($query_del);
 }
 $res_meals = $exchangable_foods = $prioritise_meals =$up_order_meals = array();
 if (!empty($res3)) {
@@ -933,7 +935,7 @@ if (!empty($res3)) {
             		$count=$wpdb->get_var("select count(id) from up_order_meals where order_id=".$order_id." AND meal_id=".$up_order_meals['meal_id']);
             		if($count==0){
             			$query_insert="insert into up_order_meals (order_id,meal_id,ingredient_ids,exchangble) values(".$order_id.",".$up_order_meals['meal_id'].",'".$up_order_meals['ingredient_ids']."',1)";
-            			$wpdb->query($query_insert);
+            		//	$wpdb->query($query_insert);
             		}
                 }
             } else if ($r1->total_ingredient <= $r3->main_count) {
@@ -943,11 +945,11 @@ if (!empty($res3)) {
                 $up_order_meals['meal_id']=$r3->meal_id;
                 $up_order_meals['ingredient_ids']=$r3->compatible_ingredients;
 
-                $count=$wpdb->get_var("select count(id) from up_order_meals where order_id=".$order_id." AND meal_id=".$up_order_meals['meal_id']);
+              //  $count=$wpdb->get_var("select count(id) from up_order_meals where order_id=".$order_id." AND meal_id=".$up_order_meals['meal_id']);
 
                 if($count==0){
 					$query_insert="insert into up_order_meals (order_id,meal_id,ingredient_ids,exchangble) values(".$order_id.",".$up_order_meals['meal_id'].",'".$up_order_meals['ingredient_ids']."',0)";
-					$wpdb->query($query_insert);
+				//	$wpdb->query($query_insert);
                 }
             }
         }

@@ -69,105 +69,107 @@ function sec_1_error_check(){
 	er = false;
 	var v1 = jQuery('#myvalcheck').val().trim();
 	var v2 = jQuery('#myvalcheck_sec').val().trim();
-            var vv1 = v1.split(",");
-           
-            var vv2 = v2.split(",");
-            
-        //    console.log(vv);
-            if (vv1[0].length <= 2)
-            {
-            	patr1 = /^[0-9]{1,2}[,]*[0-9]{1}$/;
-            }
-            else
-            {
-				         
-            	patr1 =  /^[0-1]{1}[0-9]{1,2}[,]*[0-9]{1}$/;
-            }	
-             if (vv2[0].length <= 2)
-            {
-            	patr2 = /^[0-9]{1,2}[,]*[0-9]{1}$/;
-            }
-            else
-            {
-            	patr2 = /^[0-1]{1}[0-9]{1,2}[,]*[0-9]{1}$/;
-            }	
-	if (jQuery('#myvalcheck').val().trim() == '' )
-	{
-		$('.current-weight').addClass('error_color');
-	
-		jQuery('#myvalcheck ').tooltipster('update',error_msg[1]);
-			jQuery('#myvalcheck').tooltipster('show');
-		//jQuery('.first_err').html('<strong>' + error_msg[3] + '</strong>');
-		if (er === false)	{			er = true;		}
-	}
-	else if ((v1).match(patr1) && vv1[0].length <= 3)
-	{
-		jQuery('#myvalcheck').tooltipster('hide');
+		var vv1 = v1.split(",");
+	   
+		var vv2 = v2.split(",");
 		
-	}
-	else{
-		
-		$('.current-weight').addClass('error_color');
-	
-		jQuery('#myvalcheck ').tooltipster('update',error_msg[3]);
-		jQuery('#myvalcheck').tooltipster('show');
-		//jQuery('.first_err').html('<strong>' + error_msg[3] + '</strong>');
-		if (er === false)	{			er = true;		}
+		if (vv1[0].length <= 2)
+		{
+			patr1 = /^[0-9]{1,2}[,]*[0-9]{1}$/;
 		}
+		else
+		{
+					 
+			patr1 =  /^[0-1]{1}[0-9]{1,2}[,]*[0-9]{1}$/;
+		}	
+		if (vv2[0].length <= 2)
+		{
+			patr2 = /^[0-9]{1,2}[,]*[0-9]{1}$/;
+		}
+		else
+		{
+			patr2 = /^[0-1]{1}[0-9]{1,2}[,]*[0-9]{1}$/;
+		}	
+		if (jQuery('#myvalcheck').val().trim() == '' )
+		{
+			$('.current-weight').addClass('error_color');
 		
-	if (jQuery('#myvalcheck_sec').val().trim() == '')
-	{
-		$('.weight-loss').addClass('error_color');
-		jQuery('#myvalcheck_sec ').tooltipster('update', error_msg[1]);
-		if($('.current-weight').hasClass('error_color')){
-				//jQuery('#myvalcheck_sec').tooltipster('update', 'position', 'bottom');
+			jQuery('#myvalcheck ').tooltipster('update',error_msg[1]);
+				jQuery('#myvalcheck').tooltipster('show');
+			//jQuery('.first_err').html('<strong>' + error_msg[3] + '</strong>');
+			if (er === false)	{			er = true;		}
+		}
+		else if ((v1).match(patr1) && vv1[0].length <= 3)
+		{
+			jQuery('#myvalcheck').tooltipster('hide');
+			
+		}
+		else{
+			
+			$('.current-weight').addClass('error_color');
+		
+			jQuery('#myvalcheck ').tooltipster('update',error_msg[3]);
+			jQuery('#myvalcheck').tooltipster('show');
+			//jQuery('.first_err').html('<strong>' + error_msg[3] + '</strong>');
+			if (er === false)	{			er = true;		}
 			}
-			jQuery('#myvalcheck_sec').tooltipster('show');
-		//jQuery('.sec_err').html('<strong>' + error_msg[4] + '</strong>');
-		if (er === false)	{			er = true;		}
-	}
-	
-	else if (!(v2).match(patr2) && vv2[0].length >= 3)
-	{
-	
-		$('.weight-loss').addClass('error_color');
-		jQuery('#myvalcheck_sec ').tooltipster('update', error_msg[2]);
-		if( $('.current-weight').hasClass('error_color')){
+			
+		if (jQuery('#myvalcheck_sec').val().trim() == '')
+		{
+			$('.weight-loss').addClass('error_color');
+			jQuery('#myvalcheck_sec ').tooltipster('update', error_msg[1]);
+			if($('.current-weight').hasClass('error_color')){
 					//jQuery('#myvalcheck_sec').tooltipster('update', 'position', 'bottom');
 				}
-			jQuery('#myvalcheck_sec').tooltipster('show');
-		//jQuery('.sec_err').html('<strong>' + error_msg[4] + '</strong>');
-		if (er === false)	{			er = true;		}
+				jQuery('#myvalcheck_sec').tooltipster('show');
+			//jQuery('.sec_err').html('<strong>' + error_msg[4] + '</strong>');
+			if (er === false)	{			er = true;		}
+		}
+		
+		else if ((v2).match(patr2) && vv2[0].length <= 3)
+		{
+		
+			jQuery('#myvalcheck_sec').tooltipster('hide');
+		}
+		else{
+			$('.weight-loss').addClass('error_color');
+			jQuery('#myvalcheck_sec ').tooltipster('update', error_msg[2]);
+			if( $('.current-weight').hasClass('error_color')){
+						//jQuery('#myvalcheck_sec').tooltipster('update', 'position', 'bottom');
+					}
+				jQuery('#myvalcheck_sec').tooltipster('show');
+			//jQuery('.sec_err').html('<strong>' + error_msg[4] + '</strong>');
+			if (er === false)	{			er = true;		}
+		}
+		if (er === true)
+		{
+			errors=true;
+		}
+		else 
+		{
+			var text1 = jQuery('#myvalcheck').val();
+			var text2 = jQuery('#myvalcheck_sec').val();
+			text1 = parseInt(text1.replace(',', '.'));
+			text2 = parseInt(text2.replace(',', '.'));
+		
+			if (text2 >= text1) {
+				//jQuery('.sec_err').html('<strong>' + error_msg[2] + '</strong>');
+				jQuery('.weight-loss').addClass('error_color');
+				//jQuery('#myvalcheck').addClass('tooltipster_error');
+				jQuery('#myvalcheck_sec').tooltipster('update', error_msg[2]);
+				jQuery('#myvalcheck_sec').tooltipster('show');
+				
+					//jQuery('.info-tooltip').removeClass('hidden');
+					errors=true;
+			}
+			else {
+					jQuery('.sec_err').empty();
+					jQuery('#myvalcheck_sec').tooltipster('hide');
+						 errors=false;
+				//jQuery('.info-tooltip').addClass('hidden');
+			}
+		}
 	}
-	if (er === true)
-	{
-		errors=true;
-	}
-	else 
-	{
-		var text1 = jQuery('#myvalcheck').val();
-		var text2 = jQuery('#myvalcheck_sec').val();
-		text1 = parseInt(text1.replace(',', '.'));
-		text2 = parseInt(text2.replace(',', '.'));
-	
-		if (text2 >= text1) {
-			//jQuery('.sec_err').html('<strong>' + error_msg[2] + '</strong>');
-			jQuery('.weight-loss').addClass('error_color');
-			//jQuery('#myvalcheck').addClass('tooltipster_error');
-			jQuery('#myvalcheck_sec').tooltipster('update', error_msg[2]);
-			jQuery('#myvalcheck_sec').tooltipster('show');
-			
-                //jQuery('.info-tooltip').removeClass('hidden');
-                errors=true;
-        }
-        else {
-				jQuery('.sec_err').empty();
-        		jQuery('#myvalcheck_sec').tooltipster('hide');
-        			 errors=false;
-            //jQuery('.info-tooltip').addClass('hidden');
-        }
-    }
-}
 /*---------Section-1 Weight & Aim ----------------*/
 /*
 	jQuery('#myvalcheck').blur(function () {

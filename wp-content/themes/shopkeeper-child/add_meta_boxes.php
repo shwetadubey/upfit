@@ -435,25 +435,25 @@ function save_fatburner_drink_boxes($post_id){
 function nutrition_details()
 {
   
-  $orderid=$_REQUEST['post'];
-  global $wpdb;
-  
-  //echo $order->id;
-  $order_detail = new WC_Order($orderid);
-  $items = array_values($order_detail->get_items());
-  /*echo "<pre>";
-  print_r($items);
-  echo "</pre>";*/
-  
-  $mixed = $items[0]['wdm_user_custom_data'];
-  $order_custom_data=unserialize($mixed);
-  
-  $sql="SELECT upl.* FROM up_user_nutrition_plans unp,up_plan_logs upl WHERE unp.id=upl.user_nutrition_plan_id and unp.order_id=".$orderid." and unp.regenerate=1";
-  $regenerate_plan=$wpdb->get_results($sql);
-	
+	$orderid=$_REQUEST['post'];
+	global $wpdb;
+
+	//echo $order->id;
+	$order_detail = new WC_Order($orderid);
+	$items = array_values($order_detail->get_items());
+	/*echo "<pre>";
+	print_r($items);
+	echo "</pre>";*/
+
+	$mixed = $items[0]['wdm_user_custom_data'];
+	$order_custom_data=unserialize($mixed);
+
+	$sql="SELECT upl.* FROM up_user_nutrition_plans unp,up_plan_logs upl WHERE unp.id=upl.user_nutrition_plan_id and unp.order_id=".$orderid." and unp.regenerate=1";
+	$regenerate_plan=$wpdb->get_results($sql);
+		
 
 ?>
-<link href="<?php echo get_template_directory_uri() . '/../shopkeeper-child/css/admin_style.css';?>"/>
+<link href="<?php echo get_template_directory_uri() . '-child/css/admin_style.css';?>"/>
 <script>
   jQuery(document).ready(function () {
     jQuery('#change_nutrition_plan').on('click', function () {
@@ -486,7 +486,7 @@ function nutrition_details()
 </script>
 <style>
 .details_table tr td:first-child{
-	width:50%;	
+	width:40%;	
 }
 .details_table tr:last-child td{
 	border-bottom:0px;		
@@ -513,103 +513,219 @@ function nutrition_details()
 	padding: 5px 32px;
 }
 </style>
-  <input type="hidden" id="admin_order_id" value="<?php echo $orderid;?>"/>
- 
-  <table class="details_table">
-    <tbody>
-      <tr class="tablehead">
-        <td colspan="2">1. Gewicht & Ziel</td>
-      </tr>
-      <tr>
-        <td>Aktuelles Gewicht</td>
-        <td><?php echo $order_custom_data['cur_weight']." kg";?></td>
-      </tr>
-      <tr>
-        <td>Wunschgewicht</td>
-        <td><?php echo  $order_custom_data['desired_weight']." kg";?></td>
-      </tr>
-      <tr class="tablehead">
-        <td colspan="2">2. Körper & Aktivität</td>
-      </tr>
-      <tr>
-        <td>Geschlecht</td>
-        <td><?php $gender=($order_custom_data['gender']=="m")?"männlich" :  "weiblich";
-              echo $gender;?></td>
-      </tr>
-      <tr>
-        <td>Alter</td>
-        <td><?php echo $order_custom_data['age']." Jahre";?></td>
-      </tr> 
-      <tr>
-        <td>Körpergröße</td>
-        <td><?php echo $order_custom_data['height']." cm";?></td>
-      </tr>
-      <tr>
-        <td>Aktivitätsniveau im Alltag</td>
-        <td><?php echo $order_custom_data['daily_activity'];?></td>
-      </tr>
-      <tr class="tablehead">
-        <td colspan="2">3. Ernährungsweise</td>
-      </tr>
-      <tr>
-        <td>Ernährungsweise</td>
-        <td><?php echo str_replace(',',', ',$order_custom_data['nutrition_type']); ?></td>
-      </tr>
-      
-      <tr class="tablehead">
-        <td colspan="2">4. Allergien & Intoleranzen</td>
-      </tr>
-      <tr>
-        <td>Allergien & Intoleranzen</td>
-        <td><?php echo str_replace(',',', ',$order_custom_data['allergies']); ?></td>
-      </tr>
-      <tr>
-        <td>NÜSSE</td>
-        <td><?php echo str_replace(',',', ',$order_custom_data['nuts']); ?></td>
-      </tr>
-      <tr>
-        <td>FRÜCHTE</td>
-        <td><?php echo str_replace(',',', ',$order_custom_data['fruit']); ?></td>
-      </tr>
-      <tr>
-        <td>Auszuschließende Lebensmittel</td>
-        <td><?php echo str_replace(',',', ',$order_custom_data['exclude']); ?></td>
-      </tr>
-      <tr class="tablehead">
-        <td colspan="2">5. Essgewohnheiten</td>
-      </tr>
-      <tr>
-        <td>Naschst/snackst Du gern?</td>
-        <td><?php echo  $order_custom_data['sweet_tooth']; ?></td>
-      </tr>
-      <tr>
-        <td>Deine Lust/Zeit zum Kochen pro Tag?</td>
-        <td><?php echo  $order_custom_data['is_time_to_cook']; ?></td>
-      </tr>
-      <tr>
-        <td>Wo kaufst Du Lebensmittel?</td>
-        <td><?php echo $order_custom_data['where_food_buy']; ?></td>
-      </tr>
-      <tr>
-        <td>Worauf achtest Du beim Kauf besonders?</td>
-        <td><?php echo $order_custom_data['most_buy']; ?></td>
-      </tr>
-      <tr class="tablehead">
-        <td colspan="2">6. Plan</td>
-      </tr>
-      <tr>
-        <td>Plan Name</td>
-        <td><?php echo $items[0]['name']; ?></td>
-      </tr>
-      <?php if(!empty($regenerate_plan)){?>
-      <tr>
-        <td>Regenerate pdf</td>
-        <td><input type="button" name="change_nutrition_plan" id="change_nutrition_plan" value="Regenerate Plan"><div class="loader"></div></td>
-      </tr>
-      <?php }?>
-      
-    </tbody>
-  </table>
+<?php 
+	$nut_types=$nuts=$fruits=$allergies=$sweet_tooth_ar=array();
+		$nut_types=array(
+					'nospecial'=>'Keine besondere',
+					'vegetarian'=>'Vegetarisch',
+					'vegan'=>'Vegan',
+					'pescetarian'=>'Pescetarian',
+					'flexitarian'=>'Flexitarisch',
+					'paleo'=>'Paleo'
+					);
+		$allergies=array(
+					'lactose'=>'Laktose (Milchzucker)',
+					'fructose'=>'Fruktose (Fruchtzucker)',
+					'histamine'=>'Histamin',
+					'gluten'=>'Gluten (Zöliakie)',
+					'glutamat'=>'Glutamat',
+					'sucrose'=>'Saccharose (Haushaltszucker)',
+					);
+		$nuts_ar=array(
+					'hazelnut'=>'Haselnuss',
+					'almond'=>'Mandel',
+					'pecan_nut'=>'Pekannuss',
+					'walnut'=>'Walnuss',
+					'peanut'=>'Erdnuss',
+					'cashew'=>'Cashewnuss',
+					'brazil_nut'=>'Paranuss',
+					'pistachio'=>'Pistazie',
+					);
+		$fruits_ar=array(
+					'apple'=>'Apfel',
+					'avocade'=>'Avocado',
+					'banana'=>'Banane',
+					'kiwi'=>'Kiwi',
+					'papaya'=>'Papaya',
+					'strawberry'=>'Erdbeere',
+					'melon'=>'Melone',
+					'peach'=>'Pfirsich',
+					);
+		$alg=$fr=$nt=$nuts=array();
+		//------Nutrition Type-------//
+		$nt_db=explode(',',$order_custom_data['nutrition_type']);
+		foreach($nt_db as $n){
+			if(array_key_exists($n,$nut_types)){
+				$nt[]=$nut_types[$n];
+			}
+		}
+		$nt1=implode(',',$nt);
+		
+	//---------Allergies-----------//
+		$alg_db=explode(',',$order_custom_data['allergies']);
+		foreach($alg_db as $al){
+			if(array_key_exists($al,$allergies)){
+				$alg[]=$allergies[$al];
+			}
+		}
+		$alg1=implode(',',$alg);
+	//---------------Fruits------------//
+		$fr_db=explode(',',$order_custom_data['fruit']);
+		
+		//if(!empty($fr_db)){
+			foreach($fr_db as $f){
+				if(array_key_exists($f,$fruits_ar)){
+					$fr[]=$fruits_ar[$f];
+				}
+			}
+				$fr1=implode(',',$fr);
+	//	}
+	//---------------Nuts--------------//
+		$nuts_db=explode(',',$order_custom_data['nuts']);
+		if(!empty($nuts_db)){
+			foreach($nuts_db as $nt){
+				if(array_key_exists($nt,$nuts_ar)){
+					$nuts[]=$nuts_ar[$nt];
+				}
+			}
+				$nuts1=implode(',',$nuts);
+		}
+	//----------Sweet Tooth--------------//
+	$sweet_tooth_ar=array('yes'=>'Ja','sometime'=>'Manchmal','no'=>'Nein');
+	//---------------is_time_to_cook--------------//
+	$time_to_cook_ar=array('little'=>'Wenig (< 45 min)','Normal'=>'Normal (45-60 min)','much'=>'Viel (> 60 min)');
+	$where_food_buy_ar=array('cheap'=>'Preiswert','Normal'=>'Normal','much'=>'Premium');
+	$most_buy_ar=array('price'=>'Preis','quality'=>'Qualität','both'=>'Beides');
+	
+?>
+	<input type="hidden" id="admin_order_id" value="<?php echo $orderid;?>"/>
+
+	<table class="details_table">
+		<tbody>
+			<tr class="tablehead">
+				<td colspan="2">1. Gewicht & Ziel</td>
+			</tr>
+			<tr>
+				<td>Aktuelles Gewicht</td>
+				<td><?php echo $order_custom_data['cur_weight']." kg";?></td>
+			</tr>
+			<tr>
+				<td>Wunschgewicht</td>
+				<td><?php echo  $order_custom_data['desired_weight']." kg";?></td>
+			</tr>
+			<tr class="tablehead">
+				<td colspan="2">2. Körper & Aktivität</td>
+			</tr>
+			<tr>
+				<td>Geschlecht</td>
+				<td><?php $gender=($order_custom_data['gender']=="m")?"männlich" :  "weiblich";
+					  echo $gender;?></td>
+			</tr>
+			<tr>
+				<td>Alter</td>
+				<td><?php echo $order_custom_data['age']." Jahre";?></td>
+			</tr> 
+			<tr>
+				<td>Körpergröße</td>
+				<td><?php echo $order_custom_data['height']." cm";?></td>
+			</tr>
+			<tr>
+				<td>Aktivitätsniveau im Alltag</td>
+				<td><?php echo $order_custom_data['daily_activity'];?></td>
+			</tr>
+			<tr class="tablehead">
+				<td colspan="2">3. Ernährungsweise</td>
+			</tr>
+			<tr>
+				<td>Ernährungsweise</td>
+				<td><?php echo str_replace(',',', ',$nt1); ?></td>
+			</tr>
+
+			<tr class="tablehead">
+				<td colspan="2">4. Allergien & Intoleranzen</td>
+			</tr>
+			<tr>
+				<td>Allergien & Intoleranzen</td>
+				<td>
+					<?php 
+						if(!empty($order_custom_data['allergies']))
+							echo str_replace(',',', ',$alg1); 
+						else
+							echo '-';
+					?>
+				</td>
+			</tr>
+			<tr>
+				<td><?php echo ('Nüsse'); ?></td>
+				<td>
+				<?php 
+					if(!empty($order_custom_data['nuts']))  
+						echo str_replace(',',', ',$nuts1); 
+					else 
+						echo '-';
+				?>
+				</td>
+			</tr>
+			<tr>
+				<td><?php echo ('Früchte'); ?></td>
+				<td>
+				<?php 
+					if(!empty($order_custom_data['fruit'])) 
+						echo str_replace(',',', ',$fr1);
+					else  
+						echo '-';
+				?>
+				</td>
+			</tr>
+			<tr>
+				<td>Auszuschließende Lebensmittel</td>
+				<td>
+				<?php
+					if(!empty($order_custom_data['exclude'])) 
+						echo str_replace(',',', ',$order_custom_data['exclude']); 
+					else 
+						echo '-';
+				?>
+				</td>
+			</tr>
+			<tr class="tablehead">
+				<td colspan="2">5. Essgewohnheiten</td>
+			</tr>
+			<tr>
+			<td>Naschst/snackst Du gern?</td>
+				<td><?php echo $sweet_tooth_ar[$order_custom_data['sweet_tooth']]; ?></td>
+			</tr>
+			<tr>
+				<td>Deine Lust/Zeit zum Kochen pro Tag?</td>
+				<td><?php echo $time_to_cook_ar[$order_custom_data['is_time_to_cook']]; ?></td>
+			</tr>
+			<tr>
+				<td>Wo kaufst Du Lebensmittel?</td>
+				<td><?php echo $where_food_buy_ar[$order_custom_data['where_food_buy']]; ?></td>
+			</tr>
+			<tr>
+				<td>Worauf achtest Du beim Kauf besonders?</td>
+				<td><?php echo  $most_buy_ar[$order_custom_data['most_buy']]; ?></td>
+			</tr>
+			<tr class="tablehead">
+				<td colspan="2">6. Plan</td>
+			</tr>
+			<tr>
+				<td>Plan Name</td>
+				<td><?php echo $items[0]['name']; ?></td>
+			</tr>
+			<?php if(!empty($regenerate_plan)){?>
+			<tr>
+				<td>Regenerate pdf</td>
+				<td>
+					<input type="button" name="change_nutrition_plan" id="change_nutrition_plan" value="Regenerate Plan">
+					<div class="loader"></div>
+				</td>
+			</tr>
+			<?php }?>
+			  
+		</tbody>
+	</table>
 <?php
 }
 
@@ -620,11 +736,11 @@ function regenerate_pdf_plan() {
 	global $post,$wpdb;
 	$wpdb->query('update up_user_nutrition_plans set regenerate="1" where order_id='.$re_order_id);
 	echo do_shortcode('[create_pdf order_id='.$re_order_id.']');
-wp_die();
+	wp_die();
 }
 
 function downloadable_pdf_plan(){
-   global $post,$wpdb;
+	global $post,$wpdb;
     $site_id=get_current_blog_id();
 	$results = $wpdb->get_results( 'SELECT * FROM up_user_nutrition_plans WHERE order_id ='.$post->ID.' AND site_id='.$site_id);
     //print_r($results);

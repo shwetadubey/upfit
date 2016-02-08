@@ -69,6 +69,19 @@
 
 <body <?php body_class(); ?>>
 <!-- Google Tag Manager -->
+<?php if(is_wc_endpoint_url('order-received')){
+		$order_id=wc_get_order_id_by_order_key($_GET['key']);
+		$order1=new WC_order($order_id);
+		$order_items=array_values($order1->get_items());
+		$net_amount=$order_items[0]['line_subtotal'];
+		$belboon=$_SESSION['belboon'];
+?>
+		<img src="https://www1.belboon.de/adtracking/sale/000021772.gif/oc=<?php echo $order_id ?>&sale=<?php echo $net_amount; ?>&belboon=<?php echo $belboon; ?>" border="0" width="1" height="1" alt="" id="bbconv"/>
+		<object class="flash" type="application/x-shockwave-flash" data="https://www1.belboon.de/adtracking/flash.swf" width="1" height="1" >
+		<param name="flashvars" value="pgmid=000021772&etype=sale&tparam=sale&evalue=<?php echo $net_amount; ?>&oc=<?php echo $order_id ?>">
+		<param name="movie" value="https://www1.belboon.de/adtracking/flash.swf" /></object>
+		<script src="https://www1.belboon.de/adtracking/conversion.jssl"></script>
+<?php }?>
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-W97B73"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

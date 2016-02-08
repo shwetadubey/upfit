@@ -218,6 +218,12 @@ class WC_Settings_Tab_Demo_d {
 								'melon'=>'Melone',
 								'peach'=>'Pfirsich',
 								);
+								//----------Sweet Tooth--------------//
+					$sweet_tooth_ar=array('yes'=>'Ja','sometime'=>'Manchmal','no'=>'Nein');
+					//---------------is_time_to_cook--------------//
+					$time_to_cook_ar=array('little'=>'Wenig (< 45 min)','Normal'=>'Normal (45-60 min)','much'=>'Viel (> 60 min)');
+					$where_food_buy_ar=array('cheap'=>'Preiswert','Normal'=>'Normal','much'=>'Premium');
+					$most_buy_ar=array('price'=>'Preis','quality'=>'Qualität','both'=>'Beides');
 					if(count($res)>0){
 							//print_r($res);
 						foreach ($res as $val) {
@@ -270,10 +276,10 @@ class WC_Settings_Tab_Demo_d {
 							<td scope="col"  class="manage-column Q_nuts"><?php echo utf8_encode(str_replace(',',', ',$nuts_new1))?></td>  
 							<td scope="col"  class="manage-column Q_fruit"><?php echo utf8_encode(str_replace(',',', ',$fruits_new1)) ?></td> 
 							<td scope="col"  class="manage-column Q_allergies"><?php echo utf8_encode(str_replace(',',', ',$val->exclude))  ?></td> 
-							<td scope="col"  class="manage-column Q_date"><?php echo $val->sweet_tooth ?></td> 
-							<td scope="col"  class="manage-column Q_date"><?php echo $val->is_time_to_cook ?></td> 
-							<td scope="col"  class="manage-column Q_date"><?php echo $val->where_food_buy ?></td> 
-							<td scope="col"  class="manage-column Q_date"><?php echo $val->most_buy ?></td> 
+							<td scope="col"  class="manage-column Q_date"><?php echo utf8_encode($sweet_tooth_ar[$val->sweet_tooth]) ?></td> 
+							<td scope="col"  class="manage-column Q_date"><?php echo utf8_encode($time_to_cook_ar[$val->is_time_to_cook]) ?></td> 
+							<td scope="col"  class="manage-column Q_date"><?php echo utf8_encode($where_food_buy_ar[$val->where_food_buy]) ?></td> 
+							<td scope="col"  class="manage-column Q_date"><?php echo utf8_encode($most_buy_ar[$val->most_buy]) ?></td> 
 							</tr> 
 							<?php 
 						}

@@ -22,11 +22,23 @@
 	} else {
 		$page_title_option = "on";
 	}	
- $path = wp_upload_dir();
+	$path = wp_upload_dir();
    // print_r($path);
 	$uppath = $path['baseurl'] . '/foodies/';	
- get_header(); ?>
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/../shopkeeper-child'; ?>/tooltipster/tooltipster.css">
+	// Integration of code on target landing page
+	
+//------------------- belboon session variable-------------------//
+	if(empty($_SESSION['belboon'])) { // If $_SESSION['belboon'] not set
+
+	// example: http://www.abc.de?belboon=0001cb000205005e720005f2,2022994 
+
+		$_SESSION['belboon'] = $_GET['belboon']; // value of $_GET['belboon'] will be saved in server session 
+
+	}
+
+	get_header();
+?>
+<link rel="stylesheet" href="<?php echo get_template_directory_uri().'/../shopkeeper-child'; ?>/tooltipster/tooltipster.css">
 
  <style type="text/css">
 
