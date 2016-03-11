@@ -5,7 +5,7 @@
 */
 	
 	global $shopkeeper_theme_options;
-	
+	session_start();
 	$page_id = "";
 	if ( is_single() || is_page() ) {
 		$page_id = get_the_ID();
@@ -29,13 +29,11 @@
 	
 //------------------- belboon session variable-------------------//
 	if(empty($_SESSION['belboon'])) { // If $_SESSION['belboon'] not set
-
 	// example: http://www.abc.de?belboon=0001cb000205005e720005f2,2022994 
-
 		$_SESSION['belboon'] = $_GET['belboon']; // value of $_GET['belboon'] will be saved in server session 
+		//$_SESSION['belboon'] = '3232323,232323'; // value of $_GET['belboon'] will be saved in server session 
 
 	}
-
 	get_header();
 ?>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/../shopkeeper-child'; ?>/tooltipster/tooltipster.css">
@@ -48,6 +46,7 @@
 	background: rgb(236, 65, 45)  !important;
 	border: solid 1px rgb(236, 65, 45) !important;
 	color: #ffffff;
+	z-index: 2000000000;
 }
 .tooltipster-error .tooltipster-content {
 	text-transform: inherit;
@@ -88,8 +87,9 @@ letter-spacing: 0.5px;
         </div><!-- #primary -->
     
     </div><!-- .full-width-page -->
-    <script type="text/javascript" src="<?php echo get_template_directory_uri().'/../shopkeeper-child'; ?>/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>-child/js/jquery.cookie.js"></script>
 <script type="text/javascript">
+
 var v=jQuery('#main_sec div.left_images').clone();
 jQuery(window).resize(function(){
 if( jQuery(window).width()<768 ) {
@@ -155,6 +155,7 @@ jQuery(document).on( 'cycletwo-update-view', function( e, opts, slideOpts, currS
 })*/
 
 jQuery(document).ready(function(){
+	
 	var w=jQuery(window).width();
 	v11 = jQuery('#pricing .sub_headding').text();
 	//console.log(w);
@@ -192,7 +193,7 @@ jQuery(window).resize(function(){
 
 <?php get_footer(); ?>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
- <script type="text/javascript" src="<?php echo get_template_directory_uri().'/../shopkeeper-child'; ?>/tooltipster/jquery.tooltipster.min.js"></script>
+ <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>-child/tooltipster/jquery.tooltipster.min.js"></script>
 
 
 <script src="<?php echo get_template_directory_uri();?>-child/js/redirect.js"></script>  

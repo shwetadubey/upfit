@@ -12,7 +12,24 @@
                 <div class="wrapper_header_layout">
                         
                     <div class="header_col left_menu">
-                           <?php
+                        <nav class="main-navigation default-navigation" role="navigation">                    
+                            <?php 
+                                $walker = new rc_scm_walker;
+								wp_nav_menu(array(
+                                    'theme_location'  => 'centered_header_left_navigation',
+                                    'fallback_cb'     => false,
+                                    'container'       => false,
+                                    'items_wrap'      => '<ul class="%1$s">%3$s</ul>',
+									'walker' 		  => $walker
+                                ));
+                            ?>           
+                        </nav><!-- .main-navigation -->
+                    </div>
+                    
+                    <div class="header_col branding">
+                        <div class="site-branding">
+                        
+                            <?php
 					
 							if ( (isset($shopkeeper_theme_options['site_logo']['url'])) && (trim($shopkeeper_theme_options['site_logo']['url']) != "" ) ) {
 								if (is_ssl()) {
@@ -61,29 +78,23 @@
                             
                             <?php } ?>
                             
-                    </div>
-                    
-                    <div class="header_col branding">
-                        <div class="site-branding">
-                         <div class="punch_line">
-							 
-							 <p><?php echo get_bloginfo('description','display'); ?></p>
-							</div>
-                        
                         </div><!-- .site-branding -->
                     </div>
-                    <!----- -------Trust Badge ----- ------>
+                    
                     <div class="header_col right_menu">
-						 <div class="iosmarker">
-							 <?php
-						if ( (isset($shopkeeper_theme_options['header_trust_badge']['url'])) && (trim($shopkeeper_theme_options['header_trust_badge']['url']) != "" ) ) {
-							?>
-							<img src=" <?php echo $shopkeeper_theme_options['header_trust_badge']['url'];?>" />
-							<?php
-						}
-						?>
-						</div>
-					</div>
+                        <nav class="main-navigation default-navigation" role="navigation">                    
+                            <?php 
+                                $walker = new rc_scm_walker;
+								wp_nav_menu(array(
+                                    'theme_location'  => 'centered_header_right_navigation',
+                                    'fallback_cb'     => false,
+                                    'container'       => false,
+                                    'items_wrap'      => '<ul class="%1$s">%3$s</ul>',
+									'walker' 		  => $walker
+                                ));
+                            ?>           
+                        </nav><!-- .main-navigation -->
+                    </div>
                         
                 </div>           
                     
@@ -134,7 +145,7 @@
                                     <i class="fa fa-shopping-cart"></i>
 									<?php endif; ?>
                                 </span>
-                                <span class="shopping_bag_items_number"><?php echo esc_html(WC()->cart->get_cart_contents_count()); ?></span>
+                                <span class="shopping_bag_items_number"><?php echo esc_html($woocommerce->cart->cart_contents_count); ?></span>
                             </a>
                         </li>
                         <?php endif; ?>

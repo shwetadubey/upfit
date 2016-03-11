@@ -35,11 +35,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 					</div>
 				</td>
 			</tr>
-            	<tr>
-                <td>
+			<tr>
+				<td>
 					<table style="margin:0 auto;width:100%;background-color: #fff;">
 						<tr>
-							<td id="template_header_image" style="float:left;margin:0px 0px 0 40px">
+							<td id="template_header_image" class="logo_pdf_top" style="float:left; margin:0 0 0 40px">
 								<?php
 									
 									if ( $img = get_option( 'woocommerce_email_header_image' ) ) {
@@ -48,7 +48,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 								?>
 							</td>
 							
-							<td align="right" style="float:right;margin:10px 40px 10px 0"><span style="font-size:14px;line-height: 20px; color:#96a7b0;letter-spacing: 0.5px;">Mail nicht lesbar? <a style="color:#96a7b0;text-decoration:underline;font-family:Helvetica, Arial;" href="<?php echo home_url();?>/email-html/?order_id=<?php echo $order_id; ?>">Hier klicken.</a></span></td>
+							<td align="right" style="float:right;margin:10px 40px 10px 0"><span style="font-size:14px;line-height: 20px; color:#96a7b0;letter-spacing: 0.5px;">Mail nicht lesbar? <a style="color:#96a7b0;text-decoration:underline;font-family:Helvetica, Arial;" href="<?php echo site_url();?>/email-html/?order_id=<?php echo $order_id; ?>">Hier klicken.</a></span></td>
 						</tr>
 					</table>
 						
@@ -59,8 +59,8 @@ if ( ! defined( 'ABSPATH' ) ) {
                                     
                                 	<table border="0" cellpadding="0" border=0 cellspacing="0" width="100%" id="template_header">
                                         <tr>
-                                            <td id="header_wrapper" class="left_right_border" style="display: block; padding: 20px 0px 0;">
-                                            	<h2 style="color:#162c5d;border-top:1px solid #bdc9cc;border-bottom:1px solid #bdc9cc;padding:40px 0px;margin:0px 40px 0px 40px; font-size:24px;line-height: 30px; margin:0 auto;font-weight: normal;"><?php echo $email_heading; ?></h2>
+                                            <td id="" class="left_right_border" style="display: block; padding-top: 20px;padding-left: 0px;padding-right: 0;padding-bottom:0px">
+                                            	<h2 class="border_bottom_sub" style="border-top:1px solid #bdc9cc; color:#162c5d; border-bottom:1px solid #bdc9cc;margin:0px 40px 0px 40px; padding:40px 0px; font-size:24px;line-height: 30px; margin:0 auto;font-weight: normal;"><?php echo $email_heading; ?></h2>
                                             </td>
                                         </tr>
                                     </table>
@@ -70,7 +70,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                         	<tr>
                             	<td align="center" valign="top">
                                     <!-- Body -->
-                                	<table border="0" cellpadding="0" cellspacing="0" id="template_body">
+                                	<table border="0" cellpadding="0" cellspacing="0" id="template_body" style="width:100%">
                                     	<tr>
                                             <td valign="top" id="body_content" >
                                                 <!-- Content -->

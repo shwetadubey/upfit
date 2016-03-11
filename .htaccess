@@ -19,6 +19,7 @@ php_value max_execution_time 259200
 php_value max_input_time 259200
 php_value session.gc_maxlifetime 1200
 </IfModule>
+
 <IfModule mod_rewrite.c>
 php_value max_execution_time 0
 php_value upload_max_filesize 32M
@@ -33,7 +34,7 @@ RewriteRule ^([_0-9a-zA-Z-]+/)?wp-admin$ $1wp-admin/ [R=301,L]
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
 RewriteRule ^partnerlogin/(.*) wp-admin/$1?%{QUERY_STRING} [L]
-
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]

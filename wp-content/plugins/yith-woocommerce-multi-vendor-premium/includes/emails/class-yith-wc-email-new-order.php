@@ -25,7 +25,7 @@ class YITH_WC_Email_New_Order extends WC_Email {
      * Construct
      */
     function __construct() {
-        $this->id 				= 'new_order';
+        $this->id 				= 'vendor_new_order';
 		$this->title 			= __( 'New order (to vendor)', 'yith_wc_product_vendors' );
 		$this->description		= __( 'New order emails are sent to vendor(s) when an order is received.', 'yith_wc_product_vendors' );
 

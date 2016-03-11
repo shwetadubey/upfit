@@ -9,8 +9,7 @@
 	WHERE umi.meal_id='.$dinner[0];
 	$meal_extra_details=$wpdb->get_results( $sql,ARRAY_A);
 
-	unset($res);
-	unset($f_ids);
+	$res=$om_id=$f_ids=array();
 	$dinner_details= $wpdb->get_results('select id,name from up_meals where id='.$dinner[0]);
 	$query='select uf.id as f_id,umi.* from up_meal_ingredients umi join up_foods uf on uf.name=umi.name where umi.meal_id='.$dinner[0];	
 	$dinner_ingredients=$wpdb->get_results( $query,ARRAY_A);
@@ -18,14 +17,18 @@
 		$f_ids[]=$bi['f_id'];
 	}
 	//print_r($f_ids);
-	$dinner_order_meals=$wpdb->get_results( 'select * from up_order_meals where order_id='.$order_id.' AND meal_id='.$dinner[0],ARRAY_A);
+	$dinner_order_meals=$wpdb->get_results( 'select * from up_order_meals where order_id='.$order_id.' AND meal_id='.$dinner[0].' AND site_id='.$site_id,ARRAY_A);
 	$dinner_final_ingredients=explode(',',$dinner_order_meals[0]['ingredient_ids']);
 	
 	if($dinner_order_meals[0]['exchangble']==1){
 		$res=array_diff($dinner_final_ingredients,$f_ids);
 		$e_id=array_values($res);
 	}
-
+	if(empty($e_id) && count($e_id) <= 0){
+			$res1=array_diff($f_ids,$dinner_final_ingredients);
+			$om_id=array_values($res1);
+	}
+	
 	$meal_details=$wpdb->get_results( 'select * from up_meal_instructions where meal_id='.$dinner[0],ARRAY_A);
 	$str_time = $meal_details[0]['preparation_time'];
 	$str_time = preg_replace("/^([\d]{1,2})\:([\d]{2})$/", "00:$1:$2", $str_time);
@@ -39,7 +42,7 @@
 	$fisch_meals2 = $wpdb->get_results('call meat_and_fish_meals("' . $dinner[0] . '","Schalentiere")', OBJECT_K);
 	foreach($meat_meals2 as $k=>$v){
 		foreach($v as $v1=>$v2){
-			if($v2=='Fleischwaren & Wurstwaren')
+			if($v1=='Fleischwaren & Wurstwaren')
 				$meat_meals3['fleischwaren']=$v2;
 		}
 	}	
@@ -115,31 +118,35 @@
 					  
 					  <table class="p4-listingingredients" width="100%" cellspacing="0" cellpadding="0" border="0" style="border:0;outline:none; padding-bottom:5px;">
 							<?php
+							$c=$e=0;
 							unset($prise_ar);
 							$prise_ar=array();
-							$e=0;
+							$prise_ing='';
 							foreach($dinner_ingredients as $ing){
+								$ing_name='';
+					
 								$unit=$wpdb->get_results('select unit_symbol from up_units where id='.$ing['unit_id']);
 								$c++;
-								
-								if(!in_array($ing['f_id'],$dinner_final_ingredients)){
-									
-									if(count($e_id)>0  && !empty($e_id)){
-										$res1=$wpdb->get_results('select name from up_foods where id='.$e_id[$e]);
-										$ing_name=$res1[0]->name;
-										$e++;
+							//	if(empty($om_id) && !in_array($ing['f_id'],$om_id)){
+									if(!in_array($ing['f_id'],$dinner_final_ingredients)){
+										
+										if(count($e_id)>0  && !empty($e_id)){
+											$res1=$wpdb->get_results('select name from up_foods where id='.$e_id[$e]);
+											$ing_name=$res1[0]->name;
+											$e++;
+										}
 									}
-								}
-								else{
-									$ing_name= $ing['name'];
-								}
-							if(isset($ing_name)){
+									else{
+										$ing_name= $ing['name'];
+									}
+							//	}
+							if(isset($ing_name) && !empty($ing_name)){
 							 ?>
 								<tr>				
 									<?php
 									if((float)$ing['quantity']==1 && $unit[0]->unit_symbol =='Prise'){
 
-							 			$prise_ar[]= $ing['name'];
+							 			$prise_ar[]= $ing_name;
 							 		}
 							 		else{?>
 									<td style="width:70px;">
@@ -168,7 +175,7 @@
 									<?php
 										$prise_ar=array_unique($prise_ar);
 										$prise_ing=implode(', ', $prise_ar);
-										echo $prise_ing;
+										echo trim($prise_ing,', ');
 									?>
 									</td>
 								</tr>

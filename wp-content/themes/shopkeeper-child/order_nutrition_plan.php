@@ -14,6 +14,7 @@ $prefix = 'up_';
 //echo "ddd";exit;
 $order_id = $_REQUEST['order_id'];
 //echo $order_id;exit;
+$GLOBALS['site_id']=get_current_blog_id();
 function calculate_micro_value($meal_micro_value,$ideal_value,$meal_portion,$weight_variance)
 {
 	//echo "befor".$ideal_value;
@@ -25,15 +26,17 @@ function calculate_micro_value($meal_micro_value,$ideal_value,$meal_portion,$wei
 
 }
 
-
 function array_sort($variance_arr,$key1,$day,$percent)
 {
 	if (!empty($variance_arr)) {
 	   $sort = array();
+	
 		foreach($variance_arr as $k=>$v) {
 			$sort['variance'][$day][$percent][$k] = $v['variance'][$day][$percent];
 			$sort[$key1][$k] = $v[$key1];
+		
 		}
+		
 		# sort by exchangble asc and then variance asc
 		array_multisort($sort[$key1],SORT_ASC, $sort['variance'][$day][$percent],SORT_ASC,$variance_arr);
 	}
@@ -41,17 +44,33 @@ function array_sort($variance_arr,$key1,$day,$percent)
 
 }
 
-function select_balance_meals($plan, $nutrition_type, $variance, $micros_array, $meat_meals, $fish_meals, $meals_plan, $days_npes_cal, $protin, $fat, $carbo, $meal_cat, $weeknum, $last_category_meals, &$fin_meals,&$fin_meals_db, &$final_meal_ids, &$week_meal_ids, &$pescetarian_fish_count, &$nospecial_meat_fish_count)
+     
+function sortByKeyCallback($a, $b) {
+	//------Ascending------//
+	//$return = $a['sweet_tooth'] - $b['sweet_tooth'];
+	//-----Descending------//
+	$return = $b['sweet_tooth'] - $a['sweet_tooth'];
+    return $return;
+} 
+function select_balance_meals($plan, $nutrition_type, $variance1, $micros_array, $meat_meals, $fish_meals, $meals_plan, $days_npes_cal, $protin, $fat, $carbo, $meal_cat, $weeknum, $last_category_meals, &$fin_meals,&$fin_meals_db, &$final_meal_ids, &$week_meal_ids, &$pescetarian_fish_count, &$nospecial_meat_fish_count,$sweet_tooth)
 {
+	$last_week_no=0;
     $micros_diff = array();
-    $assigned_days = array();
+    $used_below_kcal_meals=$used_above_kcal_meals=$variance=$assigned_days = array();
+    
     $meals_below_kcal = array();
-    $meals_above_kcal = array();
-
+    $meals_above_kcal = $check_swt_meals=array();
+	/*if($meal_cat=='breakfast'){
+			echo 'breakfast Sweet tooth';
+			print_r($variance);
+	}*/
+	//echo 'micros_array';
+	//print_r($micros_array);
 	if (!empty($micros_array)) {
         // If chosen plan = Sparfuchs then repeat main meals all weeks.
       try{
 	    if ($plan == 162) {
+			$last_week_no=$weeknum-1;
 	        if($weeknum-1 > 0 && !empty($fin_meals[$weeknum-1]) && count($fin_meals[$weeknum-1]) > 0) {
                 if ($meal_cat != "pre_lunch_snack" && $meal_cat != "pre_dinner_snack" ) {
                     $assigned_days = array("mon", "tue", "wed", "thu", "fri", "sat");
@@ -79,6 +98,7 @@ function select_balance_meals($plan, $nutrition_type, $variance, $micros_array, 
             }
         } else {
             // If chosen plan != Sparfuchs then repeat main meals of first 2 week to next 2 weeks.
+            $last_week_no=$weeknum-2;
             if($weeknum-2 > 0 && !empty($fin_meals[$weeknum-2]) && count($fin_meals[$weeknum-2]) > 0) {
                 if(in_array($weeknum, array(3,4,7,8,11,12))) {
                     if ($meal_cat != "pre_lunch_snack" && $meal_cat != "pre_dinner_snack" ) {
@@ -87,7 +107,7 @@ function select_balance_meals($plan, $nutrition_type, $variance, $micros_array, 
                         $random_days = $assigned_days;
                         $assigned_days = array("mon", "tue", "wed", "thu", "fri", "sat");
                         foreach ($assigned_days as $d => $v) {
-                            if(array_key_exists($meal_cat, $fin_meals[$weeknum-1][$random_days[$d]]) && !empty($fin_meals[$weeknum-2][$random_days[$d]][$meal_cat])) {
+                            if(array_key_exists($meal_cat, $fin_meals[$weeknum-1][$random_days[$d]]) && !empty(	$fin_meals[$weeknum-2][$random_days[$d]][$meal_cat])) {
                                 $final_id = key($fin_meals[$weeknum-2][$random_days[$d]][$meal_cat]);
                                 $final_meal_ids[$final_id] = $final_meal_ids[$final_id] + 1;
                                 $micros_diff[$v][$meal_cat][$final_id] = $final_id;
@@ -108,6 +128,53 @@ function select_balance_meals($plan, $nutrition_type, $variance, $micros_array, 
                 }
             }
         }
+        if($last_week_no > 0 && $sweet_tooth == 'yes' && $meal_cat == 'pre_lunch_snack'){
+			$check_swt_meals= search_sweet_tooth_meals($fin_meals[$weeknum]['wed'],'sweet_tooth',1,'yes');
+//echo '$check_swt_meals';
+			//print_r($check_swt_meals);
+			$cnt_st_meals =count($check_swt_meals); 
+			
+			if($cnt_st_meals <= 0 && $last_week_no > 0){
+				
+				$check_swt_meals1= search_sweet_tooth_meals($fin_meals[$last_week_no],'sweet_tooth',1,'yes');
+				if(!empty($check_swt_meals1)){
+					$random_key=array_rand($check_swt_meals1);
+					$cats=array('breakfast','lunch','dinner','pre_dinner_snack');
+					$cat_k=array_rand($cats);
+					$temp_key=key($fin_meals[$weeknum]['wed'][$cats[$cat_k]]);
+					unset($fin_meals[$weeknum]['wed'][$cats[$cat_k]][$temp_key]);
+					$fin_meals[$weeknum]['wed'][$cats[$cat_k]][$random_key]=$check_swt_meals1[$random_key];
+				}
+			}
+			else if($cnt_st_meals > 1){
+				$except_swt_meals= search_sweet_tooth_meals($fin_meals[$last_week_no],'sweet_tooth',1,'no');
+				//echo 'except_swt_meals';
+				//print_r($except_swt_meals);
+				$wed_meals=$fin_meals[$weeknum]['wed'];
+				$sm=0;
+				foreach($wed_meals as $k => $wm){
+					foreach($wm as $k1 => $w){
+						if($w['sweet_tooth'] == 1){
+							$sm++;
+							if($sm > 1){
+								$meal_c=$k;
+								unset($fin_meals[$weeknum]['wed'][$k][$k1]);
+							//	print_r($fin_meals[$weeknum]['wed']);
+							//	echo '$wm='.$k;
+							//print_r($fin_meals[$weeknum]['wed']);
+								if(!empty($except_swt_meals)){
+									$not_swt_meal=array_rand($except_swt_meals);
+									$fin_meals[$weeknum]['wed'][$k][$not_swt_meal]=$except_swt_meals[$not_swt_meal];
+									$final_meal_ids[$not_swt_meal] = $final_meal_ids[$not_swt_meal] + 1;
+									unset($except_swt_meals[$not_swt_meal]);
+								}
+									//print_r($fin_meals[$weeknum]['wed']);
+							}
+						}
+					}
+				}
+			}
+		} 
 	}catch(Exception $e)
 	{
 		$error="In Repitition of meal on different plan:".$e->getMessage();
@@ -117,13 +184,22 @@ function select_balance_meals($plan, $nutrition_type, $variance, $micros_array, 
 	}
 	try{
     	foreach ($days_npes_cal as $d => $v) {
+		//	echo '<br/>$d1='.$d;
     	    if(!in_array($d, $assigned_days)) {
-        		$variance=array_sort($variance,'exchangble',$d,$meals_plan[$meal_cat]);
-                //echo "day wise ".$d." after sort meal<pre>";print_r($variance);
+				$st_value=array();
+		/*		echo 'swt_count='.count($st_value);
+				
+				echo '<br/>Week_no='.$weeknum.'<br/>';
+				echo 'Meal_cat='.$meal_cat.'<br/>';
+		*/		
+				$st_is_already_taken=0;
+        		$variance=array_sort($variance1,'exchangble',$d,$meals_plan[$meal_cat]);
+           //     echo "day wise ".$d." after sort meal<pre>";print_r($variance);
                 $is_found = true;
                 $meals_below_kcal = array();
                 $meals_above_kcal = array();
-
+				$skipped_meals = array();
+				$skipped_reassigned_meals = array();
         		foreach ($variance as $k => $m) {
         		    $is_found = false;
                     $min_variance = $v[$meal_cat][1];
@@ -143,6 +219,7 @@ function select_balance_meals($plan, $nutrition_type, $variance, $micros_array, 
                             $meals_above_kcal[$m['meal_id']] =  $new_kcal_meal_cat;
                         }
                     }
+                    
         		    if(!empty($last_category_meals) && !empty($last_category_meals[$d]) && count($last_category_meals) > 0){
 
         		        $last_category = key($last_category_meals[$d]);
@@ -165,69 +242,212 @@ function select_balance_meals($plan, $nutrition_type, $variance, $micros_array, 
                     $dif = $new_kcal_meal_cat + $pro_diff + $fat_diff + $carb_diff;
 
         			$kcal = $micros_array[$m['meal_id']]['kcal'];
-					//echo "meal_id: ".$m['meal_id']." meal kcal:".$kcal."</br>";
-
+        		/*		echo '<br/>above kcal: '.$meal_cat;
+        				echo '<br/>$d='.$d;
+        				print_r($fin_meals[$weeknum][$d]);
+						echo '<br/>Week_no='.$weeknum.'<br/>';
+					echo "meal_id: ".$m['meal_id']." meal kcal:".$kcal."</br>";
+					*/
         			if ($kcal >= $min_variance && $kcal <= $max_variance) {
-						
-                        $diff_array = array();
-                        $current_meal_variance=$m['variance'][$d][$meals_plan[$meal_cat]];
-                        $i = $k;
-                        while (!empty($variance[$i])){
-                           $next_meal_variance = $variance[$i]['variance'][$d][$meals_plan[$meal_cat]];
 
-                           if($current_meal_variance != $next_meal_variance) {
-                               break;
-                           } else {
-                                $next_micro_values = $micros_array[$variance[$i]['meal_id']];
-                                $diff_array[$variance[$i]['meal_id']] = $dif - ($next_micro_values['kcal'] + $next_micro_values['Protein_variance'] + $next_micro_values['Fett_variance']   + $next_micro_values['Kohlenhydrate_variance']);
-                                $i++;
-                           }
-                        }
+						$diff_array = array();
+						$current_meal_variance=$m['variance'][$d][$meals_plan[$meal_cat]];
+						$i = $k;
+						while (!empty($variance[$i])){
+						   $next_meal_variance = $variance[$i]['variance'][$d][$meals_plan[$meal_cat]];
 
-                        $new_meal_id = $m['meal_id'];
+						   if($current_meal_variance != $next_meal_variance) {
+							   break;
+						   } else {
+								$next_micro_values = $micros_array[$variance[$i]['meal_id']];
+								$diff_array[$variance[$i]['meal_id']] = $dif - ($next_micro_values['kcal'] + $next_micro_values['Protein_variance'] + $next_micro_values['Fett_variance']   + $next_micro_values['Kohlenhydrate_variance']);
+								$i++;
+						   }
+						}
+
+						$new_meal_id = $m['meal_id'];
 
                         if(!empty($diff_array) && count($diff_array) > 1) {
                             asort($diff_array);
                             $new_meal_id = key($diff_array);
                         }
-						//echo "in select balance meal:<pre>";print_r($micros_array[$new_meal_id]);
+					//	echo "in select balance meal:<pre>";print_r($micros_array[$new_meal_id]);
 						//echo "new meal id:".$new_meal_id."</br>";
                         $micro_values = $micros_array[$new_meal_id];
-                        //echo "in select balance meal micro values:<pre>";print_r($micro_values);
-
+                    //    echo "in select balance meal micro values:<pre>";print_r($micro_values);
+						//print_r($micros_array);
                         if(empty($final_meal_ids) || !array_key_exists($new_meal_id, $final_meal_ids)) {
 							//echo "in select balance meal micro values:<pre>";print_r($micro_values);
+                        
                             $final_meal_id = meals_output_per_weeks($nutrition_type, $d, $meal_cat, $weeknum, $micro_values, $pescetarian_fish_count, $nospecial_meat_fish_count);
+                        
+                          //  $st_is_already_taken=0;
+						/*	echo '<br/>$meal_cat='.$meal_cat.PHP_EOL;
+							echo '<br/>$d='.$d;
+							echo '<br/>$weeknum='.$weeknum;
+							echo '<br/>f_meal'.$final_meal_id;
+						*/
+							if(!empty($final_meal_id) && $final_meal_id != 0) {    
+								//echo '<br/>final_meal_id:'.$final_meal_id;
+								//print_r($micros_array[$final_meal_id]);
+								if(($sweet_tooth == 'yes'  && ($d =='wed' || $d =='sun')) || ($sweet_tooth == 'sometime' && $d == 'sun')){
+									//echo '<br/>final_meal_id_if: '.$final_meal_id;
+									if(!empty($fin_meals[$weeknum][$d])){
+										$st_value= search_sweet_tooth_meals($fin_meals[$weeknum][$d],'sweet_tooth','1','yes');
+									}
+									$meals_count_week=search_assigned_meals($fin_meals[$weeknum],'meal_id',$final_meal_id,'yes');
+							
+									if(count($st_value) <= 0 && count($meals_count_week) < 2){
+										
+									//	echo 'Sweet meal is not taken <br/>';
+										if( $micros_array[$final_meal_id]['sweet_tooth']==1) {
+									//		echo 'assign sweet tooth meal <br/>';
+											$st_is_already_taken=1;
+											$is_found = true;
+											$final_meal_ids[$final_meal_id] = 1;
+											$micros_diff[$d][$meal_cat][$final_meal_id] = $final_meal_id;
+											$fin_meals_db[$d][$meal_cat][$final_meal_id] = $final_meal_id;
+											$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['meal_id'] = $final_meal_id;
+											$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['csv_id'] = $micros_array[$final_meal_id]['csv_id'];
+											$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['sweet_tooth'] = $micros_array[$final_meal_id]['sweet_tooth'];
+											$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_ideal'] = $v[$meal_cat][0];
+											$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_min'] = $min_variance;
+											$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_max'] = $max_variance;
+											$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal'] = $micros_array[$final_meal_id]['kcal'];
+											$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_new'] = $new_kcal_meal_cat;
+											$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['reassigned'] = false;
+											$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['repeated'] = false;
 
-                            if(!empty($final_meal_id) && $final_meal_id != 0) {
-                                $is_found = true;
-                                $final_meal_ids[$final_meal_id] = 1;
-                                $micros_diff[$d][$meal_cat][$final_meal_id] = $final_meal_id;
-                                $fin_meals_db[$d][$meal_cat][$final_meal_id] = $final_meal_id;
-                                $fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['meal_id'] = $final_meal_id;
-                                $fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_ideal'] = $v[$meal_cat][0];
-                                $fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_min'] = $min_variance;
-                                $fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_max'] = $max_variance;
-                                $fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal'] = $micros_array[$final_meal_id]['kcal'];
-                                $fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_new'] = $new_kcal_meal_cat;
-                                $fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['reassigned'] = false;
-                                $fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['repeated'] = false;
+											if(empty($week_meal_ids) || !in_array($final_meal_id,  $week_meal_ids)) {
+												 $week_meal_ids[$final_meal_id] = $final_meal_id;
+											}
 
-                                if(empty($week_meal_ids) || !in_array($final_meal_id,  $week_meal_ids)) {
-                                     $week_meal_ids[$final_meal_id] = $final_meal_id;
-                                }
-                                /*$fin_meals[$d][$meal_cat][$final_meal_id]['Protein'] = $micros_array[$final_meal_id]['Protein'];
-                                $fin_meals[$d][$meal_cat][$final_meal_id]['protein_new'] = $pro_diff;
-                                $fin_meals[$d][$meal_cat][$final_meal_id]['Fatt'] = $micros_array[$final_meal_id]['Fett'];
-                                $fin_meals[$d][$meal_cat][$final_meal_id]['fatt_new'] = $fat_diff;
-                                $fin_meals[$d][$meal_cat][$final_meal_id]['Kohlenhydrate'] = $micros_array[$final_meal_id]['Kohlenhydrate'];
-                                $fin_meals[$d][$meal_cat][$final_meal_id]['Kohlenhydrate_new'] = $carb_diff;*/
-                                break;
-                            }
+											break;
+										}
+										else{
+										//	echo 'in skipp';
+											$skipped_meals[$final_meal_id]=$micros_array[$final_meal_id];
+											//$skipped_meals[]=$final_meal_id;
+										}
+									}
+									else{
+											$st_is_already_taken=1;
+											$skipped_meals[$final_meal_id]=$micros_array[$final_meal_id];
+									}
+									
+								}
+								if($st_is_already_taken == 1 || $sweet_tooth=='no' || !($sweet_tooth == 'yes'  && ($d == 'wed' || $d == 'sun')) || !($sweet_tooth == 'sometime' && $d == 'sun')) {
+									//echo $d.'<br/>';
+									//echo "<br/>is already taken:".$st_is_already_taken;
+									if(($sweet_tooth == 'yes'  && ($d =='wed' || $d =='sun')) || ($sweet_tooth == 'sometime' && $d == 'sun')){
+										
+										if($st_is_already_taken==1 &&  $micros_array[$final_meal_id]['sweet_tooth']==1){
+									//		echo "<br/>is sweet tooth already taken:".$st_is_already_taken;
+											$skipped_meals[$final_meal_id]=$micros_array[$final_meal_id];
+											continue;
+										}
+									}
+										/*echo '<br/><br/>testhere<br/>';
+										echo '$d='.$d;
+										echo '<br/>$meal_cat='.$meal_cat;
+										echo '<br/>$weeknum='.$weeknum.'<br/>final_meal_id='.$final_meal_id;
+									*/
+									$meals_count_week=search_assigned_meals($fin_meals[$weeknum],'meal_id',$final_meal_id,'yes');
+							
+									if(count($meals_count_week) < 2){
+										$is_found = true;
+										$final_meal_ids[$final_meal_id] = 1;
+										$micros_diff[$d][$meal_cat][$final_meal_id] = $final_meal_id;
+										$fin_meals_db[$d][$meal_cat][$final_meal_id] = $final_meal_id;
+										$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['meal_id'] = $final_meal_id;
+										$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['csv_id'] = $micros_array[$final_meal_id]['csv_id'];
+										$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['sweet_tooth'] = $micros_array[$final_meal_id]['sweet_tooth'];
+										$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_ideal'] = $v[$meal_cat][0];
+										$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_min'] = $min_variance;
+										$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_max'] = $max_variance;
+										$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal'] = $micros_array[$final_meal_id]['kcal'];
+										$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_new'] = $new_kcal_meal_cat;
+										$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['reassigned'] = false;
+										$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['repeated'] = false;
+
+										if(empty($week_meal_ids) || !in_array($final_meal_id,  $week_meal_ids)) {
+											 $week_meal_ids[$final_meal_id] = $final_meal_id;
+										}
+										break;
+									}
+								}
+								else{
+								//	echo 'in skipp='.$final_meal_id;
+									//$skipped_meals[]=$final_meal_id;
+									$skipped_meals[$final_meal_id]=$micros_array[$final_meal_id];
+								}
+							}
                         }
         			}
         		}
+			//----- Assign from skipped meals if no sweet tooth meal is selected ------ //
+				if($is_found == false && !empty($skipped_meals) && count($skipped_meals) > 0) {
+					
+					if(($sweet_tooth == 'yes'  && ($d =='wed' || $d =='sun')) || ($sweet_tooth == 'sometime' && $d == 'sun')){
+						//echo '<br/>is found false for sweet tooth<br/>';
+						//print_r($skipped_meals);
+						if(!empty($skipped_meals) && count($fin_meals[$weeknum][$d][$meal_cat]) <= 0){
+							//echo 'Sweet meal is not found so assignisng from skipped meals <br/>';
+							//echo $skipped_meals[0];
+							$is_found = true;
+							//print_r($skipped_meals);
+							uasort($skipped_meals, 'sortByKeyCallback');
+							/*
+								echo 'here';
+								echo '$weekno='.$weeknum;
+								echo '$d='.$d;
+							*/
+							//echo '<br/>$skipped_meal_id='.$skipped_meals[0]['id'];
+							
+							asort($final_meal_ids);
+							
+							$skipped_meals_results=array();
+							foreach($final_meal_ids as $f => $v){
+								if(array_key_exists($f,$skipped_meals)){
+									$skipped_meals_results[$f]=$skipped_meals[$f];
+								}
+							}
+							//print_r($skipped_meals_results);
+							if(!empty($skipped_meals_results)){
+							
+								$final_meal_id=key($skipped_meals_results);
+							}
+							else{
+								$final_meal_id=key($skipped_meals);
+							}
+					//		$final_meal_id=array_keys($skipped_meals_results)[0];
+							//echo '$final_meal_id'.$final_meal_id;
+							$meals_count_week=search_assigned_meals($fin_meals[$weeknum],'meal_id',$final_meal_id,'yes');
+							if(count($meals_count_week) < 2){
+								$final_meal_ids[$final_meal_id] = (isset($final_meal_ids[$final_meal_id]) ? $final_meal_ids[$final_meal_id] : 0) + 1;
+								$micros_diff[$d][$meal_cat][$final_meal_id] = $final_meal_id;
+								$fin_meals_db[$d][$meal_cat][$final_meal_id] = $final_meal_id;
+								$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['meal_id'] = $final_meal_id;
+								$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['csv_id'] = $micros_array[$final_meal_id]['csv_id'];
+								$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['sweet_tooth'] = $micros_array[$final_meal_id]['sweet_tooth'];
+								$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_ideal'] = $v[$meal_cat][0];
+								$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_min'] = $min_variance;
+								$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_max'] = $max_variance;
+								$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal'] = $micros_array[$final_meal_id]['kcal'];
+								$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_new'] = $new_kcal_meal_cat;
+								$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['reassigned'] = false;
+								$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['repeated'] = false;
 
+								if(empty($week_meal_ids) || !in_array($final_meal_id,  $week_meal_ids)) {
+									 $week_meal_ids[$final_meal_id] = $final_meal_id;
+								}
+						
+						  //  break;
+							}
+						}
+					}
+				}
+				
                 //if no compatible food found then assigned that are already assigned.
                 if($is_found == false && !empty($final_meal_ids) && count($final_meal_ids) > 0) {
                     asort($final_meal_ids);
@@ -262,37 +482,197 @@ function select_balance_meals($plan, $nutrition_type, $variance, $micros_array, 
                             $final_meal_id = meals_output_per_weeks($nutrition_type, $d, $meal_cat, $weeknum, $micro_values, $pescetarian_fish_count, $nospecial_meat_fish_count);
 
                             if(!empty($final_meal_id) && $final_meal_id != 0) {
-                                $is_found = true;
-                                //echo "final_meal_id".$final_meal_ids[$final_meal_id]."</br>";
-                                $final_meal_ids[$final_meal_id] = (isset($final_meal_ids[$final_meal_id]) ? $final_meal_ids[$final_meal_id] : 0) + 1;
-                                $micros_diff[$d][$meal_cat][$final_meal_id] = $final_meal_id;
-                                $fin_meals_db[$d][$meal_cat][$final_meal_id] = $final_meal_id;
-                                $fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['meal_id'] = $final_meal_id;
-                                $fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_ideal'] = $v[$meal_cat][0];
-                                $fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_min'] = $min_variance;
-                                $fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_max'] = $max_variance;
-                                $fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal'] = $micros_array[$final_meal_id]['kcal'];
-                                $fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_new'] = $new_kcal_meal_cat;
-                                $fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['reassigned'] = true;
-                                $fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['repeated'] = false;
 
-                                if(empty($week_meal_ids) || !in_array($final_meal_id,  $week_meal_ids)) {
-                                     $week_meal_ids[$final_meal_id] = $final_meal_id;
-                                }
-                                break;
+								if(($sweet_tooth == 'yes'  && ($d =='wed' || $d == 'sun')) || ($sweet_tooth == 'sometime' && $d == 'sun')){
+									
+								//	echo '<br/>$d_compatible='.$d;
+									//print_r($fin_meals[$weeknum][$d]);
+									
+									//print_r($fin_meals[$weeknum][$d]);
+									if(array_key_exists($d,$fin_meals[$weeknum])){
+									$st_value= search_sweet_tooth_meals($fin_meals[$weeknum][$d],'sweet_tooth','1','yes');
+									}
+									$meals_count_week=search_assigned_meals($fin_meals[$weeknum],'meal_id',$final_meal_id,'yes');
+							
+									if(count($st_value) <= 0){
+										//echo '<br/>in if compatible';
+
+										if( $micros_array[$final_meal_id]['sweet_tooth']==1 && count($meals_count_week) < 2) {
+										//	echo '<br/>sweet_tooth_if_compatible';
+											$st_is_already_taken=1;
+											$is_found = true;
+											$final_meal_ids[$final_meal_id] = 1;
+											$micros_diff[$d][$meal_cat][$final_meal_id] = $final_meal_id;
+											$fin_meals_db[$d][$meal_cat][$final_meal_id] = $final_meal_id;
+											$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['meal_id'] = $final_meal_id;
+											$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['csv_id'] = $micros_array[$final_meal_id]['csv_id'];
+											$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['sweet_tooth'] = $micros_array[$final_meal_id]['sweet_tooth'];
+											$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_ideal'] = $v[$meal_cat][0];
+											$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_min'] = $min_variance;
+											$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_max'] = $max_variance;
+											$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal'] = $micros_array[$final_meal_id]['kcal'];
+											$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_new'] = $new_kcal_meal_cat;
+											$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['reassigned'] = false;
+											$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['repeated'] = false;
+
+											if(empty($week_meal_ids) || !in_array($final_meal_id,  $week_meal_ids)) {
+												 $week_meal_ids[$final_meal_id] = $final_meal_id;
+											}
+
+											break;
+										}
+										else{
+											$skipped_reassigned_meals[$final_meal_id]=$micros_array[$final_meal_id];
+										}
+									}
+									else{
+										$st_is_already_taken=1;
+										//if( $micros_array[$final_meal_id]['sweet_tooth']!=1) {
+											//$skipped_reassigned_meals[]=$final_meal_id;
+											$skipped_reassigned_meals[$final_meal_id]=$micros_array[$final_meal_id];
+											
+										//}
+									}
+								}
+								if($st_is_already_taken == 1 || ($sweet_tooth=='no' || !($sweet_tooth == 'yes'  && ($d == 'wed' || $d == 'sun')) || !($sweet_tooth == 'sometime' && $d == 'sun'))) {
+									if(($sweet_tooth == 'yes'  && ($d =='wed' || $d =='sun')) || ($sweet_tooth == 'sometime' && $d == 'sun')){
+										if($st_is_already_taken==1 &&  $micros_array[$final_meal_id]['sweet_tooth']==1){
+											$skipped_reassigned_meals[$final_meal_id]=$micros_array[$final_meal_id];
+										/*	echo '<br/>continue11';
+											echo $meal_cat.'11<br/>';
+											echo '$d11='.$d.'<br/>';
+											echo '$weeknum11='.$weeknum.'<br/>';
+											*/
+											continue;
+										}
+									}
+								/*	echo '<br/>after continue11: '.$final_meal_id.'<br/>';
+									echo '<br/>after continue11 count: '.$final_meal_ids[$final_meal_id].'<br/>';
+									echo $meal_cat.'11<br/>';
+									echo '$d11='.$d.'<br/>';
+									echo '$weeknum11='.$weeknum.'<br/>';
+									*/
+									$meals_count_week=search_assigned_meals($fin_meals[$weeknum],'meal_id',$final_meal_id,'yes');
+									if(count($meals_count_week) < 2){
+										$is_found = true;
+										$final_meal_ids[$final_meal_id] = (isset($final_meal_ids[$final_meal_id]) ? $final_meal_ids[$final_meal_id] : 0) + 1;
+										$micros_diff[$d][$meal_cat][$final_meal_id] = $final_meal_id;
+										$fin_meals_db[$d][$meal_cat][$final_meal_id] = $final_meal_id;
+										$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['meal_id'] = $final_meal_id;
+										$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['csv_id'] = $micros_array[$final_meal_id]['csv_id'];
+										$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['sweet_tooth'] = $micros_array[$final_meal_id]['sweet_tooth'];
+										$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_ideal'] = $v[$meal_cat][0];
+										$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_min'] = $min_variance;
+										$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_max'] = $max_variance;
+										$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal'] = $micros_array[$final_meal_id]['kcal'];
+										$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_new'] = $new_kcal_meal_cat;
+										$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['reassigned'] = false;
+										$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['repeated'] = false;
+
+										if(empty($week_meal_ids) || !in_array($final_meal_id,  $week_meal_ids)) {
+											 $week_meal_ids[$final_meal_id] = $final_meal_id;
+										}
+										break;
+									}
+								}
+								else{
+									//$skipped_reassigned_meals[]=$final_meal_id;
+									$skipped_reassigned_meals[$final_meal_id]=$micros_array[$final_meal_id];
+								}
+
                             }
             			}
             		}
                 }
 
+				if($is_found == false && !empty($skipped_reassigned_meals) && count($skipped_reassigned_meals) > 0) {
+					
+					if(($sweet_tooth == 'yes'  && ($d =='wed' || $d =='sun')) || ($sweet_tooth == 'sometime' && $d == 'sun')){
+					//	echo '<br/>is found false for sweet tooth<br/>';
+					//print_r($skipped_meals);
+						if(!empty($skipped_reassigned_meals) && count($fin_meals[$weeknum][$d][$meal_cat]) <= 0){
+							//echo 'Sweet meal is not found so assignisng from skipped meals <br/>';
+						//	echo $skipped_reassigned_meals[0];
+							$is_found = true;
+							uasort($skipped_reassigned_meals, 'sortByKeyCallback');  
+							
+							asort($final_meal_ids);
+							$skipped_reassigned_meals_results=array();
+						//	print_r($final_meal_ids);
+							
+							foreach($final_meal_ids as $f=>$v){
+								if(array_key_exists($f,$skipped_reassigned_meals)){
+									$skipped_reassigned_meals_results[$f]=$skipped_reassigned_meals[$f];
+								}
+							}
+							//echo '$skipped_reassigned_meals_results';
+							if(!empty($skipped_reassigned_meals_results)){
+							
+								$final_meal_id=key($skipped_reassigned_meals_results);
+							}
+							else{
+								$final_meal_id=key($skipped_reassigned_meals);
+							}
+							//echo '$final_meal_id'.$final_meal_id;
+							$meals_count_week=search_assigned_meals($fin_meals[$weeknum],'meal_id',$final_meal_id,'yes');
+							if(count($meals_count_week) < 2){
+								$final_meal_ids[$final_meal_id] = (isset($final_meal_ids[$final_meal_id]) ? $final_meal_ids[$final_meal_id] : 0) + 1;
+								$micros_diff[$d][$meal_cat][$final_meal_id] = $final_meal_id;
+								$fin_meals_db[$d][$meal_cat][$final_meal_id] = $final_meal_id;
+								$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['meal_id'] = $final_meal_id;
+								$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['csv_id'] = $micros_array[$final_meal_id]['csv_id'];
+								$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['sweet_tooth'] = $micros_array[$final_meal_id]['sweet_tooth'];
+								$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_ideal'] = $v[$meal_cat][0];
+								$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_min'] = $min_variance;
+								$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_max'] = $max_variance;
+								$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal'] = $micros_array[$final_meal_id]['kcal'];
+								$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_new'] = $new_kcal_meal_cat;
+								$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['reassigned'] = false;
+								$fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['repeated'] = false;
+
+								if(empty($week_meal_ids) || !in_array($final_meal_id,  $week_meal_ids)) {
+									 $week_meal_ids[$final_meal_id] = $final_meal_id;
+								}
+//print_r($fin_meals[$weeknum][$d]);
+						  //  break;
+							}
+						}
+					}
+				}
+					
                 if($is_found == false) {
 					if (!empty($meals_below_kcal)) {
                         arsort($meals_below_kcal);
-                        $final_meal_id = key($meals_below_kcal);
+					/*	echo '<br/><br/>inside meals_below_kcal';
+                        echo '<br/>weekno ='.$weeknum;
+						echo '<br/>day ='.$d.'<br/>cat ='.$meal_cat;
+					*///	print_r($meals_below_kcal);
+						//print_r($used_below_kcal_meals);
+						if(!empty($used_below_kcal_meals) && count($used_below_kcal_meals) > 0){
+							foreach($used_below_kcal_meals as $v){
+								//echo $v;
+								if(array_key_exists($v,$meals_below_kcal)){
+	//								echo 'array_key_exists';
+									unset($meals_below_kcal[$v]);
+								}
+							}
+						}
+						foreach($meals_below_kcal as $key=>$value){
+							$meals_count_week=search_assigned_meals($fin_meals[$weeknum],'meal_id',$key,'yes');
+							if(count($meals_count_week) < 2){
+								 $final_meal_id=$key;
+								 break;
+							}
+						}
+                        //$final_meal_id = key($meals_below_kcal);
+					//	echo '<br/>final_meal_id ='.$final_meal_id;
+						$used_below_kcal_meals[$final_meal_id]=$final_meal_id;
                         $final_meal_ids[$final_meal_id] = (isset($final_meal_ids[$final_meal_id]) ? $final_meal_ids[$final_meal_id] : 0) + 1;
                         $micros_diff[$d][$meal_cat][$final_meal_id] = $final_meal_id;
                         $fin_meals_db[$d][$meal_cat][$final_meal_id] = $final_meal_id;
                         $fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['meal_id'] = $final_meal_id;
+                        $fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['csv_id'] = $micros_array[$final_meal_id]['csv_id'];
+                        $fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['sweet_tooth'] = $micros_array[$final_meal_id]['sweet_tooth'];
                         $fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_ideal'] = $v[$meal_cat][0];
                         $fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_min'] = $min_variance;
                         $fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_max'] = $max_variance;
@@ -306,11 +686,22 @@ function select_balance_meals($plan, $nutrition_type, $variance, $micros_array, 
                         }
                     } else if (!empty($meals_above_kcal)) {
                         asort($meals_above_kcal);
+                      //  echo '$meals_above_kcal';
+                        if(!empty($used_above_kcal_meals) && count($used_above_kcal_meals) > 0){
+							foreach($used_above_kcal_meals as $v){
+								if(array_key_exists($v,$meals_above_kcal)){
+									unset($meals_above_kcal[$v]);
+								}
+							}
+						}
                         $final_meal_id = key($meals_above_kcal);
+                        $used_above_kcal_meals[$final_meal_id]=$final_meal_id;
                         $final_meal_ids[$final_meal_id] = (isset($final_meal_ids[$final_meal_id]) ? $final_meal_ids[$final_meal_id] : 0) + 1;
                         $micros_diff[$d][$meal_cat][$final_meal_id] = $final_meal_id;
                         $fin_meals_db[$d][$meal_cat][$final_meal_id] = $final_meal_id;
                         $fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['meal_id'] = $final_meal_id;
+                        $fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['csv_id'] = $micros_array[$final_meal_id]['csv_id'];
+                        $fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['sweet_tooth'] = $micros_array[$final_meal_id]['sweet_tooth'];
                         $fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_ideal'] = $v[$meal_cat][0];
                         $fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_min'] = $min_variance;
                         $fin_meals[$weeknum][$d][$meal_cat][$final_meal_id]['kcal_max'] = $max_variance;
@@ -339,9 +730,75 @@ function select_balance_meals($plan, $nutrition_type, $variance, $micros_array, 
 		}
 	  
     }
+    
+//echo 'skipped_meals';
 
+	//print_r($fin_meals);
+/*print_r($skipped_meals);/*
+echo 'skipped_reassigned_meals';
+print_r($skipped_reassigned_meals);
+    */
     return $micros_diff;
 }
+
+function search_assigned_meals($array, $key, $value,$condition)
+{
+    $results = array();
+  
+	search_meal_in_week($array, $key, $value, $results,$condition);
+	
+    return $results;
+}
+
+function search_meal_in_week($array, $key, $value, &$results,$condition)
+{
+    if (!is_array($array)) {
+        return;
+    }
+    if($condition == 'yes'){
+		if (isset($array[$key]) && $array[$key] == $value) {
+			$results[] = $array;
+		}
+	}
+	else{
+		if (isset($array[$key]) && $array[$key] != $value) {
+			$results[] = $array;
+		}
+	}
+    foreach ($array as $k=>$subarray) {
+        search_meal_in_week($subarray, $key, $value, $results,$condition);
+    }
+}   
+
+function search_sweet_tooth_meals($array, $key, $value,$condition)
+{
+    $results = array();
+  
+	search_r($array, $key, $value, $results,$condition);
+	
+    return $results;
+}
+
+function search_r($array, $key, $value, &$results,$condition)
+{
+    if (!is_array($array)) {
+        return;
+    }
+    if($condition == 'yes'){
+		if (isset($array[$key]) && $array[$key] == $value) {
+			$results[$array['meal_id']] = $array;
+		}
+	}
+	else{
+		if (isset($array[$key]) && $array[$key] != $value) {
+			$results[$array['meal_id']] = $array;
+		}
+	}
+    foreach ($array as $k=>$subarray) {
+        search_r($subarray, $key, $value, $results,$condition);
+    }
+}   
+
 
 function in_array_r($needle, $haystack, $strict = false) {
     foreach ($haystack as $item) {
@@ -443,8 +900,6 @@ function meals_output_per_weeks($nutrition_type, $day, $meal_category, $weeknum,
 }
 
 
-
-
 //echo "order id:".$order_id;
 if(!empty($order_id)){
 try{
@@ -462,7 +917,7 @@ $items = array_values($order_detail->get_items());
 $customer_nutrition_detail = $items[0]['wdm_user_custom_data'];
 //echo $customer_nutrition_detail;
 $nutrion_plan_detail = unserialize($customer_nutrition_detail);
-echo "nutrion_plan_detail<pre>";print_r($nutrion_plan_detail);
+//echo "nutrion_plan_detail<pre>";print_r($nutrion_plan_detail);
 
 $nutrion_plan_detail['cur_weight'] = str_replace(',', '.', $nutrion_plan_detail['cur_weight']);
 //$nutrion_plan_detail['cur_weight']=82.2;
@@ -716,9 +1171,9 @@ $res2 = $wpdb->get_results($q2);
 
 /* changed by krutika */
 
-$count=$wpdb->get_var("select count(id) from ".$prefix."order_meals where order_id=".$order_id);
+$count=$wpdb->get_var("select count(id) from ".$prefix."order_meals where order_id=".$order_id." AND site_id=".$site_id);
 if($count!=0){
-	$query_del="DELETE from ".$prefix."order_meals where order_id=".$order_id;
+	$query_del="DELETE from ".$prefix."order_meals where order_id=".$order_id." AND site_id=".$site_id;
 	$wpdb->query($query_del);
 }
 
@@ -771,9 +1226,9 @@ if (!empty($res3)) {
                     $up_order_meals['meal_id']=$r3->meal_id;
                     $up_order_meals['ingredient_ids']=$r3->compatible_ingredients.$temp_meal_id;
                     //echo "<pre>";print_r($up_order_meals);
-                    $count=$wpdb->get_var("select count(id) from up_order_meals where order_id=".$order_id." AND meal_id=".$up_order_meals['meal_id']);
+                    $count=$wpdb->get_var("select count(id) from up_order_meals where order_id=".$order_id." AND meal_id=".$up_order_meals['meal_id']." AND site_id=".$site_id);
                     if($count==0){
-                        $query_insert="insert into up_order_meals (order_id,meal_id,ingredient_ids,exchangble) values(".$order_id.",".$up_order_meals['meal_id'].",'".$up_order_meals['ingredient_ids']."',1)";
+                        $query_insert="insert into up_order_meals (site_id,order_id,meal_id,ingredient_ids,exchangble) values(".$site_id.",".$order_id.",".$up_order_meals['meal_id'].",'".$up_order_meals['ingredient_ids']."',1)";
                         $wpdb->query($query_insert);
                     }
                 }
@@ -787,10 +1242,10 @@ if (!empty($res3)) {
                 $up_order_meals['ingredient_ids']=$r3->compatible_ingredients;
                 //echo "<pre>";print_r($up_order_meals);
 
-                $count=$wpdb->get_var("select count(id) from up_order_meals where order_id=".$order_id." AND meal_id=".$up_order_meals['meal_id']);
+                $count=$wpdb->get_var("select count(id) from up_order_meals where order_id=".$order_id." AND meal_id=".$up_order_meals['meal_id']." AND site_id=".$site_id);
 
                 if($count==0){
-					$query_insert="insert into up_order_meals (order_id,meal_id,ingredient_ids,exchangble) values(".$order_id.",".$up_order_meals['meal_id'].",'".$up_order_meals['ingredient_ids']."',0)";
+					$query_insert="insert into up_order_meals (site_id,order_id,meal_id,ingredient_ids,exchangble) values(".$site_id.",".$order_id.",".$up_order_meals['meal_id'].",'".$up_order_meals['ingredient_ids']."',0)";
 					$wpdb->query($query_insert);
 				}
             }
@@ -1039,8 +1494,10 @@ if ($sweet_tooth == 'yes') {
 //call sp for all micro value calculation
 //$priority_micros = $wpdb->get_results("CALL prioritise_val('" . $final_meal . "');");
 
-$priority_micros = $wpdb->get_results("CALL prioritise_val_v4('" . $order_id . "');", OBJECT_K);
+$priority_micros = $wpdb->get_results("CALL prioritise_val_v4('" . $order_id . "','" . $site_id . "');", OBJECT_K);
+
 //echo "<pre>";print_r($priority_micros);
+
 try{
 $fish_meals = $meat_meals = array();
 if (in_array('nospecial', $nutrition_type)) {
@@ -1316,7 +1773,9 @@ while($weeknum <= $period) {
             $micros_array[$pm->id]['is_veg'] = $pm->is_veg;
             $micros_array[$pm->id]['fatt'] = $pm->fatt;
             $micros_array[$pm->id]['price_avgr'] = $pm->price_avgr;
-
+			$micros_array[$pm->id]['sweet_tooth'] = $pm->sweet_tooth;
+			$micros_array[$pm->id]['csv_id'] = $pm->csv_id;
+			
     		$meal_categories=explode(",",$pm->meal_category_ids);
     		foreach ($meal_categories as $mc => $meal_category) {
     			$sum = 0;$breakfast_id;$lunch_id;$dinner_id;$snack_id;
@@ -1621,261 +2080,285 @@ while($weeknum <= $period) {
     			//}
 
 
-    			if(strcasecmp($available_time,'little')==0) {
-    				if($meal_category == 1 && ($pm->preparation_time <= $time_con['breakfast']))
-    				{
-    					foreach ($days_npes_cal as $d => $v) {
-    						$daykal = @round(((abs($v['breakfast'][0] - $pm->Kilokalorien)) / $v['breakfast'][0]) * 150, 5);
-    					}
-    					$breakfast_variance[$breakfast_id]['meal_id']=$breakfast_id;
-    					//$breakfast_variance[$breakfast_id]['variance'] = $sum;
-    					$breakfast_variance[$breakfast_id]['exchangble'] = $pm->exchangble;
-    					$breakfast_variance[$breakfast_id]['assign'] = 0;
+    							if(strcasecmp($available_time,'little')==0) {
+						if($meal_category == 1 && ($pm->preparation_time <= $time_con['breakfast']))
+						{
+							foreach ($days_npes_cal as $d => $v) {
+								$daykal = @round(((abs($v['breakfast'][0] - $pm->Kilokalorien)) / $v['breakfast'][0]) * 150, 5);
+							}
+							$breakfast_variance[$breakfast_id]['meal_id']=$breakfast_id;
+							//$breakfast_variance[$breakfast_id]['variance'] = $sum;
+							$breakfast_variance[$breakfast_id]['exchangble'] = $pm->exchangble;
+							$breakfast_variance[$breakfast_id]['assign'] = 0;
+							$breakfast_variance[$breakfast_id]['sweet_tooth'] = $pm->sweet_tooth;
+							$breakfast_variance[$breakfast_id]['csv_id'] = $pm->csv_id;
 
-                        if (!empty($plan_week)) {
-                            foreach ($plan_week as $day => $day_value) {
-                                if (!empty($meals_plan)) {
-                                    foreach ($meals_plan as $k => $m) {
+							if (!empty($plan_week)) {
+								foreach ($plan_week as $day => $day_value) {
+									if (!empty($meals_plan)) {
+										foreach ($meals_plan as $k => $m) {
 
-                                        //if(empty($breakfast_variance[$breakfast_id]['variance']) || !array_key_exists($m, $breakfast_variance[$breakfast_id]['variance'])) {
-    										if($k=='breakfast'){
-    											$breakfast_variance[$breakfast_id]['variance'][$day][$m] = $sum + (@round(((abs(@round($days_npes_cal[$day]['NPES'] * ($m / 100), 2) - $pm->Kilokalorien)) / @round($days_npes_cal[$day]['NPES'] * ($m / 100), 2)) * 150, 5));
-    										}
-                                        //}
-                                    }
-                                }
-                            }
-                        }
-    				}
-    				else if($meal_category == 2 && ($pm->preparation_time <= $time_con['lunch']))
-    				{
-    					$lunch_variance[$lunch_id]['meal_id']=$lunch_id;
-    					//$lunch_variance[$lunch_id]['variance'] = $sum;
-    					$lunch_variance[$lunch_id]['exchangble'] = $pm->exchangble;
+											//if(empty($breakfast_variance[$breakfast_id]['variance']) || !array_key_exists($m, $breakfast_variance[$breakfast_id]['variance'])) {
+												if($k=='breakfast'){
+													$breakfast_variance[$breakfast_id]['variance'][$day][$m] = $sum + (@round(((abs(@round($days_npes_cal[$day]['NPES'] * ($m / 100), 2) - $pm->Kilokalorien)) / @round($days_npes_cal[$day]['NPES'] * ($m / 100), 2)) * 150, 5));
+												}
+											//}
+										}
+									}
+								}
+							}
+						}
+						else if($meal_category == 2 && ($pm->preparation_time <= $time_con['lunch']))
+						{
+							$lunch_variance[$lunch_id]['meal_id']=$lunch_id;
+							
+							//$lunch_variance[$lunch_id]['variance'] = $sum;
+							$lunch_variance[$lunch_id]['exchangble'] = $pm->exchangble;
+							$lunch_variance[$lunch_id]['sweet_tooth'] = $pm->sweet_tooth;
+							$lunch_variance[$lunch_id]['csv_id'] = $pm->csv_id;
 
-                        if (!empty($plan_week)) {
-                            foreach ($plan_week as $day => $day_value) {
-                                if (!empty($meals_plan)) {
-                                    foreach ($meals_plan as $k => $m) {
-                                        //if(empty($breakfast_variance[$breakfast_id]['variance']) || !array_key_exists($m, $breakfast_variance[$breakfast_id]['variance'])) {
-                                        if($k=='lunch'){
-                                            $lunch_variance[$lunch_id]['variance'][$day][$m] = $sum + (@round(((abs(@round($days_npes_cal[$day]['NPES'] * ($m / 100), 2) - $pm->Kilokalorien)) / @round($days_npes_cal[$day]['NPES'] * ($m / 100), 2)) * 150, 5));
-                                         }
-                                        //}
-                                    }
-                                }
-                            }
-                        }
-    				}
-    				else if($meal_category == 3 && ($pm->preparation_time <= $time_con['dinner']))
-    				{
-    					$dinner_variance[$dinner_id]['meal_id']=$dinner_id;
-    					//$dinner_variance[$dinner_id]['variance'] = $sum;
-    					$dinner_variance[$dinner_id]['exchangble'] = $pm->exchangble;
+							if (!empty($plan_week)) {
+								foreach ($plan_week as $day => $day_value) {
+									if (!empty($meals_plan)) {
+										foreach ($meals_plan as $k => $m) {
+											//if(empty($breakfast_variance[$breakfast_id]['variance']) || !array_key_exists($m, $breakfast_variance[$breakfast_id]['variance'])) {
+											if($k=='lunch'){
+												$lunch_variance[$lunch_id]['variance'][$day][$m] = $sum + (@round(((abs(@round($days_npes_cal[$day]['NPES'] * ($m / 100), 2) - $pm->Kilokalorien)) / @round($days_npes_cal[$day]['NPES'] * ($m / 100), 2)) * 150, 5));
+											 }
+											//}
+										}
+									}
+								}
+							}
+						}
+						else if($meal_category == 3 && ($pm->preparation_time <= $time_con['dinner']))
+						{
+							$dinner_variance[$dinner_id]['meal_id']=$dinner_id;
+							//$dinner_variance[$dinner_id]['variance'] = $sum;
+							$dinner_variance[$dinner_id]['exchangble'] = $pm->exchangble;
+							$dinner_variance[$dinner_id]['sweet_tooth'] = $pm->sweet_tooth;
+							$dinner_variance[$dinner_id]['csv_id'] = $pm->csv_id;
 
-                        if (!empty($plan_week)) {
-                            foreach ($plan_week as $day => $day_value) {
-                                if (!empty($meals_plan)) {
-                                    foreach ($meals_plan as $k => $m) {
-    									if($k=='dinner'){
-                                        //if(empty($breakfast_variance[$breakfast_id]['variance']) || !array_key_exists($m, $breakfast_variance[$breakfast_id]['variance'])) {
-                                            $dinner_variance[$dinner_id]['variance'][$day][$m] = $sum + (@round(((abs(@round($days_npes_cal[$day]['NPES'] * ($m / 100), 2) - $pm->Kilokalorien)) / @round($days_npes_cal[$day]['NPES'] * ($m / 100), 2)) * 150, 5));
-                                        //}
-    									}
-                                    }
-                                }
-                            }
-                        }
-    				}
-    				else if($meal_category == 4 && ($pm->preparation_time <= $time_con['snack']))
-    				{
-    					$snack_variance[$snack_id]['meal_id']=$snack_id;
-    					//$snack_variance[$snack_id]['variance'] = $sum;
-    					$snack_variance[$snack_id]['exchangble'] = $pm->exchangble;
+							if (!empty($plan_week)) {
+								foreach ($plan_week as $day => $day_value) {
+									if (!empty($meals_plan)) {
+										foreach ($meals_plan as $k => $m) {
+											if($k=='dinner'){
+											//if(empty($breakfast_variance[$breakfast_id]['variance']) || !array_key_exists($m, $breakfast_variance[$breakfast_id]['variance'])) {
+												$dinner_variance[$dinner_id]['variance'][$day][$m] = $sum + (@round(((abs(@round($days_npes_cal[$day]['NPES'] * ($m / 100), 2) - $pm->Kilokalorien)) / @round($days_npes_cal[$day]['NPES'] * ($m / 100), 2)) * 150, 5));
+											//}
+											}
+										}
+									}
+								}
+							}
+						}
+						else if($meal_category == 4 && ($pm->preparation_time <= $time_con['snack']))
+						{
+							$snack_variance[$snack_id]['meal_id']=$snack_id;
+							//$snack_variance[$snack_id]['variance'] = $sum;
+							$snack_variance[$snack_id]['exchangble'] = $pm->exchangble;
+							$snack_variance[$snack_id]['sweet_tooth'] = $pm->sweet_tooth;
+							$snack_variance[$snack_id]['csv_id'] = $pm->csv_id;
 
-                        if (!empty($plan_week)) {
-                            foreach ($plan_week as $day => $day_value) {
-                                if (!empty($meals_plan)) {
-                                    foreach ($meals_plan as $k => $m) {
-                                        //if(empty($breakfast_variance[$breakfast_id]['variance']) || !array_key_exists($m, $breakfast_variance[$breakfast_id]['variance'])) {
-                                        if($k=='pre_dinner_snack'){
-                                            $snack_variance[$snack_id]['variance'][$day][$m] = $sum + (@round(((abs(@round($days_npes_cal[$day]['NPES'] * ($m / 100), 2) - $pm->Kilokalorien)) / @round($days_npes_cal[$day]['NPES'] * ($m / 100), 2)) * 150, 5));
-                                         }
-                                        //}
-                                    }
-                                }
-                            }
-                        }
-    				}
-    			}
-    			else if(strcasecmp($available_time,'much')==0){
-    				if($meal_category == 1 && ($pm->preparation_time >= $time_con['breakfast']))
-    				{
-    					$breakfast_variance[$breakfast_id]['meal_id']=$breakfast_id;
-    					//$breakfast_variance[$breakfast_id]['variance'] = $sum;
-    					$breakfast_variance[$breakfast_id]['exchangble'] = $pm->exchangble;
-    					$breakfast_variance[$breakfast_id]['assign'] = 0;
+							if (!empty($plan_week)) {
+								foreach ($plan_week as $day => $day_value) {
+									if (!empty($meals_plan)) {
+										foreach ($meals_plan as $k => $m) {
+											//if(empty($breakfast_variance[$breakfast_id]['variance']) || !array_key_exists($m, $breakfast_variance[$breakfast_id]['variance'])) {
+											if($k=='pre_dinner_snack'){
+												$snack_variance[$snack_id]['variance'][$day][$m] = $sum + (@round(((abs(@round($days_npes_cal[$day]['NPES'] * ($m / 100), 2) - $pm->Kilokalorien)) / @round($days_npes_cal[$day]['NPES'] * ($m / 100), 2)) * 150, 5));
+											 }
+											//}
+										}
+									}
+								}
+							}
+						}
+					}
+					else if(strcasecmp($available_time,'much')==0){
+						if($meal_category == 1 && ($pm->preparation_time >= $time_con['breakfast']))
+						{
+							$breakfast_variance[$breakfast_id]['meal_id']=$breakfast_id;
+							//$breakfast_variance[$breakfast_id]['variance'] = $sum;
+							$breakfast_variance[$breakfast_id]['exchangble'] = $pm->exchangble;
+							$breakfast_variance[$breakfast_id]['assign'] = 0;
+							$breakfast_variance[$breakfast_id]['sweet_tooth'] = $pm->sweet_tooth;
+							$breakfast_variance[$breakfast_id]['csv_id'] = $pm->csv_id;
+							if (!empty($plan_week)) {
+								foreach ($plan_week as $day => $day_value) {
+									if (!empty($meals_plan)) {
+										foreach ($meals_plan as $k => $m) {
+											//if(empty($breakfast_variance[$breakfast_id]['variance']) || !array_key_exists($m, $breakfast_variance[$breakfast_id]['variance'])) {
+											if($k=='breakfast'){
+												$breakfast_variance[$breakfast_id]['variance'][$day][$m] = $sum + (@round(((abs(@round($days_npes_cal[$day]['NPES'] * ($m / 100), 2) - $pm->Kilokalorien)) / @round($days_npes_cal[$day]['NPES'] * ($m / 100), 2)) * 150, 5));
+											}
+											//}
+										}
+									}
+								}
+							}
+						}
+						else if($meal_category == 2 && ($pm->preparation_time >= $time_con['lunch']))
+						{
+							$lunch_variance[$lunch_id]['meal_id']=$lunch_id;
+							//$lunch_variance[$lunch_id]['variance'] = $sum;
+							$lunch_variance[$lunch_id]['exchangble'] = $pm->exchangble;
+							$lunch_variance[$lunch_id]['sweet_tooth'] = $pm->sweet_tooth;
+							$lunch_variance[$lunch_id]['csv_id'] = $pm->csv_id;
+							if (!empty($plan_week)) {
+								foreach ($plan_week as $day => $day_value) {
+									if (!empty($meals_plan)) {
+										foreach ($meals_plan as $k => $m) {
+											//if(empty($breakfast_variance[$breakfast_id]['variance']) || !array_key_exists($m, $breakfast_variance[$breakfast_id]['variance'])) {
+											if($k=='lunch'){
+												$lunch_variance[$lunch_id]['variance'][$day][$m] = $sum + (@round(((abs(@round($days_npes_cal[$day]['NPES'] * ($m / 100), 2) - $pm->Kilokalorien)) / @round($days_npes_cal[$day]['NPES'] * ($m / 100), 2)) * 150, 5));
+											}
+											//}
+										}
+									}
+								}
+							}
+						}
+						else if($meal_category == 3 && ($pm->preparation_time >= $time_con['dinner']))
+						{
+							$dinner_variance[$dinner_id]['meal_id']=$dinner_id;
+							//$dinner_variance[$dinner_id]['variance'] = $sum;
+							$dinner_variance[$dinner_id]['exchangble'] = $pm->exchangble;
+							$dinner_variance[$dinner_id]['sweet_tooth'] = $pm->sweet_tooth;
+							$dinner_variance[$dinner_id]['csv_id'] = $pm->csv_id;
 
-                        if (!empty($plan_week)) {
-                            foreach ($plan_week as $day => $day_value) {
-                                if (!empty($meals_plan)) {
-                                    foreach ($meals_plan as $k => $m) {
-                                        //if(empty($breakfast_variance[$breakfast_id]['variance']) || !array_key_exists($m, $breakfast_variance[$breakfast_id]['variance'])) {
-                                        if($k=='breakfast'){
-                                            $breakfast_variance[$breakfast_id]['variance'][$day][$m] = $sum + (@round(((abs(@round($days_npes_cal[$day]['NPES'] * ($m / 100), 2) - $pm->Kilokalorien)) / @round($days_npes_cal[$day]['NPES'] * ($m / 100), 2)) * 150, 5));
-    									}
-                                        //}
-                                    }
-                                }
-                            }
-                        }
-    				}
-    				else if($meal_category == 2 && ($pm->preparation_time >= $time_con['lunch']))
-    				{
-    					$lunch_variance[$lunch_id]['meal_id']=$lunch_id;
-    					//$lunch_variance[$lunch_id]['variance'] = $sum;
-    					$lunch_variance[$lunch_id]['exchangble'] = $pm->exchangble;
+							if (!empty($plan_week)) {
+								foreach ($plan_week as $day => $day_value) {
+									if (!empty($meals_plan)) {
+										foreach ($meals_plan as $k => $m) {
+											//if(empty($breakfast_variance[$breakfast_id]['variance']) || !array_key_exists($m, $breakfast_variance[$breakfast_id]['variance'])) {
+											if($k=='dinner'){
+												$dinner_variance[$dinner_id]['variance'][$day][$m] = $sum + (@round(((abs(@round($days_npes_cal[$day]['NPES'] * ($m / 100), 2) - $pm->Kilokalorien)) / @round($days_npes_cal[$day]['NPES'] * ($m / 100), 2)) * 150, 5));
+											}
+											//}
+										}
+									}
+								}
+							}
+						}
+						else if($meal_category == 4 && ($pm->preparation_time >= $time_con['snack']))
+						{
+							$snack_variance[$snack_id]['meal_id']=$snack_id;
+							//$snack_variance[$snack_id]['variance'] = $sum;
+							$snack_variance[$snack_id]['exchangble'] = $pm->exchangble;
+							$snack_variance[$snack_id]['sweet_tooth'] = $pm->sweet_tooth;
+							$snack_variance[$snack_id]['csv_id'] = $pm->csv_id;
 
-                        if (!empty($plan_week)) {
-                            foreach ($plan_week as $day => $day_value) {
-                                if (!empty($meals_plan)) {
-                                    foreach ($meals_plan as $k => $m) {
-                                        //if(empty($breakfast_variance[$breakfast_id]['variance']) || !array_key_exists($m, $breakfast_variance[$breakfast_id]['variance'])) {
-                                        if($k=='lunch'){
-                                            $lunch_variance[$lunch_id]['variance'][$day][$m] = $sum + (@round(((abs(@round($days_npes_cal[$day]['NPES'] * ($m / 100), 2) - $pm->Kilokalorien)) / @round($days_npes_cal[$day]['NPES'] * ($m / 100), 2)) * 150, 5));
-    									}
-                                        //}
-                                    }
-                                }
-                            }
-                        }
-    				}
-    				else if($meal_category == 3 && ($pm->preparation_time >= $time_con['dinner']))
-    				{
-    					$dinner_variance[$dinner_id]['meal_id']=$dinner_id;
-    					//$dinner_variance[$dinner_id]['variance'] = $sum;
-    					$dinner_variance[$dinner_id]['exchangble'] = $pm->exchangble;
+							if (!empty($plan_week)) {
+								foreach ($plan_week as $day => $day_value) {
+									if (!empty($meals_plan)) {
+										foreach ($meals_plan as $k => $m) {
+											//if(empty($breakfast_variance[$breakfast_id]['variance']) || !array_key_exists($m, $breakfast_variance[$breakfast_id]['variance'])) {
+											if($k=='pre_dinner_snack'){
+												$snack_variance[$snack_id]['variance'][$day][$m] = $sum + (@round(((abs(@round($days_npes_cal[$day]['NPES'] * ($m / 100), 2) - $pm->Kilokalorien)) / @round($days_npes_cal[$day]['NPES'] * ($m / 100), 2)) * 150, 5));
+											 }
+											//}
+										}
+									}
+								}
+							}
+						}
+					}
+					else
+					{
+						if($meal_category == 1)
+						{	
 
-                        if (!empty($plan_week)) {
-                            foreach ($plan_week as $day => $day_value) {
-                                if (!empty($meals_plan)) {
-                                    foreach ($meals_plan as $k => $m) {
-                                        //if(empty($breakfast_variance[$breakfast_id]['variance']) || !array_key_exists($m, $breakfast_variance[$breakfast_id]['variance'])) {
-                                        if($k=='dinner'){
-                                            $dinner_variance[$dinner_id]['variance'][$day][$m] = $sum + (@round(((abs(@round($days_npes_cal[$day]['NPES'] * ($m / 100), 2) - $pm->Kilokalorien)) / @round($days_npes_cal[$day]['NPES'] * ($m / 100), 2)) * 150, 5));
-    									}
-                                        //}
-                                    }
-                                }
-                            }
-                        }
-    				}
-    				else if($meal_category == 4 && ($pm->preparation_time >= $time_con['snack']))
-    				{
-    					$snack_variance[$snack_id]['meal_id']=$snack_id;
-    					//$snack_variance[$snack_id]['variance'] = $sum;
-    					$snack_variance[$snack_id]['exchangble'] = $pm->exchangble;
+							$breakfast_variance[$breakfast_id]['meal_id']=$breakfast_id;
+							//$breakfast_variance[$breakfast_id]['variance'] = $sum;
+							$breakfast_variance[$breakfast_id]['exchangble'] = $pm->exchangble;
+							$breakfast_variance[$breakfast_id]['assign'] = 0;
+							$breakfast_variance[$breakfast_id]['sweet_tooth'] = $pm->sweet_tooth;
+							$breakfast_variance[$breakfast_id]['csv_id'] = $pm->csv_id;
 
-                        if (!empty($plan_week)) {
-                            foreach ($plan_week as $day => $day_value) {
-                                if (!empty($meals_plan)) {
-                                    foreach ($meals_plan as $k => $m) {
-                                        //if(empty($breakfast_variance[$breakfast_id]['variance']) || !array_key_exists($m, $breakfast_variance[$breakfast_id]['variance'])) {
-                                        if($k=='pre_dinner_snack'){
-                                            $snack_variance[$snack_id]['variance'][$day][$m] = $sum + (@round(((abs(@round($days_npes_cal[$day]['NPES'] * ($m / 100), 2) - $pm->Kilokalorien)) / @round($days_npes_cal[$day]['NPES'] * ($m / 100), 2)) * 150, 5));
-                                         }
-                                        //}
-                                    }
-                                }
-                            }
-                        }
-    				}
-    			}
-    			else
-    			{
-    				if($meal_category == 1)
-    				{
-    					$breakfast_variance[$breakfast_id]['meal_id']=$breakfast_id;
-    					//$breakfast_variance[$breakfast_id]['variance'] = $sum;
-    					$breakfast_variance[$breakfast_id]['exchangble'] = $pm->exchangble;
-    					$breakfast_variance[$breakfast_id]['assign'] = 0;
+							if (!empty($plan_week)) {
+								foreach ($plan_week as $day => $day_value) {
+									if (!empty($meals_plan)) {
+										foreach ($meals_plan as $k => $m) {
+											//if(empty($breakfast_variance[$breakfast_id]['variance']) || !array_key_exists($m, $breakfast_variance[$breakfast_id]['variance'])) {
+												if($k=='breakfast'){
+													$breakfast_variance[$breakfast_id]['variance'][$day][$m] = $sum + (@round(((abs(@round($days_npes_cal[$day]['NPES'] * ($m / 100), 2) - $pm->Kilokalorien)) / @round($days_npes_cal[$day]['NPES'] * ($m / 100), 2)) * 150, 5));
+												}
+											//}
+										}
+									}
+								}
+							}
+						}
+						else if($meal_category == 2)
+						{
+							$lunch_variance[$lunch_id]['meal_id']=$lunch_id;
+							//$lunch_variance[$lunch_id]['variance'] = $sum;
+							$lunch_variance[$lunch_id]['exchangble'] = $pm->exchangble;
+							$lunch_variance[$lunch_id]['sweet_tooth'] = $pm->sweet_tooth;
+							$lunch_variance[$lunch_id]['csv_id'] = $pm->csv_id;
+								
+							if (!empty($plan_week)) {
+								foreach ($plan_week as $day => $day_value) {
+									if (!empty($meals_plan)) {
+										foreach ($meals_plan as $k => $m) {
+											//if(empty($breakfast_variance[$breakfast_id]['variance']) || !array_key_exists($m, $breakfast_variance[$breakfast_id]['variance'])) {
+											if($k=='lunch'){
+												$lunch_variance[$lunch_id]['variance'][$day][$m] = $sum + (@round(((abs(@round($days_npes_cal[$day]['NPES'] * ($m / 100), 2) - $pm->Kilokalorien)) / @round($days_npes_cal[$day]['NPES'] * ($m / 100), 2)) * 150, 5));
+											}
+											//}
+										}
+									}
+								}
+							}
+						}
+						else if($meal_category == 3)
+						{
+							$dinner_variance[$dinner_id]['meal_id']=$dinner_id;
+							//$dinner_variance[$dinner_id]['variance'] = $sum;
+							$dinner_variance[$dinner_id]['exchangble'] = $pm->exchangble;
+							$dinner_variance[$dinner_id]['sweet_tooth'] = $pm->sweet_tooth;
+							$dinner_variance[$dinner_id]['csv_id'] = $pm->csv_id;
 
-                        if (!empty($plan_week)) {
-                            foreach ($plan_week as $day => $day_value) {
-                                if (!empty($meals_plan)) {
-                                    foreach ($meals_plan as $k => $m) {
-                                        //if(empty($breakfast_variance[$breakfast_id]['variance']) || !array_key_exists($m, $breakfast_variance[$breakfast_id]['variance'])) {
-    										if($k=='breakfast'){
-    											$breakfast_variance[$breakfast_id]['variance'][$day][$m] = $sum + (@round(((abs(@round($days_npes_cal[$day]['NPES'] * ($m / 100), 2) - $pm->Kilokalorien)) / @round($days_npes_cal[$day]['NPES'] * ($m / 100), 2)) * 150, 5));
-    										}
-                                        //}
-                                    }
-                                }
-                            }
-                        }
-    				}
-    				else if($meal_category == 2)
-    				{
-    					$lunch_variance[$lunch_id]['meal_id']=$lunch_id;
-    					//$lunch_variance[$lunch_id]['variance'] = $sum;
-    					$lunch_variance[$lunch_id]['exchangble'] = $pm->exchangble;
+							if (!empty($plan_week)) {
+								foreach ($plan_week as $day => $day_value) {
+									if (!empty($meals_plan)) {
+										foreach ($meals_plan as $k => $m) {
+											//if(empty($breakfast_variance[$breakfast_id]['variance']) || !array_key_exists($m, $breakfast_variance[$breakfast_id]['variance'])) {
+											if($k=='dinner'){
+												$dinner_variance[$dinner_id]['variance'][$day][$m] = $sum + (@round(((abs(@round($days_npes_cal[$day]['NPES'] * ($m / 100), 2) - $pm->Kilokalorien)) / @round($days_npes_cal[$day]['NPES'] * ($m / 100), 2)) * 150, 5));
+											}
+											//}
+										}
+									}
+								}
+							}
+						}
+						else if($meal_category == 4)
+						{
+							$snack_variance[$snack_id]['meal_id']=$snack_id;
+							//$snack_variance[$snack_id]['variance'] = $sum;
+							$snack_variance[$snack_id]['exchangble'] = $pm->exchangble;
+							$snack_variance[$snack_id]['sweet_tooth'] = $pm->sweet_tooth;
+							$snack_variance[$snack_id]['csv_id'] = $pm->csv_id;
 
-                        if (!empty($plan_week)) {
-                            foreach ($plan_week as $day => $day_value) {
-                                if (!empty($meals_plan)) {
-                                    foreach ($meals_plan as $k => $m) {
-                                        //if(empty($breakfast_variance[$breakfast_id]['variance']) || !array_key_exists($m, $breakfast_variance[$breakfast_id]['variance'])) {
-                                        if($k=='lunch'){
-                                            $lunch_variance[$lunch_id]['variance'][$day][$m] = $sum + (@round(((abs(@round($days_npes_cal[$day]['NPES'] * ($m / 100), 2) - $pm->Kilokalorien)) / @round($days_npes_cal[$day]['NPES'] * ($m / 100), 2)) * 150, 5));
-    									}
-                                        //}
-                                    }
-                                }
-                            }
-                        }
-    				}
-    				else if($meal_category == 3)
-    				{
-    					$dinner_variance[$dinner_id]['meal_id']=$dinner_id;
-    					//$dinner_variance[$dinner_id]['variance'] = $sum;
-    					$dinner_variance[$dinner_id]['exchangble'] = $pm->exchangble;
-
-                        if (!empty($plan_week)) {
-                            foreach ($plan_week as $day => $day_value) {
-                                if (!empty($meals_plan)) {
-                                    foreach ($meals_plan as $k => $m) {
-                                        //if(empty($breakfast_variance[$breakfast_id]['variance']) || !array_key_exists($m, $breakfast_variance[$breakfast_id]['variance'])) {
-                                        if($k=='dinner'){
-                                            $dinner_variance[$dinner_id]['variance'][$day][$m] = $sum + (@round(((abs(@round($days_npes_cal[$day]['NPES'] * ($m / 100), 2) - $pm->Kilokalorien)) / @round($days_npes_cal[$day]['NPES'] * ($m / 100), 2)) * 150, 5));
-    									}
-                                        //}
-                                    }
-                                }
-                            }
-                        }
-    				}
-    				else if($meal_category == 4)
-    				{
-    					$snack_variance[$snack_id]['meal_id']=$snack_id;
-    					//$snack_variance[$snack_id]['variance'] = $sum;
-    					$snack_variance[$snack_id]['exchangble'] = $pm->exchangble;
-
-                        if (!empty($plan_week)) {
-                            foreach ($plan_week as $day => $day_value) {
-                                if (!empty($meals_plan)) {
-                                    foreach ($meals_plan as $k => $m) {
-                                        //if(empty($breakfast_variance[$breakfast_id]['variance']) || !array_key_exists($m, $breakfast_variance[$breakfast_id]['variance'])) {
-                                        if($k=='pre_dinner_snack'){
-                                            $snack_variance[$snack_id]['variance'][$day][$m] = $sum + (@round(((abs(@round($days_npes_cal[$day]['NPES'] * ($m / 100), 2) - $pm->Kilokalorien)) / @round($days_npes_cal[$day]['NPES'] * ($m / 100), 2)) * 150, 5));
-    									}
-                                        //}
-                                    }
-                                }
-                            }
-                        }
-    				}
-    			}
-                $sum +=$kal;
+							if (!empty($plan_week)) {
+								foreach ($plan_week as $day => $day_value) {
+									if (!empty($meals_plan)) {
+										foreach ($meals_plan as $k => $m) {
+											//if(empty($breakfast_variance[$breakfast_id]['variance']) || !array_key_exists($m, $breakfast_variance[$breakfast_id]['variance'])) {
+											if($k=='pre_dinner_snack'){
+												$snack_variance[$snack_id]['variance'][$day][$m] = $sum + (@round(((abs(@round($days_npes_cal[$day]['NPES'] * ($m / 100), 2) - $pm->Kilokalorien)) / @round($days_npes_cal[$day]['NPES'] * ($m / 100), 2)) * 150, 5));
+											}
+											//}
+										}
+									}
+								}
+							}
+						}
+					}
+					 $sum +=$kal;
     			$html .='<tr><td>&nbsp;</td><td>' . $sum . '%</td></tr>';
     		}
     		if (end($meal_categories)) {
@@ -1897,16 +2380,16 @@ while($weeknum <= $period) {
     $pescetarian_fish_count = 0;
     $nospecial_meat_fish_count = 0;
    // echo "micro array:<pre>";print_r($micros_array);
-    $breakfast_meals = select_balance_meals($plan, $nutrition_type, $breakfast_variance, $micros_array, $meat_meals, $fish_meals, $meals_plan, $days_npes_cal, $ideal_protien, $ideal_fat, $ideal_carbo, 'breakfast', $weeknum, null,$fin_meals,$fin_meals_db, $final_meal_ids, $week_meal_ids, $pescetarian_fish_count, $nospecial_meat_fish_count);
+    $breakfast_meals = select_balance_meals($plan, $nutrition_type, $breakfast_variance, $micros_array, $meat_meals, $fish_meals, $meals_plan, $days_npes_cal, $ideal_protien, $ideal_fat, $ideal_carbo, 'breakfast', $weeknum, null,$fin_meals,$fin_meals_db, $final_meal_ids, $week_meal_ids, $pescetarian_fish_count, $nospecial_meat_fish_count,$sweet_tooth);
 	//echo "break fast meals:<pre>";print_r($breakfast_meals);
 	
-    $lunch_meals = select_balance_meals($plan, $nutrition_type, $lunch_variance, $micros_array, $meat_meals, $fish_meals, $meals_plan, $days_npes_cal, $ideal_protien, $ideal_fat, $ideal_carbo, 'lunch', $weeknum, $breakfast_meals,$fin_meals,$fin_meals_db, $final_meal_ids, $week_meal_ids, $pescetarian_fish_count, $nospecial_meat_fish_count);
+    $lunch_meals = select_balance_meals($plan, $nutrition_type, $lunch_variance, $micros_array, $meat_meals, $fish_meals, $meals_plan, $days_npes_cal, $ideal_protien, $ideal_fat, $ideal_carbo, 'lunch', $weeknum, $breakfast_meals,$fin_meals,$fin_meals_db, $final_meal_ids, $week_meal_ids, $pescetarian_fish_count, $nospecial_meat_fish_count,$sweet_tooth);
 
 
-    $dinner_meals = select_balance_meals($plan, $nutrition_type, $dinner_variance, $micros_array, $meat_meals, $fish_meals, $meals_plan, $days_npes_cal, $ideal_protien, $ideal_fat, $ideal_carbo, 'dinner', $weeknum, $lunch_meals,$fin_meals,$fin_meals_db, $final_meal_ids, $week_meal_ids, $pescetarian_fish_count, $nospecial_meat_fish_count);
-    $pre_dinner_snack_meals = select_balance_meals($plan, $nutrition_type, $snack_variance, $micros_array, $meat_meals, $fish_meals, $meals_plan, $days_npes_cal, $ideal_protien, $ideal_fat, $ideal_carbo, 'pre_dinner_snack', $weeknum, $dinner_meals,$fin_meals,$fin_meals_db, $final_meal_ids, $week_meal_ids, $pescetarian_fish_count, $nospecial_meat_fish_count);
+    $dinner_meals = select_balance_meals($plan, $nutrition_type, $dinner_variance, $micros_array, $meat_meals, $fish_meals, $meals_plan, $days_npes_cal, $ideal_protien, $ideal_fat, $ideal_carbo, 'dinner', $weeknum, $lunch_meals,$fin_meals,$fin_meals_db, $final_meal_ids, $week_meal_ids, $pescetarian_fish_count, $nospecial_meat_fish_count,$sweet_tooth);
+    $pre_dinner_snack_meals = select_balance_meals($plan, $nutrition_type, $snack_variance, $micros_array, $meat_meals, $fish_meals, $meals_plan, $days_npes_cal, $ideal_protien, $ideal_fat, $ideal_carbo, 'pre_dinner_snack', $weeknum, $dinner_meals,$fin_meals,$fin_meals_db, $final_meal_ids, $week_meal_ids, $pescetarian_fish_count, $nospecial_meat_fish_count,$sweet_tooth);
     if ($sweet_tooth == 'yes') {
-        $pre_lunch_snack_meals = select_balance_meals($plan, $nutrition_type, $snack_variance, $micros_array, $meat_meals, $fish_meals, $meals_plan, $days_npes_cal, $ideal_protien, $ideal_fat, $ideal_carbo, 'pre_lunch_snack', $weeknum, $pre_dinner_snack_meals,$fin_meals,$fin_meals_db,$final_meal_ids, $week_meal_ids, $pescetarian_fish_count, $nospecial_meat_fish_count);
+        $pre_lunch_snack_meals = select_balance_meals($plan, $nutrition_type, $snack_variance, $micros_array, $meat_meals, $fish_meals, $meals_plan, $days_npes_cal, $ideal_protien, $ideal_fat, $ideal_carbo, 'pre_lunch_snack', $weeknum, $pre_dinner_snack_meals,$fin_meals,$fin_meals_db,$final_meal_ids, $week_meal_ids, $pescetarian_fish_count, $nospecial_meat_fish_count,$sweet_tooth);
     }
 
     /*if($weeknum == 1) {

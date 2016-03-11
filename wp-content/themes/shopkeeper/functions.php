@@ -286,7 +286,7 @@ function shopkeeper_styles() {
 
 	wp_enqueue_style('shopkeeper-foundation-app', get_template_directory_uri() . '/css/app.css', array(), '5.3.1', 'all' );		
 	
-	wp_enqueue_style('shopkeeper-animate', get_template_directory_uri() . '/css/animate.css', array(), '2.0', 'all' );
+//	wp_enqueue_style('shopkeeper-animate', get_template_directory_uri() . '/css/animate.css', array(), '2.0', 'all' );
 	
 	wp_enqueue_style('shopkeeper-font-awesome', get_template_directory_uri() . '/inc/fonts/font-awesome/css/font-awesome.min.css', array(), '4.0.3', 'all' );
 	wp_enqueue_style('shopkeeper-font-linea-arrows', get_template_directory_uri() . '/inc/fonts/linea-fonts/arrows/styles.css', array(), '1.0', 'all' );

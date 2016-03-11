@@ -10,15 +10,15 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
-
+$action='&order_action=processing_order';
 $order_id=$order->id;
- do_action('woocommerce_email_header', $email_heading,$order_id); ?>
+ do_action('woocommerce_email_header', $email_heading,$order_id.$action); ?>
 
 <p style="font-size:16px;color:#96a7b0; line-height: 28px;margin:0px 0px 20px 0px;"><?php _e( "Deine Bestellung ist bei uns eingegangen und wird nun bearbeitet. Deine Bestelldetails werden unten zur Kontrolle angezeigt:", 'woocommerce' ); ?></p>
 <?php
 if (get_post_meta($order->id, '_payment_method', true) == 'bacs') {
 	$bacs = new WC_Gateway_BACS(); ?>
-<p style="font-size:16px;color:#96a7b0;line-height: 28px;margin:20px 0px 40px;"><?php _e( "Überweise direkt an unsere Bankverbindung. Bitte nutze die Bestellnummer als Verwendungszweck. Deine Bestellung wird direkt nach Geldeingang auf unserem Konto versandt.", 'woocommerce' ); ?></p>
+<p class="marging_remove_leftright marging_bottom_add" style="font-size:16px;color:#96a7b0;line-height: 28px;margin:20px 0px 40px;"><?php _e( "Überweise direkt an unsere Bankverbindung. Bitte nutze die Bestellnummer als Verwendungszweck. Deine Bestellung wird direkt nach Geldeingang auf unserem Konto versandt.", 'woocommerce' ); ?></p>
 <?php
 // do_action( 'woocommerce_email_before_order_table', $order, $sent_to_admin, $plain_text ); ?>
 
@@ -27,7 +27,7 @@ if (get_post_meta($order->id, '_payment_method', true) == 'bacs') {
 <div class="row">
 	<div class="xlarge-12 xlarge-centered large-8 large-centered columns">
 
-		<ul class="no-margin no-padding no-padding-left" style="list-style:none;">
+		<ul class="no-margin no-padding no-padding-left remove_marginleft" style="list-style:none;">
 			<li style="margin:0 !important;line-height:26px">
 				<label class="pull-left green-text text-light" style="font-family:arial,​sans-serif">Kontoinhaber:</label>
 				<strong class="pull-left green-text text-light" style="font-family:arial,​sans-serif"><?php echo $bacs->account_details[0]['account_name']; ?></strong>
@@ -53,12 +53,12 @@ else{
 ?>
 <h2 style="color:#162c5d; font-size:24px;line-height: 24px; border-bottom:10px solid #fff; margin:0 auto;font-weight: normal;"><?php printf( __( ' Bestellnummer: %s', 'woocommerce' ), $order->get_order_number() ); ?></h2>
      <?php }?>                  
-<table cellspacing="0" cellpadding="0" style="width:100%;border:1px solid #BDC9CC;width:100%;color:#96a7b0;font-family:Helvetica, Arial;" >
+<table class="email_box_border" cellspacing="0" cellpadding="0" style="width:100%;border:1px solid #BDC9CC; width:100%;color:#96a7b0;font-family:Helvetica, Arial;" >
 	<thead>
 		<tr>
-			<th scope="col" style="text-align:left;color:#162c5d; font-size:16px;line-height: 16px; font-weight: normal; background-color:#EDEDED;padding:0 0px 0 30px;height:72px;border-right:1px solid #BDC9CC;border-bottom:1px solid #BDC9CC;font-family:Helvetica, Arial; "><?php _e( 'Produkt', 'woocommerce' ); ?></th>
-			<th scope="col" style="text-align:left;color:#162c5d; font-size:16px;line-height: 16px; font-weight: normal; background-color:#EDEDED;padding:0 0px 0 30px;height:72px;border-right:1px solid #BDC9CC;border-bottom:1px solid #BDC9CC;font-family:Helvetica, Arial; "><?php _e( 'Anzahl', 'woocommerce' ); ?></th>
-			<th scope="col" style="text-align:right;color:#162c5d; font-size:16px;line-height: 16px; font-weight: normal; background-color:#EDEDED;padding:0 30px 0 0px;;height:72px;border-bottom:1px solid #BDC9CC;font-family:Helvetica, Arial; "><?php _e( 'Preis', 'woocommerce' ); ?></th>
+			<th scope="col" style="text-align:left;color:#162c5d; font-size:16px;line-height: 16px; font-weight: normal; background-color:#EDEDED;padding:0 0 0 30px;border-bottom:1px solid #BDC9CC; border-right:1px solid #BDC9CC; font-family:Helvetica, Arial; height:72px;"><?php _e( 'Produkt', 'woocommerce' ); ?></th>
+			<th scope="col" style="text-align:left;color:#162c5d; font-size:16px;line-height: 16px; font-weight: normal; background-color:#EDEDED;padding:0 0 0 30px; border-right:1px solid #BDC9CC; font-family:Helvetica, Arial; border-bottom:1px solid #BDC9CC; height:72px;"><?php _e( 'Anzahl', 'woocommerce' ); ?></th>
+			<th scope="col" style="text-align:right;color:#162c5d; font-size:16px;line-height: 16px; font-weight: normal; background-color:#EDEDED;padding:0 30px 0 0px;height:72px; border-bottom:1px solid #BDC9CC;font-family:Helvetica, Arial; "><?php _e( 'Preis', 'woocommerce' ); ?></th>
 		</tr>
 	</thead>
 	<tbody>
@@ -97,7 +97,7 @@ else{
 			
 			}
 			if(isset($tax_array['tax_rate']['tax']->rate))
-				$tax_label='<span  class="inc-tax" style="color:#96a7b0;">(inkl.&nbsp;'.$tax_array['tax_rate']['tax']->rate.'&nbsp;'.$tax_array['tax_rate']['tax']->label.')</span>';;
+				$tax_label='<span  class="inc-tax" style="color:#96a7b0;">(inkl.&nbsp;'.$tax_array['tax_rate']['tax']->rate.'&nbsp;'.$tax_array['tax_rate']['tax']->label.')</span>';
 		
 		foreach($order->get_order_item_totals() as $key => $value){
 			$exp_key = explode('_', $key);

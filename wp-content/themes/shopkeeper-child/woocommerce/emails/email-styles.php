@@ -25,6 +25,18 @@ $text_lighter_20 = wc_hex_lighter( $text, 20 );
 // !important; is a gmail hack to prevent styles being stripped if it doesn't like something.
 ?>
 .left_right_border { margin-right: 40px; margin-left: 40px; }
+.logo_pdf_top { margin:0 0 0 40px;}
+h2.border_bottom_sub { border-top:1px solid #bdc9cc; padding:40px 0px;}
+.marging_remove_leftright { margin:20px 0px 40px;}
+.no-padding-left li label.pull-left.green-text.text-light { color:#8d9da5;}
+.remove_marginleft { margin-left:0;}
+table.email_box_border { border:1px solid #BDC9CC;}
+.padding_left_odlist { padding-left:30px;} 
+.padding_bottom_add { padding-bottom:40px;}
+.email_box_border th, .email_box_border td { border-color:#BDC9CC; }
+.border_bottom_add { border-bottom:1px solid #BDC9CC;}
+.email_box_border th.padding_left_odlist.border-bottom { border-style:solid; border-width:0 1px 1px 0;}
+.marging_bottom_add { margin-bottom:40px;}
 
 #wrapper {
     background-color: <?php echo esc_attr( $bg ); ?>;

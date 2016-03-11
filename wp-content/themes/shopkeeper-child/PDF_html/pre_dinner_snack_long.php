@@ -19,7 +19,7 @@
 		$f_ids[]=$bi['f_id'];
 	}
 	//print_r($f_ids);
-	$pre_dinner_snack_order_meals=$wpdb->get_results( 'select * from up_order_meals where order_id='.$order_id.' AND meal_id='.$pre_dinner_snack[0],ARRAY_A);
+	$pre_dinner_snack_order_meals=$wpdb->get_results( 'select * from up_order_meals where order_id='.$order_id.' AND meal_id='.$pre_dinner_snack[0].' AND site_id='.$site_id,ARRAY_A);
 	$pre_dinner_snack_final_ingredients=explode(',',$pre_dinner_snack_order_meals[0]['ingredient_ids']);
 	
 	if($pre_dinner_snack_order_meals[0]['exchangble']==1){
@@ -40,7 +40,7 @@
 	$fisch_meals2 = $wpdb->get_results('call meat_and_fish_meals("' . $pre_dinner_snack[0] . '","Schalentiere")', OBJECT_K);
 	foreach($meat_meals2 as $k=>$v){
 		foreach($v as $v1=>$v2){
-			if($v2=='Fleischwaren & Wurstwaren');
+			if($v1 == 'Fleischwaren & Wurstwaren');
 				$meat_meals3['fleischwaren']=$v2;
 			}
 	}	
@@ -104,9 +104,10 @@
    <div style="border-bottom:0.0315em solid #bec8cc; text-align:left; margin-bottom:4px; padding-bottom:10.2px;"> 
 	  <table class="p4-listingingredients" width="100%" cellspacing="0" cellpadding="0" border="0" style="border:0;outline:none; padding-bottom:5px;">
 		<?php 
-		$prise_ar=array();
-		unset($prise_ar);
-		$e=0;
+		$c=$e=0;
+				unset($prise_ar);
+				$prise_ar=array();
+				$prise_ing='';
 		foreach($pre_dinner_snack_ingredients as $ing){ 
 			$unit=$wpdb->get_results('select unit_symbol from up_units where id='.$ing['unit_id']);
 			if(!in_array($ing['f_id'],$pre_dinner_snack_final_ingredients)){
@@ -120,7 +121,7 @@
 			else{
 				$ing_name= $ing['name'];
 			}
-		if(isset($ing_name)){
+		if(isset($ing_name) && !empty($ing_name)){
 		?>
 			<tr>				
 				<?php

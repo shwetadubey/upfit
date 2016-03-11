@@ -30,7 +30,7 @@ ini_set('memory_limit', '-1');
 ini_set("display_errors", "1");
   error_reporting(E_ALL);
 //ini_set("max_file_uploads","20480");
-
+//define( 'SCRIPT_DEBUG', true );
 define( 'DIEONDBERROR', true );
 error_reporting(E_ALL);
 

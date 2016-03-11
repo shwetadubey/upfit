@@ -30,7 +30,7 @@ function plan_period()
     wp_nonce_field( 'plan_period_nonce', 'meta_box_nonce' );
     ?>
    <label>Period of Plan</label>
-     <input type="number" name="plan_period" required value="<?php echo $v; ?>" step="integer" min="1"/>
+    <input type="number" name="plan_period" required value="<?php echo $v; ?>" step="integer" min="1"/>
    
     <?php        
 }
@@ -462,6 +462,7 @@ function nutrition_details()
       jQuery.ajax({
               url: "<?php echo admin_url('admin-ajax.php'); ?>",
               type: 'POST',
+              cache: false,
               data: "action=regenerate_pdf_plan&order_id=" + order  ,
               beforeSend: function () {
                                 //console.log('sending');
@@ -588,13 +589,15 @@ function nutrition_details()
 					$nuts[]=$nuts_ar[$nt];
 				}
 			}
-				$nuts1=implode(',',$nuts);
+			$nuts1=implode(',',$nuts);
 		}
+		//echo '<pre>';
+		//print_r($order_custom_data);
 	//----------Sweet Tooth--------------//
 	$sweet_tooth_ar=array('yes'=>'Ja','sometime'=>'Manchmal','no'=>'Nein');
 	//---------------is_time_to_cook--------------//
 	$time_to_cook_ar=array('little'=>'Wenig (< 45 min)','Normal'=>'Normal (45-60 min)','much'=>'Viel (> 60 min)');
-	$where_food_buy_ar=array('cheap'=>'Preiswert','Normal'=>'Normal','much'=>'Premium');
+	$where_food_buy_ar=array('cheap'=>'Preiswert','Normal'=>'Normal','Premium'=>'Premium');
 	$most_buy_ar=array('price'=>'Preis','quality'=>'Qualität','both'=>'Beides');
 	
 ?>
@@ -714,7 +717,7 @@ function nutrition_details()
 				<td>Plan Name</td>
 				<td><?php echo $items[0]['name']; ?></td>
 			</tr>
-			<?php if(!empty($regenerate_plan)){?>
+			<?php //if(!empty($regenerate_plan)){?>
 			<tr>
 				<td>Regenerate pdf</td>
 				<td>
@@ -722,7 +725,7 @@ function nutrition_details()
 					<div class="loader"></div>
 				</td>
 			</tr>
-			<?php }?>
+			<?php// }?>
 			  
 		</tbody>
 	</table>
@@ -807,7 +810,7 @@ function downloadable_pdf_plan(){
 					 },
 				complete:function(data){
 						console.log(data);
-						  location.reload();
+						location.reload();
 					}
 				});
 		})

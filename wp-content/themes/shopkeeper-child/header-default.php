@@ -158,12 +158,7 @@
                         ));
                     ?>           
                 </nav><!-- .main-navigation -->
-                
-                <div class="punch_line"><p>Dein ma&#223;geschneiderter Ern&#228;hrungsplan</p></div>
-				<div class="iosmarker">
-					<img src="<?php echo get_template_directory_uri() ?>/images/side_logo.png" alt=""/>
-				</div>
-                             
+                    
             </div><!--.site-header-wrapper-->
         
     <?php if ( (isset($shopkeeper_theme_options['header_width'])) && ($shopkeeper_theme_options['header_width'] == "custom") ) : ?>

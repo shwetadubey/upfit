@@ -1,22 +1,48 @@
 jQuery('.nutrition_type:eq(0)').removeProp('checked');
-
+console.log(localStorage.getItem("UpfitUserData"));
 /*--------------------Read localstorage data-------------*/
 //console.log(localStorage.getItem("UpfitUserData"))
-readlocal();
-readHome();
-$act=50;
 function get_sec1_values_ByName(name) {
+	//console.log(name);
     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
     var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-    
-        results = regex.exec(location.search);
-        
+    results = regex.exec(location.search);
     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
-function readlocal(){
 
-	var current_weight = localStorage.getItem("myvalcheck");
-	var desired_weight = localStorage.getItem("myvalcheck_sec");
+if(navigator.cookieEnabled){
+	readlocal();
+	readHome();
+}
+else{
+	var current_weight =get_sec1_values_ByName("current_weight");
+	var desired_weight=get_sec1_values_ByName('desired_weight');
+	//console.log(current_weight);
+	if(jQuery.trim(current_weight)){		
+		jQuery('#myvalcheck').val(current_weight);
+	}
+	if(jQuery.trim(desired_weight)){
+		jQuery('#myvalcheck_sec').val(desired_weight);
+	}
+	if(jQuery('#myvalcheck').val() && 	jQuery('#myvalcheck_sec').val())
+	{
+		jQuery('.page-nav li:first-child').addClass('done');
+		jQuery("html, body").animate({
+				scrollTop: jQuery('#section-2').offset().top
+		}, 500);
+	}
+	var url1=window.location.href.split('?');
+	window.history.pushState("", "", url1[0]);
+
+	//window.location.href.replace=url1[0];
+}
+$act=50;
+
+function readlocal(){
+	if(navigator.cookieEnabled){
+		var current_weight = localStorage.getItem("myvalcheck");
+		var desired_weight = localStorage.getItem("myvalcheck_sec");
+	}
 	
 	if(jQuery.trim(current_weight) !== ''){
 		
@@ -189,17 +215,15 @@ if(err_msg===undefined || err_msg.length<2 )
 "Du bekommst zudem noch eine Email mit dem Download-Link, so dass Du jederzeit Zugriff auf Deinen ErnÃ¤hrungsplan hast." ];
 
 }
-else{
 
-}
 /*--------Remove place holder text-----------*/
 jQuery('input[placeholder]').on('focus',function(){
-var $this = jQuery(this);
-$this.data('placeholder',$this.prop('placeholder'));
-$this.removeAttr('placeholder')
-}).on('blur',function(){
-var $this = jQuery(this);
-$this.prop('placeholder',$this.data('placeholder'));
+	var $this = jQuery(this);
+	$this.data('placeholder',$this.prop('placeholder'));
+	$this.removeAttr('placeholder')
+	}).on('blur',function(){
+	var $this = jQuery(this);
+	$this.prop('placeholder',$this.data('placeholder'));
 });
 /*--------End Remove place holder text-----------*/
 
@@ -227,7 +251,7 @@ var k=0;
 jQuery('label.toggle-btn').one('touchend', function(e) {
         e.preventDefault();
       jQuery(this).children('input[type="radio"]').click();
-    });
+});
 /*jQuery(document).on('click','.toggle-btn',function(){
 	jQuery(this).children('input[type="radio"]').click();
 });*/
@@ -244,23 +268,19 @@ jQuery( ".tooltip" ).tooltip({	position: {
 	}
 }});
 
-jQuery(window).resize(function(){
-
-
-})
 
 /*-----------------------------TRACKER------------------*/
-var tooltip = $('<div id="tooltip" class="drtooltip " />').css({
-    position: 'absolute',
-    top: -25,
-    left: -10
-}).hide();
-if(jQuery(window).width()<767){
-    		$b='<br><br>';
-    	}
-    	else{
-    		$b='<br>';
-    	}
+	var tooltip = $('<div id="tooltip" class="drtooltip " />').css({
+		position: 'absolute',
+		top: -25,
+		left: -10
+	}).hide();
+	if(jQuery(window).width()<767){
+		$b='<br><br>';
+	}
+	else{
+		$b='<br>';
+}
 var tooltipmb=$('<div  id="tooltipbm" />').css({ position: 'absolute',top: -25,left: -10}).hide();
 $("#slider").slider({
     value: $act,
@@ -531,6 +551,7 @@ function show_error_height(){
 	jQuery('.error_height').empty().append(st);
 	jQuery('#height').parents('li').addClass('error_color');
 	errors=true;
+	//alert(errors);
 };
 
 function hide_error_height(){
@@ -809,19 +830,22 @@ function savedatacookie(){
 							where_food_buy:jQuery('input[name=q3]:checked').val(),
 							most_buy:jQuery('input[name=q4]:checked').val()
 						}
-
+						console.log(allergies);
 						$.removeCookie('UpfitUserData');
 						$.cookie('UpfitUserData',JSON.stringify(user_data),{ expires: 1 })
 						localStorage.setItem("UpfitUserData",$.cookie("UpfitUserData"));
 
 					//Object.defineProperty(document, "cookie", { get: function() { return "UpfitUserData="+JSON.stringify(user_data) } });
-		} catch (er) {
-			}
+		}
+		catch(er){
+		}
 }
 jQuery(window).bind('beforeunload', function(e){
-	localStorage.removeItem('myvalcheck');
-	localStorage.removeItem('myvalcheck_sec');
-   savedatacookie();
+	if(navigator.cookieEnabled){
+		localStorage.removeItem('myvalcheck');
+		localStorage.removeItem('myvalcheck_sec');
+		savedatacookie();
+	}
 });
 jQuery(function() {
 	
@@ -840,10 +864,8 @@ jQuery(function() {
 			}
 		}
 		else{
-
 			t=ex;
 		}
-		
 		var user_data={	
 						cur_weight:jQuery.trim(jQuery('#myvalcheck').val()),
 						desired_weight:jQuery.trim(jQuery('#myvalcheck_sec').val()),
@@ -861,15 +883,17 @@ jQuery(function() {
 						where_food_buy:jQuery('input[name=q3]:checked').val(),
 						most_buy:jQuery('input[name=q4]:checked').val()
 					}
-				 	
-
-					$.removeCookie('UpfitUserData');
-					$.cookie('UpfitUserData',JSON.stringify(user_data),{ expires: 1 })
-					Object.defineProperty(document, "cookie", { get: function() { return "UpfitUserData="+JSON.stringify(user_data) } });
-				//	window.testValue = $.cookie("UpfitUserData");
-				//	console.log($.cookie("UpfitUserData"));
-				 	localStorage.setItem("UpfitUserData", $.cookie("UpfitUserData"));
-//return;
+				 	console.log('here'+allergies);
+					if(navigator.cookieEnabled){
+						$.removeCookie('UpfitUserData');
+						$.cookie('UpfitUserData',JSON.stringify(user_data),{ expires: 1 })
+						Object.defineProperty(document, "cookie", { get: function() { return "UpfitUserData="+JSON.stringify(user_data) } });
+					//	window.testValue = $.cookie("UpfitUserData");
+					//	console.log($.cookie("UpfitUserData"));
+					localStorage.removeItem("UpfitUserData");
+						localStorage.setItem("UpfitUserData", $.cookie("UpfitUserData"));
+					//return;
+					}	
 					window.location.assign(url);
 					window.ok = true;
 					
@@ -944,6 +968,7 @@ jQuery(function() {
 			if($userData.nutrition_type!=''){
 				var ntts=$userData.nutrition_type;
 				var ntts_name=ntts.split(',');
+				
 				for(var i=0;i<countProperties(ntts_name);i++){
 					jQuery('input[value='+ntts_name[i]+']').attr('checked','checked');
 					
@@ -961,8 +986,9 @@ jQuery(function() {
 		}
 		
 	}
-setdata();
-
+if(navigator.cookieEnabled){
+	setdata();
+}
 	
 	
 	jQuery('ul.page-nav li').click(function(){
@@ -1013,7 +1039,6 @@ setdata();
 				
 			}
 		}
-		
 		
 	});
 });
@@ -1205,46 +1230,46 @@ var meal_error="";
 function checkout_tooltip(){
 	if((jQuery('.error_color').length===jQuery('.diet_error').length) && jQuery('.diet_error').length===0){
 	//alert('1');
-	jQuery('body').append('<div class="loader_plan"><div></div> </div>');
-	$c_cur_weight=jQuery.trim(jQuery('#myvalcheck').val());
-	$c_desired_weight=jQuery.trim(jQuery('#myvalcheck_sec').val());
-	$c_gender=jQuery('input[name=group3]:checked').val();
-	$c_age=jQuery.trim(jQuery('#age').val());
-	$c_height=jQuery.trim(jQuery('#height').val());
-	$c_daily_activity=jQuery('#slider').slider("option", "value");
+		jQuery('body').append('<div class="loader_plan"><div></div> </div>');
+		$c_cur_weight=jQuery.trim(jQuery('#myvalcheck').val());
+		$c_desired_weight=jQuery.trim(jQuery('#myvalcheck_sec').val());
+		$c_gender=jQuery('input[name=group3]:checked').val();
+		$c_age=jQuery.trim(jQuery('#age').val());
+		$c_height=jQuery.trim(jQuery('#height').val());
+		$c_daily_activity=jQuery('#slider').slider("option", "value");
 
-	$c_cur_weight = parseInt($c_cur_weight.replace(',', '.'));
-	$c_desired_weight = parseInt($c_desired_weight.replace(',', '.'));
-	$activity_level=jQuery('#slider').slider("option", "value");
-	$PAL = 1.20; //Resting Metabolic Rate
-	if ($activity_level >= 0 && $activity_level <= 19.99) {
-	        $PAL = 1.20;
-	} else if ($activity_level >= 20 && $activity_level <= 39.99) {
-	        $PAL = 1.45;
-	} else if ($activity_level >= 40 && $activity_level <= 59.99) {
-	        $PAL = 1.65;
-	} else if ($activity_level >= 60 && $activity_level <= 69.99) {
-	        $PAL = 1.85;
-	} else if ($activity_level >= 80 && $activity_level <= 89.99) {
-	        $PAL = 2.15;
-	} else if ($activity_level >= 90 && $activity_level <= 100) {
-	        $PAL = 2.35;
-	}
-	ex=jQuery("#exclude").select2('val'); 
-	nutrition_type=jQuery("input[class=nutrition_type]:checked").map(function(){ return this.value;}).get().join(",");
-	allergies=jQuery("input[class=allergies]:checked").map(function(){ return this.value;}).get().join(",");
-	nuts=jQuery("input[name=nuts]:checked").map(function(){ return this.value;}).get().join(",");
-	fruit=jQuery("input[name=fruit]:checked").map(function(){ return this.value;}).get().join(",");
-	preparation_time=jQuery('input[name=q2]:checked').val();
-	
-	exclude=ex.join(",");
-	//alert(ajaxurl);
-	jQuery.ajax({
-			  url: ajaxurl,
+		$c_cur_weight = parseInt($c_cur_weight.replace(',', '.'));
+		$c_desired_weight = parseInt($c_desired_weight.replace(',', '.'));
+		$activity_level=jQuery('#slider').slider("option", "value");
+		$PAL = 1.20; //Resting Metabolic Rate
+		if ($activity_level >= 0 && $activity_level <= 19.99) {
+				$PAL = 1.20;
+		} else if ($activity_level >= 20 && $activity_level <= 39.99) {
+				$PAL = 1.45;
+		} else if ($activity_level >= 40 && $activity_level <= 59.99) {
+				$PAL = 1.65;
+		} else if ($activity_level >= 60 && $activity_level <= 69.99) {
+				$PAL = 1.85;
+		} else if ($activity_level >= 80 && $activity_level <= 89.99) {
+				$PAL = 2.15;
+		} else if ($activity_level >= 90 && $activity_level <= 100) {
+				$PAL = 2.35;
+		}
+		ex=jQuery("#exclude").select2('val'); 
+		nutrition_type=jQuery("input[class=nutrition_type]:checked").map(function(){ return this.value;}).get().join(",");
+		allergies=jQuery("input[class=allergies]:checked").map(function(){ return this.value;}).get().join(",");
+		nuts=jQuery("input[name=nuts]:checked").map(function(){ return this.value;}).get().join(",");
+		fruit=jQuery("input[name=fruit]:checked").map(function(){ return this.value;}).get().join(",");
+		preparation_time=jQuery('input[name=q2]:checked').val();
+		
+		exclude=ex.join(",");
+		//alert(ajaxurl);
+		jQuery.ajax({
+				url: ajaxurl,
               //url: shopkeeper_ajaxurl,
-              type: 'POST',
-			  async: false,
-              data: "action=check_plan_validation&nutrition_type=" + nutrition_type+"&allergies=" + allergies +"&nuts=" + nuts+"&fruit="+ fruit+"&exclude="+ exclude+"&preparation_time="+preparation_time
+				type: 'POST',
+				async: false,
+				data: "action=check_plan_validation&nutrition_type=" + nutrition_type+"&allergies=" + allergies +"&nuts=" + nuts+"&fruit="+ fruit+"&exclude="+ exclude+"&preparation_time="+preparation_time
 			}).done(function(res){
 				console.log(parseInt(res));
 			//	console.log(parseInt(res) < 56);
@@ -1295,9 +1320,7 @@ function checkout_tooltip(){
 						var tooltiphtml="";
 						if(jQuery(window).width()>979){
 							
-							
-								
-								jQuery('.pricing_table').append('<div class="plan_tool_tip '+datap+'"><span class="plan_arrow "></span><div class="tool_cnt"><span>'+err_msg[43]+'<span></div><div class="tool_btn blue_hover"><a class="accept_plan" data-id='+planid+' href="javascript:void(0)">Ok, Los geht\'s <i class="vc_btn3-icon fa fa-angle-right"></i></a></div></div>');	
+							jQuery('.pricing_table').append('<div class="plan_tool_tip '+datap+'"><span class="plan_arrow "></span><div class="tool_cnt"><span>'+err_msg[43]+'<span></div><div class="tool_btn blue_hover"><a class="accept_plan" data-id='+planid+' href="javascript:void(0)">Ok, Los geht\'s <i class="vc_btn3-icon fa fa-angle-right"></i></a></div></div>');	
 							
 							
 						}
@@ -1305,11 +1328,11 @@ function checkout_tooltip(){
 							if(datap==="plan_1" || datap==="plan_2"){
 								errors=true;
 								
-									jQuery('div.price_table[datap="plan_2"]').parents('.price_table_wrapper ').after('<div class="plan_tool_tip '+datap+'"><span class="plan_arrow "></span><div class="tool_cnt"><span>'+err_msg[43]+'<span></div><div class="tool_btn blue_hover"><a class="accept_plan" data-id='+planid+' href="javascript:void(0)">Ok, Los geht\'s <i class="vc_btn3-icon fa fa-angle-right"></i></a></div></div>');
+								jQuery('div.price_table[datap="plan_2"]').parents('.price_table_wrapper ').after('<div class="plan_tool_tip '+datap+'"><span class="plan_arrow "></span><div class="tool_cnt"><span>'+err_msg[43]+'<span></div><div class="tool_btn blue_hover"><a class="accept_plan" data-id='+planid+' href="javascript:void(0)">Ok, Los geht\'s <i class="vc_btn3-icon fa fa-angle-right"></i></a></div></div>');
 								
 							}else{
 								
-									jQuery('div.price_table[datap="plan_4"]').parents('.price_table_wrapper ').after('<div class="plan_tool_tip '+datap+'"><span class="plan_arrow "></span><div class="tool_cnt"><span>'+err_msg[43]+'<span></div><div class="tool_btn blue_hover"><a class="accept_plan" data-id='+planid+' href="javascript:void(0)">Ok, Los geht\'s <i class="vc_btn3-icon fa fa-angle-right"></i></a></div></div>');
+								jQuery('div.price_table[datap="plan_4"]').parents('.price_table_wrapper ').after('<div class="plan_tool_tip '+datap+'"><span class="plan_arrow "></span><div class="tool_cnt"><span>'+err_msg[43]+'<span></div><div class="tool_btn blue_hover"><a class="accept_plan" data-id='+planid+' href="javascript:void(0)">Ok, Los geht\'s <i class="vc_btn3-icon fa fa-angle-right"></i></a></div></div>');
 								
 							}
 							errors=true;
@@ -1327,52 +1350,48 @@ function checkout_tooltip(){
 					}
 					else{
 						errors=false;
-					redirects_checkout();
+						redirects_checkout();
 					}
 				}
 				else{
 					jQuery('.plan_tool_tip').remove();
-						jQuery('.pricing_table').addClass('active');
+					jQuery('.pricing_table').addClass('active');
 					if(jQuery(window).width()>979){
 							
-							
-								jQuery('.pricing_table').append('<div class="plan_tool_tip '+datap+' tool"><span class="plan_arrow "></span><div class="tool_cnt tool_fullwidth"><span>'+meal_error+'<span></div></div>');	
+						jQuery('.pricing_table').append('<div class="plan_tool_tip '+datap+' tool"><span class="plan_arrow "></span><div class="tool_cnt tool_fullwidth"><span>'+meal_error+'<span></div></div>');	
 
-						}
-						else if(jQuery(window).width()<979 && jQuery(window).width()>640){
-							if(datap==="plan_1" || datap==="plan_2"){
-								errors=true;
-								
-									jQuery('div.price_table[datap="plan_2"]').parents('.price_table_wrapper ').after('<div class="plan_tool_tip '+datap+' tool"><span class="plan_arrow"></span><div class="tool_cnt tool_fullwidth"><span>'+meal_error+'<span></div></div>');	
-								
-							}else{
-								
-									jQuery('div.price_table[datap="plan_4"]').parents('.price_table_wrapper ').after('<div class="plan_tool_tip '+datap+' tool"><span class="plan_arrow "></span><div class="tool_cnt tool_fullwidth"><span>'+meal_error+'<span></div></div>');	
-								
-							}
+					}
+					else if(jQuery(window).width()<979 && jQuery(window).width()>640){
+						if(datap==="plan_1" || datap==="plan_2"){
 							errors=true;
+							jQuery('div.price_table[datap="plan_2"]').parents('.price_table_wrapper ').after('<div class="plan_tool_tip '+datap+' tool"><span class="plan_arrow"></span><div class="tool_cnt tool_fullwidth"><span>'+meal_error+'<span></div></div>');	
+					
+						}else{
+							jQuery('div.price_table[datap="plan_4"]').parents('.price_table_wrapper ').after('<div class="plan_tool_tip '+datap+' tool"><span class="plan_arrow "></span><div class="tool_cnt tool_fullwidth"><span>'+meal_error+'<span></div></div>');	
+							
 						}
-						else if(jQuery(window).width()<640){
-							
-							
-								jQuery('div.price_table[datap="'+datap+'"]').parents('.price_table_wrapper ').after('<div class="plan_tool_tip '+datap+' tool"><span class="plan_arrow "></span><div class="tool_cnt tool_fullwidth"><span>'+ meal_error+'<span></div></div>');	
-							
-							errors=true;
-						}
-						jQuery('html,body').animate({scrollTop: jQuery('.plan_tool_tip').offset().top-jQuery(window).height()/4 }, 1000);
-						
-						jQuery('.loader_plan').remove();
 						errors=true;
+					}
+					else if(jQuery(window).width()<640){
+						
+						jQuery('div.price_table[datap="'+datap+'"]').parents('.price_table_wrapper ').after('<div class="plan_tool_tip '+datap+' tool"><span class="plan_arrow "></span><div class="tool_cnt tool_fullwidth"><span>'+ meal_error+'<span></div></div>');	
+						
+						errors=true;
+					}
+					jQuery('html,body').animate({scrollTop: jQuery('.plan_tool_tip').offset().top-jQuery(window).height()/4 }, 1000);
+					
+					jQuery('.loader_plan').remove();
+					errors=true;
 				}
 			});	
-	}
-	else{
-		if(jQuery('.diet_error').length){
-			jQuery('html,body').animate({scrollTop: jQuery('.diet_error').offset().top-50 }, 1000);
-		}else{
-			jQuery('html,body').animate({scrollTop: jQuery('.error_color').offset().top-50 }, 1000);
 		}
-	}
+		else{
+			if(jQuery('.diet_error').length){
+				jQuery('html,body').animate({scrollTop: jQuery('.diet_error').offset().top-50 }, 1000);
+			}else{
+				jQuery('html,body').animate({scrollTop: jQuery('.error_color').offset().top-50 }, 1000);
+			}
+		}
 }
 jQuery('.price_table_wrapper ').click(function(){
 	jQuery('body').append('<div class="loader_plan"><div></div> </div>');
@@ -1414,15 +1433,16 @@ function redirects_checkout(){
 				},
 			}).done(function(data){
 				setTimeout(function(){
-					$.removeCookie('UpfitUserData');
+					if(navigator.cookieEnabled){
+						$.removeCookie('UpfitUserData');
 
-					$.cookie('UpfitUserData',JSON.stringify(user_data),{ expires: 1 })
-
-				 	localStorage.setItem("UpfitUserData", $.cookie("UpfitUserData"));
-
+						$.cookie('UpfitUserData',JSON.stringify(user_data),{ expires: 1 })
+						localStorage.removeItem("UpfitUserData");
+						localStorage.setItem("UpfitUserData", $.cookie("UpfitUserData"));
+					}
 					if(errors===false &&(jQuery('.error_color').length ===jQuery('.diet_error').length)){
-					//console.log(arr[0]+'//'+arr[2]+'/checkout/?add-to-cart='+planid);
-					window.location.assign(arr[0]+'//'+arr[2]+'/checkout/?add-to-cart='+planid);
+						//console.log(arr[0]+'//'+arr[2]+'/checkout/?add-to-cart='+planid);
+						window.location.assign(arr[0]+'//'+arr[2]+'/checkout/?add-to-cart='+planid);
 					}
 					else{
 						jQuery('.loader_plan').remove();
@@ -1574,7 +1594,7 @@ jQuery('input.inp[type="text"]').one('touchstart touchend', function(e) {
       jQuery(this).focus();
 });
 jQuery(document).on('click','.go_back',function(){
-					window.history.back();
+	window.history.back();
 });
 
 /*if (typeof(Storage) !== "undefined") {

@@ -1070,7 +1070,7 @@ function mysite_woocommerce_order_status_completed( $order_id ) {
 	$sql2="update ".$wpdb->prefix."woocommerce_order_itemmeta as itemmeta join ".$wpdb->prefix."woocommerce_order_items as items on itemmeta.order_item_id=items.order_item_id set itemmeta.meta_value='".$pdf_processing_description."' WHERE itemmeta.meta_key='pdf_processing_description' And items.order_id=".$order_id." AND items.order_item_type='line_item'";
 	
 	$result_order=$wpdb->get_results($sql1);
-	$result_order=$wpdb->get_results($sql2);
+	$result_order1=$wpdb->get_results($sql2);
 }
 add_action( 'woocommerce_order_status_completed','mysite_woocommerce_order_status_completed' );
 
@@ -1144,4 +1144,11 @@ function add_to_cart_direct_checkout() {
 	global $woocommerce;
 	$checkout_url = $woocommerce->cart->get_checkout_url();
 	return $checkout_url;
+}
+
+
+add_filter('woocommerce_resend_order_emails_available','add_vendor_new_order');
+function add_vendor_new_order(){
+	return array( 'new_order', 'cancelled_order', 'customer_processing_order', 'customer_completed_order', 'customer_invoice', 'customer_refunded_order','vendor_new_order' ,'vendor_cancelled_order') ;
+	//return array('vendor_new_order');
 }

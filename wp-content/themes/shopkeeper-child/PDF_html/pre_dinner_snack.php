@@ -89,13 +89,14 @@
 				   <div style="border-bottom:0.0315em solid #bec8cc; text-align:left; margin-bottom:4px; padding-bottom:15px;">
 					  
 					  <table class="p4-listingingredients" width="100%" cellspacing="0" cellpadding="0" border="0" style="border:0;outline:none; padding-bottom:5px;">
-							<?php foreach($pre_dinner_snack_ingredients as $ing){ ?>
+						<?php 
+							foreach($pre_dinner_snack_ingredients as $ing){ ?>
 							
 								<tr>				
 								<?php
 								if((float)$ing['quantity']==1 && $unit[0]->unit_symbol =='Prise'){
 
-									$prise_ar[]= $ing['name'];
+									$prise_ar[]= $ing_name;
 								}
 								else{?>
 								<td style="width:70px;">

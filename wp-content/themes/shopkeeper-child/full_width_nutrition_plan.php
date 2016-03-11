@@ -7,6 +7,7 @@
     
     global $shopkeeper_theme_options;
     
+    session_start();
     $page_id = "";
     if ( is_single() || is_page() ) {
         $page_id = get_the_ID();
@@ -32,20 +33,19 @@
 	if(empty($_SESSION['belboon'])) { // If $_SESSION['belboon'] not set
 
 	// example: http://www.abc.de?belboon=0001cb000205005e720005f2,2022994 
-
 		$_SESSION['belboon'] = $_GET['belboon']; // value of $_GET['belboon'] will be saved in server session 
-
 	}
+	
      if(function_exists(test1)){
 		test1();
 	 }
      ?>
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri().'/../shopkeeper-child'; ?>/css/layout.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/../shopkeeper-child'; ?>/tooltipster/tooltipster.css">
-	<!--   <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/../shopkeeper-child'; ?>/css/jquery.fullPage.css">-->
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>-child/css/layout.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>-child/tooltipster/tooltipster.css">
+	<!--   <link rel="stylesheet" href="<?php //echo get_template_directory_uri().'/../shopkeeper-child'; ?>/css/jquery.fullPage.css">-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/../shopkeeper-child'; ?>/nanoscroller/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>-child/nanoscroller/jquery.mCustomScrollbar.min.css">
 <style type="text/css">/*.select2-input, .select2-search-field{width: 150px !important;}*/
 .toggle-btn,input.inp,.zuruck_btn a{transition:0.5s !important;}
 .tooltipster-default .tooltipster-content{padding: 10px 20px}
@@ -101,9 +101,9 @@ ul.select2-choices{position: absolute !important;}
     
     </div><!-- .full-width-page -->
     <ul class="page-nav"></ul>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri().'/../shopkeeper-child'; ?>/tooltipster/jquery.tooltipster.min.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri().'/../shopkeeper-child'; ?>/nanoscroller/jquery.mCustomScrollbar.concat.min.js"></script>
-	<script type="text/javascript" src="<?php echo get_template_directory_uri().'/../shopkeeper-child'; ?>/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri().'-child'; ?>/tooltipster/jquery.tooltipster.min.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri().'-child'; ?>/nanoscroller/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri().'-child'; ?>/js/jquery.cookie.js"></script>
     <script>
     <?php    //print_r($_POST);?>
     siteurls="<?php echo $siteurl;?>";
@@ -445,10 +445,16 @@ function move(e)
 
     </script>
 <?php get_footer(); ?>
-<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-<script src="<?php echo get_template_directory_uri().'/../shopkeeper-child'; ?>/js/validation.js"></script> 
-<script type="text/javascript" src="<?php echo get_template_directory_uri().'/../shopkeeper-child'; ?>/js/transition.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri().'/../shopkeeper-child'; ?>/js/dropdown.js"></script>
+<script type="text/javascript" src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<?php $blog_id= get_current_blog_id();
+	if($blog_id == 23){
+?>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>-child/js/validation_new.js"></script> 
+<?php }else{ ?>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>-child/js/validation.js"></script> 
+<?php }?>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>-child/js/transition.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>-child/js/dropdown.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.full.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri().'/../shopkeeper-child'; ?>/js/jquery.ui.touch-punch.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>-child/js/jquery.ui.touch-punch.min.js"></script>
 <!--<script src="<?php//echo get_template_directory_uri().'/../shopkeeper-child'; ?>/js/jquery.fullPage.js"></script>  -->

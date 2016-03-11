@@ -2,8 +2,8 @@
 Theme Name: Shopkeeper Child
 Theme URI: http://shopkeeper.getbowtied.com/
 Description: This is a child theme for Shopkeeper.
-Author: Get Bowtied
-Author URI: http: //www.getbowtied.com/
+Author: Pleksi Kreativstudio
+Author URI: http://www.pleksi.de/
 Template: shopkeeper
 Version: 1.0
 */
@@ -64,7 +64,7 @@ hr.border { margin: 0 auto; border-color: #bdc9cc;}
 .main_input_section_inner_row .left_images .img_woche div { font-family: 'Conv_DINNextLTPro-Bold'; font-size: 18px; padding-top: 34px;}
 .right_content {width:50%;float:right;}
 .head_line {width: 90%; margin: 0 auto; text-align: center; font-size: 25px; color: #FFF; }
-.head_line h2 { margin: 0;line-height: 50px;padding: 50px 0;font-size: 36px;font-family: 'Conv_DINNextLTPro-Bold';text-transform: uppercase; font-weight: normal;}
+.head_line h2 { margin: 0;line-height: 48px;padding: 50px 0;font-size: 36px;font-family: 'Conv_DINNextLTPro-Bold';text-transform: uppercase; font-weight: normal;}
 .inputs_right {margin: 0;padding: 0;}
 .right_content .inputs_right .input_kg_left {background: #f4f4f4;border: 1px solid transparent;border-radius: 35px 0 0 35px;display: inline-block;font-family: 'Conv_AvenirLTStd-Medium';height: 60px;padding: 0 0 0 30px;width: 65%;margin: 5px 0;color: #162c5d;font-size: 16px; line-height: 59px;float: left; letter-spacing:0.5px;}
 .right_content .inputs_right input { background: #fff; color: #96a7b0; float: left; font-size: 16px; height: 60px; margin-top: 5px; padding: 16px 0 16px 29px; text-align: left; width: 24%; border: 1px solid transparent; font-family: 'Conv_AvenirLTStd-Medium'; font-weight: normal; cursor:text;}
@@ -518,8 +518,8 @@ ul.faq_list li:first-child a:hover i { background: url('images/faq_back_hover.pn
 .email_newsletter .newsletter_right { position: absolute; top: 0; right: 0;}
 .email_newsletter .newsletter_right img { width: 100%;}
 .email_newsletter .newsletter_center { margin: 0 auto; float: none; width: 700px;}
-.email_newsletter .newsletter_center .mc4wp-form input[type="email"] { height: 60px; border:1px solid #BFC9CD; border-right: 0 none; border-radius: 30px 0 0 30px; padding-left: 30px; width: 50%;float: left; color: #96a7b0; font-size: 16px; font-weight: normal; font-family: 'Conv_AvenirLTStd-Medium'; background: #fff !important; letter-spacing: 0.5px;}
-.email_newsletter .newsletter_center .mc4wp-form input[type="submit"] { height: 60px; border:0 none;background-color: #2CAB50 !important; border-radius: 0 30px 30px 0 !important; width: 50%; float: left; font-size: 16px; color: #fff; font-family: 'Conv_AvenirLTStd-Medium'; outline:none;
+.email_newsletter .newsletter_center .mc4wp-form input[type="email"], .mc4wp-form input[type="email"] { height: 60px; border:1px solid #BFC9CD; border-right: 0 none; border-radius: 30px 0 0 30px; padding-left: 30px; width: 50%;float: left; color: #96a7b0; font-size: 16px; font-weight: normal; font-family: 'Conv_AvenirLTStd-Medium'; background: #fff !important; letter-spacing: 0.5px;}
+.email_newsletter .newsletter_center .mc4wp-form input[type="submit"], .mc4wp-form input[type="submit"] { height: 60px; border:0 none;background-color: #2CAB50 !important; border-radius: 0 30px 30px 0 !important; width: 50%; float: left; font-size: 16px; color: #fff; font-family: 'Conv_AvenirLTStd-Medium'; outline:none;
 font-weight: normal;letter-spacing: 1px; padding-left: 0 !important; padding-right: 25px !important;}
 .email_newsletter .newsletter_center .mc4wp-form input[type="email"]::-webkit-input-placeholder { color: #96a7b0; }
 .email_newsletter .newsletter_center .mc4wp-form input[type="email"]:-moz-placeholder { color: #96a7b0; }
@@ -529,7 +529,7 @@ font-weight: normal;letter-spacing: 1px; padding-left: 0 !important; padding-rig
     right: 27px; top: 24px; width: 10px;display: inline-block; height: 10px;}
 .email_newsletter .newsletter_center .mc4wp-form .mc4wp-form-email { display: inline-block; position: relative; width: 100%;}
 .email_newsletter .newsletter_center .mc4wp-form input[type="submit"]:hover { background-color: #162C5D !important;}
-.email_newsletter .newsletter_center .mc4wp-form .error_color[type="email"] { border: 1px solid #ec412d; border-right: 0 none; font-family: 'Conv_AvenirLTStd-Medium';}
+.email_newsletter .newsletter_center .mc4wp-form .error_color[type="email"], .mc4wp-form .error_color[type="email"] { border: 1px solid #ec412d; border-right: 0 none; font-family: 'Conv_AvenirLTStd-Medium';}
 .newsletter_center .main-hedding { padding-bottom: 0px;}
 .newsletter_center .sub_headding { padding-bottom: 62px; margin-top: 0;}
 .email_err { display: block; overflow: hidden; width: 100%;}
@@ -540,13 +540,13 @@ font-weight: normal;letter-spacing: 1px; padding-left: 0 !important; padding-rig
 /*  testimonial_slider  */
 .testimonial_slider .white { padding-bottom: 0 !important; padding-top: 77px !important;}
 .testimonial_slider .white .wpb_content_element .testimonial_rotator_wrap .testimonial_rotator { max-width: 960px; margin: 0 auto;} 
-.testimonial_slider .white h2.main-hedding { max-width: 960px; width: 100%; margin: 0 auto; font-family: 'Conv_DINNextLTPro-Bold';letter-spacing: 0px; line-height: 45px;  margin-bottom: 65px !important;}
+.testimonial_slider .white h2.main-hedding { max-width: 960px; width: 100%; margin: 0 auto; font-family: 'Conv_DINNextLTPro-Bold';letter-spacing: 0px; line-height: 48px;  margin-bottom: 65px !important;}
 .testimonial_slider .white .wpb_content_element .testimonial_rotator_wrap .testimonial_rotator .has-image .img { width: 45%; float: none; display: inline-block; vertical-align: bottom; margin-right: 4%; height: 430px; position: relative;}
 .testimonial_slider .white .wpb_content_element .testimonial_rotator_wrap .testimonial_rotator .has-image .text { width: 50%; float: none; display: inline-block; margin-bottom: 56px; position: relative;}
 .testimonial_slider .white .wpb_content_element .testimonial_rotator_wrap .testimonial_rotator .has-image .text h2 { font-family:'Conv_AvenirLTStd-Medium'; font-size: 24px; color: #162c5d; display: inline-block; vertical-align: middle; font-weight: 400; margin-bottom: 21px; letter-spacing: 0.5px;}
 .testimonial_slider .white .wpb_content_element .testimonial_rotator_wrap .testimonial_rotator .has-image .text p.testimonial_rotator_weight_badge { color: #2cab50; font-size: 16px; font-family: 'Conv_AvenirLTStd-Medium'; display: inline-block; padding:8px 20px; border-radius: 20px; border: 1px solid #2cab50; margin-left: 10px; margin-bottom: 21px; line-height: 21px; height: 41px; position: absolute; top: -9px; letter-spacing: 0.5px;}
 .testimonial_slider .white .wpb_content_element .testimonial_rotator_wrap .testimonial_rotator .has-image .img img { max-width: 100%; position: absolute; bottom: 0; margin-top: -3px;}
-.testimonial_slider .white .wpb_content_element .testimonial_rotator_wrap .testimonial_rotator .has-image .text .testimonial_rotator_quote { font-size: 16px; color: #71848e;line-height: 28px; font-family: 'Conv_AvenirLTStd-Medium';font-weight: normal; margin-bottom: 77px; letter-spacing: 0.5px;}
+.testimonial_slider .white .wpb_content_element .testimonial_rotator_wrap .testimonial_rotator .has-image .text .testimonial_rotator_quote { font-size: 16px; color: #71848e;line-height: 1.625; font-family: 'Conv_AvenirLTStd-Medium';font-weight: normal; margin-bottom: 77px; letter-spacing: 0.5px;}
 .testimonial_slider .white .wpb_content_element .testimonial_rotator_wrap .testimonial_rotator .has-image .text .wpb_left-to-right a.vc_general { border-radius: 30px !important; background: #2cab50 !important; font-family: 'Conv_AvenirLTStd-Medium'; font-size: 16px !important; font-weight: normal; letter-spacing: 0.5px; line-height: 24px; height: 60px; padding: 18px 60px 18px 48px !important;}
 .testimonial_slider .white .wpb_content_element .testimonial_rotator_wrap .testimonial_rotator .has-image .text p.testimonial_rotator_notice { text-align: center; color: #71848e; font-family: 'Conv_AvenirLTStd-Medium'; font-size: 16px; margin-top: 25px; width: 76%; letter-spacing: 0.5px;}
 .testimonial_slider .white .wpb_content_element .testimonial_rotator_wrap { margin: 0 auto; padding: 0;}
@@ -788,7 +788,7 @@ form.checkout .checkout_right_wrapper .order_review_wrapper .shop_table tbody .s
 h1:first-child { margin-top: 0px !important; }
 .thank_you_header_text {margin: 0px !important; padding: 0px !important; background: #FFF; background: transparent !important;color: #2cab50; }
 .thank_you_header_text p {font-family: "Conv_AvenirLTStd-Medium";margin: 0px; font-size: 16px !important; border: 1px solid #2cab50;border-radius: 30px; padding: 17px 0px; margin: 24px 0 36px; letter-spacing: 0.5px;position: relative;}
-.thank_you_wrapper { max-width: 620px; width: 100%; margin: 0 auto; }
+.thank_you_wrapper { max-width: 620px; width: 100%; margin: 0 auto; float: none}
 .thank_you_wrapper .wpb_wrapper { max-width: 620px; width: 100%; margin: 0 auto; }
 .thank_you_wrapper.thank_you_header p:before { position: absolute; left: 50px; top: 25px; background: url('images/check_error_icon.png') no-repeat left top;width: 14px; height: 11px; font-size: 0;}
 .thank_you_wrapper .thank_you_description span.desc-text {font-size:16px; font-family: "Conv_AvenirLTStd-Medium"; line-height: 28px; letter-spacing: 0.5px; }
@@ -831,7 +831,7 @@ h1:first-child { margin-top: 0px !important; }
 .thank_you_wrapper .order-detail-box table.shop_table.order_details tfoot tr.order-details-total:last-of-type > td > span,
 .thank_you_wrapper .order-detail-box table.shop_table.order_details tfoot tr.order-details-total:last-of-type > td {border-bottom:0 none;color:#2cab50 !important;padding-bottom:0 !important;  }
 .thank_you_wrapper .order_details th.light-gray-text span.inc-tax { color: #96a7b0;margin-left: 5px;}
-.thank_you_header p.cancel_order_text { color: #ec412c; background: url('images/cancel_error_icon.png') no-repeat 25px 22px; padding-left: 40px; border-color: #ec412c;}
+.thank_you_header p.cancel_order_text { color: #ec412c; background: url('images/cancel_error_icon.png') no-repeat 25px 22px; padding: 18px 25px 18px 75px; border-color: #ec412c;}
 .thank_you_header p.cancel_order_text a { color: #ec412c; text-decoration: underline;}
 .thank_you_header p.cancel_order_text:before { display: none;}
 .thank_you_header_text .blue_hover a { max-width: 480px; width: 100%;}
@@ -856,6 +856,7 @@ h1:first-child { margin-top: 0px !important; }
 .select2-search input {display:none;}
 .mc_success { color: #2cab50 !important; font-size: 16px; font-family: 'Conv_AvenirLTStd-Medium'; letter-spacing: 0.5px; margin: 0 auto;text-align: center;
 padding: 18px 33px 18px 55px;  border: 1px solid #2cab50; border-radius: 30px; max-width: 620px; width: 100%; position: relative;}
+.mc_success a, .mc_error a { text-decoration:underline; }
 .mc_error {  letter-spacing: 0.5px; color: #ec412c !important; font-family: "Conv_AvenirLTStd-Medium"; font-size: 16px;text-align: center; margin: 0 auto;
 padding: 18px 33px 18px 55px;  border: 1px solid #ec412c; border-radius: 30px; max-width: 620px; width: 100%; position: relative;}
 .mc_error:before { content: url("images/cancel_error_icon.png"); font-size: 0; height: 12px; left: 33px; position: absolute; top: 25px; width: 12px;}
@@ -872,7 +873,7 @@ padding: 18px 33px 18px 55px;  border: 1px solid #ec412c; border-radius: 30px; m
 .woocommerce .woocommerce-error li, .woocommerce .woocommerce-info li, .woocommerce .woocommerce-message li { text-align:left}
 .blockUI.blockOverlay { opacity: 1 !important;}
 .loader_plan { /*background: rgba(0, 0, 0, 0.1);*/ position: fixed; height: 100%; width: 100%; display: inline-block;z-index: 999;top: 0;}
-.loader_plan div { background:url("images/GRAY.gif") no-repeat left center; background-size: auto; width: 100px; height: 100%; margin: 0 auto; text-align: center;vertical-align: middle;}
+.loader_plan div { background:url("images/GRAY.gif") no-repeat center center; background-size: auto; width: 100px; height: 100%; margin: 0 auto; text-align: center;vertical-align: middle;}
 /* IE 10+ */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
    .inp-s3 input[type=checkbox]:not(old):checked + label > i:before {background-image:url("images/check_icon.png") no-repeat left top; width:20px;display: inline-block; margin-top: 22px; margin-left: 20px; text-align: center;}
@@ -1200,7 +1201,7 @@ padding: 18px 33px 18px 55px;  border: 1px solid #ec412c; border-radius: 30px; m
   .main_input_section_inner_row .left_images .img_woche div { font-size: 12px; height: 90px; width: 90px; padding-top: 25px;}
   .left_images .img_woche strong { font-size: 20px; line-height: 24px;}
   .right_content .benefits {  margin: 41px 7px 41px;}
-  .main_input_section .wpb_column.vc_col-sm-12 .main_input_section_inner_row > .wpb_column.vc_col-sm-12 { padding:0 !important; }
+  .main_input_section .wpb_column.vc_col-sm-12 .main_input_section_inner_row > .wpb_column.vc_col-sm-12, .wpb_column.vc_col-sm-12 .wpb_column.vc_col-sm-12 { padding:0 !important; }
   .main_input_section .head_line {  padding: 50px 24px 34px;}
   .right_content .inputs_right .input_kg_left, .welter_btn.yellow_hover .btn_arrow_right { display: none;}
   .right_content .inputs_right input { width: 84%;border-radius: 35px 0 0 35px; margin-top: 0;}
@@ -1552,10 +1553,10 @@ padding: 18px 33px 18px 55px;  border: 1px solid #ec412c; border-radius: 30px; m
   .right_content .benefits { margin: 39px 0px 41px;}
   .main_input_section .wpb_column.vc_col-sm-12 .main_input_section_inner_row > .wpb_column.vc_col-sm-12 { padding:0 !important; }
 /**/
-  .email_newsletter .newsletter_center .mc4wp-form input[type="email"] {  border-radius: 30px; width: 100%; border-right: 1px solid #bfc9cd;}
-  .email_newsletter .newsletter_center .mc4wp-form .error_color[type="email"] { border-right: 1px solid #ec412d;}
-  .email_newsletter .newsletter_center .mc4wp-form input[type="submit"] { width: 100%; border-radius: 30px !important;  margin-top: 10px; padding-right: 0 !important}
-  .email_newsletter .newsletter_center .mc4wp-form .arrow_icon { right: 27px; top: 105px;}
+  .email_newsletter .newsletter_center .mc4wp-form input[type="email"], .mc4wp-form input[type="email"] {  border-radius: 30px; width: 100%; border-right: 1px solid #bfc9cd;}
+  .email_newsletter .newsletter_center .mc4wp-form .error_color[type="email"], .mc4wp-form .error_color[type="email"] { border: 1px solid #ec412d;}
+  .email_newsletter .newsletter_center .mc4wp-form input[type="submit"], .mc4wp-form input[type="submit"] { width: 100%; border-radius: 30px !important;  margin-top: 10px; padding-right: 0 !important}
+  .email_newsletter .newsletter_center .mc4wp-form .arrow_icon, .mc4wp-form .arrow_icon { right: 27px; top: 105px;}
   .testimonial_slider .white .wpb_content_element .testimonial_rotator_wrap .testimonial_rotator .has-image .text p.testimonial_rotator_weight_badge { display: table; margin-bottom: 28px;}
   .testimonial_slider .blue_hover a { line-height: 62px !important;}
   /*  nutrition-plan-overview  */
@@ -1713,3 +1714,201 @@ padding: 18px 33px 18px 55px;  border: 1px solid #ec412c; border-radius: 30px; m
 /* don't show the eye for password inputs */
 ::-ms-reveal { width : 0; height: 0;}
 
+/************* CHANGES BY UPFIT *************/
+@media only screen and (min-width: 40.063em) {
+	h1, h2 {
+		line-height: 1.33;
+	}
+}
+
+#site-footer a.benefits-plan-preview {
+	text-decoration: none;
+}
+.max-width-990 {
+	max-width: 990px !important;
+	margin: auto !important;
+}
+.max-width-1020 {
+	max-width: 1020px !important;
+	margin: auto !important;
+}
+.copy p, .faq_details p {
+	line-height: 1.625;
+}
+a.grey-link {
+	text-decoration: underline;
+}
+a.sbi_load_btn {
+	letter-spacing: 1px; 
+}
+
+/* Plan Preview */
+a.plan_more_details:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    position: relative;
+    margin-right: 8px;
+    display: inline-block;
+}
+.popmake-content .row {
+	padding: 0 0;
+}
+.popmake-content .mc4wp-form input[type="submit"] {
+	padding-right: 0 !important;
+}
+.popmake-content .sub_headding, .popmake-content .sub_headding p {
+    width: 100%;
+}
+a.benefits-plan-preview {
+	text-decoration: underline;
+}
+@media only screen and (max-width:480px) {
+	.popmake, .popmake.theme-default-theme {
+		padding: 30px !important;
+	}
+}
+
+/* 1 Plan only */
+.h3-uppercase {
+	font-size: 16px;
+	font-weight: normal;
+	text-transform: uppercase !important;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+#dein-ernaehrungsplan .copy p, #benefits .copy p {
+	margin-bottom: 0;
+}
+#dein-ernaehrungsplan > div:first-child {
+	border-bottom-left-radius: 35px;
+	border-top-left-radius: 35px;
+}
+#dein-ernaehrungsplan > div:last-child {
+	border-bottom-right-radius: 35px;
+	border-top-right-radius: 35px;
+}
+.to-checkout .copy p {
+	color: white !important;
+}
+.copy .plan-basics {
+	line-height: 1.8 !important;
+}
+.to-checkout .blue_hover {
+	margin-top: 10px;
+	margin-bottom: 17px !important;
+}
+.to-checkout .blue_hover a {
+	padding: 0 32px !important;
+}
+ul.plan_content {
+	margin: 0 0 0 1.5em !important;
+	list-style: none !important;
+}
+ul.plan_content li {
+	padding-left: 1.5em;
+	padding: 2px 5px 2px 0px;
+    	font-size: 16px;
+    	letter-spacing: 0.5px;
+}
+ul.plan_content li:first-child {
+	padding-top: 0;
+}
+ul.plan_content li:before {
+    	content: "\f00c";
+    	font-family: FontAwesome;
+    	display: inline-block;
+		margin-left: -1.5em;
+    	width: 1.5em;
+}
+a.plan-preview {
+    text-decoration: underline;
+}
+a.plan-preview:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    display: inline-block;
+    width: 1.5em;
+}
+span.real-price {
+	font-size: 36px;
+    letter-spacing: 1px;
+}
+span.real-price .text-through {
+    text-decoration: line-through;
+    font-size: 16px;
+    vertical-align: top;
+    top: 7px;
+    left: 5px;
+    padding: 0;
+    font-weight: 400;
+    position: relative;
+    display: inline;
+    width: auto;
+}
+#benefits {
+	background-color: #e4e4e4;
+}
+#benefits > div:last-child {
+	padding-right: 0;
+}
+#benefits > div {
+	padding-left: 0;
+}
+.round-icon {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+@media only screen and (max-width:768px) {
+	#dein-ernaehrungsplan, #benefits {
+		padding: 0 25px !important;
+	}
+	#benefits {
+		background-color: transparent;
+	}
+	#benefits > div {
+		margin-bottom: 20px;
+	}	
+	#dein-ernaehrungsplan > div:first-child {
+		border-bottom-left-radius: 0px;
+		border-top-left-radius: 35px;
+		border-top-right-radius: 35px;
+		border-bottom-right-radius: 0px;
+		border-bottom: 1px solid #dedddd;
+	}
+	#dein-ernaehrungsplan > div.to-checkout {
+		border-bottom-left-radius: 35px;
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 35px;
+		width: 100%;
+	}
+	span.real-price .text-through {
+		top: -8px;
+	}
+	.to-checkout .blue_hover {
+		margin-top: 15px;
+	}
+}
+
+
+/* sekundär */
+.h3-uppercase {
+	color: #162C5D;
+}
+.to-checkout .blue_hover a {
+	background-color: #162C5D !important;	
+}
+
+/* sekundär hover */
+.to-checkout .blue_hover a:hover {
+	background-color: #FEDA46 !important;	
+}
+
+/* primär */
+a.plan-preview, ul.plan_content li:before {
+    color: #2cab50 !important;
+}
+.to-checkout, .round-icon .vc_icon_element-color-custom {
+	background-color: #2cab50 !important;
+}

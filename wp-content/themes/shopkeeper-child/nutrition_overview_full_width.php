@@ -91,8 +91,8 @@
      </style>
 	 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 	 
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/../shopkeeper-child'; ?>/css/jquery.fullPage.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/../shopkeeper-child'; ?>/css/jquery.sidr.light.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>-child/css/jquery.fullPage.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>-child/css/jquery.sidr.light.css">
 
     <div class="full-width-page <?php  echo ( (isset($page_title_option)) && ($page_title_option == "on") ) ? 'page-title-shown':'page-title-hidden';?>">
     <div id="menu">
@@ -321,6 +321,6 @@ e.preventDefault();
 window.location.href='<?php echo home_url(); ?>/ernaehrungsplan_erstellen';
 });	
 </script>
-<!--<script src="<?php echo get_template_directory_uri().'/../shopkeeper-child'; ?>/js/validation.js"></script> 
+<!--<script src="<?php //echo get_template_directory_uri().'/../shopkeeper-child'; ?>/js/validation.js"></script> 
 
 <script src="<?php //echo get_template_directory_uri().'/../shopkeeper-child'; ?>/js/jquery.fullPage.js"></script>  -->

@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Template Name: Demo Nutrition creation logic
+ * 
  */
 
 global $wpdb;

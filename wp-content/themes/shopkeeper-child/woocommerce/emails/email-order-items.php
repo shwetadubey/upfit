@@ -20,7 +20,7 @@ foreach ( $items as $item_id => $item ) :
 		?>
 		<tr class="<?php echo esc_attr( apply_filters( 'woocommerce_order_item_class', 'order_item', $item, $order ) ); ?>">
 	
-			<td style="color:#96a7b0; font-size:16px;line-height:30px; font-weight: normal; background-color:#fff;height:72px;padding:20px 0 20px 30px;border-right:1px solid #BDC9CC;border-bottom:1px solid #BDC9CC;">
+			<td class="padding_left_odlist" style="color:#96a7b0; font-size:16px;line-height:30px; font-weight: normal; background-color:#fff;height:72px;padding:20px 0px 20px 30px; border-right:1px solid #BDC9CC;border-bottom:1px solid #BDC9CC;">
 				
 				<?php
 					
@@ -34,7 +34,7 @@ foreach ( $items as $item_id => $item ) :
 				//echo apply_filters( 'woocommerce_order_item_name', $item['name'], $item, false );
 				//echo "status:".$order->post_status;
 				
-				if($order->post_status == 'wc-completed'){
+				if($order->has_status('completed')){
 					$site_id=get_current_blog_id();
 					$results = $wpdb->get_results( 'SELECT * FROM up_user_nutrition_plans WHERE order_id ='.$order->id.' AND site_id='.$site_id);
 					//echo "<pre>";print_r($results);
@@ -84,7 +84,7 @@ foreach ( $items as $item_id => $item ) :
 			?>
 			
 			</td>
-			<td style="color:#96a7b0;text-align:left; font-size:16px;line-height: 16px; font-weight: normal;padding:0 0px 0 30px; background-color:#fff;height:72px;border-right:1px solid #BDC9CC;border-bottom:1px solid #BDC9CC;"><?php echo apply_filters( 'woocommerce_email_order_item_quantity', $item['qty'], $item ); ?></td>
+			<td class="padding_left_odlist" style="color:#96a7b0;text-align:left; font-size:16px;line-height: 16px; font-weight: normal; padding:0 0 0 30px; background-color:#fff;height:72px;border-right:1px solid #BDC9CC;border-bottom:1px solid #BDC9CC;"><?php echo apply_filters( 'woocommerce_email_order_item_quantity', $item['qty'], $item ); ?></td>
 			<td style="color:#96a7b0;text-align:right; font-size:16px;line-height: 16px; font-weight: normal; background-color:#fff;height:72px;padding:0px 30px 0px 0px;border-bottom:1px solid #BDC9CC;"><?php echo $order->get_formatted_line_subtotal( $item ); ?></td>
 		</tr>
 		<?php

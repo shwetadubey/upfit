@@ -27,7 +27,7 @@ add_action('init', 'admin_css');
 
 function admin_css() {
 
-        wp_enqueue_style('admin_css', get_template_directory_uri() . '/../shopkeeper-child/css/admin_style.css', array(), '', true);
+    wp_enqueue_style('admin_css', get_template_directory_uri() . '/../shopkeeper-child/css/admin_style.css', array(), '', true);
 }
 
 $flag = -1;
@@ -37,14 +37,13 @@ function import_food_meals_page() {
 $default_value=0;
         global $wpdb;
         $flag = -1;
+        $prefix = 'up_';
         if (isset($_POST['submit'])) {
 
                 /* ----------Load units ------------ */
                 $sql6 = 'select id,unit_symbol From  ' . $prefix . 'units';
                 //$res = mysql_query($sql6);
                 $res = $wpdb->get_results($sql6);
-
-
                 $unita = array();
                 /* while ($row = mysql_fetch_object($res)) {
                   $unita[$row->unit_symbol] = $row->id;
@@ -60,6 +59,7 @@ $default_value=0;
                 $type = $_POST['import_type'];
                 $path = wp_upload_dir();
                 $uppath = $path['basedir'] . '/csv';
+           
                 if (file_exists($uppath)) {
                         $prefix = 'up_';;
                         if ($_FILES["import_csv"]["error"] > 0) {
@@ -237,7 +237,7 @@ $default_value=0;
                                                                         $cat = 0;
                                                                 }
 
-								$shop_id = 0;
+																$shop_id = 0;
                                                                 if (isset($data[99]) && !empty($data[99])) {
                                                                         $sql_query_cat_shop = "SELECT id FROM " . $prefix . "shopping_list_categories WHERE name='" . htmlspecialchars($data[99]) . "'";
                                                                         $cat_shop_id = $wpdb->get_row($sql_query_cat_shop);
@@ -371,11 +371,11 @@ $default_value=0;
                                                                
                                                                 //echo trim($sql8,',').'<br/>';
                                                                 if ($wpdb->query(trim($sql8,','))) {
-                                                                                $temp1++;
-                                                                        } else {
-                                                                                $temp1 = 1;
-                                                                                break;
-                                                                        }
+                                                                    $temp1++;
+																} else {
+																	$temp1 = 1;
+																	break;
+																}
 
                                                                 // echo $last_id;
                                                         }
@@ -420,17 +420,17 @@ $default_value=0;
                                                 $wpdb->query($sql1);
                                                 $temp = 0;
                                                 while (($data = fgetcsv($file, 10000, ",")) !== FALSE) {
-                                                        // print_r($data);
-                                                        /*$slug = preg_replace('/[-`~!@#$%\^&*()+={}[\]\\\\|;:\'",.><?\/]/', '_', $data[1]);
-                                                        $slug = str_replace(' ', '_', $slug);*/
-                                                        $slug = sanitize_title($data[1]);
-                                                        $sql = "Insert into " . $prefix . "food_categories(id,name,slug,created) VALUES('" . $data[0] . "','" . $data[1] . "','" . $slug . "','" . date('Y-m-d H:i:s') . "')";
-                                                        if ($wpdb->query($sql)) {
-                                                                $temp++;
-                                                        } else {
-                                                                $temp = 0;
-                                                                break;
-                                                        }                                                // echo $sql.' <br>';
+													// print_r($data);
+													/*$slug = preg_replace('/[-`~!@#$%\^&*()+={}[\]\\\\|;:\'",.><?\/]/', '_', $data[1]);
+													$slug = str_replace(' ', '_', $slug);*/
+													$slug = sanitize_title($data[1]);
+													$sql = "Insert into " . $prefix . "food_categories(id,name,slug,created) VALUES('" . $data[0] . "','" . $data[1] . "','" . $slug . "','" . date('Y-m-d H:i:s') . "')";
+													if ($wpdb->query($sql)) {
+															$temp++;
+													} else {
+															$temp = 0;
+															break;
+													}                                                // echo $sql.' <br>';
                                                 }
                                                 if ($temp == 0) {
                                                         $sql = "RENAME TABLE " . $prefix . "food_categories TO " . $prefix . "food_categories_zap," . $prefix . "food_categories_old TO " . $prefix . "food_categories";
@@ -525,124 +525,127 @@ $default_value=0;
                                         fclose($file);
                                 } else if (strtolower($type) == strtolower('meal')) {
                                       $prefix = 'up_';
+                                    //  echo 'here';
                                         $file = fopen($bpath . $nm, "r");
                                         $ckfield = fgetcsv($file);
+                                        //print_r( $ckfield);
                                         if (strtolower($ckfield[0]) == strtolower('id') && strtolower($ckfield[1]) == strtolower('name') && strtolower($ckfield[2]) == strtolower('Ingredient 1') && strtolower($ckfield[3]) == strtolower('Ingredient 1 Quantity')) {
                                                 //  echo 'yes';
-                                                $sql = "CREATE TABLE " . $prefix . "meals_new LIKE " . $prefix . "meals";
-                                                $wpdb->query($sql);
-                                                $sql1 = "RENAME TABLE " . $prefix . "meals TO " . $prefix . "meals_old," . $prefix . "meals_new TO " . $prefix . "meals";
-                                                $wpdb->query($sql1);
+											$sql = "CREATE TABLE " . $prefix . "meals_new LIKE " . $prefix . "meals";
+											$wpdb->query($sql);
+											$sql1 = "RENAME TABLE " . $prefix . "meals TO " . $prefix . "meals_old," . $prefix . "meals_new TO " . $prefix . "meals";
+											$wpdb->query($sql1);
 
-                                                $sql = "CREATE TABLE " . $prefix . "meal_ingredients_new LIKE " . $prefix . "meal_ingredients";
-                                                $wpdb->query($sql);
-                                                $sql1 = "RENAME TABLE " . $prefix . "meal_ingredients TO " . $prefix . "meal_ingredients_old," . $prefix . "meal_ingredients_new TO " . $prefix . "meal_ingredients";
-                                                $wpdb->query($sql1);
+											$sql = "CREATE TABLE " . $prefix . "meal_ingredients_new LIKE " . $prefix . "meal_ingredients";
+											$wpdb->query($sql);
+											$sql1 = "RENAME TABLE " . $prefix . "meal_ingredients TO " . $prefix . "meal_ingredients_old," . $prefix . "meal_ingredients_new TO " . $prefix . "meal_ingredients";
+											$wpdb->query($sql1);
 
-                                                $sql = "CREATE TABLE " . $prefix . "meal_instructions_new LIKE " . $prefix . "meal_instructions";
-                                                $wpdb->query($sql);
-                                                $sql1 = "RENAME TABLE " . $prefix . "meal_instructions TO " . $prefix . "meal_instructions_old," . $prefix . "meal_instructions_new TO " . $prefix . "meal_instructions";
-                                                $wpdb->query($sql1);
+											$sql = "CREATE TABLE " . $prefix . "meal_instructions_new LIKE " . $prefix . "meal_instructions";
+											$wpdb->query($sql);
+											$sql1 = "RENAME TABLE " . $prefix . "meal_instructions TO " . $prefix . "meal_instructions_old," . $prefix . "meal_instructions_new TO " . $prefix . "meal_instructions";
+											$wpdb->query($sql1);
 
-                                                /* $sql = 'Truncate TABLE wp_meals';
-                                                  $wpdb->query($sql);
-                                                  $sql = 'Truncate TABLE wp_meal_ingredients';
-                                                  $wpdb->query($sql);
-                                                  $sql = 'Truncate TABLE wp_meal_instructions';
-                                                  $wpdb->query($sql); */
-                                                // echo '<pre>';
-                                                
-                                                $sql6 = 'select id,unit_symbol From  ' . $prefix . 'units';
-                                                $res = $wpdb->get_results($sql6);
-                                                $unita = array();
-                                                foreach ($res as $v) {
-                                                        $unita[$v->unit_symbol] = $v->id;
-                                                }
-                                                $file = fopen($bpath . $nm, "r");
-                                                $ckfield = fgetcsv($file);
-                                                //print_r($ckfield);
-                                                $key = array_search('Preparation Instruction', $ckfield);
-                                                // echo $key;
-                                                $last_key = key(array_slice($ckfield, -1, 1, TRUE));
-                                                // echo $last_key;
-                                                $temp = 0;
-                                               
-                                                while (($data = fgetcsv($file, 10000, ",")) !== FALSE) {
+											/* $sql = 'Truncate TABLE wp_meals';
+											  $wpdb->query($sql);
+											  $sql = 'Truncate TABLE wp_meal_ingredients';
+											  $wpdb->query($sql);
+											  $sql = 'Truncate TABLE wp_meal_instructions';
+											  $wpdb->query($sql); */
+											// echo '<pre>';
+											
+											$sql6 = 'select id,unit_symbol From  ' . $prefix . 'units';
+											$res = $wpdb->get_results($sql6);
+											$unita = array();
+											foreach ($res as $v) {
+													$unita[$v->unit_symbol] = $v->id;
+											}
+											$file = fopen($bpath . $nm, "r");
+											$ckfield = fgetcsv($file);
+											//print_r($ckfield);
+											$key = array_search('Preparation Instruction', $ckfield);
+										  
+											$last_key = key(array_slice($ckfield, -1, 1, TRUE));
+											// echo $last_key;
+											$temp = 0;
+										   
+                                            while (($data = fgetcsv($file, 10000, ",")) !== FALSE) {
 													
-                                                        if ($data[1] != '') {
+                                                if ($data[1] != '') {
 								//$name = wp_specialchars($data[1], $quotes );
 													$meal_id=$data[0];
 													$name = htmlspecialchars($data[1], ENT_QUOTES );
-                                                                $sql = "Insert into " . $prefix . "meals(meal_id,name,created) VALUES('".$meal_id."','" . $name . "','" . date('Y-m-d H:i:s') . "')";
-                                                                //echo "meal :".$sql."</br>";
-                                                                $res = $wpdb->query($sql);
-								
-                                                                //$last_id = mysql_insert_id();
-                                                                $last_id = $wpdb->insert_id;
-                                                                $j = 1;
-                                                                $sql1 = "Insert into " . $prefix . "meal_ingredients(meal_id,name,quantity,unit_id,weight,is_ommitable,exchangable_with_ingredient,created) VALUES";
-                                                                for ($i = 2; $i < $key; $i = $i + 6) {
-                                                                        if ($data[$i] != '') {
+														$sql = "Insert into " . $prefix . "meals(meal_id,name,created) VALUES('".$meal_id."','" . $name . "','" . date('Y-m-d H:i:s') . "')";
+													//	echo "meal :".$sql."</br>";
+														$res = $wpdb->query($sql);
+						
+														//$last_id = mysql_insert_id();
+														$last_id = $wpdb->insert_id;
+														//echo 'last='.$last_id;
+														$j = 1;
+														$sql1 = "Insert into " . $prefix . "meal_ingredients(meal_id,name,quantity,unit_id,weight,is_ommitable,exchangable_with_ingredient,created) VALUES";
+														//echo $sql1.'<br/>';
+														for ($i = 2; $i < $key; $i = $i + 6) {
+															if ($data[$i] != '') {
 
-                                                                                $sql1 .= "('" . $last_id . "','" . htmlspecialchars($data[$i],ENT_QUOTES) . "','" . str_replace(',','.',$data[$i + 1]) . "','" . $unita[$data[$i + 2]] . "','" . str_replace(',','.',$data[$i + 3]) . "','" . $data[$i + 4] . "','" . $data[$i + 5] . "','" . date('Y-m-d H:i:s') . "'),";
-                                                                                
-                                                                                
-                                                                                
-                                                                                $data[$key] = str_replace('[[' . strtolower('ingredient' . $j) . ']]', $data[$i], $data[$key]);
-                                                                        }
-                                                                        $j++;
-                                                                }
-                                                               // echo "meal ingrident:".$sql1."</br>";
-                                                                
-                                                               
-                                                                $res1 = $wpdb->query(trim($sql1,','));
-                                                                //echo "res1:".$res1."<br>";
-                                                                //echo "popularity:".$data[$key + 4]."</br>";
-                                                                
-                                                                $sql3 = "Insert into " . $prefix . "meal_instructions(meal_id,instruction,difficulty,preparation_time,other_time,popularity,source,meal_category_ids,created) VALUES('" . $last_id . "','" . $data[$key] . "','" . $data[$key + 1] . "','" . $data[$key + 2] . "','" . $data[$key + 3] ."','" .((($data[$key + 4]) == "") ? $default_value : $data[$key + 4])."','" . $data[$key + 5] . "','" . $data[$key + 6] . "','" . date('Y-m-d H:i:s') . "')";
-                                                                
-                                                               // echo "meal instruction:".$sql3."</br>";
-                                                               // exit;
-                                                                $res2 = $wpdb->query($sql3);
-                                                                //echo "res:".$res2."<br>";
-                                                                if ($res == false || $res1 == false || $res2 == false) {
-                                                                        $temp = 0;
-                                                                        break;
-                                                                } else {
-                                                                        $temp++;
-                                                                }
-                                                                //                                                                //echo "temp:".$temp."<br>";
-                                                        }
+																$sql1 .= "('" . $last_id . "','" . htmlspecialchars($data[$i],ENT_QUOTES) . "','" . str_replace(',','.',$data[$i + 1]) . "','" . $unita[$data[$i + 2]] . "','" . str_replace(',','.',$data[$i + 3]) . "','" . $data[$i + 4] . "','" . $data[$i + 5] . "','" . date('Y-m-d H:i:s') . "'),";
+																
+																
+																
+																$data[$key] = str_replace('[[' . strtolower('ingredient' . $j) . ']]', $data[$i], $data[$key]);
+															}
+															$j++;
+														}
+														//echo "meal ingrident:".rtrim($sql1,',')."</br>";
+															
+														$res1 = $wpdb->query(rtrim($sql1,','));
+													//	echo "res1:".$res1."<br>";
+														//echo "popularity:".$data[$key + 4]."</br>";
 														
-                                                }
-                                                if ($temp == 0) {
-                                                        $sql = "RENAME TABLE " . $prefix . "meals TO " . $prefix . "meals_zap," . $prefix . "meals_old TO " . $prefix . "meals";
-                                                        $wpdb->query($sql);
-                                                        $sql12 = "DROP TABLE " . $prefix . "meals_zap";
-                                                        $wpdb->query($sql12);
+														$sql3 = "Insert into " . $prefix . "meal_instructions(meal_id,instruction,difficulty,preparation_time,other_time,popularity,source,meal_category_ids,sweet_tooth,created) VALUES('" . $last_id . "','" . $data[$key] . "','" . $data[$key + 1] . "','" . $data[$key + 2] . "','" . $data[$key + 3] ."','" .((($data[$key + 4]) == "") ? $default_value : $data[$key + 4])."','" . $data[$key + 5] . "','" . $data[$key + 6] . "','" . $data[$key + 7] . "','" . date('Y-m-d H:i:s') . "')";
+													   
+													//	echo "meal instruction:".$sql3."</br>";
+													   // exit;
+														$res2 = $wpdb->query($sql3);
+														
+														if ($res == false || $res1 == false || $res2 == false) {
+																$temp = 0;
+																break;
+														} else {
+																$temp++;
+														}
+																													  
+													}
+														
+											}
+											if ($temp == 0) {
+												$sql = "RENAME TABLE " . $prefix . "meals TO " . $prefix . "meals_zap," . $prefix . "meals_old TO " . $prefix . "meals";
+												$wpdb->query($sql);
+												$sql12 = "DROP TABLE " . $prefix . "meals_zap";
+												$wpdb->query($sql12);
 
-                                                        $sql = "RENAME TABLE " . $prefix . "meal_ingredients TO " . $prefix . "meal_ingredients_zap," . $prefix . "meal_ingredients_old TO " . $prefix . "meal_ingredients";
-                                                        $wpdb->query($sql);
-                                                        $sql12 = "DROP TABLE " . $prefix . "meal_ingredients_zap";
-                                                        $wpdb->query($sql12);
+												$sql = "RENAME TABLE " . $prefix . "meal_ingredients TO " . $prefix . "meal_ingredients_zap," . $prefix . "meal_ingredients_old TO " . $prefix . "meal_ingredients";
+												$wpdb->query($sql);
+												$sql12 = "DROP TABLE " . $prefix . "meal_ingredients_zap";
+												$wpdb->query($sql12);
 
-                                                        $sql = "RENAME TABLE " . $prefix . "meal_instructions TO " . $prefix . "meal_instructions_zap," . $prefix . "meal_instructions_old TO " . $prefix . "meal_instructions";
-                                                        $wpdb->query($sql);
-                                                        $sql12 = "DROP TABLE " . $prefix . "meal_instructions_zap";
-                                                        $wpdb->query($sql12);
-                                                        //$sql="ROLLBACK";
-                                                        $flag = 0;
-                                                } else {
-                                                        $sql = "DROP TABLE " . $prefix . "meals_old";
-                                                        $wpdb->query($sql);
+												$sql = "RENAME TABLE " . $prefix . "meal_instructions TO " . $prefix . "meal_instructions_zap," . $prefix . "meal_instructions_old TO " . $prefix . "meal_instructions";
+												$wpdb->query($sql);
+												$sql12 = "DROP TABLE " . $prefix . "meal_instructions_zap";
+												$wpdb->query($sql12);
+												//$sql="ROLLBACK";
+												$flag = 0;
+											} else {
+												$sql = "DROP TABLE " . $prefix . "meals_old";
+												$wpdb->query($sql);
 
-                                                        $sql = "DROP TABLE " . $prefix . "meal_ingredients_old";
-                                                        $wpdb->query($sql);
+												$sql = "DROP TABLE " . $prefix . "meal_ingredients_old";
+												$wpdb->query($sql);
 
-                                                        $sql = "DROP TABLE " . $prefix . "meal_instructions_old";
-                                                        $wpdb->query($sql);
-                                                        $flag = 1;
-                                                }
+												$sql = "DROP TABLE " . $prefix . "meal_instructions_old";
+												$wpdb->query($sql);
+												$flag = 1;
+											}
                                         }
 										else
                                         {
@@ -658,40 +661,40 @@ $default_value=0;
         }
         ?>
         <div class="">
-                <h2>Import CSV</h2>
-                <div class="">
-                        <form class="" name="import_food_meals" method="post" enctype="multipart/form-data">
-                                <div>
-                                        <label>Import CSV Type</label>
-                                        <select name="import_type" id="import_type">
-                                                <option value="Food">Food</option>
-                                                <option value="Food_cat">Food Category</option>
-                                                <option value="Meal">Meal</option>
-                                                <option value="Unit">Unit</option>
-                                                <option value="splistcat">Shopping list Category</option>
-                                                <!--<option value="Conversion">Unit Conversion</option>
-                                                <option value="footattrib">Food Attribute</option>-->
-                                        </select>
-                                </div>
-                                <div>
-                                        <label>Import CSV </label>
-                                        <input type="file" name="import_csv"/>
-                                </div>
-                                <div>
-                                        <input type="submit" name="submit" value="Submit" class="button button-primary button-large"/>
+			<h2>Import CSV</h2>
+			<div class="">
+				<form class="" name="import_food_meals" method="post" enctype="multipart/form-data">
+					<div>
+						<label>Import CSV Type</label>
+						<select name="import_type" id="import_type">
+								<option value="Food">Food</option>
+								<option value="Food_cat">Food Category</option>
+								<option value="Meal">Meal</option>
+								<option value="Unit">Unit</option>
+								<option value="splistcat">Shopping list Category</option>
+								<!--<option value="Conversion">Unit Conversion</option>
+								<option value="footattrib">Food Attribute</option>-->
+						</select>
+					</div>
+					<div>
+						<label>Import CSV </label>
+						<input type="file" name="import_csv"/>
+					</div>
+					<div>
+						<input type="submit" name="submit" value="Submit" class="button button-primary button-large"/>
 
-                                        <?php if ($flag == 1) { ?>
-												<input type="submit" name="submit" value="View Data" class="button button-primary button-large" id="view_data"/>
-                                                <label id='msg' name='msg'>File Successfully uploaded</label>
-                                                
-                                        <?php } elseif ($flag == 0) {
-                                                ?>
-                                                <label id='msg' name='msg'>There is an error in file upload,but database records is not changed.</label>
-                                        <?php } ?>
+						<?php if ($flag == 1) { ?>
+								<input type="submit" name="submit" value="View Data" class="button button-primary button-large" id="view_data"/>
+								<label id='msg' name='msg'>File Successfully uploaded</label>
+								
+						<?php } elseif ($flag == 0) {
+								?>
+								<label id='msg' name='msg'>There is an error in file upload,but database records is not changed.</label>
+						<?php } ?>
 
-                                </div>
-                        </form>
-                </div>
+					</div>
+				</form>
+			</div>
         </div>
         <script>
                 jQuery(document).ready(function () {
@@ -1117,6 +1120,7 @@ add_action('wp_ajax_meal_ingredient', 'meal_ingredient');
 
 function meal_ingredient() {
         global $wpdb;
+        $prefix = 'up_';
         if (!isset($_REQUEST['nonce']) || !wp_verify_nonce($_REQUEST['nonce'], 'meal_ingredient')) {
                 return;
         }
@@ -1190,13 +1194,13 @@ GROUP BY f.name";
                 
 
                 $querystr = "SELECT SQL_CALC_FOUND_ROWS f.name,f.shopping_list_name, GROUP_CONCAT( fm.name ) AS micro , GROUP_CONCAT( CONCAT( fm.value, u.unit_symbol ) ) AS value,`cw_vegetarian`,`cw_vegan`,`cw_pescetarian`,`cw_paleo`,`cw_lactose_intolerance`,`cw_fructose_intolerance`,`cw_histamine_intolerance`,`cw_gluten_intolerance`,`cw_glutamat_intolerance`,`cw_sucrose_intolerance`,`cw_peanut_intolerance`,`cw_almond_intolerance`,`cw_hazelnut_intolerance`, `cw_walnut_intolerance`, `cw_cashew_intolerance`, `cw_pecan_nut_intolerance`, `cw_brazil_nut_intolerance`, `cw_pistachio_intolerance`, `cw_banana_intolerance`, `cw_avocade_intolerance`, `cw_apple_intolerance`, `cw_kiwi_fruit_intolerance`, `cw_melon_intolerance`, `cw_papaya_intolerance`, `cw_peach_intolerance`, `cw_strawberry_intolerance`,`is_snack`, `is_fatburner`, `price_level_id`, `synonym_of`,fc.name as fc_name , wslc.name as slist_cat,wpl.name as prize_level , f.source,f.exchangeable_with
-FROM " . $prefix . "foods f
-INNER JOIN " . $prefix . "food_micros fm ON f.id = fm.food_id
-INNER JOIN " . $prefix . "units u ON fm.unit_id = u.id
-Left join " . $prefix . "shopping_list_categories wslc on wslc.id= f.shopping_list_category_id
-Left join " . $prefix . "price_levels wpl On wpl.id = f.price_level_id
-LEFT JOIN " . $prefix . "food_categories fc ON f.food_category_id = fc.id
-GROUP BY f.name LIMIT 10";
+				FROM " . $prefix . "foods f
+				INNER JOIN " . $prefix . "food_micros fm ON f.id = fm.food_id
+				INNER JOIN " . $prefix . "units u ON fm.unit_id = u.id
+				Left join " . $prefix . "shopping_list_categories wslc on wslc.id= f.shopping_list_category_id
+				Left join " . $prefix . "price_levels wpl On wpl.id = f.price_level_id
+				LEFT JOIN " . $prefix . "food_categories fc ON f.food_category_id = fc.id
+				GROUP BY f.name LIMIT 10";
               //  echo $querystr;
                 
                 $foods = $wpdb->get_results($querystr, OBJECT);
@@ -1349,7 +1353,7 @@ GROUP BY f.name LIMIT 10";
                 $total_record = $wpdb->num_rows;*/
 
 
-                $query = "SELECT SQL_CALC_FOUND_ROWS m . * , mi . instruction,mi.preparation_time,mi.other_time,mi.popularity,mi.source,mi.meal_category_ids , GROUP_CONCAT( mc.name ) as meal_cats
+                $query = "SELECT SQL_CALC_FOUND_ROWS m . * , mi . instruction,mi.preparation_time,mi.other_time,mi.popularity,mi.source,mi.meal_category_ids,mi.sweet_tooth , GROUP_CONCAT( mc.name ) as meal_cats
 					FROM  " . $prefix . "meals m
 					INNER JOIN " . $prefix . "meal_instructions mi ON mi.meal_id = m.id
 					INNER JOIN " . $prefix . "meal_categories mc ON FIND_IN_SET( mc.id, mi.meal_category_ids ) 
@@ -1372,6 +1376,7 @@ GROUP BY f.name LIMIT 10";
                 $content .= '<th>Popularity</th>';
                 $content .= '<th>Source</th>';
                 $content .= '<th>Meal Category</th>';
+                $content .= '<th>Sweet Tooth</th>';
                 $content .= '<th>Ingredient</th>';
                 $content .= '</tr>';
 
@@ -1386,6 +1391,7 @@ GROUP BY f.name LIMIT 10";
                                 $content .= '<td>' . $key->popularity . '</td>';
                                 $content .= '<td style="word-break: break-word;">' . $key->source . '</td>';
                                 $content .= '<td style="word-break: break-word;">' . $key->meal_cats . '</td>';
+                                $content .= '<td>' . $key->sweet_tooth . '</td>';
                                 $content .= '<td><span class="view_meal_ingd" id="' . $key->id . '">View</span></td></tr>';
                         }
                 }

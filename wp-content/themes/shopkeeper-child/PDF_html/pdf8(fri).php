@@ -19,7 +19,7 @@
 //	  print_r($item_data);
 	global $wpdb;
 	$order_details=$wpdb->get_results('select id,meals_per_day from up_user_nutrition_plans where order_id='.$order_id.' AND site_id='.$site_id);	
-	
+	$res=$om_id=$f_ids=array();
 	$fri_meal_res=$wpdb->get_results('select fri from up_plan_logs where user_nutrition_plan_id='.$order_details[0]->id.' AND week_no='.$week_no.' AND site_id='.$site_id);	
 	$fri_meal=unserialize($fri_meal_res[0]->fri);
 	//print_r($mon_meal);
@@ -41,13 +41,16 @@ $breakfast_ingredients=$wpdb->get_results( $query,ARRAY_A);
 		$f_ids[]=$bi['f_id'];
 	}
 	//print_r($f_ids);
-	$breakfast_order_meals=$wpdb->get_results( 'select * from up_order_meals where order_id='.$order_id.' AND meal_id='.$breakfast[0],ARRAY_A);
+	$breakfast_order_meals=$wpdb->get_results( 'select * from up_order_meals where order_id='.$order_id.' AND meal_id='.$breakfast[0].' AND site_id='.$site_id,ARRAY_A);
 	$breakfast_final_ingredients=explode(',',$breakfast_order_meals[0]['ingredient_ids']);
 	if($breakfast_order_meals[0]['exchangble']==1){
 			$res=array_diff($breakfast_final_ingredients,$f_ids);
 			$e_id=array_values($res);
 		}
-	
+	if(empty($e_id) && count($e_id) <= 0){
+			$res=array_diff($f_ids,$breakfast_final_ingredients);
+			$om_id=array_values($res);
+		}
 	$meal_details=$wpdb->get_results( 'select * from up_meal_instructions where meal_id='.$breakfast[0],ARRAY_A);
 	$str_time = $meal_details[0]['preparation_time'];
 	$str_time = preg_replace("/^([\d]{1,2})\:([\d]{2})$/", "00:$1:$2", $str_time);
@@ -75,7 +78,7 @@ $breakfast_ingredients=$wpdb->get_results( $query,ARRAY_A);
 	$fisch_meals2 = $wpdb->get_results('call meat_and_fish_meals("' . $breakfast[0] . '","Schalentiere")', OBJECT_K);
 	foreach($meat_meals2 as $k=>$v){
 		foreach($v as $v1=>$v2){
-			if($v2=='Fleischwaren & Wurstwaren');
+			if($v1=='Fleischwaren & Wurstwaren');
 				$meat_meals3['fleischwaren']=$v2;
 			}
 	}

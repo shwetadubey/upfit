@@ -24,7 +24,7 @@ class YITH_WC_Email_Cancelled_Order extends WC_Email {
 	 */
 	function __construct() {
 
-		$this->id               = 'cancelled_order';
+		$this->id               = 'vendor_cancelled_order';
 		$this->title            = __( 'Cancelled order (to vendor)', 'yith_wc_product_vendors' );
 		$this->description      = __( 'Cancelled order emails are sent when orders have been marked as cancelled (if they were previously set as pending or on-hold).', 'woocommerce' );
 

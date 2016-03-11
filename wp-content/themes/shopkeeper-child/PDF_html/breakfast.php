@@ -74,27 +74,29 @@
 					  
 					  <table class="p4-listingingredients" width="100%" cellspacing="0" cellpadding="0" border="0" style="border:0;outline:none; padding-bottom:5px;">
 						<?php 
-							$c=0;
-							$prise_ar=array();
+							$c=$e=0;
 							unset($prise_ar);
-							$e=0;
+							$prise_ar=array();
+							$prise_ing='';
 						foreach($breakfast_ingredients as $ing){
-							//echo 'select unit_symbol from '.$wpdb->prefix.'units where id='.$ing["unit_id"];
+							$ing_name='';
+							
 							$unit=$wpdb->get_results('select unit_symbol from up_units where id='.$ing['unit_id']);
 							$c++;
-							if(!in_array($ing['f_id'],$breakfast_final_ingredients)){
+						//	if(!in_array($ing['f_id'],$om_id)){
+								if(!in_array($ing['f_id'],$breakfast_final_ingredients)){
 									
 									if(count($e_id)>0  && !empty($e_id)){
 										$res1=$wpdb->get_results('select name from up_foods where id='.$e_id[$e]);
-									
 										$ing_name=$res1[0]->name;
 										$e++;
 									}
 								}
-							else{
-								$ing_name= $ing['name'];
-							}
-							if(isset($ing_name)){
+								else{
+									$ing_name= $ing['name'];
+								}
+						//	}
+							if(isset($ing_name) && !empty($ing_name)){
 							 ?>								
 							<tr>				
 								<?php
@@ -129,7 +131,7 @@
 									<?php
 										$prise_ar=array_unique($prise_ar);
 										$prise_ing=implode(', ', $prise_ar);
-										echo $prise_ing;
+										echo trim($prise_ing,', ');
 									?>
 									</td>
 								</tr>

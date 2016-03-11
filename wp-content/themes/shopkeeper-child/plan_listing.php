@@ -34,6 +34,15 @@ function plan_listing_with_description(){
 					);
 	//print_r($plans);
 
+#set different download url for plan preview main site vs. vendor subsite
+$url_home = home_url();
+	if ($url_home == "https://upfit.de"){
+		$url_plan_preview = "https://upfit.de/preview-plan-12";
+	} 
+	else {
+		$url_plan_preview = "https://upfit.de/plan-preview-12";
+	}
+
 ?>	
 <div class="pricing_table">
 <?php
@@ -100,7 +109,7 @@ function plan_listing_with_description(){
             <span>Nur <?php echo number_format($price/($period*7),2,',','').get_woocommerce_currency_symbol(); ?>/Tag</span>
           </div>
 		</div>
-		<a class="plan_more_details" href="<?php echo home_url(); ?>/ernaehrungsplaene_uebersicht/#<?php echo strtolower($plan_name[1]);?>">Mehr Details</a>
+		<a class="plan_more_details" href="<?php echo $url_plan_preview ;?>" alt="Vorschau Muster Ernährungsplan" target="_blank" onclick="ga('send','event','Pre-Sale','see','Direct Plan Preview',1);">Planvorschau</a>
 		</div>
 		<?php
 	}else{
@@ -150,7 +159,7 @@ function plan_listing_with_description(){
 				<span>Nur <?php echo number_format($price/($period*7),2,',','').get_woocommerce_currency_symbol(); ?>/Tag</span>
 			  </div>
 		 </div>
-		 		<a class="plan_more_details" href="<?php echo home_url(); ?>/ernaehrungsplaene_uebersicht/#<?php echo strtolower($plan_name[1]);?>" >Mehr Details</a>
+		 		<a class="plan_more_details" href="<?php echo $url_plan_preview ;?>" alt="Vorschau Muster Ernährungsplan" target="_blank" onclick="ga('send','event','Pre-Sale','see','Direct Plan Preview',1);">Planvorschau</a>
 		  </div>
 		<?php
 	

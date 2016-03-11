@@ -8,7 +8,7 @@
 <head>
 <style>
 .shopping_list_column{box-decoration-break:clone;
-	width:22%;float:left;padding:10px 10px 0px 10px;font-size:12px;
+	width:23%;float:left;padding:10px 10px 0px 10px;font-size:12px;
 }
 </style>
 
@@ -49,7 +49,7 @@
 //	echo '</pre>';
 	//echo 'week_ing'.$week_ing;
 	$final_meals=rtrim($meal_res[0]->final_meals,',');
-	$sql='SELECT
+	/*$sql='SELECT
 		GROUP_CONCAT(uf.shopping_list_name,"@") AS shopping_list_ing,
 		GROUP_CONCAT(umi.quantity,"") AS quantity,
 		GROUP_CONCAT(umi.unit_id ,"") AS unit_id,
@@ -60,6 +60,7 @@
 		JOIN up_units as uun on uun.id=umi.unit_id 
 		JOIN up_shopping_list_categories as uslc on uf.shopping_list_category_id=uslc.id 
 		WHERE uf.id IN('.$week_ing.') GROUP BY uslc.name ORDER BY uslc.id';
+	 */
 	 $sql1="SELECT GROUP_CONCAT(uf.shopping_list_name,'@') AS shopping_list_ing,
 			GROUP_CONCAT(umi.quantity,'') AS quantity,
 			GROUP_CONCAT(umi.unit_id ,'') AS unit_id,
@@ -73,7 +74,7 @@
 			and find_in_set(f1.id, om.ingredient_ids) = 0)) 
 			INNER JOIN up_units as uun on uun.id=umi.unit_id 
 			INNER JOIN up_shopping_list_categories as uslc on uf.shopping_list_category_id=uslc.id 
-			WHERE om.order_id=".$order_id." and om.meal_id IN (".$final_meals.")
+			WHERE om.order_id=".$order_id." and om.site_id=".$site_id." and om.meal_id IN (".$final_meals.")
 			GROUP BY uslc.name ORDER BY uslc.id";
 			//	echo $sql1;
 			
@@ -96,14 +97,13 @@
 				<div class="shopping_list_column">
 				<?php
 					$c=0;
-					$b=0;
+					$d=$b=0;
 					$a=34;
 					foreach($shopping_list as $list) {
 						//$c++;
 						$ct++;
-						if($c==$a){
-							$c=0;
-							
+						if($c == $a || $c >= $a-$d){
+							$d=$c=0;
 							if($b != 4){
 								$b++;
 								echo '</div><div class="shopping_list_column">';
@@ -124,11 +124,11 @@
 						}
 						if($b>=0 ){
 							if($ct!=1){	
-								if($c==$a || $c == $a-4  || $c == $a-3 ||  $c == $a-2 ||  $c == $a-1){
-										$c=0;
-										$b++;
-										echo '</div><div class="shopping_list_column">';
-									}
+								if($c == $a || $c >= $a-($d+4) || $c >= $a-4 ){
+									$d=$c=0;
+									$b++;
+									echo '</div><div class="shopping_list_column">';
+								}
 								if($c>=1 ){
 									
 					?>
@@ -136,29 +136,31 @@
 						<div class="shopping_hr_border"></div>
 						<div><?php $c++; ?><p style="height:7px; float:left; width:100%;margin:5px 0 8px;padding:0;">&#32;</p></div>
 						<?php
-								
 								}
 							}
 						}
 						 	
-						if($c==$a){
-							$c=0;
+						if($c == $a || $c >= $a-$d ){
+							$d=$c=0;
 							$b++;
 							echo '</div><div class="shopping_list_column">';
 						}
 						
-						  ?> 
+						?> 
 						<h3 class="category_name"><?php $c++; echo $list->cat_name;?></h3>
 						<?php 
-							if($c==$a){
-								$c=0;
+							if($c==$a || $c >= $a-$d){
+							$d=$c=0;
 								$b++;
 								//echo $c;
 								echo '</div><div class="shopping_list_column">';
 							}
 							
 						?>
-						<div><?php $c++; ?><p style="height:7px;float:left; width:100%;margin:7px 0 7px;padding:0;">&#32;</p></div>
+						<div>
+							<?php $c++; ?>
+							<p style="height:7px;float:left; width:100%;margin:7px 0 7px;padding:0;">&#32;</p>
+						</div>
 					<?php	
 						$shopping_list_ing=explode('@,',$list->shopping_list_ing);
 						$quantity=explode(',',$list->quantity);
@@ -175,7 +177,7 @@
 						unset($ing_w_ar);
 						$q_sum=$w_sum=$ing_names=array();
 						$shopping_list_ing = array_map(function($el) { return str_replace('@','',$el); }, $shopping_list_ing);
-						file_put_contents('inj.json', json_encode($shopping_list_ing),FILE_APPEND);
+						//file_put_contents('inj.json', json_encode($shopping_list_ing),FILE_APPEND);
 						
 						for( $i = 0; $i <= sizeof($shopping_list_ing); $i++) 
 						{
@@ -226,28 +228,32 @@
 								//print_r($u_res);
 								$u=$u_res[0]->unit_symbol;
 							}
-							if(strlen($k)>19){
-								$k1=substr($k,0,18).'...';
-								}
-								else{
-									$k1=$k;
-								}
+							
+								if(strlen($k)>21){
+								//	$k1=substr($k,0,18).'...';
 								
+									$d++;
+								}
+								//echo strlen('Magerquark (<10% Fett)');
 							}
+							//echo strlen('Magerquark (<10% Fett)');
+							//echo $c;
 							?>
 							<div class="font-size-same" style="line-height:15px;margin:0;width:100%;float:left;">
 								<div style="float:left; width:12px; padding-top:3px;padding-right:5px;">
-								<img height=10 width=10 src="<?php echo get_template_directory_uri(); ?>-child/images/icons/checkbox.png"></div>
+									<img height=10 width=10 src="<?php echo get_template_directory_uri(); ?>-child/images/icons/checkbox.png">
+								</div>
 								<div style="width:80px; float:left;">
 									<span><?php echo $value.' '.$u; ?></span>
 								</div>
-								<div style="float:left;"><span> <?php echo $k1;?></span></div>
+								<div style="float:left;width:120px;word-break:break-word ">
+									<span><?php echo $k;?></span>
+								</div>
 							</div>
 						<?php
 							
-							if($c==$a){
-								$c=0;
-								
+							if($c==$a || $c >= $a-$d){
+								$d=$c=0;
 								$b++;
 								if($b != 4){
 									echo '</div><div class="shopping_list_column">';
@@ -269,8 +275,8 @@
 					
 				</div>  
 			</div>  
-         </div>  
-     </div>
+        </div>  
+    </div>
 </div>
 </body>
 </html>

@@ -19,8 +19,8 @@
 	<style type="text/css">
 		.main_input_section{
 			width: 100%;
-			padding: 80px 0px;
-			position: relative;
+			height: 100%;
+			position: fixed;
 		}
 		.top-headers-wrapper{
 			margin-bottom: 0px;
@@ -67,6 +67,8 @@
 		.main_input_section_wrapper{
 			max-width: 940px;
 			margin: 0 auto;
+			top:35%;
+			position: relative;
 		}
 		.main_input_section .head_line{
 			padding: 0px 24px 35px;
@@ -75,10 +77,13 @@
 		body{
 			margin: 0;
 			padding: 0;
+			overflow: hidden;
 		}
 		#lose_weight_btn{
 			text-transform: uppercase;
 		}
+		.site-header{height: 50px}
+		#site-footer{height: 50px;padding:0px;}
 		.site-footer-widget-area .large-3:first-child { padding-left: 0;}
 		.site-footer-widget-area .large-3 { width: 23%; float: left;     padding-left: 0.625rem; padding-right: 0.625rem;}
 		.site-footer-copyright-area { display: inline-block; width: 100%;}
@@ -87,94 +92,32 @@
 		.site-footer-widget-area ul li a{
 			text-decoration: none;
 		}
-		@media only screen and (max-width: 979px) and (min-width: 768px){
+		@media only screen and (min-width:768px) and (max-width:979px) {
 			#site-footer .site-footer-widget-area .large-3.columns { width: 23%;}
-			.right_content .inputs_right .input_kg_right { padding: 19px 0px 16px 8px;}
+			.right_content .inputs_right .input_kg_right { padding: 19px 0 16px; width: 11.66%;}
+			.right_content .inputs_right input { width: 12%;}
+			.form_content { width: 400px;}
+		}
+		@media only screen and (max-width:767px) {
+			.form_content { display: block;}
+			.right_content .inputs_right input { width: 15%;}
+			.right_content .inputs_right .input_kg_right { padding: 16px 28px 16px 0;}
+		}
+		@media only screen and (max-width:640px) {
+			.form_content { width: 70%;}
+			.welter_btn.yellow_hover input.btnext { padding-left:0;}
+			.right_content .inputs_right input { width: 50%;}
+		}
+		@media only screen and (max-width:480px) {
+			.form_content { width: 85%;}
 		}
 	</style>
 	<div id="page_wrapper">
-		<div class="top-headers-wrapper">
-									                                	
-			<header id="masthead" class="site-header" role="banner">
-
-			    <div class="row">		
-			    	<div class="large-12 columns">
-			            <div class="site-header-wrapper" style="max-width:940px;">
-			             
-			               	<div class="wrapper_header_layout">
-			                        
-			                  	<div class="header_col left_menu">
-			                                       
-	                                <a href="https://upfit.de/" rel="home">
-	                                    <img class="site-logo" src="https://upfit.de/wp-content/uploads/2016/01/upfit-logo-134x35px.png" title="Schnell abnehmen ohne zu hungern" alt="Upfit">
-	                                </a>                           
-			                    </div>
-				                    
-			                    <div class="header_col branding">
-			                        <div class="site-branding">
-				                        <div class="punch_line">
-											<p>Schnell abnehmen ohne zu hungern</p>
-										</div>
-			                        
-			                        </div><!-- .site-branding -->
-			                    </div>
-			                    <!----- -------Trust Badge ----- ------>
-			                    <div class="header_col right_menu">
-									<div class="iosmarker">
-										<a href="/qualitaet-sicherheit/">
-											<img src=" https://upfit.de/wp-content/uploads/2016/01/badge-wissenschaftlich-fundiert-59x59px.png">
-										</a>
-									</div>
-									<div class="iosmarker marg-10">
-										<a href="/qualitaet-sicherheit/">
-											<img src=" https://upfit.de/wp-content/uploads/2016/01/badge-top-qualitaÌˆt-59x59px.png">
-										</a>
-									</div>
-									<div class="iosmarker">
-										<a href="/qualitaet-sicherheit/">
-											<img src=" https://upfit.de/wp-content/uploads/2016/01/badge-ssl-59x59px.png">
-										</a>
-									</div>
-								</div>
-			                        
-			              	</div>           
-			                    
-			                               
-		                   	<div class="wrapper_header_mobile_layout">
-		                        
-			                    <div class="header_col left_menu">
-			                                       
-									<a href="https://upfit.de/" rel="home">
-										<img class="site-logo" src="https://upfit.de/wp-content/uploads/2016/01/upfit-logo-134x35px.png" title="Schnell abnehmen ohne zu hungern" alt="Upfit">
-									</a>
-			                    </div>
-			                     <div class="header_col right_menu">
-									<div class="iosmarker">
-									</div>
-								</div>
-		                   
-			                    <div class="header_col branding">
-			                        <div class="site-branding">
-				                        <div class="punch_line">
-											 <p>Schnell abnehmen ohne zu hungern</p>
-										</div>
-			                        </div><!-- .site-branding -->
-			                    </div>
-		                    <!----- -------Trust Badge ----- ------>
-			                       
-			                </div>           
-			                           
-			            </div><!--.site-header-wrapper-->
-			        </div><!-- .columns -->
-			    </div><!-- .row -->
-			    
-			</header><!-- #masthead -->
-	                                                            							
-	    </div>
+		
 
 	    <div class="main_input_section">
 	      	<div class="main_input_section_wrapper">
-	      	<div class="main_input_section_inner_row"><h2 style="text-align: center" class="vc_custom_heading head_line">Der individuelle Ernährungsplan zu deiner Traumfigur!</h2></div>
+	      	
 				<div class="form_content right_content ">
 					<form method="post" id="homepage_form" action="https://upfit.de/ernaehrungsplan_erstellen">
 						<ul class="inputs_right">
@@ -192,7 +135,7 @@
 							</li>
 							<li>
 								<div class="welter_btn yellow_hover">
-									<input type="submit" id="lose_weight_btn" class="btnext" value="Ja, ich will abnehmen" />
+									<input type="submit" id="lose_weight_btn" class="btnext" value="Ernährungsplan erstellen" />
 									<i class="btn_arrow_right" ></i>
 								</div>
 							</li>
@@ -201,90 +144,10 @@
 				</div>
 			</div>
 		</div>
-		<footer id="site-footer" role="contentinfo" class="on_screen">
-                        
-                    	 						 
-							<div class="trigger-footer-widget-area">
-								<span class="trigger-footer-widget-icon"></span>
-							</div>
-						
-							<div class="site-footer-widget-area">
-								<div class="row">
-									<div class="large-3 columns"><aside id="text-2" class="widget widget_text"><h3 class="widget-title">Unser Konzept</h3>			<div class="textwidget"><ul class="ueber-upfit">
-<li><a target="_self" href="/so-funktioniert-upfit-ernaehrungsplan/" title="So funktioniert Upfit">So funktioniert Upfit</a></li>
-<li><a target="_self" href="/warum-upfit-ernaehrungsplaene/" title="Warum Upfit?">Warum Upfit?</a></li>
-<li><a target="_self" href="/all-faq/" title="Häufige Fragen und Antworten">Fragen &amp; Antworten</a></li>
-<li><a target="_self" href="/kontakt/" title="Kontakt">Kontakt</a></li>
-</ul></div>
-		</aside></div><div class="large-3 columns"><aside id="text-9" class="widget widget_text"><h3 class="widget-title">Ernährungspläne</h3>			<div class="textwidget"><ul class="ernaehrungsplaene">
-<li><a target="_self" href="/ernaehrungsplaene_uebersicht/#sparfuchs" title="Upfit Sparfuchs Ernährungsplan">Upfit Sparfuchs</a></li>
-<li><a target="_self" href="/ernaehrungsplaene_uebersicht/#fettkiller" title="Upfit Fettkiller Ernährungsplan">Upfit Fettkiller</a></li>
-<li><a target="_self" href="/ernaehrungsplaene_uebersicht/#dauerbrenner" title="Upfit Dauerbrenner Ernährungsplan">Upfit Dauerbrenner</a></li>
-<li><a target="_self" href="/ernaehrungsplaene_uebersicht/#sportmuffel" title="Upfit Sportmuffel Ernährungsplan">Upfit Sportmuffel</a></li>
-</ul></div>
-		</aside></div><div class="large-3 columns"><aside id="text-3" class="widget widget_text"><h3 class="widget-title">Upfit</h3>			<div class="textwidget"><ul class="rechtliches">
-<li><a target="_self" href="https://upfit.de/datenschutz/" title="Datenschutzerklärung">Datenschutz</a></li>
-<li><a target="_self" href="https://upfit.de/agb/" title="Allgemeine Geschäftsbedingungen">AGB</a></li>
-<li><a target="_self" href="https://upfit.de/impressum/" title="Impressum">Impressum</a></li>
-</ul>
-</div>
-		</aside></div><div class="large-3 columns"><aside id="shopkeeper_social_media-4" class="widget widget_shopkeeper_social_media"><h3 class="widget-title">Folge Uns</h3><a href="https://www.facebook.com/Upfit-898743413574018" target="_blank" class="widget_connect_facebook">Facebook</a><a href="https://de.pinterest.com/upfitit/" target="_blank" class="widget_connect_pinterest">Pinterest</a><a href="https://www.instagram.com/upfitit/" target="_blank" class="widget_connect_instagram">Instagram</a></aside></div>								</div><!-- .row -->
-							</div><!-- .site-footer-widget-area -->
-                        
-						                        
-                        <div class="site-footer-copyright-area">
-                            <div class="row">
-								<div class="large-12 columns">
-				
-									                                    
-                                  <!--  <div class="footer_col">
-									<ul>
-										<li><b>Über UpFit</b></li>
-										<li>So funktioniert UpFit</li>
-										<li>Warum UpFit?</li>
-										<li>Expertenteam</li>
-										<li>Kontakt</li>
-										<li>Partnerprogramm </li>
-										
-									</ul>
-                                    </div>
-                                    
-                                    <div class="footer_col">
-									<ul class="footer_socials_wrapper">
-										<li>Ernährungspläne</li>
-										
-									</ul>
-                                    </div>
-                                    
-                                    <div class="footer_col">
-									<ul class="footer_socials_wrapper">
-										<li>Erfahrungsberichte</li>
-										
-									</ul>
-                                    </div>
-                                    
-                                    <div class="footer_col">
-									<ul class="footer_socials_wrapper">
-										<li>Folge Uns</li>
-										
-									</ul>
-                                    </div>-->
-                                
-									<nav class="footer-navigation-wrapper" role="navigation">                    
-										           
-									</nav><!-- #site-navigation -->   
-								
-                                    <div class="copyright_text">
-                                                                                    © <a href="https://upfit.de">Copyright <script type="text/javascript">document.write(new Date().getFullYear());</script>Upfit</a>                                                                            </div><!-- .copyright_text -->  
-                            
-								</div><!--.large-12-->
-							</div><!-- .row --> 
-                        </div><!-- .site-footer-copyright-area -->
-                               
-                    </footer>
+		
 	</div>
 <script type='text/javascript' src='https://upfit.de/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
- <script type="text/javascript" src="https://upfit.de/wp-content/themes/shopkeeper/../shopkeeper-child/tooltipster/jquery.tooltipster.min.js"></script>
+ <script type="text/javascript" src="https://upfit.de/wp-content/themes/shopkeeper-child/tooltipster/jquery.tooltipster.min.js"></script>
 
 <script type="text/javascript">
 jQuery(document).ready(function($){

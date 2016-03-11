@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+    <meta charset="utf-8">
+    <title>Internen Traffic per Cookie ausschliessen</title>
+    
+    <script type="text/javascript">
+                  var _gaq = _gaq || [];
+                  _gaq.push(['_setAccount', 'UA-62321189-6']);
+                  _gaq.push(['_setVar','traffic_intern_filtern']);
+    _gaq.push(['_gat._anonymizeIp']);              
+    _gaq.push(['_trackPageview']);
+                  (function() {
+                    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                  })();
+    </script>
+    
+    </head>
+
+    <body>
+    <h2>Internen Zugriff aus Google Analytics ausschliessen</h2>
+    
+    <p>Diese Webseite mit jedem Gerät (Desktop, Laptop, Tablet, Mobile, usw.) besuchen, um als interner Besucher erkennt zu werden und nicht in Google Analytics gemessen zu werden.
+    <br/><br/>
+    <strong>Vorsicht: Werden die Cookies auf einem Gerät gelöscht, muss diese Seite erneut aufgerufen werden.</strong>
+    </p>
+    </body>
+</html>

@@ -81,7 +81,7 @@ function pdf_file_creation($atts){
 	require_once 'mpdf/mpdf.php';
 	global $wpdb, $shopkeeper_theme_options;
 	try{
-	 $site_logo = $shopkeeper_theme_options['site_logo']['url'];
+	 $site_logo = $shopkeeper_theme_options['light_transparent_header_logo']['url'];
 	//$order_id=$_REQUEST['order_id'];
 	//echo $order_id;
 
@@ -105,7 +105,7 @@ function pdf_file_creation($atts){
 		
 		$order_details=$wpdb->get_results('select id,meals_per_day,no_of_weeks,regenerate,current_weight from up_user_nutrition_plans where order_id='.$order_id.' AND site_id='.$site_id);
 		
-		$weight_range=$wpdb->get_results('select expected_weight from  up_plan_logs where user_nutrition_plan_id=(select id from  up_user_nutrition_plans where order_id='.$order_id.' AND site_id='.$site_id.')',ARRAY_N);
+		$weight_range=$wpdb->get_results('select expected_weight from up_plan_logs where user_nutrition_plan_id=(select id from  up_user_nutrition_plans where order_id='.$order_id.' AND site_id='.$site_id.')',ARRAY_N);
 		
 		$no_of_weeks=$order_details[0]->no_of_weeks;
 
@@ -416,6 +416,7 @@ function pdf_file_creation($atts){
 		//$pdfdoc = $mpdf->Output();
 	//	exit;
 		$mpdf->Output($pdfpath, "F");
+		
 		if($order_item_id != ''){
 			$pdf_processing_description='Nutrition Plan(PDF) is generated';
 			$sql1="Update ".$wpdb->prefix."woocommerce_order_itemmeta set meta_value = 3 WHERE order_item_id=".$order_item_id." and meta_key = 'pdf_processing_status'";
@@ -433,9 +434,14 @@ function pdf_file_creation($atts){
 				
 			if($dataq[0]['meta_value']==3 && (get_post_meta($order->id, '_payment_method', true) != 'bacs' || get_post_meta($order->id, '_payment_method', true) == ''))
 			{
+		//		echo 'here';
 				//wp_mail('lanetteam.milan@gmail.com','test-cron-pdf','mail sent successfully from pdf_function');
 				$order = new WC_Order( $order_id );
-				$order->update_status( 'completed' );
+				$status=$order->get_status();
+				if($order->has_status('processing')){
+					//echo 'in processing';
+					$order->update_status( 'completed' );
+				}
 				/*$pdf_processing_description='Mail is sent to user successfully in pdf_function';
 				$wpdb->query('update '.$wpdb->prefix.'woocommerce_order_itemmeta set meta_value=4 where meta_key="pdf_processing_status" and order_item_id="'.$order_item_id.'"');
 				$sql2="Update ".$wpdb->prefix."woocommerce_order_itemmeta set meta_value ='".$pdf_processing_description."' WHERE order_item_id=".$order_item_id." and meta_key = 'pdf_processing_description'";
@@ -599,7 +605,7 @@ function get_order_item_totals1( $tax_display = '' ) {
 function skyverge_show_coupon_js() {
 ?>
 <script>
-			jQuery( "body" ).bind( "updated_checkout", function() {
+		jQuery( "body" ).bind( "updated_checkout", function() {
 			jQuery( ".showcoupon" ).click( function() {
 				if(jQuery( ".checkout_coupon" ).css('display') === 'none'){
 					jQuery( ".checkout_coupon" ).fadeIn();
@@ -616,42 +622,4 @@ function skyverge_show_coupon_js() {
 <?php
 }
 //add_action( 'wp_footer', 'skyverge_show_coupon_js' );
-//is_wc_endpoint_url( 'order-received' )
-
-
-
-/*add_filter( 'woocommerce_get_item_downloads', 'get_item_downloads', $item, $this );
-public function get_item_downloads( $item ) {
-        global $wpdb;
-
-        $product_id   = $item['variation_id'] > 0 ? $item['variation_id'] : $item['product_id'];
-        $product      = wc_get_product( $product_id );
-        if ( ! $product ) {
-            /**
-             * $product can be `false`. Example: checking an old order, when a product or variation has been deleted.
-             * @see \WC_Product_Factory::get_product
-            
-            return array();
-        }
-        $download_ids = $wpdb->get_col( $wpdb->prepare("
-            SELECT download_id
-            FROM {$wpdb->prefix}woocommerce_downloadable_product_permissions
-            WHERE user_email = %s
-            AND order_key = %s
-            AND product_id = %s
-            ORDER BY permission_id
-        ", $this->billing_email, $this->order_key, $product_id ) );
-
-        $files = array();
-
-        foreach ( $download_ids as $download_id ) {
-
-            if ( $product->has_file( $download_id ) ) {
-                $files[ $download_id ]                 = $product->get_file( $download_id );
-                $files[ $download_id ]['download_url'] = $this->get_download_url( $product_id, $download_id );
-            }
-        }
-
-        return 'test';
-    }
-*/
+//is_wc_endpoint_url( 'order-received' );

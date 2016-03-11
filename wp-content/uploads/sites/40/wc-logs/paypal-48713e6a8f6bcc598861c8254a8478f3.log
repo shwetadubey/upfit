@@ -1,0 +1,176 @@
+03-03-2016 @ 16:01:50 - Generating payment form for order 2625. Notify URL: https://test.upfit.de/wc-api/WC_Gateway_Paypal/
+03-03-2016 @ 16:02:59 - Checking IPN response is valid
+03-03-2016 @ 16:03:01 - IPN Request: Array
+(
+    [body] => Array
+        (
+            [cmd] => _notify-validate
+            [mc_gross] => 56.05
+            [invoice] => TEST-2625
+            [protection_eligibility] => Ineligible
+            [item_number1] => 2625
+            [tax] => 0.00
+            [item_number2] => 
+            [payer_id] => QB3ARWVXTBP8C
+            [payment_date] => 08:03:06 Mar 03, 2016 PST
+            [payment_status] => Pending
+            [charset] => windows-1252
+            [mc_shipping] => 0.00
+            [mc_handling] => 0.00
+            [first_name] => test
+            [notify_version] => 3.8
+            [custom] => {"order_id":2625,"order_key":"wc_order_56d85fee19bb6"}
+            [payer_status] => verified
+            [num_cart_items] => 2
+            [mc_handling1] => 0.00
+            [mc_handling2] => 0.00
+            [verify_sign] => A0vr8pMQajQCGKUQiwt4BXI0X8lkArVmMZD34UsI3ARvJuEa28qMEUTO
+            [payer_email] => ideenrunde-buyer@gmail.com
+            [mc_shipping1] => 0.00
+            [mc_shipping2] => 0.00
+            [tax1] => 0.00
+            [tax2] => 0.00
+            [txn_id] => 9R240536JN198074A
+            [payment_type] => instant
+            [last_name] => buyer
+            [item_name1] => Upfit Sparfuchs x 1
+            [receiver_email] => ideenrunde@gmail.com
+            [item_name2] => Shipping via
+            [quantity1] => 1
+            [quantity2] => 1
+            [pending_reason] => unilateral
+            [txn_type] => cart
+            [mc_gross_1] => 56.05
+            [mc_currency] => EUR
+            [mc_gross_2] => 0.00
+            [residence_country] => DE
+            [test_ipn] => 1
+            [transaction_subject] => 
+            [payment_gross] => 
+            [ipn_track_id] => 17c22a0d9a042
+        )
+
+    [timeout] => 60
+    [httpversion] => 1.1
+    [compress] => 
+    [decompress] => 
+    [user-agent] => WooCommerce/2.4.10
+)
+
+03-03-2016 @ 16:03:01 - IPN Response: Array
+(
+    [headers] => Array
+        (
+            [date] => Thu, 03 Mar 2016 16:03:19 GMT
+            [server] => Apache
+            [x-frame-options] => SAMEORIGIN
+            [set-cookie] => Array
+                (
+                    [0] => c9MWDuvPtT9GIMyPc3jwol1VSlO=bijCPZv-OJlYyvbFCabejUwKXa80_u6dlijhpDIZnpt3h3NyaiAJu0-3wRANo6vZq-VJuRSaFev-SCQwcSXM2QhVYxJ7d1A07MLp3kskqcSYbjN_CIl1pnrKH-jSD631dks9PHSeb1BviPx4wQ0jFIDQhchqjKQj26Uu47ETUVk_QP1iiAAUEHyVjLeXzRCmsC3TanAgLtlp__8-XY4d65uHzsbDqYMaDexdCt8Osc-mGoUQGMDELsOyCS4eKz5RzxLjIUIKFCBTP3-c-Kc-nEKYwA41H0mjppUHgxEP1dly2drpyaSgMyiDgHhDE9Iu8oYnh_0_Ww3dGrfDSGV711srYDiu1xtvZVvywFB5wJc87FyzpbIqiSJlvuY5S2YK7jUIcC60jPdj9YYC-pAJTUcTb7fsP2siHGPcuh0ptj6SYAspZZbt4kMhPJ8; domain=.paypal.com; path=/; Secure; HttpOnly
+                    [1] => cookie_check=yes; expires=Sun, 01-Mar-2026 16:03:20 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+                    [2] => navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+                    [3] => navlns=0.0; expires=Sat, 03-Mar-2018 16:03:20 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+                    [4] => Apache=10.72.108.11.1457020999722975; path=/; expires=Sat, 24-Feb-46 16:03:19 GMT
+                    [5] => X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D1197529174; domain=.paypal.com; path=/; Secure; HttpOnly
+                    [6] => X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+                )
+
+            [vary] => Accept-Encoding,User-Agent
+            [connection] => close
+            [http_x_pp_az_locator] => sandbox.slc
+            [paypal-debug-id] => 61269cbacfce
+            [strict-transport-security] => max-age=14400
+            [transfer-encoding] => chunked
+            [content-type] => text/html; charset=UTF-8
+        )
+
+    [body] => VERIFIED
+    [response] => Array
+        (
+            [code] => 200
+            [message] => OK
+        )
+
+    [cookies] => Array
+        (
+            [0] => WP_Http_Cookie Object
+                (
+                    [name] => c9MWDuvPtT9GIMyPc3jwol1VSlO
+                    [value] => bijCPZv-OJlYyvbFCabejUwKXa80_u6dlijhpDIZnpt3h3NyaiAJu0-3wRANo6vZq-VJuRSaFev-SCQwcSXM2QhVYxJ7d1A07MLp3kskqcSYbjN_CIl1pnrKH-jSD631dks9PHSeb1BviPx4wQ0jFIDQhchqjKQj26Uu47ETUVk_QP1iiAAUEHyVjLeXzRCmsC3TanAgLtlp__8-XY4d65uHzsbDqYMaDexdCt8Osc-mGoUQGMDELsOyCS4eKz5RzxLjIUIKFCBTP3-c-Kc-nEKYwA41H0mjppUHgxEP1dly2drpyaSgMyiDgHhDE9Iu8oYnh_0_Ww3dGrfDSGV711srYDiu1xtvZVvywFB5wJc87FyzpbIqiSJlvuY5S2YK7jUIcC60jPdj9YYC-pAJTUcTb7fsP2siHGPcuh0ptj6SYAspZZbt4kMhPJ8
+                    [expires] => 
+                    [path] => /
+                    [domain] => .paypal.com
+                    [secure] => 
+                    [httponly] => 
+                )
+
+            [1] => WP_Http_Cookie Object
+                (
+                    [name] => cookie_check
+                    [value] => yes
+                    [expires] => 1772381000
+                    [path] => /
+                    [domain] => .paypal.com
+                    [secure] => 
+                    [httponly] => 
+                )
+
+            [2] => WP_Http_Cookie Object
+                (
+                    [name] => navcmd
+                    [value] => _notify-validate
+                    [expires] => 
+                    [path] => /
+                    [domain] => .paypal.com
+                    [secure] => 
+                    [httponly] => 
+                )
+
+            [3] => WP_Http_Cookie Object
+                (
+                    [name] => navlns
+                    [value] => 0.0
+                    [expires] => 1520093000
+                    [path] => /
+                    [domain] => .paypal.com
+                    [secure] => 
+                    [httponly] => 
+                )
+
+            [4] => WP_Http_Cookie Object
+                (
+                    [name] => Apache
+                    [value] => 10.72.108.11.1457020999722975
+                    [expires] => 2403100999
+                    [path] => /
+                    [domain] => www.sandbox.paypal.com
+                )
+
+            [5] => WP_Http_Cookie Object
+                (
+                    [name] => X-PP-SILOVER
+                    [value] => name=SANDBOX3.WEB.1&silo_version=1880&app=appdispatcher&TIME=1197529174
+                    [expires] => 
+                    [path] => /
+                    [domain] => .paypal.com
+                    [secure] => 
+                    [httponly] => 
+                )
+
+            [6] => WP_Http_Cookie Object
+                (
+                    [name] => X-PP-SILOVER
+                    [value] => 
+                    [expires] => 1
+                    [path] => /cgi-bin/
+                    [domain] => www.sandbox.paypal.com
+                )
+
+        )
+
+    [filename] => 
+)
+
+03-03-2016 @ 16:03:01 - Received valid response from PayPal
+03-03-2016 @ 16:03:01 - Found order #2625
+03-03-2016 @ 16:03:01 - Payment status: completed

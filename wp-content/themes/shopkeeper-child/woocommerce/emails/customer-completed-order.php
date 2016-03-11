@@ -10,20 +10,22 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
-$order_id=$order->id;
- do_action( 'woocommerce_email_header', $email_heading,$order_id ); ?>
 
-<p style="font-size:16px;font-family:'Conv_AvenirLTStd-Medium', sans-serif;color:#96a7b0; line-height: 28px;margin:0 auto;padding:0px 0px 20px 0px;"><?php printf( __( "Deine Bestellung ist bei uns eingegangen und wird nun bearbeitet. Deine Bestelldetails werden unten zur Kontrolle angezeigt:", 'woocommerce' ), get_option( 'blogname' ) ); ?></p>
+$action='&order_action=complete_order';
+$order_id=$order->id;
+ do_action( 'woocommerce_email_header', $email_heading,$order_id.$action ); ?>
+
+<p class="padding_bottom_add" style="font-size:16px;font-family:'Conv_AvenirLTStd-Medium', sans-serif;color:#96a7b0; line-height: 28px;margin:0 auto;padding:0 0 20px 0;"><?php printf( __( "Deine Bestellung ist bei uns eingegangen und wird nun bearbeitet. Deine Bestelldetails werden unten zur Kontrolle angezeigt:", 'woocommerce' ), get_option( 'blogname' ) ); ?></p>
 
 <?php //do_action( 'woocommerce_email_before_order_table', $order, $sent_to_admin, $plain_text ); ?>
 
 <h2 style="color:#162c5d; font-size:24px;line-height: 28px; border-bottom:10px solid #fff; margin:0 auto;font-weight: normal;"><?php printf( __( 'Bestellnummer: %s', 'woocommerce' ), $order->get_order_number() ); ?></h2>
 
-<table cellspacing="0" cellpadding="6" style="width:100%;border:1px solid #BDC9CC; font-family: 'Conv_AvenirLTStd-Medium', sans-serif;">
+<table class="email_box_border" cellspacing="0" cellpadding="6" style="width:100%; border:1px solid #BDC9CC;font-family: 'Conv_AvenirLTStd-Medium', sans-serif;">
 	<thead>
 		<tr>
-			<th scope="col" style="text-align:left;color:#162c5d; font-size:16px;line-height: 16px; font-weight: normal; background-color:#EDEDED;padding:0 0px 0 30px;height:72px;border-right:1px solid #BDC9CC;border-bottom:1px solid #BDC9CC; "><?php _e( 'Produkt', 'woocommerce' ); ?></th>
-			<th scope="col" style="text-align:left;color:#162c5d; font-size:16px;line-height: 16px; font-weight: normal; background-color:#EDEDED;padding:0 0px 0 30px;height:72px;border-right:1px solid #BDC9CC;border-bottom:1px solid #BDC9CC; "><?php _e( 'Anzahl', 'woocommerce' ); ?></th>
+			<th class="padding_left_odlist border-bottom" scope="col" style="text-align:left;color:#162c5d; font-size:16px;line-height: 16px; font-weight: normal; background-color:#EDEDED;padding:0 0 0 30px;height:72px;border-right:1px solid #BDC9CC; border-bottom:1px solid #BDC9CC"><?php _e( 'Produkt', 'woocommerce' ); ?></th>
+			<th class="padding_left_odlist border-bottom" scope="col" style="text-align:left;color:#162c5d; font-size:16px;line-height: 16px; font-weight: normal; background-color:#EDEDED;padding:0 0px 0 30px;height:72px;border-right:1px solid #BDC9CC; border-bottom:1px solid #BDC9CC;"><?php _e( 'Anzahl', 'woocommerce' ); ?></th>
 			<th scope="col" style="text-align:right;color:#162c5d; font-size:16px;line-height: 16px; font-weight: normal; background-color:#EDEDED;padding:0 30px 0 0px;;height:72px;border-bottom:1px solid #BDC9CC; "><?php _e( 'Preis', 'woocommerce' ); ?></th>
 		</tr>
 	</thead>
@@ -158,14 +160,12 @@ $order_id=$order->id;
 			//exit;
 	//	wp_mail('lanetteam.brijesh@gmail.com','test','test msg');
 		?>
-	
-		
 		
 	</tfoot>
 
 </table>
 
-<?php do_action( 'woocommerce_email_after_order_table', $order, $sent_to_admin, $plain_text ); ?>
+<?php  do_action( 'woocommerce_email_after_order_table', $order, $sent_to_admin, $plain_text ); ?>
 
 <?php  do_action( 'woocommerce_email_order_meta', $order, $sent_to_admin, $plain_text ); ?>
 
